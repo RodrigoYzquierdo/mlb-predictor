@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLB Predictor 2026</title>
+  <style>
+    :root {
+      --bg:#ffffff; --bg2:#f5f5f4; --bg3:#f0ede8;
+      --bgS:#eaf3de; --bgW:#faeeda; --bgD:#fcebeb; --bgI:#e6f1fb;
+      --tx:#1a1a1a; --tx2:#666; --txS:#3b6d11; --txW:#854f0b; --txD:#a32d2d; --txI:#185fa5;
+      --bd:rgba(0,0,0,.12); --bdM:rgba(0,0,0,.22); --bdS:rgba(59,109,17,.3);
+      --r:8px; --rl:12px; --font:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    }
+    @media(prefers-color-scheme:dark){
+      :root{--bg:#1c1c1e;--bg2:#2c2c2e;--bg3:#3a3a3c;--bgS:#173404;--bgW:#412402;--bgD:#501313;--bgI:#042c53;--tx:#f2f2f7;--tx2:#aeaeb2;--txS:#c0dd97;--txW:#fac775;--txD:#f09595;--txI:#b5d4f4;--bd:rgba(255,255,255,.1);--bdM:rgba(255,255,255,.2);--bdS:rgba(192,221,151,.3)}
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font);background:var(--bg3);color:var(--tx);min-height:100vh}
+    .wrap{max-width:700px;margin:0 auto;padding:1.5rem 1rem 4rem}
+
+    /* Header */
+    .hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand-icon{font-size:28px}
+    .brand-name{font-size:21px;font-weight:500;letter-spacing:-.3px}
+    .brand-sub{font-size:11px;color:var(--tx2);margin-top:1px}
+    .updated-pill{font-size:11px;font-weight:500;background:var(--bgS);color:var(--txS);padding:3px 10px;border-radius:20px;border:.5px solid var(--bdS)}
+
+    /* Loading */
+    .loading{text-align:center;padding:3rem;color:var(--tx2);font-size:14px}
+    .spinner{width:20px;height:20px;border:2px solid var(--bd);border-top-color:var(--tx2);border-radius:50%;animation:sp .6s linear infinite;margin:0 auto 12px}
+    @keyframes sp{to{transform:rotate(360deg)}}
+    .error-box{background:var(--bgD);border:.5px solid rgba(163,45,45,.3);border-radius:var(--r);padding:1rem;color:var(--txD);font-size:13px;text-align:center}
+
+    /* Tabs */
+    .tabs{display:flex;gap:2px;background:var(--bg2);border-radius:var(--r);padding:3px;margin-bottom:1.25rem}
+    .tab{flex:1;padding:8px 6px;font-size:13px;font-weight:500;text-align:center;border-radius:6px;cursor:pointer;color:var(--tx2);border:none;background:transparent;transition:all .15s;font-family:var(--font)}
+    .tab.on{background:var(--bg);color:var(--tx);border:.5px solid var(--bd);box-shadow:0 1px 3px rgba(0,0,0,.06)}
+    .panel{display:none}.panel.on{display:block}
+
+    /* Cards */
+    .card{background:var(--bg);border:.5px solid var(--bd);border-radius:var(--rl);padding:1.25rem;margin-bottom:1rem}
+    .clabel{font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.7px;color:var(--tx2);margin-bottom:1rem;display:flex;align-items:center;gap:6px}
+    .tag{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:500}
+    .tag-today{background:var(--bgW);color:var(--txW)}
+    .tag-hot{background:var(--bgS);color:var(--txS)}
+    .disc{background:var(--bgW);border:.5px solid rgba(133,79,11,.3);border-radius:var(--r);padding:.75rem 1rem;margin-bottom:1rem;font-size:12px;color:var(--txW);line-height:1.5}
+
+    /* Pred cards */
+    .pred-card{border:.5px solid var(--bd);border-radius:10px;overflow:hidden;margin-bottom:10px}
+    .pred-card:last-child{margin-bottom:0}
+    .pred-head{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:10px;padding:10px 14px;background:var(--bg2);border-bottom:.5px solid var(--bd)}
+    .rank{width:22px;height:22px;border-radius:50%;background:var(--bg);border:.5px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:500;color:var(--tx2)}
+    .rank.r1{background:var(--bgW);color:var(--txW)}
+    .match{font-size:13px;font-weight:500;color:var(--tx)}
+    .meta{font-size:11px;color:var(--tx2);margin-top:1px}
+    .conf-pill{font-size:10px;font-weight:500;padding:2px 7px;border-radius:10px}
+    .c-hi{background:var(--bgS);color:var(--txS)}.c-med{background:var(--bgW);color:var(--txW)}.c-lo{background:var(--bg2);color:var(--tx2);border:.5px solid var(--bd)}
+    .pred-body{padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+    .prow{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+    .pc{background:var(--bg2);border-radius:7px;padding:7px 10px}
+    .pc-side{font-size:10px;color:var(--tx2);margin-bottom:2px}
+    .pc-name{font-size:12px;font-weight:500;color:var(--tx)}
+    .pc-era{font-size:11px;color:var(--tx2)}.pc-era.elite{color:var(--txS);font-weight:500}
+
+    /* Bars */
+    .bars{display:flex;flex-direction:column;gap:5px}
+    .br{display:grid;grid-template-columns:72px 1fr 38px;align-items:center;gap:8px}
+    .bl{font-size:11px;color:var(--tx2);text-align:right}
+    .bo{position:relative;height:6px;background:var(--bg2);border-radius:3px}
+    .bf{height:6px;border-radius:3px;background:var(--tx);transition:width .8s cubic-bezier(.34,1.56,.64,1)}
+    .bf.a{background:var(--bdM)}
+    .bm{position:absolute;top:-3px;width:2px;height:12px;background:var(--txD);border-radius:1px;opacity:.8}
+    .bp{font-size:11px;font-weight:500;color:var(--tx)}
+
+    /* Odds */
+    .odds-t{display:grid;grid-template-columns:72px 1fr 1fr 1fr;gap:4px}
+    .oth{font-size:10px;font-weight:500;color:var(--tx2);text-transform:uppercase;letter-spacing:.4px;text-align:center;padding:2px 0}
+    .oth.l{text-align:left}
+    .otn{font-size:12px;font-weight:500;color:var(--tx)}
+    .otc{background:var(--bg2);border-radius:6px;padding:5px 7px;text-align:center}
+    .ov{font-size:12px;font-weight:500;color:var(--tx)}
+    .om{font-size:10px;color:var(--tx2);margin-top:1px}
+    .od{font-size:10px;font-weight:500;margin-top:1px}
+    .od.up{color:var(--txS)}.od.dn{color:var(--txD)}.od.eq{color:var(--tx2)}
+    .dr{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+    .dn{font-size:11px;color:var(--tx2);line-height:1.5;flex:1}
+    .db{font-size:11px;font-weight:500;padding:3px 9px;border-radius:10px;white-space:nowrap;flex-shrink:0}
+    .dhi{background:var(--bgS);color:var(--txS)}.dlo{background:var(--bgD);color:var(--txD)}.deq{background:var(--bg2);color:var(--tx2);border:.5px solid var(--bd)}
+    .leg-row{display:flex;gap:12px;margin-bottom:.75rem}
+    .leg-i{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--tx2)}
+    .leg-box{width:10px;height:4px;border-radius:2px;background:var(--tx)}
+    .leg-line{width:2px;height:10px;border-radius:1px;background:var(--txD);opacity:.8}
+
+    /* Historial */
+    .acc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:1.25rem}
+    .acc-card{background:var(--bg2);border-radius:var(--r);padding:12px;text-align:center}
+    .av{font-size:22px;font-weight:500;color:var(--tx)}
+    .av.g{color:var(--txS)}.av.r{color:var(--txD)}
+    .al{font-size:11px;color:var(--tx2);margin-top:2px}
+    .sbar{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:.75rem}
+    .sd{width:23px;height:23px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:600}
+    .sd.h{background:var(--bgS);color:var(--txS)}.sd.m{background:var(--bgD);color:var(--txD)}
+    .frow{display:flex;gap:6px;margin-bottom:1rem;flex-wrap:wrap}
+    .fb{padding:5px 12px;font-size:12px;font-weight:500;border-radius:20px;border:.5px solid var(--bd);background:var(--bg);color:var(--tx2);cursor:pointer;font-family:var(--font);transition:all .15s}
+    .fb.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+    .hi{border:.5px solid var(--bd);border-radius:var(--r);padding:9px 14px;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px;margin-bottom:6px}
+    .hi:last-child{margin-bottom:0}
+    .hi.hit{border-left:3px solid #2d9e6b}.hi.miss{border-left:3px solid #c8102e}
+    .ht{font-size:13px;font-weight:500;color:var(--tx)}
+    .hd{font-size:11px;color:var(--tx2);margin-top:1px}
+    .hs{font-size:12px;font-weight:500;color:var(--tx);text-align:right}
+    .hr{font-size:11px;font-weight:600;padding:2px 9px;border-radius:10px;white-space:nowrap}
+    .rh{background:var(--bgS);color:var(--txS)}.rm{background:var(--bgD);color:var(--txD)}
+
+    .footer{text-align:center;font-size:11px;color:var(--tx2);margin-top:2rem;line-height:1.6}
+    .note{font-size:11px;color:var(--tx2);text-align:center;padding:.75rem 0 0}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hdr">
+    <div class="brand">
+      <span class="brand-icon">⚾</span>
+      <div>
+        <div class="brand-name">MLB Predictor</div>
+        <div class="brand-sub" id="brand-sub">Cargando...</div>
+      </div>
+    </div>
+    <div class="updated-pill" id="updated-pill">⏳ Actualizando</div>
+  </header>
+
+  <div id="main-content">
+    <div class="loading">
+      <div class="spinner"></div>
+      Cargando datos del día...
+    </div>
+  </div>
+
+  <footer class="footer">
+    Datos: MLB Stats API · Momios: referencia FanDuel<br>
+    Actualización automática diaria · Solo fines informativos
+  </footer>
+</div>
+
+<script>
+let DATA = null;
+let activeDate = 'all';
+
+// ── Cargar data.json generado por el script Python ──────────────────────────
+async function loadData() {
+  try {
+    const r = await fetch(`./data.json?t=${Date.now()}`);
+    if (!r.ok) throw new Error("No se pudo cargar data.json");
+    DATA = await r.json();
+    renderApp();
+  } catch(e) {
+    document.getElementById('main-content').innerHTML = `
+      <div class="error-box">
+        ⚠️ No se pudieron cargar los datos del día.<br>
+        <small>El script de actualización corre a las 9 AM CST. Intenta más tarde.</small>
+      </div>`;
+  }
+}
+
+function renderApp() {
+  document.getElementById('brand-sub').textContent = `Temporada 2026 · ${DATA.date}`;
+  document.getElementById('updated-pill').textContent = `✓ ${DATA.updated}`;
+
+  document.getElementById('main-content').innerHTML = `
+    <div class="tabs" role="tablist">
+      <button class="tab on" onclick="goTab('top5')">⭐ Top 5 hoy</button>
+      <button class="tab" onclick="goTab('hist')">📋 Historial</button>
+    </div>
+    <div id="p-top5" class="panel on"></div>
+    <div id="p-hist" class="panel"></div>
+    <div class="note">Standings en vivo · Momios FanDuel · Solo fines informativos</div>
+  `;
+
+  renderTop5();
+  renderHistory();
+}
+
+// ── Top 5 ────────────────────────────────────────────────────────────────────
+function ccls(c) { return c==='Alta'?'c-hi':c==='Media'?'c-med':'c-lo' }
+function mlToImpl(ml) { return ml<0?Math.round((-ml/(-ml+100))*100):Math.round((100/(ml+100))*100) }
+function dcls(d) { return Math.abs(d)>=6?(d>0?'dhi':'dlo'):'deq' }
+function dlbl(d) {
+  if(d>=6)  return `Modelo +${d}pp`;
+  if(d<=-6) return `Mercado +${Math.abs(d)}pp`;
+  return `Alineados (${d>0?'+':''}${d}pp)`;
+}
+
+function renderTop5() {
+  const top5 = DATA.top5 || [];
+  let html = `
+    <div class="disc">⚠️ Solo análisis estadístico — no es asesoramiento de apuestas. Los momios son referencia informativa.</div>
+    <div class="card">
+      <div class="clabel">
+        Mejores predicciones · ${DATA.date}
+        <span class="tag tag-today">Hoy</span>
+        ${DATA.stats.streak >= 5 ? `<span class="tag tag-hot">🔥 ${DATA.stats.streak} seguidas</span>` : ''}
+      </div>
+      <div class="leg-row">
+        <div class="leg-i"><div class="leg-box"></div>Modelo</div>
+        <div class="leg-i"><div class="leg-line"></div>Mercado</div>
+      </div>`;
+
+  top5.forEach((g, rank) => {
+    const favT = g.hp >= g.ap ? g.home : g.away;
+    const favP = Math.max(g.hp, g.ap);
+    const mktPct = g.hML ? mlToImpl(g.hML) : 50;
+    const hD = g.hp - mktPct, aD = g.ap - (100 - mktPct);
+    const timeLocal = g.time ? new Date(g.time).toLocaleTimeString('es-MX', {hour:'2-digit',minute:'2-digit',timeZone:'America/Mexico_City'}) : '';
+    const hEraElite = g.home_era && g.home_era < 2.5 ? 'elite' : '';
+    const aEraElite = g.away_era && g.away_era < 2.5 ? 'elite' : '';
+
+    html += `<div class="pred-card">
+      <div class="pred-head">
+        <div class="rank${rank===0?' r1':''}">${rank+1}</div>
+        <div>
+          <div class="match">${g.away} @ ${g.home}</div>
+          <div class="meta">${timeLocal} CST · <span class="${ccls(g.conf)}" style="font-size:10px;font-weight:500">${g.conf} confianza</span>${g.mixed?' · 🔬 ERA mixta':''}</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:12px;font-weight:500">${favT}</div>
+          <div style="font-size:19px;font-weight:500;line-height:1.1">${favP}%</div>
+        </div>
+      </div>
+      <div class="pred-body">
+        <div class="prow">
+          <div class="pc"><div class="pc-side">🏟 ${g.home} (local)</div><div class="pc-name">${g.home_pitcher||'Por confirmar'}</div>${g.home_era?`<div class="pc-era ${hEraElite}">ERA ${g.home_era}</div>`:''}</div>
+          <div class="pc"><div class="pc-side">✈ ${g.away} (visitante)</div><div class="pc-name">${g.away_pitcher||'Por confirmar'}</div>${g.away_era?`<div class="pc-era ${aEraElite}">ERA ${g.away_era}</div>`:''}</div>
+        </div>
+        <div class="bars">
+          <div class="br"><div class="bl">${g.home}</div><div class="bo"><div class="bf" id="bh${rank}" style="width:0%"></div>${g.hML?`<div class="bm" style="left:${mktPct}%"></div>`:''}</div><div class="bp">${g.hp}%</div></div>
+          <div class="br"><div class="bl">${g.away}</div><div class="bo"><div class="bf a" id="ba${rank}" style="width:0%"></div>${g.hML?`<div class="bm" style="left:${g.ap}%"></div>`:''}</div><div class="bp">${g.ap}%</div></div>
+        </div>
+        ${g.hML ? `
+        <div class="odds-t">
+          <div class="oth l">Equipo</div><div class="oth">ML</div><div class="oth">Run Line</div><div class="oth">Total O/U</div>
+          <div class="otn">${g.home} 🏠</div>
+          <div class="otc"><div class="ov">${g.hML>0?'+'+g.hML:g.hML}</div><div class="om">Mkt ${mktPct}%</div><div class="od ${hD>=6?'up':hD<=-6?'dn':'eq'}">Mdl ${g.hp}% ${hD>=6?'↑':hD<=-6?'↓':'≈'}</div></div>
+          <div class="otc"><div class="ov">${g.hRL||'-1.5'}</div><div class="om">local</div></div>
+          <div class="otc"><div class="ov">↑${g.total||'—'}</div><div class="om">${g.ov||'—'}</div></div>
+          <div class="otn">${g.away} ✈</div>
+          <div class="otc"><div class="ov">${g.aML>0?'+'+g.aML:g.aML}</div><div class="om">Mkt ${100-mktPct}%</div><div class="od ${aD>=6?'up':aD<=-6?'dn':'eq'}">Mdl ${g.ap}% ${aD>=6?'↑':aD<=-6?'↓':'≈'}</div></div>
+          <div class="otc"><div class="ov">${g.aRL||'+1.5'}</div><div class="om">visitante</div></div>
+          <div class="otc"><div class="ov">↓${g.total||'—'}</div><div class="om">${g.un||'—'}</div></div>
+        </div>` : ''}
+        ${g.delta !== undefined ? `<div class="dr"><span class="dn">${g.note||''}</span><span class="db ${dcls(g.delta)}">${dlbl(g.delta)}</span></div>` : ''}
+      </div>
+    </div>`;
+  });
+
+  html += `</div>`;
+  document.getElementById('p-top5').innerHTML = html;
+
+  setTimeout(() => {
+    top5.forEach((g, rank) => {
+      const bh = document.getElementById('bh'+rank);
+      const ba = document.getElementById('ba'+rank);
+      if(bh) bh.style.width = g.hp + '%';
+      if(ba) ba.style.width = g.ap + '%';
+    });
+  }, 80);
+}
+
+// ── Historial ────────────────────────────────────────────────────────────────
+function renderHistory() {
+  const history = DATA.history || [];
+  const stats   = DATA.stats   || {};
+  const dates   = [...new Set(history.map(h => h.date))].reverse();
+
+  let html = `
+    <div class="card">
+      <div class="clabel">Precisión acumulada</div>
+      <div class="acc-grid">
+        <div class="acc-card"><div class="av g">${stats.pct||0}%</div><div class="al">Precisión</div></div>
+        <div class="acc-card"><div class="av">${stats.hits||0}</div><div class="al">✓ Aciertos</div></div>
+        <div class="acc-card"><div class="av r">${(stats.total||0)-(stats.hits||0)}</div><div class="al">✗ Fallos</div></div>
+        <div class="acc-card"><div class="av">${stats.streak_type==='W'?'✓':'✗'} ${stats.streak||0}</div><div class="al">Racha</div></div>
+      </div>
+      <div class="clabel" style="margin-bottom:.5rem">Últimas predicciones</div>
+      <div class="sbar">${history.slice(-25).map(h=>`<div class="sd ${h.hit?'h':'m'}" title="${h.away}@${h.home} ${h.date}">${h.hit?'✓':'✗'}</div>`).join('')}</div>
+    </div>
+    <div class="card">
+      <div class="clabel">Detalle por fecha</div>
+      <div class="frow" id="frow">
+        <button class="fb on" onclick="setFilter('all')">Todos (${history.length})</button>
+        ${dates.map(d=>{const g=history.filter(h=>h.date===d),hits=g.filter(x=>x.hit).length;return `<button class="fb" onclick="setFilter('${d}')">${d} · ${hits}/${g.length}</button>`;}).join('')}
+      </div>
+      <div id="hlist"></div>
+    </div>`;
+
+  document.getElementById('p-hist').innerHTML = html;
+  renderList(history);
+}
+
+function setFilter(date) {
+  activeDate = date;
+  document.querySelectorAll('.fb').forEach(b =>
+    b.classList.toggle('on', date==='all' ? b.textContent.startsWith('Todos') : b.textContent.startsWith(date))
+  );
+  renderList(DATA.history || []);
+}
+
+function renderList(history) {
+  const filtered = activeDate === 'all'
+    ? [...history].reverse()
+    : history.filter(h => h.date === activeDate).reverse();
+
+  document.getElementById('hlist').innerHTML = filtered.map(h => `
+    <div class="hi ${h.hit?'hit':'miss'}">
+      <div><div class="ht">${h.away} @ ${h.home}</div><div class="hd">${h.date} · Pred: <strong>${h.pred}</strong> (${h.hp>50?h.hp:100-h.hp}%)</div></div>
+      <div><div class="hs">${h.actual}</div></div>
+      <span class="hr ${h.hit?'rh':'rm'}">${h.hit?'✓':'✗'}</span>
+    </div>`).join('');
+}
+
+function goTab(name) {
+  document.querySelectorAll('.tab').forEach((t,i) => t.classList.toggle('on', ['top5','hist'][i]===name));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('on'));
+  document.getElementById('p-'+name).classList.add('on');
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
