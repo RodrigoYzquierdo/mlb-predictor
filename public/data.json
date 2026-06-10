@@ -1,1 +1,119 @@
-{}
+{
+  "date": "2026-06-09",
+  "updated": "09/06/2026 23:19 CST",
+  "standings": {
+    "UNK": {
+      "name": "Rockies",
+      "w": 25,
+      "l": 42,
+      "pct": 0.373,
+      "div": "",
+      "conf": ""
+    }
+  },
+  "top5": [
+    {
+      "id": 823290,
+      "status": "Live",
+      "home": "UNK",
+      "away": "UNK",
+      "home_name": "San Diego Padres",
+      "away_name": "Cincinnati Reds",
+      "time": "2026-06-10T01:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Lucas Giolito",
+      "home_pitcher_id": 608337,
+      "away_pitcher": "Chase Burns",
+      "away_pitcher_id": 695505,
+      "home_era": 4.35,
+      "away_era": 2.14,
+      "hp": 42,
+      "ap": 58,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 8
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 6-3 UNK",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 3-1 UNK",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 7-5 UNK",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 5-2 UNK",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 5-4 UNK",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 6-2 UNK",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 4-3 UNK",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "UNK",
+      "away": "UNK",
+      "hp": 51,
+      "pred": "UNK",
+      "actual": "UNK 15-14 UNK",
+      "hit": true
+    }
+  ],
+  "stats": {
+    "hits": 8,
+    "total": 8,
+    "pct": 100,
+    "streak": 8,
+    "streak_type": "W"
+  }
+}
