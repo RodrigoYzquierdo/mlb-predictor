@@ -31,8 +31,8 @@ def get_games(date):
             game = {
                 "id":       g["gamePk"],
                 "status":   g["status"]["abstractGameState"],  # Preview / Live / Final
-                "home":     home["team"]["abbreviation"],
-                "away":     away["team"]["abbreviation"],
+                "home":     (home.get("team",{}).get("abbreviation") or home.get("team",{}).get("teamCode","UNK")).upper(),
+                "away":     (away.get("team",{}).get("abbreviation") or away.get("team",{}).get("teamCode","UNK")).upper(),
                 "home_name":home["team"]["name"],
                 "away_name":away["team"]["name"],
                 "time":     g.get("gameDate", ""),
