@@ -62,37 +62,38 @@ def get_pitcher_era(pitcher_id):
     except:
         pass
     return None
-
+    
 # ── 3. Obtener standings ──────────────────────────────────────────────────────
 def get_standings():
     url = f"{MLB_API}/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason"
     r = requests.get(url, timeout=10)
     data = r.json()
-    print("KEYS:", list(data.keys()))
-    for rec in data.get("records", [])[:1]:
-        for tr in rec.get("teamRecords", [])[:1]:
-            print("TEAM KEYS:", list(tr.get("team", {}).keys()))
+    NAME_TO_ABBR = {
+        "Arizona Diamondbacks":"AZ","Atlanta Braves":"ATL","Baltimore Orioles":"BAL",
+        "Boston Red Sox":"BOS","Chicago Cubs":"CHC","Chicago White Sox":"CWS",
+        "Cincinnati Reds":"CIN","Cleveland Guardians":"CLE","Colorado Rockies":"COL",
+        "Detroit Tigers":"DET","Houston Astros":"HOU","Kansas City Royals":"KC",
+        "Los Angeles Angels":"LAA","Los Angeles Dodgers":"LAD","Miami Marlins":"MIA",
+        "Milwaukee Brewers":"MIL","Minnesota Twins":"MIN","New York Mets":"NYM",
+        "New York Yankees":"NYY","Athletics":"ATH","Philadelphia Phillies":"PHI",
+        "Pittsburgh Pirates":"PIT","San Diego Padres":"SD","San Francisco Giants":"SF",
+        "Seattle Mariners":"SEA","St. Louis Cardinals":"STL","Tampa Bay Rays":"TB",
+        "Texas Rangers":"TEX","Toronto Blue Jays":"TOR","Washington Nationals":"WSH",
+    }
     teams = {}
     for record in data.get("records", []):
         for tr in record.get("teamRecords", []):
-            # La API puede devolver 'abbreviation' o 'teamCode' según la versión
-            team_info = tr.get("team", {})
-            abbr = (team_info.get("abbreviation") or
-                    team_info.get("teamCode") or
-                    team_info.get("clubName", "UNK")).upper()
+            team = tr.get("team", {})
+            name = team.get("name", "UNK")
+            abbr = NAME_TO_ABBR.get(name, name[:3].upper())
             w = tr.get("wins", 0)
             l = tr.get("losses", 0)
-            pct_raw = tr.get("winningPercentage", "0.000")
-            try:
-                pct = round(float(pct_raw), 3)
-            except (ValueError, TypeError):
-                pct = round(w / (w + l), 3) if (w + l) > 0 else 0.500
             teams[abbr] = {
-                "name": team_info.get("name", abbr),
-                "w":    w,
-                "l":    l,
-                "pct":  pct,
-                "div":  record.get("division", {}).get("name", ""),
+                "name": name,
+                "w": w,
+                "l": l,
+                "pct": round(w/(w+l), 3) if (w+l) > 0 else 0.500,
+                "div": record.get("division", {}).get("name", ""),
                 "conf": record.get("league", {}).get("name", ""),
             }
     return teams
