@@ -1,8 +1,224 @@
 {
   "date": "2026-06-09",
-  "updated": "09/06/2026 23:19 CST",
+  "updated": "09/06/2026 23:51 CST",
   "standings": {
-    "UNK": {
+    "RAY": {
+      "name": "Rays",
+      "w": 39,
+      "l": 25,
+      "pct": 0.609,
+      "div": "",
+      "conf": ""
+    },
+    "YAN": {
+      "name": "Yankees",
+      "w": 40,
+      "l": 26,
+      "pct": 0.606,
+      "div": "",
+      "conf": ""
+    },
+    "BLU": {
+      "name": "Blue Jays",
+      "w": 33,
+      "l": 35,
+      "pct": 0.485,
+      "div": "",
+      "conf": ""
+    },
+    "ORI": {
+      "name": "Orioles",
+      "w": 31,
+      "l": 37,
+      "pct": 0.456,
+      "div": "",
+      "conf": ""
+    },
+    "RED": {
+      "name": "Reds",
+      "w": 32,
+      "l": 34,
+      "pct": 0.485,
+      "div": "",
+      "conf": ""
+    },
+    "GUA": {
+      "name": "Guardians",
+      "w": 37,
+      "l": 32,
+      "pct": 0.536,
+      "div": "",
+      "conf": ""
+    },
+    "WHI": {
+      "name": "White Sox",
+      "w": 35,
+      "l": 31,
+      "pct": 0.53,
+      "div": "",
+      "conf": ""
+    },
+    "TWI": {
+      "name": "Twins",
+      "w": 30,
+      "l": 38,
+      "pct": 0.441,
+      "div": "",
+      "conf": ""
+    },
+    "TIG": {
+      "name": "Tigers",
+      "w": 28,
+      "l": 39,
+      "pct": 0.418,
+      "div": "",
+      "conf": ""
+    },
+    "ROY": {
+      "name": "Royals",
+      "w": 28,
+      "l": 39,
+      "pct": 0.418,
+      "div": "",
+      "conf": ""
+    },
+    "MAR": {
+      "name": "Marlins",
+      "w": 32,
+      "l": 35,
+      "pct": 0.478,
+      "div": "",
+      "conf": ""
+    },
+    "RAN": {
+      "name": "Rangers",
+      "w": 32,
+      "l": 34,
+      "pct": 0.485,
+      "div": "",
+      "conf": ""
+    },
+    "ATH": {
+      "name": "Athletics",
+      "w": 32,
+      "l": 35,
+      "pct": 0.478,
+      "div": "",
+      "conf": ""
+    },
+    "AST": {
+      "name": "Astros",
+      "w": 31,
+      "l": 38,
+      "pct": 0.449,
+      "div": "",
+      "conf": ""
+    },
+    "ANG": {
+      "name": "Angels",
+      "w": 26,
+      "l": 42,
+      "pct": 0.382,
+      "div": "",
+      "conf": ""
+    },
+    "BRA": {
+      "name": "Braves",
+      "w": 45,
+      "l": 22,
+      "pct": 0.672,
+      "div": "",
+      "conf": ""
+    },
+    "PHI": {
+      "name": "Phillies",
+      "w": 36,
+      "l": 31,
+      "pct": 0.537,
+      "div": "",
+      "conf": ""
+    },
+    "NAT": {
+      "name": "Nationals",
+      "w": 35,
+      "l": 33,
+      "pct": 0.515,
+      "div": "",
+      "conf": ""
+    },
+    "MET": {
+      "name": "Mets",
+      "w": 29,
+      "l": 37,
+      "pct": 0.439,
+      "div": "",
+      "conf": ""
+    },
+    "BRE": {
+      "name": "Brewers",
+      "w": 41,
+      "l": 24,
+      "pct": 0.631,
+      "div": "",
+      "conf": ""
+    },
+    "CAR": {
+      "name": "Cardinals",
+      "w": 36,
+      "l": 28,
+      "pct": 0.562,
+      "div": "",
+      "conf": ""
+    },
+    "PIR": {
+      "name": "Pirates",
+      "w": 34,
+      "l": 33,
+      "pct": 0.507,
+      "div": "",
+      "conf": ""
+    },
+    "CUB": {
+      "name": "Cubs",
+      "w": 34,
+      "l": 33,
+      "pct": 0.507,
+      "div": "",
+      "conf": ""
+    },
+    "DOD": {
+      "name": "Dodgers",
+      "w": 43,
+      "l": 24,
+      "pct": 0.642,
+      "div": "",
+      "conf": ""
+    },
+    "D-B": {
+      "name": "D-backs",
+      "w": 34,
+      "l": 32,
+      "pct": 0.515,
+      "div": "",
+      "conf": ""
+    },
+    "PAD": {
+      "name": "Padres",
+      "w": 34,
+      "l": 32,
+      "pct": 0.515,
+      "div": "",
+      "conf": ""
+    },
+    "GIA": {
+      "name": "Giants",
+      "w": 27,
+      "l": 41,
+      "pct": 0.397,
+      "div": "",
+      "conf": ""
+    },
+    "ROC": {
       "name": "Rockies",
       "w": 25,
       "l": 42,
@@ -11,30 +227,7 @@
       "conf": ""
     }
   },
-  "top5": [
-    {
-      "id": 823290,
-      "status": "Live",
-      "home": "UNK",
-      "away": "UNK",
-      "home_name": "San Diego Padres",
-      "away_name": "Cincinnati Reds",
-      "time": "2026-06-10T01:40:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Lucas Giolito",
-      "home_pitcher_id": 608337,
-      "away_pitcher": "Chase Burns",
-      "away_pitcher_id": 695505,
-      "home_era": 4.35,
-      "away_era": 2.14,
-      "hp": 42,
-      "ap": 58,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 8
-    }
-  ],
+  "top5": [],
   "history": [
     {
       "date": "2026-06-08",
@@ -107,13 +300,85 @@
       "pred": "UNK",
       "actual": "UNK 15-14 UNK",
       "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "BAL",
+      "away": "SEA",
+      "hp": 45,
+      "pred": "SEA",
+      "actual": "SEA 6-3 BAL",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "TB",
+      "away": "BOS",
+      "hp": 64,
+      "pred": "TB",
+      "actual": "TB 3-1 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "CLE",
+      "away": "NYY",
+      "hp": 50,
+      "pred": "CLE",
+      "actual": "NYY 7-5 CLE",
+      "hit": false
+    },
+    {
+      "date": "2026-06-08",
+      "home": "TOR",
+      "away": "PHI",
+      "hp": 46,
+      "pred": "PHI",
+      "actual": "PHI 5-2 TOR",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "LAA",
+      "away": "HOU",
+      "hp": 38,
+      "pred": "HOU",
+      "actual": "HOU 5-4 LAA",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "SD",
+      "away": "CIN",
+      "hp": 58,
+      "pred": "SD",
+      "actual": "SD 6-2 CIN",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "SF",
+      "away": "WSH",
+      "hp": 43,
+      "pred": "WSH",
+      "actual": "WSH 4-3 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "ATH",
+      "away": "MIL",
+      "hp": 43,
+      "pred": "MIL",
+      "actual": "MIL 15-14 ATH",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 8,
-    "total": 8,
-    "pct": 100,
-    "streak": 8,
+    "hits": 15,
+    "total": 16,
+    "pct": 94,
+    "streak": 5,
     "streak_type": "W"
   }
 }
