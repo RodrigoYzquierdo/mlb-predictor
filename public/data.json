@@ -1,6 +1,6 @@
 {
-  "date": "2026-06-09",
-  "updated": "09/06/2026 23:51 CST",
+  "date": "2026-06-10",
+  "updated": "10/06/2026 11:58 CST",
   "standings": {
     "RAY": {
       "name": "Rays",
@@ -227,7 +227,118 @@
       "conf": ""
     }
   },
-  "top5": [],
+  "top5": [
+    {
+      "id": 824348,
+      "status": "Preview",
+      "home": "COL",
+      "away": "CHC",
+      "home_name": "Colorado Rockies",
+      "away_name": "Chicago Cubs",
+      "time": "2026-06-11T00:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Michael Lorenzen",
+      "home_pitcher_id": 547179,
+      "away_pitcher": "Shota Imanaga",
+      "away_pitcher_id": 684007,
+      "home_era": 8.01,
+      "away_era": 4.74,
+      "hp": 27,
+      "ap": 73,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 23
+    },
+    {
+      "id": 823372,
+      "status": "Preview",
+      "home": "PIT",
+      "away": "LAD",
+      "home_name": "Pittsburgh Pirates",
+      "away_name": "Los Angeles Dodgers",
+      "time": "2026-06-10T22:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Jared Jones",
+      "home_pitcher_id": 683003,
+      "away_pitcher": "Shohei Ohtani",
+      "away_pitcher_id": 660271,
+      "home_era": 4.82,
+      "away_era": 0.74,
+      "hp": 32,
+      "ap": 68,
+      "conf": "Media",
+      "mixed": true,
+      "diff": 18
+    },
+    {
+      "id": 823287,
+      "status": "Preview",
+      "home": "SD",
+      "away": "CIN",
+      "home_name": "San Diego Padres",
+      "away_name": "Cincinnati Reds",
+      "time": "2026-06-10T20:10:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Michael King",
+      "home_pitcher_id": 650633,
+      "away_pitcher": "Brady Singer",
+      "away_pitcher_id": 663903,
+      "home_era": 3.41,
+      "away_era": 5.89,
+      "hp": 67,
+      "ap": 33,
+      "conf": "Media",
+      "mixed": true,
+      "diff": 17
+    },
+    {
+      "id": 823856,
+      "status": "Preview",
+      "home": "MIA",
+      "away": "AZ",
+      "home_name": "Miami Marlins",
+      "away_name": "Arizona Diamondbacks",
+      "time": "2026-06-10T22:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Ryan Gusto",
+      "home_pitcher_id": 687473,
+      "away_pitcher": "Ryne Nelson",
+      "away_pitcher_id": 669194,
+      "home_era": 10.8,
+      "away_era": 4.6,
+      "hp": 34,
+      "ap": 66,
+      "conf": "Media",
+      "mixed": true,
+      "diff": 16
+    },
+    {
+      "id": 822970,
+      "status": "Live",
+      "home": "TB",
+      "away": "BOS",
+      "home_name": "Tampa Bay Rays",
+      "away_name": "Boston Red Sox",
+      "time": "2026-06-10T17:10:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Drew Rasmussen",
+      "home_pitcher_id": 656876,
+      "away_pitcher": "Jake Bennett",
+      "away_pitcher_id": 687562,
+      "home_era": 2.83,
+      "away_era": 3.95,
+      "hp": 64,
+      "ap": 36,
+      "conf": "Media",
+      "mixed": true,
+      "diff": 14
+    }
+  ],
   "history": [
     {
       "date": "2026-06-08",
@@ -372,13 +483,148 @@
       "pred": "MIL",
       "actual": "MIL 15-14 ATH",
       "hit": true
+    },
+    {
+      "date": "2026-06-09",
+      "home": "BAL",
+      "away": "SEA",
+      "hp": 45,
+      "pred": "SEA",
+      "actual": "SEA 6-5 BAL",
+      "hit": true
+    },
+    {
+      "date": "2026-06-09",
+      "home": "PIT",
+      "away": "LAD",
+      "hp": 41,
+      "pred": "LAD",
+      "actual": "LAD 12-3 PIT",
+      "hit": true
+    },
+    {
+      "date": "2026-06-09",
+      "home": "TB",
+      "away": "BOS",
+      "hp": 64,
+      "pred": "TB",
+      "actual": "TB 4-3 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-06-09",
+      "home": "DET",
+      "away": "MIN",
+      "hp": 40,
+      "pred": "MIN",
+      "actual": "DET 10-4 MIN",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "MIA",
+      "away": "AZ",
+      "hp": 42,
+      "pred": "AZ",
+      "actual": "MIA 10-6 AZ",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "CLE",
+      "away": "NYY",
+      "hp": 50,
+      "pred": "CLE",
+      "actual": "NYY 3-2 CLE",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "TOR",
+      "away": "PHI",
+      "hp": 46,
+      "pred": "PHI",
+      "actual": "TOR 3-2 PHI",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "NYM",
+      "away": "STL",
+      "hp": 44,
+      "pred": "STL",
+      "actual": "STL 7-0 NYM",
+      "hit": true
+    },
+    {
+      "date": "2026-06-09",
+      "home": "KC",
+      "away": "TEX",
+      "hp": 40,
+      "pred": "TEX",
+      "actual": "KC 5-3 TEX",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "CWS",
+      "away": "ATL",
+      "hp": 42,
+      "pred": "ATL",
+      "actual": "CWS 6-5 ATL",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "COL",
+      "away": "CHC",
+      "hp": 31,
+      "pred": "CHC",
+      "actual": "COL 7-3 CHC",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "LAA",
+      "away": "HOU",
+      "hp": 38,
+      "pred": "HOU",
+      "actual": "LAA 10-1 HOU",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "SD",
+      "away": "CIN",
+      "hp": 58,
+      "pred": "SD",
+      "actual": "CIN 5-3 SD",
+      "hit": false
+    },
+    {
+      "date": "2026-06-09",
+      "home": "SF",
+      "away": "WSH",
+      "hp": 43,
+      "pred": "WSH",
+      "actual": "WSH 6-3 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-06-09",
+      "home": "ATH",
+      "away": "MIL",
+      "hp": 43,
+      "pred": "MIL",
+      "actual": "ATH 7-5 MIL",
+      "hit": false
     }
   ],
   "stats": {
-    "hits": 15,
-    "total": 16,
-    "pct": 94,
-    "streak": 5,
-    "streak_type": "W"
+    "hits": 20,
+    "total": 31,
+    "pct": 65,
+    "streak": 1,
+    "streak_type": "L"
   }
 }
