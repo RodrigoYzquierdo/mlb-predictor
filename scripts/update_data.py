@@ -68,6 +68,10 @@ def get_standings():
     url = f"{MLB_API}/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason"
     r = requests.get(url, timeout=10)
     data = r.json()
+    print("KEYS:", list(data.keys()))
+    for rec in data.get("records", [])[:1]:
+        for tr in rec.get("teamRecords", [])[:1]:
+            print("TEAM KEYS:", list(tr.get("team", {}).keys()))
     teams = {}
     for record in data.get("records", []):
         for tr in record.get("teamRecords", []):
