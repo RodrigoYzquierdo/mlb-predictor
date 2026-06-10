@@ -71,14 +71,25 @@ def get_standings():
     teams = {}
     for record in data.get("records", []):
         for tr in record.get("teamRecords", []):
-            abbr = tr["team"]["abbreviation"]
+            # La API puede devolver 'abbreviation' o 'teamCode' según la versión
+            team_info = tr.get("team", {})
+            abbr = (team_info.get("abbreviation") or
+                    team_info.get("teamCode") or
+                    team_info.get("clubName", "UNK")).upper()
+            w = tr.get("wins", 0)
+            l = tr.get("losses", 0)
+            pct_raw = tr.get("winningPercentage", "0.000")
+            try:
+                pct = round(float(pct_raw), 3)
+            except (ValueError, TypeError):
+                pct = round(w / (w + l), 3) if (w + l) > 0 else 0.500
             teams[abbr] = {
-                "name": tr["team"]["name"],
-                "w":    tr["wins"],
-                "l":    tr["losses"],
-                "pct":  round(tr["winningPercentage"], 3),
-                "div":  record["division"]["name"],
-                "conf": record["league"]["name"],
+                "name": team_info.get("name", abbr),
+                "w":    w,
+                "l":    l,
+                "pct":  pct,
+                "div":  record.get("division", {}).get("name", ""),
+                "conf": record.get("league", {}).get("name", ""),
             }
     return teams
 
