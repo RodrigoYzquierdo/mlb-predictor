@@ -1,342 +1,342 @@
 {
-  "date": "2026-06-10",
-  "updated": "10/06/2026 11:58 CST",
+  "date": "2026-06-11",
+  "updated": "11/06/2026 11:45 CST",
   "standings": {
     "RAY": {
       "name": "Rays",
-      "w": 39,
+      "w": 40,
       "l": 25,
-      "pct": 0.609,
+      "pct": 0.615,
       "div": "",
       "conf": ""
     },
     "YAN": {
       "name": "Yankees",
-      "w": 40,
+      "w": 41,
       "l": 26,
-      "pct": 0.606,
+      "pct": 0.612,
       "div": "",
       "conf": ""
     },
     "BLU": {
       "name": "Blue Jays",
       "w": 33,
-      "l": 35,
-      "pct": 0.485,
+      "l": 36,
+      "pct": 0.478,
       "div": "",
       "conf": ""
     },
     "ORI": {
       "name": "Orioles",
-      "w": 31,
+      "w": 32,
       "l": 37,
-      "pct": 0.456,
+      "pct": 0.464,
       "div": "",
       "conf": ""
     },
     "RED": {
       "name": "Reds",
       "w": 32,
-      "l": 34,
-      "pct": 0.485,
-      "div": "",
-      "conf": ""
-    },
-    "GUA": {
-      "name": "Guardians",
-      "w": 37,
-      "l": 32,
-      "pct": 0.536,
+      "l": 35,
+      "pct": 0.478,
       "div": "",
       "conf": ""
     },
     "WHI": {
       "name": "White Sox",
-      "w": 35,
-      "l": 31,
-      "pct": 0.53,
-      "div": "",
-      "conf": ""
-    },
-    "TWI": {
-      "name": "Twins",
-      "w": 30,
-      "l": 38,
-      "pct": 0.441,
-      "div": "",
-      "conf": ""
-    },
-    "TIG": {
-      "name": "Tigers",
-      "w": 28,
-      "l": 39,
-      "pct": 0.418,
-      "div": "",
-      "conf": ""
-    },
-    "ROY": {
-      "name": "Royals",
-      "w": 28,
-      "l": 39,
-      "pct": 0.418,
-      "div": "",
-      "conf": ""
-    },
-    "MAR": {
-      "name": "Marlins",
-      "w": 32,
-      "l": 35,
-      "pct": 0.478,
-      "div": "",
-      "conf": ""
-    },
-    "RAN": {
-      "name": "Rangers",
-      "w": 32,
-      "l": 34,
-      "pct": 0.485,
-      "div": "",
-      "conf": ""
-    },
-    "ATH": {
-      "name": "Athletics",
-      "w": 32,
-      "l": 35,
-      "pct": 0.478,
-      "div": "",
-      "conf": ""
-    },
-    "AST": {
-      "name": "Astros",
-      "w": 31,
-      "l": 38,
-      "pct": 0.449,
-      "div": "",
-      "conf": ""
-    },
-    "ANG": {
-      "name": "Angels",
-      "w": 26,
-      "l": 42,
-      "pct": 0.382,
-      "div": "",
-      "conf": ""
-    },
-    "BRA": {
-      "name": "Braves",
-      "w": 45,
-      "l": 22,
-      "pct": 0.672,
-      "div": "",
-      "conf": ""
-    },
-    "PHI": {
-      "name": "Phillies",
       "w": 36,
       "l": 31,
       "pct": 0.537,
       "div": "",
       "conf": ""
     },
+    "GUA": {
+      "name": "Guardians",
+      "w": 37,
+      "l": 33,
+      "pct": 0.529,
+      "div": "",
+      "conf": ""
+    },
+    "TWI": {
+      "name": "Twins",
+      "w": 31,
+      "l": 38,
+      "pct": 0.449,
+      "div": "",
+      "conf": ""
+    },
+    "TIG": {
+      "name": "Tigers",
+      "w": 28,
+      "l": 40,
+      "pct": 0.412,
+      "div": "",
+      "conf": ""
+    },
+    "ROY": {
+      "name": "Royals",
+      "w": 28,
+      "l": 40,
+      "pct": 0.412,
+      "div": "",
+      "conf": ""
+    },
+    "MAR": {
+      "name": "Marlins",
+      "w": 33,
+      "l": 35,
+      "pct": 0.485,
+      "div": "",
+      "conf": ""
+    },
+    "RAN": {
+      "name": "Rangers",
+      "w": 33,
+      "l": 34,
+      "pct": 0.493,
+      "div": "",
+      "conf": ""
+    },
+    "ATH": {
+      "name": "Athletics",
+      "w": 33,
+      "l": 35,
+      "pct": 0.485,
+      "div": "",
+      "conf": ""
+    },
+    "AST": {
+      "name": "Astros",
+      "w": 31,
+      "l": 39,
+      "pct": 0.443,
+      "div": "",
+      "conf": ""
+    },
+    "ANG": {
+      "name": "Angels",
+      "w": 27,
+      "l": 42,
+      "pct": 0.391,
+      "div": "",
+      "conf": ""
+    },
+    "BRA": {
+      "name": "Braves",
+      "w": 45,
+      "l": 23,
+      "pct": 0.662,
+      "div": "",
+      "conf": ""
+    },
+    "PHI": {
+      "name": "Phillies",
+      "w": 37,
+      "l": 31,
+      "pct": 0.544,
+      "div": "",
+      "conf": ""
+    },
     "NAT": {
       "name": "Nationals",
       "w": 35,
-      "l": 33,
-      "pct": 0.515,
+      "l": 34,
+      "pct": 0.507,
       "div": "",
       "conf": ""
     },
     "MET": {
       "name": "Mets",
       "w": 29,
-      "l": 37,
-      "pct": 0.439,
+      "l": 38,
+      "pct": 0.433,
       "div": "",
       "conf": ""
     },
     "BRE": {
       "name": "Brewers",
       "w": 41,
-      "l": 24,
-      "pct": 0.631,
+      "l": 25,
+      "pct": 0.621,
       "div": "",
       "conf": ""
     },
     "CAR": {
       "name": "Cardinals",
-      "w": 36,
+      "w": 37,
       "l": 28,
-      "pct": 0.562,
+      "pct": 0.569,
       "div": "",
       "conf": ""
     },
     "PIR": {
       "name": "Pirates",
-      "w": 34,
+      "w": 35,
       "l": 33,
-      "pct": 0.507,
+      "pct": 0.515,
       "div": "",
       "conf": ""
     },
     "CUB": {
       "name": "Cubs",
       "w": 34,
-      "l": 33,
-      "pct": 0.507,
+      "l": 34,
+      "pct": 0.5,
       "div": "",
       "conf": ""
     },
     "DOD": {
       "name": "Dodgers",
       "w": 43,
-      "l": 24,
-      "pct": 0.642,
+      "l": 25,
+      "pct": 0.632,
+      "div": "",
+      "conf": ""
+    },
+    "PAD": {
+      "name": "Padres",
+      "w": 35,
+      "l": 32,
+      "pct": 0.522,
       "div": "",
       "conf": ""
     },
     "D-B": {
       "name": "D-backs",
       "w": 34,
-      "l": 32,
-      "pct": 0.515,
-      "div": "",
-      "conf": ""
-    },
-    "PAD": {
-      "name": "Padres",
-      "w": 34,
-      "l": 32,
-      "pct": 0.515,
+      "l": 33,
+      "pct": 0.507,
       "div": "",
       "conf": ""
     },
     "GIA": {
       "name": "Giants",
-      "w": 27,
+      "w": 28,
       "l": 41,
-      "pct": 0.397,
+      "pct": 0.406,
       "div": "",
       "conf": ""
     },
     "ROC": {
       "name": "Rockies",
-      "w": 25,
+      "w": 26,
       "l": 42,
-      "pct": 0.373,
+      "pct": 0.382,
       "div": "",
       "conf": ""
     }
   },
   "top5": [
     {
-      "id": 824348,
-      "status": "Preview",
-      "home": "COL",
-      "away": "CHC",
-      "home_name": "Colorado Rockies",
-      "away_name": "Chicago Cubs",
-      "time": "2026-06-11T00:40:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Michael Lorenzen",
-      "home_pitcher_id": 547179,
-      "away_pitcher": "Shota Imanaga",
-      "away_pitcher_id": 684007,
-      "home_era": 8.01,
-      "away_era": 4.74,
-      "hp": 27,
-      "ap": 73,
-      "conf": "Alta",
-      "mixed": true,
-      "diff": 23
-    },
-    {
-      "id": 823372,
+      "id": 823371,
       "status": "Preview",
       "home": "PIT",
       "away": "LAD",
       "home_name": "Pittsburgh Pirates",
       "away_name": "Los Angeles Dodgers",
-      "time": "2026-06-10T22:40:00Z",
+      "time": "2026-06-11T22:40:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Jared Jones",
-      "home_pitcher_id": 683003,
-      "away_pitcher": "Shohei Ohtani",
-      "away_pitcher_id": 660271,
-      "home_era": 4.82,
-      "away_era": 0.74,
-      "hp": 32,
-      "ap": 68,
+      "home_pitcher": "Mitch Keller",
+      "home_pitcher_id": 656605,
+      "away_pitcher": "Justin Wrobleski",
+      "away_pitcher_id": 680736,
+      "home_era": 4.81,
+      "away_era": 2.62,
+      "hp": 36,
+      "ap": 64,
       "conf": "Media",
       "mixed": true,
-      "diff": 18
+      "diff": 14
     },
     {
-      "id": 823287,
-      "status": "Preview",
-      "home": "SD",
-      "away": "CIN",
-      "home_name": "San Diego Padres",
-      "away_name": "Cincinnati Reds",
-      "time": "2026-06-10T20:10:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Michael King",
-      "home_pitcher_id": 650633,
-      "away_pitcher": "Brady Singer",
-      "away_pitcher_id": 663903,
-      "home_era": 3.41,
-      "away_era": 5.89,
-      "hp": 67,
-      "ap": 33,
-      "conf": "Media",
-      "mixed": true,
-      "diff": 17
-    },
-    {
-      "id": 823856,
-      "status": "Preview",
+      "id": 823855,
+      "status": "Live",
       "home": "MIA",
       "away": "AZ",
       "home_name": "Miami Marlins",
       "away_name": "Arizona Diamondbacks",
-      "time": "2026-06-10T22:40:00Z",
+      "time": "2026-06-11T17:10:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Ryan Gusto",
-      "home_pitcher_id": 687473,
-      "away_pitcher": "Ryne Nelson",
-      "away_pitcher_id": 669194,
-      "home_era": 10.8,
-      "away_era": 4.6,
-      "hp": 34,
-      "ap": 66,
-      "conf": "Media",
+      "home_pitcher": "Tyler Phillips",
+      "home_pitcher_id": 663969,
+      "away_pitcher": "Merrill Kelly",
+      "away_pitcher_id": 518876,
+      "home_era": 1.97,
+      "away_era": 5.7,
+      "hp": 60,
+      "ap": 40,
+      "conf": "Baja",
       "mixed": true,
-      "diff": 16
+      "diff": 10
     },
     {
-      "id": 822970,
-      "status": "Live",
-      "home": "TB",
-      "away": "BOS",
-      "home_name": "Tampa Bay Rays",
-      "away_name": "Boston Red Sox",
-      "time": "2026-06-10T17:10:00Z",
+      "id": 824346,
+      "status": "Preview",
+      "home": "COL",
+      "away": "CHC",
+      "home_name": "Colorado Rockies",
+      "away_name": "Chicago Cubs",
+      "time": "2026-06-11T19:10:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Drew Rasmussen",
-      "home_pitcher_id": 656876,
-      "away_pitcher": "Jake Bennett",
-      "away_pitcher_id": 687562,
-      "home_era": 2.83,
-      "away_era": 3.95,
-      "hp": 64,
-      "ap": 36,
-      "conf": "Media",
+      "home_pitcher": "Ryan Feltner",
+      "home_pitcher_id": 663372,
+      "away_pitcher": "Edward Cabrera",
+      "away_pitcher_id": 665795,
+      "home_era": 4.22,
+      "away_era": 4.99,
+      "hp": 40,
+      "ap": 60,
+      "conf": "Baja",
       "mixed": true,
-      "diff": 14
+      "diff": 10
+    },
+    {
+      "id": 824589,
+      "status": "Preview",
+      "home": "CWS",
+      "away": "ATL",
+      "home_name": "Chicago White Sox",
+      "away_name": "Atlanta Braves",
+      "time": "2026-06-11T23:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": null,
+      "home_pitcher_id": null,
+      "away_pitcher": "Martín Pérez",
+      "away_pitcher_id": 527048,
+      "home_era": null,
+      "away_era": 3.02,
+      "hp": 42,
+      "ap": 58,
+      "conf": "Baja",
+      "mixed": false,
+      "diff": 8
+    },
+    {
+      "id": 824101,
+      "status": "Preview",
+      "home": "KC",
+      "away": "TEX",
+      "home_name": "Kansas City Royals",
+      "away_name": "Texas Rangers",
+      "time": "2026-06-11T18:10:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Michael Wacha",
+      "home_pitcher_id": 608379,
+      "away_pitcher": "Kumar Rocker",
+      "away_pitcher_id": 677958,
+      "home_era": 3.44,
+      "away_era": 3.54,
+      "hp": 44,
+      "ap": 56,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 6
     }
   ],
   "history": [
@@ -618,13 +618,148 @@
       "pred": "MIL",
       "actual": "ATH 7-5 MIL",
       "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "TB",
+      "away": "BOS",
+      "hp": 64,
+      "pred": "TB",
+      "actual": "TB 7-5 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "CLE",
+      "away": "NYY",
+      "hp": 50,
+      "pred": "CLE",
+      "actual": "NYY 8-4 CLE",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "SF",
+      "away": "WSH",
+      "hp": 43,
+      "pred": "WSH",
+      "actual": "SF 11-10 WSH",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "SD",
+      "away": "CIN",
+      "hp": 58,
+      "pred": "SD",
+      "actual": "SD 5-4 CIN",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "BAL",
+      "away": "SEA",
+      "hp": 45,
+      "pred": "SEA",
+      "actual": "BAL 7-2 SEA",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "PIT",
+      "away": "LAD",
+      "hp": 41,
+      "pred": "LAD",
+      "actual": "PIT 9-8 LAD",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "DET",
+      "away": "MIN",
+      "hp": 40,
+      "pred": "MIN",
+      "actual": "MIN 6-4 DET",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "MIA",
+      "away": "AZ",
+      "hp": 42,
+      "pred": "AZ",
+      "actual": "MIA 8-0 AZ",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "TOR",
+      "away": "PHI",
+      "hp": 46,
+      "pred": "PHI",
+      "actual": "PHI 7-4 TOR",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "NYM",
+      "away": "STL",
+      "hp": 44,
+      "pred": "STL",
+      "actual": "STL 9-2 NYM",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "KC",
+      "away": "TEX",
+      "hp": 40,
+      "pred": "TEX",
+      "actual": "TEX 6-4 KC",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "CWS",
+      "away": "ATL",
+      "hp": 42,
+      "pred": "ATL",
+      "actual": "CWS 2-1 ATL",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "COL",
+      "away": "CHC",
+      "hp": 31,
+      "pred": "CHC",
+      "actual": "COL 3-2 CHC",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "ATH",
+      "away": "MIL",
+      "hp": 43,
+      "pred": "MIL",
+      "actual": "ATH 4-3 MIL",
+      "hit": false
+    },
+    {
+      "date": "2026-06-10",
+      "home": "LAA",
+      "away": "HOU",
+      "hp": 38,
+      "pred": "HOU",
+      "actual": "LAA 3-2 HOU",
+      "hit": false
     }
   ],
   "stats": {
-    "hits": 20,
-    "total": 31,
-    "pct": 65,
-    "streak": 1,
+    "hits": 26,
+    "total": 46,
+    "pct": 57,
+    "streak": 4,
     "streak_type": "L"
   }
 }
