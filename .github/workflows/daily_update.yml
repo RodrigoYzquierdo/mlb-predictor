@@ -1,11 +1,10 @@
 name: MLB Predictor — Actualización diaria
 
-on:
-  # Corre todos los días a las 15:00 UTC = 9:00 AM CST (México)
+  on:
   schedule:
-    - cron: "0 15 * * *"
-
-  # También permite correrlo manualmente desde GitHub
+    - cron: "0 14 * * *"   # 8 AM CST (principal)
+    - cron: "0 15 * * *"   # 9 AM CST (respaldo)
+    - cron: "0 16 * * *"   # 10 AM CST (segundo respaldo)
   workflow_dispatch:
 
 jobs:
