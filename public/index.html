@@ -63,6 +63,12 @@
     .pc-side{font-size:10px;color:var(--tx2);margin-bottom:2px}
     .pc-name{font-size:12px;font-weight:500;color:var(--tx)}
     .pc-era{font-size:11px;color:var(--tx2)}.pc-era.elite{color:var(--txS);font-weight:500}
+    .pc-bp{font-size:10px;color:var(--tx2);margin-top:2px}
+    .pc-form{font-size:10px;font-weight:500;margin-top:3px;padding:1px 6px;border-radius:6px;display:inline-block}
+    .form-hot{background:var(--bgS);color:var(--txS)}
+    .form-cold{background:var(--bgD);color:var(--txD)}
+    .form-avg{background:var(--bg3);color:var(--tx2)}
+    .park-row{font-size:10px;color:var(--tx2);background:var(--bg2);border-radius:6px;padding:6px 10px;line-height:1.4}
 
     /* Bars */
     .bars{display:flex;flex-direction:column;gap:5px}
@@ -287,19 +293,52 @@ function renderTop5() {
       </div>
       <div class="pred-body">
 
-        <!-- Pitchers -->
+        <!-- Pitchers + Bullpen + Forma reciente -->
         <div class="prow">
           <div class="pc">
             <div class="pc-side">🏟 ${g.home} (local)</div>
             <div class="pc-name">${g.home_pitcher||'Por confirmar'}</div>
-            ${g.home_era ? `<div class="pc-era ${hEraElite}">ERA ${g.home_era}</div>` : ''}
+            ${g.home_era ? `<div class="pc-era ${hEraElite}">Abridor ERA ${g.home_era}</div>` : ''}
+            ${(() => {
+              const ts = (DATA.team_stats||{})[g.home] || {};
+              const bp = ts.bullpen_era;
+              const form = (DATA.form||{})[g.home];
+              const l10 = form ? `${form.last10_w}-${form.last10_l}` : null;
+              const l10pct = form ? form.last10_pct : null;
+              const formCls = l10pct >= 0.6 ? 'form-hot' : l10pct <= 0.4 ? 'form-cold' : 'form-avg';
+              return `
+                ${bp != null ? `<div class="pc-bp">Bullpen ERA ${bp}</div>` : ''}
+                ${l10 ? `<div class="pc-form ${formCls}">Últimos 10: ${l10}</div>` : ''}
+              `;
+            })()}
           </div>
           <div class="pc">
             <div class="pc-side">✈ ${g.away} (visitante)</div>
             <div class="pc-name">${g.away_pitcher||'Por confirmar'}</div>
-            ${g.away_era ? `<div class="pc-era ${aEraElite}">ERA ${g.away_era}</div>` : ''}
+            ${g.away_era ? `<div class="pc-era ${aEraElite}">Abridor ERA ${g.away_era}</div>` : ''}
+            ${(() => {
+              const ts = (DATA.team_stats||{})[g.away] || {};
+              const bp = ts.bullpen_era;
+              const form = (DATA.form||{})[g.away];
+              const l10 = form ? `${form.last10_w}-${form.last10_l}` : null;
+              const l10pct = form ? form.last10_pct : null;
+              const formCls = l10pct >= 0.6 ? 'form-hot' : l10pct <= 0.4 ? 'form-cold' : 'form-avg';
+              return `
+                ${bp != null ? `<div class="pc-bp">Bullpen ERA ${bp}</div>` : ''}
+                ${l10 ? `<div class="pc-form ${formCls}">Últimos 10: ${l10}</div>` : ''}
+              `;
+            })()}
           </div>
         </div>
+
+        <!-- Park factor badge si es relevante -->
+        ${g.park_factor && Math.abs(g.park_factor - 1.0) >= 0.03 ? `
+        <div class="park-row">
+          ${g.park_factor > 1.0
+            ? `🏟 Estadio favorece la ofensiva (factor ${g.park_factor}) — ERA efectiva más baja de lo que parece`
+            : `🏟 Estadio favorece el pitcheo (factor ${g.park_factor}) — partido bajo en carreras esperado`
+          }
+        </div>` : ''}
 
         <!-- Barras de probabilidad -->
         <div class="bars">
