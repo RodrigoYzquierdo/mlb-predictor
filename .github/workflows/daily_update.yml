@@ -1,31 +1,26 @@
 name: MLB Predictor - Actualizacion diaria
-
 "on":
   schedule:
     - cron: "0 14 * * *"
     - cron: "0 15 * * *"
     - cron: "0 16 * * *"
   workflow_dispatch:
-
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Descargar codigo
         uses: actions/checkout@v4
-
       - name: Instalar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
       - name: Instalar dependencias
         run: pip install requests pytz
-
       - name: Actualizar datos MLB
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/update_data.py
-
       - name: Guardar cambios en el repositorio
         run: |
           git config user.name "github-actions[bot]"
