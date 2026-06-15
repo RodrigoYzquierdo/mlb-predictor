@@ -253,15 +253,24 @@ def get_team_stats():
 
     return team_stats
 
-# 5. Obtener momios de The Odds API
+# 5. Obtener momios + consensus de sportsbooks
 def get_odds():
     """
-    Obtiene momios moneyline de MLB para hoy.
-    Retorna dict keyed por "AWAY@HOME" -> {home_ml, away_ml, bookmaker}
+    Obtiene momios moneyline de MLB para hoy de todos los sportsbooks disponibles.
+    Calcula consensus (promedio de probabilidades implícitas) y spread entre books.
+    Retorna dict keyed por "AWAY@HOME"
     """
     if not ODDS_API_KEY:
         print("   ODDS_API_KEY no configurada, omitiendo momios")
         return {}
+
+    def ml_to_prob(ml):
+        """Convierte moneyline americano a probabilidad implícita (sin vig)."""
+        if ml < 0:
+            return abs(ml) / (abs(ml) + 100)
+        else:
+            return 100 / (ml + 100)
+
     try:
         url = (
             f"{ODDS_API}/sports/baseball_mlb/odds"
@@ -275,155 +284,82 @@ def get_odds():
         r.raise_for_status()
         data = r.json()
 
+        SHARP_BOOKS = ["draftkings", "fanduel", "betmgm", "caesars", "betrivers", "pointsbet", "bovada"]
         odds_map = {}
+
         for event in data:
             home_name = event.get("home_team", "")
             away_name = event.get("away_team", "")
             home_abbr = NAME_TO_ABBR.get(home_name, home_name[:3].upper())
             away_abbr = NAME_TO_ABBR.get(away_name, away_name[:3].upper())
 
-            # Preferir DraftKings > FanDuel > BetMGM > cualquier otro
             bookmakers = event.get("bookmakers", [])
-            preferred  = ["draftkings", "fanduel", "betmgm"]
-            chosen     = None
-            for pref in preferred:
-                for bk in bookmakers:
-                    if bk["key"] == pref:
-                        chosen = bk
-                        break
-                if chosen:
-                    break
-            if not chosen and bookmakers:
-                chosen = bookmakers[0]
-            if not chosen:
+            if not bookmakers:
                 continue
 
-            home_ml = away_ml = None
-            for market in chosen.get("markets", []):
-                if market["key"] == "h2h":
+            # Recolectar probabilidades de todos los books
+            home_probs, away_probs = [], []
+            book_names = []
+            best_home_ml = best_away_ml = None
+            best_book = None
+
+            for bk in bookmakers:
+                if bk["key"] not in SHARP_BOOKS:
+                    continue
+                for market in bk.get("markets", []):
+                    if market["key"] != "h2h":
+                        continue
+                    h_ml = a_ml = None
                     for outcome in market.get("outcomes", []):
                         if outcome["name"] == home_name:
-                            home_ml = outcome["price"]
+                            h_ml = outcome["price"]
                         elif outcome["name"] == away_name:
-                            away_ml = outcome["price"]
+                            a_ml = outcome["price"]
+                    if h_ml is not None and a_ml is not None:
+                        home_probs.append(ml_to_prob(h_ml) * 100)
+                        away_probs.append(ml_to_prob(a_ml) * 100)
+                        book_names.append(bk["title"])
+                        # Guardar DraftKings como referencia de moneyline display
+                        if bk["key"] == "draftkings" or best_home_ml is None:
+                            best_home_ml = h_ml
+                            best_away_ml = a_ml
+                            best_book    = bk["title"]
 
-            if home_ml is not None and away_ml is not None:
-                key = f"{away_abbr}@{home_abbr}"
-                odds_map[key] = {
-                    "home_ml":   home_ml,
-                    "away_ml":   away_ml,
-                    "bookmaker": chosen["title"],
-                }
+            if not home_probs:
+                continue
 
-        print(f"   Momios obtenidos: {len(odds_map)} partidos")
+            # Consensus: promedio de probabilidades implícitas (removiendo vig)
+            avg_home = round(sum(home_probs) / len(home_probs), 1)
+            avg_away = round(sum(away_probs) / len(away_probs), 1)
+
+            # Normalizar para que sumen 100
+            total      = avg_home + avg_away
+            consensus_home = round(avg_home / total * 100, 1)
+            consensus_away = round(avg_away / total * 100, 1)
+
+            # Spread: diferencia entre el book más alto y más bajo para el local
+            spread = round(max(home_probs) - min(home_probs), 1) if len(home_probs) > 1 else 0
+            agreement = "Alta" if spread < 3 else ("Media" if spread < 6 else "Baja")
+
+            key = f"{away_abbr}@{home_abbr}"
+            odds_map[key] = {
+                "home_ml":        best_home_ml,
+                "away_ml":        best_away_ml,
+                "bookmaker":      best_book,
+                "consensus_home": consensus_home,
+                "consensus_away": consensus_away,
+                "books_count":    len(home_probs),
+                "books":          book_names,
+                "spread":         spread,
+                "agreement":      agreement,
+            }
+
+        print(f"   Momios obtenidos: {len(odds_map)} partidos ({sum(o['books_count'] for o in odds_map.values())} lineas totales)")
         return odds_map
 
     except Exception as e:
         print(f"   Error obteniendo momios: {e}")
         return {}
-
-# 6. Obtener probabilidades de Polymarket
-def get_polymarket(today_games):
-    """
-    Obtiene probabilidades implícitas de Polymarket para los partidos de hoy.
-    Construye el slug directamente: mlb-{away_lower}-{home_lower}-{yyyy}-{mm}-{dd}
-    Ejemplo: mlb-col-chc-2026-06-15
-    Retorna dict keyed por "AWAY@HOME" -> {home_prob, away_prob, volume, question}
-    """
-    GAMMA_API = "https://gamma-api.polymarket.com"
-
-    # Polymarket usa abreviaciones en minúsculas en el slug
-    ABBR_TO_POLY = {
-        "AZ":  "ari", "ATL": "atl", "BAL": "bal", "BOS": "bos",
-        "CHC": "chc", "CWS": "cws", "CIN": "cin", "CLE": "cle",
-        "COL": "col", "DET": "det", "HOU": "hou", "KC":  "kc",
-        "LAA": "laa", "LAD": "lad", "MIA": "mia", "MIL": "mil",
-        "MIN": "min", "NYM": "nym", "NYY": "nyy", "ATH": "oak",
-        "PHI": "phi", "PIT": "pit", "SD":  "sd",  "SF":  "sf",
-        "SEA": "sea", "STL": "stl", "TB":  "tb",  "TEX": "tex",
-        "TOR": "tor", "WSH": "wsh",
-    }
-
-    date_parts = TODAY.split("-")
-    yyyy, mm, dd = date_parts[0], date_parts[1], date_parts[2]
-
-    # Polymarket usa fecha UTC — partidos nocturnos CST pueden tener fecha +1
-    tomorrow   = (datetime.now(MEXICO_TZ) + timedelta(days=1)).strftime("%Y-%m-%d")
-    t_parts    = tomorrow.split("-")
-    t_yyyy, t_mm, t_dd = t_parts[0], t_parts[1], t_parts[2]
-
-    poly_map = {}
-    headers  = {"User-Agent": "Mozilla/5.0"}
-
-    for g in today_games:
-        if g["status"] == "Final":
-            continue
-
-        away_poly = ABBR_TO_POLY.get(g["away"])
-        home_poly = ABBR_TO_POLY.get(g["home"])
-        if not away_poly or not home_poly:
-            continue
-
-        # Intentar con fecha de hoy y mañana (UTC offset)
-        slugs_to_try = [
-            f"mlb-{home_poly}-{away_poly}-{yyyy}-{mm}-{dd}",
-            f"mlb-{home_poly}-{away_poly}-{t_yyyy}-{t_mm}-{t_dd}",
-        ]
-
-        for slug in slugs_to_try:
-            url = f"{GAMMA_API}/events?slug={slug}"
-            try:
-                r = requests.get(url, timeout=8, headers=headers)
-                r.raise_for_status()
-                events = r.json()
-                if not events:
-                    continue
-
-                event   = events[0]
-                markets = event.get("markets", [])
-
-                for m in markets:
-                    q = m.get("question", "").lower()
-                    if not any(kw in q for kw in ["win", "beat", "defeat", "winner"]):
-                        continue
-                    if any(kw in q for kw in ["series", "inning", "run", "score", "total", "hits"]):
-                        continue
-
-                    prices_raw = m.get("outcomePrices", "[]")
-                    try:
-                        prices = json.loads(prices_raw) if isinstance(prices_raw, str) else prices_raw
-                        p_yes  = float(prices[0])
-                        p_no   = float(prices[1])
-                    except:
-                        continue
-
-                    if len(prices) != 2:
-                        continue
-
-                    volume = float(m.get("volumeNum", 0) or 0)
-                    key    = f"{g['away']}@{g['home']}"
-                    poly_map[key] = {
-                        "home_prob": round(p_yes * 100),
-                        "away_prob": round(p_no  * 100),
-                        "volume":    round(volume),
-                        "question":  m.get("question", ""),
-                        "slug":      slug,
-                    }
-                    break
-
-                if f"{g['away']}@{g['home']}" in poly_map:
-                    break  # Ya encontramos este partido, no intentar fecha +1
-
-            except Exception:
-                pass
-
-    print(f"   Polymarket: {len(poly_map)}/{len([g for g in today_games if g['status'] != 'Final'])} partidos con mercado")
-    return poly_map
-
-
-def match_polymarket(away, home, poly_map):
-    """Busca el mercado Polymarket para este partido."""
-    return poly_map.get(f"{away}@{home}", {})
 
 
 # 7. Modelo de prediccion
@@ -477,38 +413,30 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
 # 7. Calcular si hay value bet (modelo contradice al mercado)
 def calc_value_bet(hp, ap, odds):
     """
-    Compara la probabilidad del modelo vs la probabilidad implícita del mercado.
-    Retorna True si el modelo favorece al equipo que el mercado tiene como underdog.
+    Compara la probabilidad del modelo vs el consensus del mercado.
+    Retorna (is_value, edge) donde edge = diferencia en pp vs consensus.
     """
     if not odds:
         return False, None
 
-    home_ml = odds.get("home_ml")
-    away_ml = odds.get("away_ml")
-    if home_ml is None or away_ml is None:
-        return False, None
-
-    # Convertir moneyline americano a probabilidad implícita
-    def ml_to_prob(ml):
-        if ml < 0:
-            return abs(ml) / (abs(ml) + 100)
-        else:
-            return 100 / (ml + 100)
-
-    market_home_prob = ml_to_prob(home_ml) * 100
-    market_away_prob = ml_to_prob(away_ml) * 100
+    consensus_home = odds.get("consensus_home")
+    consensus_away = odds.get("consensus_away")
+    if consensus_home is None or consensus_away is None:
+        # Fallback a moneyline si no hay consensus
+        home_ml = odds.get("home_ml")
+        away_ml = odds.get("away_ml")
+        if home_ml is None or away_ml is None:
+            return False, None
+        def ml_to_prob(ml):
+            return abs(ml)/(abs(ml)+100)*100 if ml < 0 else 100/(ml+100)*100
+        consensus_home = ml_to_prob(home_ml)
+        consensus_away = ml_to_prob(away_ml)
 
     model_favors_home  = hp >= 50
-    market_favors_home = market_home_prob >= market_away_prob
-
+    market_favors_home = consensus_home >= consensus_away
     is_value = model_favors_home != market_favors_home
 
-    # Diferencia entre probabilidad del modelo y del mercado para el equipo favorito del modelo
-    if model_favors_home:
-        edge = round(hp - market_home_prob, 1)
-    else:
-        edge = round(ap - market_away_prob, 1)
-
+    edge = round(hp - consensus_home, 1) if model_favors_home else round(ap - consensus_away, 1)
     return is_value, edge
 
 # 8. Historial
@@ -583,9 +511,6 @@ def main():
     print("\nObteniendo momios...")
     odds_map = get_odds()
 
-    print("\nObteniendo mercados Polymarket...")
-    poly_map = get_polymarket(today_games)
-
     print("\nCalculando Top 5...")
     predictions = []
     for g in today_games:
@@ -595,21 +520,15 @@ def main():
             g["home"], g["away"], standings, team_stats,
             g.get("home_era"), g.get("away_era")
         )
-        # Momios de sportsbook
         odds_key  = f"{g['away']}@{g['home']}"
         game_odds = odds_map.get(odds_key, {})
         is_value, edge = calc_value_bet(pred["hp"], pred["ap"], game_odds)
-
-        # Polymarket
-        poly = match_polymarket(g["away"], g["home"], poly_map)
-
         predictions.append({
             **g,
             **pred,
-            "odds":       game_odds,
-            "value":      is_value,
-            "edge":       edge,
-            "polymarket": poly,
+            "odds":  game_odds,
+            "value": is_value,
+            "edge":  edge,
         })
 
     if not predictions:
@@ -662,8 +581,6 @@ def main():
     print(f"Stats dinamicos incluidos para {len(team_stats)} equipos")
     if odds_map:
         print(f"Momios incluidos para {len(odds_map)} partidos")
-    if poly_map:
-        print(f"Polymarket incluido para {len(poly_map)} mercados")
 
 if __name__ == "__main__":
     main()
