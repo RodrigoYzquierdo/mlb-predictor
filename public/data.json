@@ -1,8 +1,8 @@
 {
   "date": "2026-06-15",
-  "updated": "15/06/2026 14:38 CST",
+  "updated": "15/06/2026 14:49 CST",
   "standings": {
-    "YAN": {
+    "NYY": {
       "name": "Yankees",
       "w": 43,
       "l": 27,
@@ -11,7 +11,7 @@
       "conf": "",
       "rdiff": 107
     },
-    "RAY": {
+    "TB": {
       "name": "Rays",
       "w": 41,
       "l": 27,
@@ -20,7 +20,7 @@
       "conf": "",
       "rdiff": 8
     },
-    "BLU": {
+    "TOR": {
       "name": "Blue Jays",
       "w": 34,
       "l": 38,
@@ -29,7 +29,7 @@
       "conf": "",
       "rdiff": -22
     },
-    "ORI": {
+    "BAL": {
       "name": "Orioles",
       "w": 34,
       "l": 39,
@@ -38,16 +38,16 @@
       "conf": "",
       "rdiff": -33
     },
-    "RED": {
-      "name": "Reds",
-      "w": 33,
-      "l": 37,
-      "pct": 0.471,
+    "BOS": {
+      "name": "Red Sox",
+      "w": 29,
+      "l": 40,
+      "pct": 0.42,
       "div": "",
       "conf": "",
-      "rdiff": -58
+      "rdiff": -4
     },
-    "WHI": {
+    "CWS": {
       "name": "White Sox",
       "w": 38,
       "l": 32,
@@ -56,7 +56,7 @@
       "conf": "",
       "rdiff": 12
     },
-    "GUA": {
+    "CLE": {
       "name": "Guardians",
       "w": 39,
       "l": 33,
@@ -65,7 +65,7 @@
       "conf": "",
       "rdiff": -3
     },
-    "TWI": {
+    "MIN": {
       "name": "Twins",
       "w": 33,
       "l": 40,
@@ -74,7 +74,7 @@
       "conf": "",
       "rdiff": -42
     },
-    "TIG": {
+    "DET": {
       "name": "Tigers",
       "w": 29,
       "l": 42,
@@ -83,7 +83,7 @@
       "conf": "",
       "rdiff": -12
     },
-    "ROY": {
+    "KC": {
       "name": "Royals",
       "w": 29,
       "l": 43,
@@ -92,14 +92,14 @@
       "conf": "",
       "rdiff": -49
     },
-    "MAR": {
-      "name": "Marlins",
-      "w": 36,
+    "SEA": {
+      "name": "Mariners",
+      "w": 37,
       "l": 36,
-      "pct": 0.5,
+      "pct": 0.507,
       "div": "",
       "conf": "",
-      "rdiff": 0
+      "rdiff": 20
     },
     "ATH": {
       "name": "Athletics",
@@ -110,7 +110,7 @@
       "conf": "",
       "rdiff": -51
     },
-    "RAN": {
+    "TEX": {
       "name": "Rangers",
       "w": 35,
       "l": 36,
@@ -119,7 +119,7 @@
       "conf": "",
       "rdiff": 6
     },
-    "AST": {
+    "HOU": {
       "name": "Astros",
       "w": 33,
       "l": 40,
@@ -128,7 +128,7 @@
       "conf": "",
       "rdiff": -39
     },
-    "ANG": {
+    "LAA": {
       "name": "Angels",
       "w": 29,
       "l": 43,
@@ -137,7 +137,7 @@
       "conf": "",
       "rdiff": -38
     },
-    "BRA": {
+    "ATL": {
       "name": "Braves",
       "w": 46,
       "l": 25,
@@ -155,7 +155,7 @@
       "conf": "",
       "rdiff": -23
     },
-    "NAT": {
+    "WSH": {
       "name": "Nationals",
       "w": 37,
       "l": 35,
@@ -164,7 +164,16 @@
       "conf": "",
       "rdiff": 13
     },
-    "MET": {
+    "MIA": {
+      "name": "Marlins",
+      "w": 36,
+      "l": 36,
+      "pct": 0.5,
+      "div": "",
+      "conf": "",
+      "rdiff": 0
+    },
+    "NYM": {
       "name": "Mets",
       "w": 32,
       "l": 39,
@@ -173,7 +182,7 @@
       "conf": "",
       "rdiff": -11
     },
-    "BRE": {
+    "MIL": {
       "name": "Brewers",
       "w": 43,
       "l": 26,
@@ -182,7 +191,7 @@
       "conf": "",
       "rdiff": 112
     },
-    "CAR": {
+    "STL": {
       "name": "Cardinals",
       "w": 38,
       "l": 31,
@@ -191,7 +200,7 @@
       "conf": "",
       "rdiff": 12
     },
-    "CUB": {
+    "CHC": {
       "name": "Cubs",
       "w": 37,
       "l": 35,
@@ -200,7 +209,7 @@
       "conf": "",
       "rdiff": 9
     },
-    "PIR": {
+    "PIT": {
       "name": "Pirates",
       "w": 36,
       "l": 36,
@@ -209,7 +218,16 @@
       "conf": "",
       "rdiff": 14
     },
-    "DOD": {
+    "CIN": {
+      "name": "Reds",
+      "w": 33,
+      "l": 37,
+      "pct": 0.471,
+      "div": "",
+      "conf": "",
+      "rdiff": -58
+    },
+    "LAD": {
       "name": "Dodgers",
       "w": 45,
       "l": 27,
@@ -218,7 +236,7 @@
       "conf": "",
       "rdiff": 141
     },
-    "PAD": {
+    "SD": {
       "name": "Padres",
       "w": 37,
       "l": 33,
@@ -227,7 +245,7 @@
       "conf": "",
       "rdiff": -10
     },
-    "D-B": {
+    "AZ": {
       "name": "D-backs",
       "w": 36,
       "l": 35,
@@ -236,7 +254,7 @@
       "conf": "",
       "rdiff": -20
     },
-    "GIA": {
+    "SF": {
       "name": "Giants",
       "w": 29,
       "l": 43,
@@ -245,7 +263,7 @@
       "conf": "",
       "rdiff": -56
     },
-    "ROC": {
+    "COL": {
       "name": "Rockies",
       "w": 27,
       "l": 45,
@@ -409,6 +427,64 @@
   },
   "top5": [
     {
+      "id": 824666,
+      "status": "Preview",
+      "home": "CHC",
+      "away": "COL",
+      "home_name": "Chicago Cubs",
+      "away_name": "Colorado Rockies",
+      "time": "2026-06-16T00:05:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Shota Imanaga",
+      "home_pitcher_id": 684007,
+      "away_pitcher": "Michael Lorenzen",
+      "away_pitcher_id": 547179,
+      "home_era": 4.44,
+      "away_era": 7.54,
+      "hp": 77,
+      "ap": 23,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 27,
+      "odds": {
+        "home_ml": -199,
+        "away_ml": 163,
+        "bookmaker": "DraftKings"
+      },
+      "value": false,
+      "edge": 10.4
+    },
+    {
+      "id": 822724,
+      "status": "Preview",
+      "home": "WSH",
+      "away": "KC",
+      "home_name": "Washington Nationals",
+      "away_name": "Kansas City Royals",
+      "time": "2026-06-15T22:45:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Andrew Alvarez",
+      "home_pitcher_id": 674841,
+      "away_pitcher": "Mitch Spence",
+      "away_pitcher_id": 687765,
+      "home_era": 3.7,
+      "away_era": 13.5,
+      "hp": 76,
+      "ap": 24,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 26,
+      "odds": {
+        "home_ml": -126,
+        "away_ml": 104,
+        "bookmaker": "DraftKings"
+      },
+      "value": false,
+      "edge": 20.2
+    },
+    {
       "id": 823452,
       "status": "Preview",
       "home": "PHI",
@@ -438,91 +514,33 @@
       "edge": 2.9
     },
     {
-      "id": 822724,
+      "id": 822887,
       "status": "Preview",
-      "home": "WSH",
-      "away": "KC",
-      "home_name": "Washington Nationals",
-      "away_name": "Kansas City Royals",
-      "time": "2026-06-15T22:45:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Andrew Alvarez",
-      "home_pitcher_id": 674841,
-      "away_pitcher": "Mitch Spence",
-      "away_pitcher_id": 687765,
-      "home_era": 3.7,
-      "away_era": 13.5,
-      "hp": 66,
-      "ap": 34,
-      "conf": "Media",
-      "mixed": true,
-      "diff": 16,
-      "odds": {
-        "home_ml": -126,
-        "away_ml": 104,
-        "bookmaker": "DraftKings"
-      },
-      "value": false,
-      "edge": 10.2
-    },
-    {
-      "id": 824666,
-      "status": "Preview",
-      "home": "CHC",
-      "away": "COL",
-      "home_name": "Chicago Cubs",
-      "away_name": "Colorado Rockies",
+      "home": "TEX",
+      "away": "MIN",
+      "home_name": "Texas Rangers",
+      "away_name": "Minnesota Twins",
       "time": "2026-06-16T00:05:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Shota Imanaga",
-      "home_pitcher_id": 684007,
-      "away_pitcher": "Michael Lorenzen",
-      "away_pitcher_id": 547179,
-      "home_era": 4.44,
-      "away_era": 7.54,
-      "hp": 61,
-      "ap": 39,
-      "conf": "Media",
+      "home_pitcher": "MacKenzie Gore",
+      "home_pitcher_id": 669022,
+      "away_pitcher": "Mike Paredes",
+      "away_pitcher_id": 702474,
+      "home_era": 4.18,
+      "away_era": 4.35,
+      "hp": 59,
+      "ap": 41,
+      "conf": "Baja",
       "mixed": true,
-      "diff": 11,
+      "diff": 9,
       "odds": {
-        "home_ml": -199,
-        "away_ml": 163,
+        "home_ml": -143,
+        "away_ml": 119,
         "bookmaker": "DraftKings"
       },
       "value": false,
-      "edge": -5.6
-    },
-    {
-      "id": 825071,
-      "status": "Preview",
-      "home": "AZ",
-      "away": "LAA",
-      "home_name": "Arizona Diamondbacks",
-      "away_name": "Los Angeles Angels",
-      "time": "2026-06-16T01:40:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Ryne Nelson",
-      "home_pitcher_id": 669194,
-      "away_pitcher": "Walbert Ureña",
-      "away_pitcher_id": 700712,
-      "home_era": 5.19,
-      "away_era": 2.44,
-      "hp": 40,
-      "ap": 60,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 10,
-      "odds": {
-        "home_ml": -115,
-        "away_ml": -105,
-        "bookmaker": "DraftKings"
-      },
-      "value": true,
-      "edge": 8.8
+      "edge": 0.2
     },
     {
       "id": 824505,
@@ -540,18 +558,18 @@
       "away_pitcher_id": 668964,
       "home_era": 2.14,
       "away_era": 4.05,
-      "hp": 59,
-      "ap": 41,
+      "hp": 58,
+      "ap": 42,
       "conf": "Baja",
       "mixed": true,
-      "diff": 9,
+      "diff": 8,
       "odds": {
         "home_ml": -137,
         "away_ml": 114,
         "bookmaker": "DraftKings"
       },
       "value": false,
-      "edge": 1.2
+      "edge": 0.2
     }
   ],
   "history": [
