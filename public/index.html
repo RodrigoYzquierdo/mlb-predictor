@@ -74,20 +74,24 @@
     .bm{position:absolute;top:-3px;width:2px;height:12px;background:var(--txD);border-radius:1px;opacity:.8}
     .bp{font-size:11px;font-weight:500;color:var(--tx)}
 
-    /* Odds */
-    .odds-t{display:grid;grid-template-columns:72px 1fr 1fr 1fr;gap:4px}
-    .oth{font-size:10px;font-weight:500;color:var(--tx2);text-transform:uppercase;letter-spacing:.4px;text-align:center;padding:2px 0}
-    .oth.l{text-align:left}
-    .otn{font-size:12px;font-weight:500;color:var(--tx)}
-    .otc{background:var(--bg2);border-radius:6px;padding:5px 7px;text-align:center}
-    .ov{font-size:12px;font-weight:500;color:var(--tx)}
-    .om{font-size:10px;color:var(--tx2);margin-top:1px}
-    .od{font-size:10px;font-weight:500;margin-top:1px}
-    .od.up{color:var(--txS)}.od.dn{color:var(--txD)}.od.eq{color:var(--tx2)}
-    .dr{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
-    .dn{font-size:11px;color:var(--tx2);line-height:1.5;flex:1}
-    .db{font-size:11px;font-weight:500;padding:3px 9px;border-radius:10px;white-space:nowrap;flex-shrink:0}
-    .dhi{background:var(--bgS);color:var(--txS)}.dlo{background:var(--bgD);color:var(--txD)}.deq{background:var(--bg2);color:var(--tx2);border:.5px solid var(--bd)}
+    /* Odds row */
+    .odds-row{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+    .odds-cell{background:var(--bg2);border-radius:7px;padding:8px 10px}
+    .odds-team{font-size:10px;color:var(--tx2);margin-bottom:3px}
+    .odds-ml{font-size:15px;font-weight:500;color:var(--tx)}
+    .odds-impl{font-size:10px;color:var(--tx2);margin-top:1px}
+    .odds-delta{font-size:10px;font-weight:500;margin-top:2px}
+    .odds-delta.up{color:var(--txS)}.odds-delta.dn{color:var(--txD)}.odds-delta.eq{color:var(--tx2)}
+    .odds-source{font-size:10px;color:var(--tx2);text-align:right;margin-top:4px}
+
+    /* Value bet badge */
+    .value-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .value-desc{font-size:11px;color:var(--tx2);line-height:1.5;flex:1}
+    .value-badge{font-size:11px;font-weight:500;padding:3px 10px;border-radius:10px;white-space:nowrap;flex-shrink:0}
+    .vb-yes{background:var(--bgS);color:var(--txS);border:.5px solid var(--bdS)}
+    .vb-no{background:var(--bg2);color:var(--tx2);border:.5px solid var(--bd)}
+
+    /* Legend */
     .leg-row{display:flex;gap:12px;margin-bottom:.75rem}
     .leg-i{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--tx2)}
     .leg-box{width:10px;height:4px;border-radius:2px;background:var(--tx)}
@@ -140,7 +144,7 @@
   </div>
 
   <footer class="footer">
-    Datos: MLB Stats API · Momios: referencia FanDuel<br>
+    Datos: MLB Stats API · Momios: The Odds API<br>
     Actualización automática diaria · Solo fines informativos
   </footer>
 </div>
@@ -149,7 +153,6 @@
 let DATA = null;
 let activeDate = 'all';
 
-// ── Cargar data.json generado por el script Python ──────────────────────────
 async function loadData() {
   try {
     const r = await fetch(`./data.json?t=${Date.now()}`);
@@ -176,23 +179,31 @@ function renderApp() {
     </div>
     <div id="p-top5" class="panel on"></div>
     <div id="p-hist" class="panel"></div>
-    <div class="note">Standings en vivo · Momios FanDuel · Solo fines informativos</div>
+    <div class="note">Standings en vivo · Momios: The Odds API · Solo fines informativos</div>
   `;
 
   renderTop5();
   renderHistory();
 }
 
-// ── Top 5 ────────────────────────────────────────────────────────────────────
-function ccls(c) { return c==='Alta'?'c-hi':c==='Media'?'c-med':'c-lo' }
-function mlToImpl(ml) { return ml<0?Math.round((-ml/(-ml+100))*100):Math.round((100/(ml+100))*100) }
-function dcls(d) { return Math.abs(d)>=6?(d>0?'dhi':'dlo'):'deq' }
-function dlbl(d) {
-  if(d>=6)  return `Modelo +${d}pp`;
-  if(d<=-6) return `Mercado +${Math.abs(d)}pp`;
-  return `Alineados (${d>0?'+':''}${d}pp)`;
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function ccls(c) { return c==='Alta'?'c-hi':c==='Media'?'c-med':'c-lo'; }
+
+// Convierte moneyline americano a probabilidad implícita (%)
+function mlToImpl(ml) {
+  if (ml == null) return null;
+  return ml < 0
+    ? Math.round((-ml / (-ml + 100)) * 100)
+    : Math.round((100 / (ml + 100)) * 100);
 }
 
+// Formato moneyline: -145 → "-145" | 122 → "+122"
+function fmtML(ml) {
+  if (ml == null) return '—';
+  return ml > 0 ? `+${ml}` : `${ml}`;
+}
+
+// ── Top 5 ────────────────────────────────────────────────────────────────────
 function renderTop5() {
   const top5 = DATA.top5 || [];
   let html = `
@@ -211,18 +222,47 @@ function renderTop5() {
   top5.forEach((g, rank) => {
     const favT = g.hp >= g.ap ? g.home : g.away;
     const favP = Math.max(g.hp, g.ap);
-    const mktPct = g.hML ? mlToImpl(g.hML) : 50;
-    const hD = g.hp - mktPct, aD = g.ap - (100 - mktPct);
-    const timeLocal = g.time ? new Date(g.time).toLocaleTimeString('es-MX', {hour:'2-digit',minute:'2-digit',timeZone:'America/Mexico_City'}) : '';
+
+    // Nuevos campos de momios
+    const odds      = g.odds || {};
+    const home_ml   = odds.home_ml ?? null;
+    const away_ml   = odds.away_ml ?? null;
+    const bookmaker = odds.bookmaker || null;
+    const hasOdds   = home_ml !== null && away_ml !== null;
+
+    const homeImpl = mlToImpl(home_ml);
+    const awayImpl = mlToImpl(away_ml);
+
+    // Delta modelo vs mercado
+    const homeDelta = hasOdds ? (g.hp - homeImpl) : null;
+    const awayDelta = hasOdds ? (g.ap - awayImpl) : null;
+
+    const deltaCls = (d) => d == null ? 'eq' : Math.abs(d) >= 6 ? (d > 0 ? 'up' : 'dn') : 'eq';
+    const deltaLbl = (d) => d == null ? '' : (d > 0 ? `Modelo +${d}pp ↑` : d < 0 ? `Mercado +${Math.abs(d)}pp ↓` : `Alineados`);
+
+    // Value bet: modelo y mercado favorecen equipos distintos
+    const isValue   = g.value === true;
+    const edge      = g.edge;
+    const edgeLbl   = isValue && edge != null
+      ? `💡 Value bet · modelo +${edge}pp vs mercado`
+      : hasOdds ? 'Modelo alineado con el mercado' : 'Sin momios disponibles';
+
+    const timeLocal = g.time
+      ? new Date(g.time).toLocaleTimeString('es-MX', {hour:'2-digit',minute:'2-digit',timeZone:'America/Mexico_City'})
+      : '';
     const hEraElite = g.home_era && g.home_era < 2.5 ? 'elite' : '';
     const aEraElite = g.away_era && g.away_era < 2.5 ? 'elite' : '';
+
+    // Marcador de mercado en la barra (posición = prob implícita del local)
+    const mktBarPos = hasOdds ? homeImpl : null;
 
     html += `<div class="pred-card">
       <div class="pred-head">
         <div class="rank${rank===0?' r1':''}">${rank+1}</div>
         <div>
           <div class="match">${g.away} @ ${g.home}</div>
-          <div class="meta">${timeLocal} CST · <span class="${ccls(g.conf)}" style="font-size:10px;font-weight:500">${g.conf} confianza</span>${g.mixed?' · 🔬 ERA mixta':''}</div>
+          <div class="meta">${timeLocal} CST · <span class="${ccls(g.conf)}" style="font-size:10px;font-weight:500">${g.conf} confianza</span>${g.mixed?' · 🔬 ERA mixta':''}${isValue?' · 💡 Value':''}
+          </div>
         </div>
         <div style="text-align:right">
           <div style="font-size:12px;font-weight:500">${favT}</div>
@@ -230,27 +270,66 @@ function renderTop5() {
         </div>
       </div>
       <div class="pred-body">
+
+        <!-- Pitchers -->
         <div class="prow">
-          <div class="pc"><div class="pc-side">🏟 ${g.home} (local)</div><div class="pc-name">${g.home_pitcher||'Por confirmar'}</div>${g.home_era?`<div class="pc-era ${hEraElite}">ERA ${g.home_era}</div>`:''}</div>
-          <div class="pc"><div class="pc-side">✈ ${g.away} (visitante)</div><div class="pc-name">${g.away_pitcher||'Por confirmar'}</div>${g.away_era?`<div class="pc-era ${aEraElite}">ERA ${g.away_era}</div>`:''}</div>
+          <div class="pc">
+            <div class="pc-side">🏟 ${g.home} (local)</div>
+            <div class="pc-name">${g.home_pitcher||'Por confirmar'}</div>
+            ${g.home_era ? `<div class="pc-era ${hEraElite}">ERA ${g.home_era}</div>` : ''}
+          </div>
+          <div class="pc">
+            <div class="pc-side">✈ ${g.away} (visitante)</div>
+            <div class="pc-name">${g.away_pitcher||'Por confirmar'}</div>
+            ${g.away_era ? `<div class="pc-era ${aEraElite}">ERA ${g.away_era}</div>` : ''}
+          </div>
         </div>
+
+        <!-- Barras de probabilidad -->
         <div class="bars">
-          <div class="br"><div class="bl">${g.home}</div><div class="bo"><div class="bf" id="bh${rank}" style="width:0%"></div>${g.hML?`<div class="bm" style="left:${mktPct}%"></div>`:''}</div><div class="bp">${g.hp}%</div></div>
-          <div class="br"><div class="bl">${g.away}</div><div class="bo"><div class="bf a" id="ba${rank}" style="width:0%"></div>${g.hML?`<div class="bm" style="left:${g.ap}%"></div>`:''}</div><div class="bp">${g.ap}%</div></div>
+          <div class="br">
+            <div class="bl">${g.home}</div>
+            <div class="bo">
+              <div class="bf" id="bh${rank}" style="width:0%"></div>
+              ${mktBarPos !== null ? `<div class="bm" style="left:${mktBarPos}%"></div>` : ''}
+            </div>
+            <div class="bp">${g.hp}%</div>
+          </div>
+          <div class="br">
+            <div class="bl">${g.away}</div>
+            <div class="bo">
+              <div class="bf a" id="ba${rank}" style="width:0%"></div>
+              ${mktBarPos !== null ? `<div class="bm" style="left:${100-mktBarPos}%"></div>` : ''}
+            </div>
+            <div class="bp">${g.ap}%</div>
+          </div>
         </div>
-        ${g.hML ? `
-        <div class="odds-t">
-          <div class="oth l">Equipo</div><div class="oth">ML</div><div class="oth">Run Line</div><div class="oth">Total O/U</div>
-          <div class="otn">${g.home} 🏠</div>
-          <div class="otc"><div class="ov">${g.hML>0?'+'+g.hML:g.hML}</div><div class="om">Mkt ${mktPct}%</div><div class="od ${hD>=6?'up':hD<=-6?'dn':'eq'}">Mdl ${g.hp}% ${hD>=6?'↑':hD<=-6?'↓':'≈'}</div></div>
-          <div class="otc"><div class="ov">${g.hRL||'-1.5'}</div><div class="om">local</div></div>
-          <div class="otc"><div class="ov">↑${g.total||'—'}</div><div class="om">${g.ov||'—'}</div></div>
-          <div class="otn">${g.away} ✈</div>
-          <div class="otc"><div class="ov">${g.aML>0?'+'+g.aML:g.aML}</div><div class="om">Mkt ${100-mktPct}%</div><div class="od ${aD>=6?'up':aD<=-6?'dn':'eq'}">Mdl ${g.ap}% ${aD>=6?'↑':aD<=-6?'↓':'≈'}</div></div>
-          <div class="otc"><div class="ov">${g.aRL||'+1.5'}</div><div class="om">visitante</div></div>
-          <div class="otc"><div class="ov">↓${g.total||'—'}</div><div class="om">${g.un||'—'}</div></div>
-        </div>` : ''}
-        ${g.delta !== undefined ? `<div class="dr"><span class="dn">${g.note||''}</span><span class="db ${dcls(g.delta)}">${dlbl(g.delta)}</span></div>` : ''}
+
+        <!-- Momios -->
+        ${hasOdds ? `
+        <div class="odds-row">
+          <div class="odds-cell">
+            <div class="odds-team">🏠 ${g.home} (local)</div>
+            <div class="odds-ml">${fmtML(home_ml)}</div>
+            <div class="odds-impl">Mkt ${homeImpl}% · Mdl ${g.hp}%</div>
+            <div class="odds-delta ${deltaCls(homeDelta)}">${deltaLbl(homeDelta)}</div>
+          </div>
+          <div class="odds-cell">
+            <div class="odds-team">✈ ${g.away} (visitante)</div>
+            <div class="odds-ml">${fmtML(away_ml)}</div>
+            <div class="odds-impl">Mkt ${awayImpl}% · Mdl ${g.ap}%</div>
+            <div class="odds-delta ${deltaCls(awayDelta)}">${deltaLbl(awayDelta)}</div>
+          </div>
+        </div>
+        ${bookmaker ? `<div class="odds-source">Fuente: ${bookmaker}</div>` : ''}
+        ` : ''}
+
+        <!-- Value bet -->
+        <div class="value-row">
+          <span class="value-desc">${edgeLbl}</span>
+          <span class="value-badge ${isValue ? 'vb-yes' : 'vb-no'}">${isValue ? '💡 Value' : 'Sin value'}</span>
+        </div>
+
       </div>
     </div>`;
   });
@@ -290,7 +369,11 @@ function renderHistory() {
       <div class="clabel">Detalle por fecha</div>
       <div class="frow" id="frow">
         <button class="fb on" onclick="setFilter('all')">Todos (${history.length})</button>
-        ${dates.map(d=>{const g=history.filter(h=>h.date===d),hits=g.filter(x=>x.hit).length;return `<button class="fb" onclick="setFilter('${d}')">${d} · ${hits}/${g.length}</button>`;}).join('')}
+        ${dates.map(d => {
+          const g = history.filter(h => h.date === d);
+          const hits = g.filter(x => x.hit).length;
+          return `<button class="fb" onclick="setFilter('${d}')">${d} · ${hits}/${g.length}</button>`;
+        }).join('')}
       </div>
       <div id="hlist"></div>
     </div>`;
@@ -302,7 +385,9 @@ function renderHistory() {
 function setFilter(date) {
   activeDate = date;
   document.querySelectorAll('.fb').forEach(b =>
-    b.classList.toggle('on', date==='all' ? b.textContent.startsWith('Todos') : b.textContent.startsWith(date))
+    b.classList.toggle('on', date==='all'
+      ? b.textContent.startsWith('Todos')
+      : b.textContent.startsWith(date))
   );
   renderList(DATA.history || []);
 }
@@ -326,7 +411,6 @@ function goTab(name) {
   document.getElementById('p-'+name).classList.add('on');
 }
 
-// ── Init ─────────────────────────────────────────────────────────────────────
 loadData();
 </script>
 </body>
