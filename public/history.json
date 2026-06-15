@@ -412,5 +412,140 @@
     "pred": "HOU",
     "actual": "LAA 3-2 HOU",
     "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "PIT",
+    "away": "MIA",
+    "hp": 52,
+    "pred": "PIT",
+    "actual": "MIA 4-2 PIT",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "BAL",
+    "away": "SD",
+    "hp": 52,
+    "pred": "BAL",
+    "actual": "SD 5-2 BAL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "WSH",
+    "away": "SEA",
+    "hp": 48,
+    "pred": "SEA",
+    "actual": "WSH 10-1 SEA",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "TOR",
+    "away": "NYY",
+    "hp": 44,
+    "pred": "NYY",
+    "actual": "NYY 8-3 TOR",
+    "hit": true
+  },
+  {
+    "date": "2026-06-14",
+    "home": "CIN",
+    "away": "AZ",
+    "hp": 49,
+    "pred": "AZ",
+    "actual": "AZ 5-3 CIN",
+    "hit": true
+  },
+  {
+    "date": "2026-06-14",
+    "home": "NYM",
+    "away": "ATL",
+    "hp": 44,
+    "pred": "ATL",
+    "actual": "NYM 8-1 ATL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "KC",
+    "away": "HOU",
+    "hp": 52,
+    "pred": "KC",
+    "actual": "KC 4-0 HOU",
+    "hit": true
+  },
+  {
+    "date": "2026-06-14",
+    "home": "MIN",
+    "away": "STL",
+    "hp": 47,
+    "pred": "STL",
+    "actual": "MIN 5-4 STL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "CWS",
+    "away": "LAD",
+    "hp": 44,
+    "pred": "LAD",
+    "actual": "CWS 6-4 LAD",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "MIL",
+    "away": "PHI",
+    "hp": 58,
+    "pred": "MIL",
+    "actual": "MIL 4-0 PHI",
+    "hit": true
+  },
+  {
+    "date": "2026-06-14",
+    "home": "ATH",
+    "away": "COL",
+    "hp": 54,
+    "pred": "ATH",
+    "actual": "COL 23-9 ATH",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "SF",
+    "away": "CHC",
+    "hp": 49,
+    "pred": "CHC",
+    "actual": "SF 5-1 CHC",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "LAA",
+    "away": "TB",
+    "hp": 46,
+    "pred": "TB",
+    "actual": "TB 8-3 LAA",
+    "hit": true
+  },
+  {
+    "date": "2026-06-14",
+    "home": "BOS",
+    "away": "TEX",
+    "hp": 50,
+    "pred": "BOS",
+    "actual": "TEX 6-4 BOS",
+    "hit": false
+  },
+  {
+    "date": "2026-06-14",
+    "home": "CLE",
+    "away": "DET",
+    "hp": 52,
+    "pred": "CLE",
+    "actual": "CLE 0-0 DET",
+    "hit": false
   }
 ]
