@@ -33,13 +33,3 @@ jobs:
           git add public/data.json public/history.json
           git diff --staged --quiet || git commit -m "Datos MLB actualizados - $(date +'%d/%m/%Y')"
           git push
-
-      - name: Deploy a Netlify
-        uses: nwtgck/actions-netlify@v2
-        with:
-          publish-dir: "./public"
-          production-deploy: true
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
