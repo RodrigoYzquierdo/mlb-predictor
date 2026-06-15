@@ -344,8 +344,13 @@ def get_polymarket(today_games):
         "TOR": "tor", "WSH": "wsh",
     }
 
-    date_parts = TODAY.split("-")  # ["2026", "06", "15"]
+    date_parts = TODAY.split("-")
     yyyy, mm, dd = date_parts[0], date_parts[1], date_parts[2]
+
+    # Polymarket usa fecha UTC — partidos nocturnos CST pueden tener fecha +1
+    tomorrow   = (datetime.now(MEXICO_TZ) + timedelta(days=1)).strftime("%Y-%m-%d")
+    t_parts    = tomorrow.split("-")
+    t_yyyy, t_mm, t_dd = t_parts[0], t_parts[1], t_parts[2]
 
     poly_map = {}
     headers  = {"User-Agent": "Mozilla/5.0"}
@@ -359,56 +364,58 @@ def get_polymarket(today_games):
         if not away_poly or not home_poly:
             continue
 
-        # Slug: mlb-{away}-{home}-{yyyy}-{mm}-{dd}
-        slug = f"mlb-{away_poly}-{home_poly}-{yyyy}-{mm}-{dd}"
-        url  = f"{GAMMA_API}/events?slug={slug}"
+        # Intentar con fecha de hoy y mañana (UTC offset)
+        slugs_to_try = [
+            f"mlb-{home_poly}-{away_poly}-{yyyy}-{mm}-{dd}",
+            f"mlb-{home_poly}-{away_poly}-{t_yyyy}-{t_mm}-{t_dd}",
+        ]
 
-        try:
-            r = requests.get(url, timeout=8, headers=headers)
-            r.raise_for_status()
-            events = r.json()
-            if not events:
-                continue
-
-            event   = events[0]
-            markets = event.get("markets", [])
-
-            # Buscar el market de moneyline (winner): outcomes = ["Yes","No"] con 2 precios
-            for m in markets:
-                q = m.get("question", "").lower()
-                # Solo el market de "who wins" — ignorar totales, innings, etc.
-                if not any(kw in q for kw in ["win", "beat", "defeat", "winner"]):
-                    continue
-                if any(kw in q for kw in ["series", "inning", "run", "score", "total", "hits"]):
+        for slug in slugs_to_try:
+            url = f"{GAMMA_API}/events?slug={slug}"
+            try:
+                r = requests.get(url, timeout=8, headers=headers)
+                r.raise_for_status()
+                events = r.json()
+                if not events:
                     continue
 
-                prices_raw = m.get("outcomePrices", "[]")
-                try:
-                    prices = json.loads(prices_raw) if isinstance(prices_raw, str) else prices_raw
-                    p_yes  = float(prices[0])  # prob de que el "Yes" ocurra
-                    p_no   = float(prices[1])
-                except:
-                    continue
+                event   = events[0]
+                markets = event.get("markets", [])
 
-                if len(prices) != 2:
-                    continue
+                for m in markets:
+                    q = m.get("question", "").lower()
+                    if not any(kw in q for kw in ["win", "beat", "defeat", "winner"]):
+                        continue
+                    if any(kw in q for kw in ["series", "inning", "run", "score", "total", "hits"]):
+                        continue
 
-                # En Polymarket el "Yes" en "Will AWAY beat HOME?" = AWAY gana
-                # Entonces: away_prob = p_yes, home_prob = p_no
-                volume = float(m.get("volumeNum", 0) or 0)
-                key    = f"{g['away']}@{g['home']}"
-                poly_map[key] = {
-                    "home_prob": round(p_no  * 100),
-                    "away_prob": round(p_yes * 100),
-                    "volume":    round(volume),
-                    "question":  m.get("question", ""),
-                    "slug":      slug,
-                }
-                break  # Solo el primer market de winner
+                    prices_raw = m.get("outcomePrices", "[]")
+                    try:
+                        prices = json.loads(prices_raw) if isinstance(prices_raw, str) else prices_raw
+                        p_yes  = float(prices[0])
+                        p_no   = float(prices[1])
+                    except:
+                        continue
 
-        except Exception as e:
-            # No hay mercado para este partido — normal para algunos juegos
-            pass
+                    if len(prices) != 2:
+                        continue
+
+                    volume = float(m.get("volumeNum", 0) or 0)
+                    key    = f"{g['away']}@{g['home']}"
+                    poly_map[key] = {
+                        "home_prob": round(p_yes * 100),
+                        "away_prob": round(p_no  * 100),
+                        "volume":    round(volume),
+                        "question":  m.get("question", ""),
+                        "slug":      slug,
+                    }
+                    break
+
+                if f"{g['away']}@{g['home']}" in poly_map:
+                    break  # Ya encontramos este partido, no intentar fecha +1
+
+            except Exception:
+                pass
 
     print(f"   Polymarket: {len(poly_map)}/{len([g for g in today_games if g['status'] != 'Final'])} partidos con mercado")
     return poly_map
