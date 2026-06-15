@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "15/06/2026 14:12 CST",
+  "updated": "15/06/2026 14:38 CST",
   "standings": {
     "YAN": {
       "name": "Yankees",
@@ -428,7 +428,14 @@
       "ap": 34,
       "conf": "Media",
       "mixed": true,
-      "diff": 16
+      "diff": 16,
+      "odds": {
+        "home_ml": -171,
+        "away_ml": 141,
+        "bookmaker": "DraftKings"
+      },
+      "value": false,
+      "edge": 2.9
     },
     {
       "id": 822724,
@@ -450,7 +457,14 @@
       "ap": 34,
       "conf": "Media",
       "mixed": true,
-      "diff": 16
+      "diff": 16,
+      "odds": {
+        "home_ml": -126,
+        "away_ml": 104,
+        "bookmaker": "DraftKings"
+      },
+      "value": false,
+      "edge": 10.2
     },
     {
       "id": 824666,
@@ -472,7 +486,14 @@
       "ap": 39,
       "conf": "Media",
       "mixed": true,
-      "diff": 11
+      "diff": 11,
+      "odds": {
+        "home_ml": -199,
+        "away_ml": 163,
+        "bookmaker": "DraftKings"
+      },
+      "value": false,
+      "edge": -5.6
     },
     {
       "id": 825071,
@@ -494,7 +515,14 @@
       "ap": 60,
       "conf": "Baja",
       "mixed": true,
-      "diff": 10
+      "diff": 10,
+      "odds": {
+        "home_ml": -115,
+        "away_ml": -105,
+        "bookmaker": "DraftKings"
+      },
+      "value": true,
+      "edge": 8.8
     },
     {
       "id": 824505,
@@ -516,7 +544,14 @@
       "ap": 41,
       "conf": "Baja",
       "mixed": true,
-      "diff": 9
+      "diff": 9,
+      "odds": {
+        "home_ml": -137,
+        "away_ml": 114,
+        "bookmaker": "DraftKings"
+      },
+      "value": false,
+      "edge": 1.2
     }
   ],
   "history": [
