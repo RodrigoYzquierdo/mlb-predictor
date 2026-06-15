@@ -120,6 +120,13 @@
 
     .footer{text-align:center;font-size:11px;color:var(--tx2);margin-top:2rem;line-height:1.6}
     .note{font-size:11px;color:var(--tx2);text-align:center;padding:.75rem 0 0}
+
+    /* Polymarket */
+    .poly-row{background:var(--bgI);border:.5px solid rgba(24,95,165,.25);border-radius:8px;padding:10px 10px 6px}
+    .poly-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .poly-label{font-size:11px;font-weight:600;color:var(--txI)}
+    .poly-vol{font-size:10px;color:var(--tx2)}
+    .poly-prob{color:var(--txI) !important}
   </style>
 </head>
 <body>
@@ -305,7 +312,7 @@ function renderTop5() {
           </div>
         </div>
 
-        <!-- Momios -->
+        <!-- Momios sportsbook -->
         ${hasOdds ? `
         <div class="odds-row">
           <div class="odds-cell">
@@ -323,6 +330,37 @@ function renderTop5() {
         </div>
         ${bookmaker ? `<div class="odds-source">Fuente: ${bookmaker}</div>` : ''}
         ` : ''}
+
+        <!-- Polymarket -->
+        ${(() => {
+          const poly = g.polymarket || {};
+          if (!poly.home_prob) return '';
+          const polyHomeDelta = poly.home_prob - g.hp;
+          const polyAwayDelta = poly.away_prob - g.ap;
+          const volFmt = poly.volume >= 1000
+            ? `$${(poly.volume/1000).toFixed(1)}K` : `$${poly.volume}`;
+          return `
+          <div class="poly-row">
+            <div class="poly-header">
+              <span class="poly-label">🔮 Polymarket</span>
+              <span class="poly-vol">${volFmt} vol.</span>
+            </div>
+            <div class="odds-row">
+              <div class="odds-cell">
+                <div class="odds-team">🏠 ${g.home}</div>
+                <div class="odds-ml poly-prob">${poly.home_prob}%</div>
+                <div class="odds-impl">Poly ${poly.home_prob}% · Mdl ${g.hp}%</div>
+                <div class="odds-delta ${deltaCls(polyHomeDelta)}">${deltaLbl(polyHomeDelta)}</div>
+              </div>
+              <div class="odds-cell">
+                <div class="odds-team">✈ ${g.away}</div>
+                <div class="odds-ml poly-prob">${poly.away_prob}%</div>
+                <div class="odds-impl">Poly ${poly.away_prob}% · Mdl ${g.ap}%</div>
+                <div class="odds-delta ${deltaCls(polyAwayDelta)}">${deltaLbl(polyAwayDelta)}</div>
+              </div>
+            </div>
+          </div>`;
+        })()}
 
         <!-- Value bet -->
         <div class="value-row">
