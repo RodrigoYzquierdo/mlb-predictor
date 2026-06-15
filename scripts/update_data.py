@@ -10,10 +10,12 @@ import pytz
 import os
 
 # Configuracion
-MLB_API   = "https://statsapi.mlb.com/api/v1"
-MEXICO_TZ = pytz.timezone("America/Mexico_City")
-TODAY     = datetime.now(MEXICO_TZ).strftime("%Y-%m-%d")
-YESTERDAY = (datetime.now(MEXICO_TZ) - timedelta(days=1)).strftime("%Y-%m-%d")
+MLB_API      = "https://statsapi.mlb.com/api/v1"
+ODDS_API     = "https://api.the-odds-api.com/v4"
+ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
+MEXICO_TZ    = pytz.timezone("America/Mexico_City")
+TODAY        = datetime.now(MEXICO_TZ).strftime("%Y-%m-%d")
+YESTERDAY    = (datetime.now(MEXICO_TZ) - timedelta(days=1)).strftime("%Y-%m-%d")
 
 print(f"Actualizando datos para: {TODAY}")
 print(f"Resultados de ayer: {YESTERDAY}")
@@ -123,7 +125,6 @@ def get_standings():
             abbr = NAME_TO_ABBR.get(name, name[:3].upper())
             w = tr.get("wins", 0)
             l = tr.get("losses", 0)
-            # Run differential desde runsScored - runsAllowed
             rs = tr.get("runsScored", 0)
             ra = tr.get("runsAllowed", 0)
             rdiff = rs - ra if (rs or ra) else 0
@@ -140,13 +141,8 @@ def get_standings():
 
 # 4. Obtener estadisticas de pitcheo y bateo por equipo (DINAMICO)
 def get_team_stats():
-    """
-    Obtiene ERA, OBP y SLG actualizados de la temporada 2026
-    directamente de la API de MLB — ya no son valores hardcodeados
-    """
     team_stats = {}
 
-    # Stats de pitcheo (ERA por equipo)
     try:
         url = f"{MLB_API}/teams/stats?season=2026&group=pitching&stats=season&sportId=1"
         r = requests.get(url, timeout=10)
@@ -168,7 +164,6 @@ def get_team_stats():
     except Exception as e:
         print(f"   Error obteniendo ERA: {e}")
 
-    # Stats de bateo (OBP y SLG por equipo)
     try:
         url = f"{MLB_API}/teams/stats?season=2026&group=hitting&stats=season&sportId=1"
         r = requests.get(url, timeout=10)
@@ -196,12 +191,80 @@ def get_team_stats():
 
     return team_stats
 
-# 5. Modelo de prediccion
+# 5. Obtener momios de The Odds API
+def get_odds():
+    """
+    Obtiene momios moneyline de MLB para hoy.
+    Retorna dict keyed por "AWAY@HOME" -> {home_ml, away_ml, bookmaker}
+    """
+    if not ODDS_API_KEY:
+        print("   ODDS_API_KEY no configurada, omitiendo momios")
+        return {}
+    try:
+        url = (
+            f"{ODDS_API}/sports/baseball_mlb/odds"
+            f"?apiKey={ODDS_API_KEY}"
+            f"&regions=us"
+            f"&markets=h2h"
+            f"&oddsFormat=american"
+            f"&dateFormat=iso"
+        )
+        r = requests.get(url, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+
+        odds_map = {}
+        for event in data:
+            home_name = event.get("home_team", "")
+            away_name = event.get("away_team", "")
+            home_abbr = NAME_TO_ABBR.get(home_name, home_name[:3].upper())
+            away_abbr = NAME_TO_ABBR.get(away_name, away_name[:3].upper())
+
+            # Preferir DraftKings > FanDuel > BetMGM > cualquier otro
+            bookmakers = event.get("bookmakers", [])
+            preferred  = ["draftkings", "fanduel", "betmgm"]
+            chosen     = None
+            for pref in preferred:
+                for bk in bookmakers:
+                    if bk["key"] == pref:
+                        chosen = bk
+                        break
+                if chosen:
+                    break
+            if not chosen and bookmakers:
+                chosen = bookmakers[0]
+            if not chosen:
+                continue
+
+            home_ml = away_ml = None
+            for market in chosen.get("markets", []):
+                if market["key"] == "h2h":
+                    for outcome in market.get("outcomes", []):
+                        if outcome["name"] == home_name:
+                            home_ml = outcome["price"]
+                        elif outcome["name"] == away_name:
+                            away_ml = outcome["price"]
+
+            if home_ml is not None and away_ml is not None:
+                key = f"{away_abbr}@{home_abbr}"
+                odds_map[key] = {
+                    "home_ml":   home_ml,
+                    "away_ml":   away_ml,
+                    "bookmaker": chosen["title"],
+                }
+
+        print(f"   Momios obtenidos: {len(odds_map)} partidos")
+        return odds_map
+
+    except Exception as e:
+        print(f"   Error obteniendo momios: {e}")
+        return {}
+
+# 6. Modelo de prediccion
 def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     hs_data = standings.get(h_abbr, {})
     as_data = standings.get(a_abbr, {})
 
-    # Stats dinamicos con fallback
     DEFAULT = {"era":4.00,"obp":.310,"slg":.410}
     ht = {**DEFAULT, **team_stats.get(h_abbr, {})}
     at = {**DEFAULT, **team_stats.get(a_abbr, {})}
@@ -213,18 +276,15 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     h_wp = h_w / (h_w + h_l) if (h_w + h_l) > 0 else 0.5
     a_wp = a_w / (a_w + a_l) if (a_w + a_l) > 0 else 0.5
 
-    # Run differential de standings
     h_rdiff = hs_data.get("rdiff", 0)
     a_rdiff = as_data.get("rdiff", 0)
 
     mixed = h_sera is not None and a_sera is not None
     hs, as_ = 0, 0
 
-    # Win% (35%)
     hs  += h_wp * 35
     as_ += a_wp * 35
 
-    # ERA - modelo mixto si hay abridor confirmado (25%)
     if mixed:
         hs  += (5.0 - min(ht["era"] * 0.4 + h_sera * 0.6, 5.5)) * 8
         as_ += (5.0 - min(at["era"] * 0.4 + a_sera * 0.6, 5.5)) * 8
@@ -232,17 +292,14 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
         hs  += (5.0 - min(ht["era"], 5.5)) * 6
         as_ += (5.0 - min(at["era"], 5.5)) * 6
 
-    # OBP y SLG (ofensiva) (20%)
     hs  += (ht["obp"] - 0.280) * 80
     as_ += (at["obp"] - 0.280) * 80
     hs  += (ht["slg"] - 0.380) * 50
     as_ += (at["slg"] - 0.380) * 50
 
-    # Run differential (10%)
     hs  += max(-1, min(1, h_rdiff / 150)) * 8
     as_ += max(-1, min(1, a_rdiff / 150)) * 8
 
-    # Ventaja de campo local (5%)
     hs *= 1.055
 
     total = hs + as_
@@ -251,7 +308,44 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     conf  = "Alta" if diff > 18 else ("Media" if diff > 10 else "Baja")
     return {"hp": hp, "ap": 100 - hp, "conf": conf, "mixed": mixed, "diff": diff}
 
-# 6. Historial
+# 7. Calcular si hay value bet (modelo contradice al mercado)
+def calc_value_bet(hp, ap, odds):
+    """
+    Compara la probabilidad del modelo vs la probabilidad implícita del mercado.
+    Retorna True si el modelo favorece al equipo que el mercado tiene como underdog.
+    """
+    if not odds:
+        return False, None
+
+    home_ml = odds.get("home_ml")
+    away_ml = odds.get("away_ml")
+    if home_ml is None or away_ml is None:
+        return False, None
+
+    # Convertir moneyline americano a probabilidad implícita
+    def ml_to_prob(ml):
+        if ml < 0:
+            return abs(ml) / (abs(ml) + 100)
+        else:
+            return 100 / (ml + 100)
+
+    market_home_prob = ml_to_prob(home_ml) * 100
+    market_away_prob = ml_to_prob(away_ml) * 100
+
+    model_favors_home  = hp >= 50
+    market_favors_home = market_home_prob >= market_away_prob
+
+    is_value = model_favors_home != market_favors_home
+
+    # Diferencia entre probabilidad del modelo y del mercado para el equipo favorito del modelo
+    if model_favors_home:
+        edge = round(hp - market_home_prob, 1)
+    else:
+        edge = round(ap - market_away_prob, 1)
+
+    return is_value, edge
+
+# 8. Historial
 HISTORY_FILE = "public/history.json"
 
 def load_history():
@@ -264,7 +358,7 @@ def save_history(history):
     with open(HISTORY_FILE, "w") as f:
         json.dump(history, f, indent=2)
 
-# 7. Actualizar historial con resultados de ayer
+# 9. Actualizar historial con resultados de ayer
 def update_history(history, yesterday_games, standings, team_stats):
     existing = {f"{h['home']}-{h['away']}-{h['date']}" for h in history}
     added = 0
@@ -298,7 +392,7 @@ def update_history(history, yesterday_games, standings, team_stats):
     print(f"{added} resultados de ayer agregados al historial")
     return history
 
-# 8. Main
+# 10. Main
 def main():
     print("\nObteniendo standings...")
     standings = get_standings()
@@ -320,6 +414,9 @@ def main():
             era_str = f"ERA {g['home_era']}" if g["home_era"] else "ERA N/A"
             print(f"   {g['home_pitcher']} ({g['home']}) - {era_str}")
 
+    print("\nObteniendo momios...")
+    odds_map = get_odds()
+
     print("\nCalculando Top 5...")
     predictions = []
     for g in today_games:
@@ -329,7 +426,17 @@ def main():
             g["home"], g["away"], standings, team_stats,
             g.get("home_era"), g.get("away_era")
         )
-        predictions.append({**g, **pred})
+        # Agregar momios y value bet
+        odds_key  = f"{g['away']}@{g['home']}"
+        game_odds = odds_map.get(odds_key, {})
+        is_value, edge = calc_value_bet(pred["hp"], pred["ap"], game_odds)
+        predictions.append({
+            **g,
+            **pred,
+            "odds":     game_odds,
+            "value":    is_value,
+            "edge":     edge,
+        })
 
     if not predictions:
         print("No hay partidos pendientes hoy")
@@ -337,6 +444,9 @@ def main():
     else:
         top5 = sorted(predictions, key=lambda x: x["diff"], reverse=True)[:5]
         print(f"   Top 5 listo. Lider: {top5[0]['away']} @ {top5[0]['home']} ({top5[0]['conf']} confianza)")
+        value_bets = [p for p in top5 if p.get("value")]
+        if value_bets:
+            print(f"   Value bets detectados: {len(value_bets)}")
 
     print("\nActualizando historial...")
     yesterday_games = get_games(YESTERDAY)
@@ -356,7 +466,6 @@ def main():
             else:
                 break
 
-    # Incluir team_stats en el output para debug
     output = {
         "date":       TODAY,
         "updated":    datetime.now(MEXICO_TZ).strftime("%d/%m/%Y %H:%M CST"),
@@ -377,6 +486,8 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False)
     print(f"\nListo: {total} predicciones historicas, {pct}% precision")
     print(f"Stats dinamicos incluidos para {len(team_stats)} equipos")
+    if odds_map:
+        print(f"Momios incluidos para {len(odds_map)} partidos")
 
 if __name__ == "__main__":
     main()
