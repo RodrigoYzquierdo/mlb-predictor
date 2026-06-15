@@ -51,6 +51,16 @@ NAME_TO_ABBR = {
     "Washington Nationals": "WSH",
 }
 
+# IDs oficiales de MLB por equipo
+TEAM_IDS = {
+    "AZ":133,"ATL":144,"BAL":110,"BOS":111,"CHC":112,
+    "CWS":145,"CIN":113,"CLE":114,"COL":115,"DET":116,
+    "HOU":117,"KC":118,"LAA":108,"LAD":119,"MIA":146,
+    "MIL":158,"MIN":142,"NYM":121,"NYY":147,"ATH":133,
+    "PHI":143,"PIT":134,"SD":135,"SF":137,"SEA":136,
+    "STL":138,"TB":139,"TEX":140,"TOR":141,"WSH":120,
+}
+
 def get_abbr(team_dict):
     name = team_dict.get("name", "UNK")
     return NAME_TO_ABBR.get(name, name[:3].upper())
@@ -113,6 +123,10 @@ def get_standings():
             abbr = NAME_TO_ABBR.get(name, name[:3].upper())
             w = tr.get("wins", 0)
             l = tr.get("losses", 0)
+            # Run differential desde runsScored - runsAllowed
+            rs = tr.get("runsScored", 0)
+            ra = tr.get("runsAllowed", 0)
+            rdiff = rs - ra if (rs or ra) else 0
             teams[abbr] = {
                 "name": name,
                 "w":    w,
@@ -120,78 +134,124 @@ def get_standings():
                 "pct":  round(w / (w + l), 3) if (w + l) > 0 else 0.500,
                 "div":  record.get("division", {}).get("name", ""),
                 "conf": record.get("league", {}).get("name", ""),
+                "rdiff": rdiff,
             }
     return teams
 
-# 4. Modelo de prediccion
-TEAM_STATS = {
-    "TB":  {"era":3.42,"obp":.318,"slg":.422,"rdiff":82},
-    "NYY": {"era":3.61,"obp":.325,"slg":.441,"rdiff":62},
-    "TOR": {"era":4.05,"obp":.308,"slg":.408,"rdiff":3},
-    "BAL": {"era":4.21,"obp":.305,"slg":.399,"rdiff":-4},
-    "BOS": {"era":4.58,"obp":.310,"slg":.403,"rdiff":-36},
-    "CLE": {"era":3.55,"obp":.315,"slg":.415,"rdiff":55},
-    "CWS": {"era":3.88,"obp":.312,"slg":.418,"rdiff":35},
-    "MIN": {"era":4.12,"obp":.309,"slg":.405,"rdiff":0},
-    "DET": {"era":4.72,"obp":.298,"slg":.382,"rdiff":-74},
-    "KC":  {"era":4.65,"obp":.300,"slg":.388,"rdiff":-60},
-    "SEA": {"era":3.48,"obp":.311,"slg":.410,"rdiff":30},
-    "TEX": {"era":4.02,"obp":.312,"slg":.420,"rdiff":12},
-    "ATH": {"era":3.98,"obp":.307,"slg":.401,"rdiff":15},
-    "HOU": {"era":4.28,"obp":.308,"slg":.408,"rdiff":-5},
-    "LAA": {"era":4.88,"obp":.295,"slg":.375,"rdiff":-80},
-    "MIL": {"era":3.38,"obp":.320,"slg":.435,"rdiff":95},
-    "STL": {"era":3.82,"obp":.314,"slg":.418,"rdiff":40},
-    "PIT": {"era":3.95,"obp":.310,"slg":.405,"rdiff":25},
-    "CHC": {"era":3.91,"obp":.316,"slg":.422,"rdiff":22},
-    "CIN": {"era":4.18,"obp":.308,"slg":.400,"rdiff":5},
-    "ATL": {"era":3.25,"obp":.332,"slg":.458,"rdiff":145},
-    "PHI": {"era":3.88,"obp":.318,"slg":.430,"rdiff":42},
-    "WSH": {"era":4.10,"obp":.311,"slg":.410,"rdiff":18},
-    "MIA": {"era":4.45,"obp":.302,"slg":.392,"rdiff":-22},
-    "NYM": {"era":4.30,"obp":.306,"slg":.398,"rdiff":-20},
-    "LAD": {"era":3.18,"obp":.335,"slg":.462,"rdiff":118},
-    "AZ":  {"era":3.78,"obp":.315,"slg":.420,"rdiff":38},
-    "SD":  {"era":3.65,"obp":.320,"slg":.428,"rdiff":50},
-    "SF":  {"era":4.55,"obp":.302,"slg":.388,"rdiff":-40},
-    "COL": {"era":5.12,"obp":.298,"slg":.380,"rdiff":-98},
-}
+# 4. Obtener estadisticas de pitcheo y bateo por equipo (DINAMICO)
+def get_team_stats():
+    """
+    Obtiene ERA, OBP y SLG actualizados de la temporada 2026
+    directamente de la API de MLB — ya no son valores hardcodeados
+    """
+    team_stats = {}
 
-def calc_model(h_abbr, a_abbr, standings, h_sera=None, a_sera=None):
+    # Stats de pitcheo (ERA por equipo)
+    try:
+        url = f"{MLB_API}/teams/stats?season=2026&group=pitching&stats=season&sportId=1"
+        r = requests.get(url, timeout=10)
+        data = r.json()
+        for split in data.get("stats", [{}])[0].get("splits", []):
+            team = split.get("team", {})
+            name = team.get("name", "")
+            abbr = NAME_TO_ABBR.get(name, name[:3].upper())
+            stat = split.get("stat", {})
+            era_raw = stat.get("era", "4.00")
+            try:
+                era = round(float(era_raw), 2)
+            except:
+                era = 4.00
+            if abbr not in team_stats:
+                team_stats[abbr] = {}
+            team_stats[abbr]["era"] = era
+        print(f"   ERA de pitcheo: {len(team_stats)} equipos")
+    except Exception as e:
+        print(f"   Error obteniendo ERA: {e}")
+
+    # Stats de bateo (OBP y SLG por equipo)
+    try:
+        url = f"{MLB_API}/teams/stats?season=2026&group=hitting&stats=season&sportId=1"
+        r = requests.get(url, timeout=10)
+        data = r.json()
+        for split in data.get("stats", [{}])[0].get("splits", []):
+            team = split.get("team", {})
+            name = team.get("name", "")
+            abbr = NAME_TO_ABBR.get(name, name[:3].upper())
+            stat = split.get("stat", {})
+            try:
+                obp = round(float(stat.get("obp", ".310")), 3)
+            except:
+                obp = 0.310
+            try:
+                slg = round(float(stat.get("slg", ".410")), 3)
+            except:
+                slg = 0.410
+            if abbr not in team_stats:
+                team_stats[abbr] = {}
+            team_stats[abbr]["obp"] = obp
+            team_stats[abbr]["slg"] = slg
+        print(f"   OBP/SLG de bateo: {len(team_stats)} equipos")
+    except Exception as e:
+        print(f"   Error obteniendo OBP/SLG: {e}")
+
+    return team_stats
+
+# 5. Modelo de prediccion
+def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     hs_data = standings.get(h_abbr, {})
     as_data = standings.get(a_abbr, {})
-    ht = TEAM_STATS.get(h_abbr, {"era":4.0,"obp":.310,"slg":.410,"rdiff":0})
-    at = TEAM_STATS.get(a_abbr, {"era":4.0,"obp":.310,"slg":.410,"rdiff":0})
+
+    # Stats dinamicos con fallback
+    DEFAULT = {"era":4.00,"obp":.310,"slg":.410}
+    ht = {**DEFAULT, **team_stats.get(h_abbr, {})}
+    at = {**DEFAULT, **team_stats.get(a_abbr, {})}
+
     h_w = hs_data.get("w", 40)
     h_l = hs_data.get("l", 40)
     a_w = as_data.get("w", 40)
     a_l = as_data.get("l", 40)
     h_wp = h_w / (h_w + h_l) if (h_w + h_l) > 0 else 0.5
     a_wp = a_w / (a_w + a_l) if (a_w + a_l) > 0 else 0.5
+
+    # Run differential de standings
+    h_rdiff = hs_data.get("rdiff", 0)
+    a_rdiff = as_data.get("rdiff", 0)
+
     mixed = h_sera is not None and a_sera is not None
     hs, as_ = 0, 0
+
+    # Win% (35%)
     hs  += h_wp * 35
     as_ += a_wp * 35
+
+    # ERA - modelo mixto si hay abridor confirmado (25%)
     if mixed:
         hs  += (5.0 - min(ht["era"] * 0.4 + h_sera * 0.6, 5.5)) * 8
         as_ += (5.0 - min(at["era"] * 0.4 + a_sera * 0.6, 5.5)) * 8
     else:
         hs  += (5.0 - min(ht["era"], 5.5)) * 6
         as_ += (5.0 - min(at["era"], 5.5)) * 6
+
+    # OBP y SLG (ofensiva) (20%)
     hs  += (ht["obp"] - 0.280) * 80
     as_ += (at["obp"] - 0.280) * 80
     hs  += (ht["slg"] - 0.380) * 50
     as_ += (at["slg"] - 0.380) * 50
-    hs  += max(-1, min(1, ht["rdiff"] / 150)) * 8
-    as_ += max(-1, min(1, at["rdiff"] / 150)) * 8
-    hs  *= 1.055
+
+    # Run differential (10%)
+    hs  += max(-1, min(1, h_rdiff / 150)) * 8
+    as_ += max(-1, min(1, a_rdiff / 150)) * 8
+
+    # Ventaja de campo local (5%)
+    hs *= 1.055
+
     total = hs + as_
     hp    = round(hs / total * 100)
     diff  = abs(hp - 50)
     conf  = "Alta" if diff > 18 else ("Media" if diff > 10 else "Baja")
     return {"hp": hp, "ap": 100 - hp, "conf": conf, "mixed": mixed, "diff": diff}
 
-# 5. Historial
+# 6. Historial
 HISTORY_FILE = "public/history.json"
 
 def load_history():
@@ -204,8 +264,8 @@ def save_history(history):
     with open(HISTORY_FILE, "w") as f:
         json.dump(history, f, indent=2)
 
-# 6. Actualizar historial con resultados de ayer
-def update_history(history, yesterday_games, standings):
+# 7. Actualizar historial con resultados de ayer
+def update_history(history, yesterday_games, standings, team_stats):
     existing = {f"{h['home']}-{h['away']}-{h['date']}" for h in history}
     added = 0
     for g in yesterday_games:
@@ -216,11 +276,15 @@ def update_history(history, yesterday_games, standings):
         key = f"{g['home']}-{g['away']}-{YESTERDAY}"
         if key in existing:
             continue
-        pred = calc_model(g["home"], g["away"], standings)
+        pred = calc_model(g["home"], g["away"], standings, team_stats)
         fav  = g["home"] if pred["hp"] >= 50 else g["away"]
         win  = g["home"] if g["home_score"] > g["away_score"] else g["away"]
         hit  = fav == win
-        score = f"{g['away']} {g['away_score']}-{g['home_score']} {g['home']}" if g["away_score"] > g["home_score"] else f"{g['home']} {g['home_score']}-{g['away_score']} {g['away']}"
+        score = (
+            f"{g['away']} {g['away_score']}-{g['home_score']} {g['home']}"
+            if g["away_score"] > g["home_score"]
+            else f"{g['home']} {g['home_score']}-{g['away_score']} {g['away']}"
+        )
         history.append({
             "date":   YESTERDAY,
             "home":   g["home"],
@@ -234,11 +298,15 @@ def update_history(history, yesterday_games, standings):
     print(f"{added} resultados de ayer agregados al historial")
     return history
 
-# 7. Main
+# 8. Main
 def main():
     print("\nObteniendo standings...")
     standings = get_standings()
     print(f"   {len(standings)} equipos cargados")
+
+    print("\nObteniendo estadisticas dinamicas de equipos...")
+    team_stats = get_team_stats()
+    print(f"   {len(team_stats)} equipos con stats actualizados")
 
     print("\nObteniendo partidos de hoy...")
     today_games = get_games(TODAY)
@@ -257,7 +325,10 @@ def main():
     for g in today_games:
         if g["status"] == "Final":
             continue
-        pred = calc_model(g["home"], g["away"], standings, g.get("home_era"), g.get("away_era"))
+        pred = calc_model(
+            g["home"], g["away"], standings, team_stats,
+            g.get("home_era"), g.get("away_era")
+        )
         predictions.append({**g, **pred})
 
     if not predictions:
@@ -270,7 +341,7 @@ def main():
     print("\nActualizando historial...")
     yesterday_games = get_games(YESTERDAY)
     history = load_history()
-    history = update_history(history, yesterday_games, standings)
+    history = update_history(history, yesterday_games, standings, team_stats)
     save_history(history)
 
     hits  = sum(1 for h in history if h["hit"])
@@ -285,24 +356,27 @@ def main():
             else:
                 break
 
+    # Incluir team_stats en el output para debug
     output = {
-        "date":      TODAY,
-        "updated":   datetime.now(MEXICO_TZ).strftime("%d/%m/%Y %H:%M CST"),
-        "standings": standings,
-        "top5":      top5,
-        "history":   history[-50:],
+        "date":       TODAY,
+        "updated":    datetime.now(MEXICO_TZ).strftime("%d/%m/%Y %H:%M CST"),
+        "standings":  standings,
+        "team_stats": team_stats,
+        "top5":       top5,
+        "history":    history[-50:],
         "stats": {
-            "hits":         hits,
-            "total":        total,
-            "pct":          pct,
-            "streak":       streak,
-            "streak_type":  "W" if (history and history[-1]["hit"]) else "L",
+            "hits":        hits,
+            "total":       total,
+            "pct":         pct,
+            "streak":      streak,
+            "streak_type": "W" if (history and history[-1]["hit"]) else "L",
         }
     }
 
     with open("public/data.json", "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
     print(f"\nListo: {total} predicciones historicas, {pct}% precision")
+    print(f"Stats dinamicos incluidos para {len(team_stats)} equipos")
 
 if __name__ == "__main__":
     main()
