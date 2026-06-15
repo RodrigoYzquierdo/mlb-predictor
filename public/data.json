@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "15/06/2026 16:26 CST",
+  "updated": "15/06/2026 16:32 CST",
   "standings": {
     "NYY": {
       "name": "Yankees",
@@ -544,7 +544,13 @@
       },
       "value": false,
       "edge": 0.2,
-      "polymarket": {}
+      "polymarket": {
+        "home_prob": 58,
+        "away_prob": 42,
+        "volume": 58352,
+        "question": "Minnesota Twins vs. Texas Rangers",
+        "slug": "mlb-min-tex-2026-06-15"
+      }
     },
     {
       "id": 824505,
