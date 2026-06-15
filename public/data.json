@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "15/06/2026 16:42 CST",
+  "updated": "15/06/2026 17:10 CST",
   "standings": {
     "NYY": {
       "name": "Yankees",
@@ -335,13 +335,13 @@
       "slg": 0.384
     },
     "MIA": {
-      "era": 4.07,
+      "era": 4.06,
       "obp": 0.323,
-      "slg": 0.383
+      "slg": 0.382
     },
     "PHI": {
-      "era": 4.11,
-      "obp": 0.296,
+      "era": 4.09,
+      "obp": 0.297,
       "slg": 0.385
     },
     "TOR": {
@@ -375,7 +375,7 @@
       "slg": 0.412
     },
     "KC": {
-      "era": 4.44,
+      "era": 4.43,
       "obp": 0.316,
       "slg": 0.378
     },
@@ -395,8 +395,8 @@
       "slg": 0.389
     },
     "WSH": {
-      "era": 4.66,
-      "obp": 0.323,
+      "era": 4.65,
+      "obp": 0.322,
       "slg": 0.422
     },
     "CIN": {
@@ -427,6 +427,45 @@
   },
   "top5": [
     {
+      "id": 822724,
+      "status": "Live",
+      "home": "WSH",
+      "away": "KC",
+      "home_name": "Washington Nationals",
+      "away_name": "Kansas City Royals",
+      "time": "2026-06-15T22:45:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Andrew Alvarez",
+      "home_pitcher_id": 674841,
+      "away_pitcher": "Mitch Spence",
+      "away_pitcher_id": 687765,
+      "home_era": 3.46,
+      "away_era": 10.8,
+      "hp": 77,
+      "ap": 23,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 27,
+      "odds": {
+        "home_ml": -126,
+        "away_ml": 104,
+        "bookmaker": "DraftKings",
+        "consensus_home": 52.8,
+        "consensus_away": 47.2,
+        "books_count": 3,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
+        ],
+        "spread": 1.6,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": 24.2
+    },
+    {
       "id": 824666,
       "status": "Preview",
       "home": "CHC",
@@ -450,41 +489,20 @@
       "odds": {
         "home_ml": -199,
         "away_ml": 163,
-        "bookmaker": "DraftKings"
+        "bookmaker": "DraftKings",
+        "consensus_home": 63.5,
+        "consensus_away": 36.5,
+        "books_count": 3,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
+        ],
+        "spread": 1.1,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 10.4,
-      "polymarket": {}
-    },
-    {
-      "id": 822724,
-      "status": "Live",
-      "home": "WSH",
-      "away": "KC",
-      "home_name": "Washington Nationals",
-      "away_name": "Kansas City Royals",
-      "time": "2026-06-15T22:45:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Andrew Alvarez",
-      "home_pitcher_id": 674841,
-      "away_pitcher": "Mitch Spence",
-      "away_pitcher_id": 687765,
-      "home_era": 3.7,
-      "away_era": 13.5,
-      "hp": 76,
-      "ap": 24,
-      "conf": "Alta",
-      "mixed": true,
-      "diff": 26,
-      "odds": {
-        "home_ml": -126,
-        "away_ml": 104,
-        "bookmaker": "DraftKings"
-      },
-      "value": false,
-      "edge": 20.2,
-      "polymarket": {}
+      "edge": 13.5
     },
     {
       "id": 823452,
@@ -500,21 +518,30 @@
       "home_pitcher_id": 554430,
       "away_pitcher": "Ryan Gusto",
       "away_pitcher_id": 687473,
-      "home_era": 2.22,
-      "away_era": 6.0,
-      "hp": 66,
-      "ap": 34,
+      "home_era": 2.16,
+      "away_era": 5.4,
+      "hp": 63,
+      "ap": 37,
       "conf": "Media",
       "mixed": true,
-      "diff": 16,
+      "diff": 13,
       "odds": {
         "home_ml": -171,
         "away_ml": 141,
-        "bookmaker": "DraftKings"
+        "bookmaker": "DraftKings",
+        "consensus_home": 60.5,
+        "consensus_away": 39.5,
+        "books_count": 3,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
+        ],
+        "spread": 0.5,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.9,
-      "polymarket": {}
+      "edge": 2.5
     },
     {
       "id": 822887,
@@ -540,15 +567,24 @@
       "odds": {
         "home_ml": -143,
         "away_ml": 119,
-        "bookmaker": "DraftKings"
+        "bookmaker": "DraftKings",
+        "consensus_home": 55.6,
+        "consensus_away": 44.4,
+        "books_count": 3,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
+        ],
+        "spread": 2.7,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.2,
-      "polymarket": {}
+      "edge": 3.4
     },
     {
       "id": 824505,
-      "status": "Preview",
+      "status": "Live",
       "home": "CIN",
       "away": "NYM",
       "home_name": "Cincinnati Reds",
@@ -570,11 +606,18 @@
       "odds": {
         "home_ml": 108,
         "away_ml": -126,
-        "bookmaker": "FanDuel"
+        "bookmaker": "FanDuel",
+        "consensus_home": 46.3,
+        "consensus_away": 53.7,
+        "books_count": 1,
+        "books": [
+          "FanDuel"
+        ],
+        "spread": 0,
+        "agreement": "Alta"
       },
       "value": true,
-      "edge": 9.9,
-      "polymarket": {}
+      "edge": 11.7
     }
   ],
   "history": [
