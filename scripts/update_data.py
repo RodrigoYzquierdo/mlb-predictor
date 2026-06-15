@@ -323,178 +323,100 @@ def get_odds():
         return {}
 
 # 6. Obtener probabilidades de Polymarket
-def get_polymarket():
+def get_polymarket(today_games):
     """
-    Obtiene probabilidades implícitas de Polymarket para partidos MLB de hoy.
-    Usa la Gamma API pública (sin API key).
+    Obtiene probabilidades implícitas de Polymarket para los partidos de hoy.
+    Construye el slug directamente: mlb-{away_lower}-{home_lower}-{yyyy}-{mm}-{dd}
+    Ejemplo: mlb-col-chc-2026-06-15
     Retorna dict keyed por "AWAY@HOME" -> {home_prob, away_prob, volume, question}
     """
     GAMMA_API = "https://gamma-api.polymarket.com"
 
-    # Nombres completos para matching con texto libre de Polymarket
-    ABBR_TO_FULL = {
-        "AZ":  "Arizona Diamondbacks",  "ATL": "Atlanta Braves",
-        "BAL": "Baltimore Orioles",     "BOS": "Boston Red Sox",
-        "CHC": "Chicago Cubs",          "CWS": "Chicago White Sox",
-        "CIN": "Cincinnati Reds",       "CLE": "Cleveland Guardians",
-        "COL": "Colorado Rockies",      "DET": "Detroit Tigers",
-        "HOU": "Houston Astros",        "KC":  "Kansas City Royals",
-        "LAA": "Los Angeles Angels",    "LAD": "Los Angeles Dodgers",
-        "MIA": "Miami Marlins",         "MIL": "Milwaukee Brewers",
-        "MIN": "Minnesota Twins",       "NYM": "New York Mets",
-        "NYY": "New York Yankees",      "ATH": "Athletics",
-        "PHI": "Philadelphia Phillies", "PIT": "Pittsburgh Pirates",
-        "SD":  "San Diego Padres",      "SF":  "San Francisco Giants",
-        "SEA": "Seattle Mariners",      "STL": "St. Louis Cardinals",
-        "TB":  "Tampa Bay Rays",        "TEX": "Texas Rangers",
-        "TOR": "Toronto Blue Jays",     "WSH": "Washington Nationals",
+    # Polymarket usa abreviaciones en minúsculas en el slug
+    ABBR_TO_POLY = {
+        "AZ":  "ari", "ATL": "atl", "BAL": "bal", "BOS": "bos",
+        "CHC": "chc", "CWS": "cws", "CIN": "cin", "CLE": "cle",
+        "COL": "col", "DET": "det", "HOU": "hou", "KC":  "kc",
+        "LAA": "laa", "LAD": "lad", "MIA": "mia", "MIL": "mil",
+        "MIN": "min", "NYM": "nym", "NYY": "nyy", "ATH": "oak",
+        "PHI": "phi", "PIT": "pit", "SD":  "sd",  "SF":  "sf",
+        "SEA": "sea", "STL": "stl", "TB":  "tb",  "TEX": "tex",
+        "TOR": "tor", "WSH": "wsh",
     }
 
-    # Palabras clave para matching rápido por abreviación
-    ABBR_KEYWORDS = {
-        "AZ":  ["diamondbacks", "d-backs"],
-        "ATL": ["braves"],         "BAL": ["orioles"],
-        "BOS": ["red sox"],        "CHC": ["cubs"],
-        "CWS": ["white sox"],      "CIN": ["reds"],
-        "CLE": ["guardians"],      "COL": ["rockies"],
-        "DET": ["tigers"],         "HOU": ["astros"],
-        "KC":  ["royals"],         "LAA": ["angels"],
-        "LAD": ["dodgers"],        "MIA": ["marlins"],
-        "MIL": ["brewers"],        "MIN": ["twins"],
-        "NYM": ["mets"],           "NYY": ["yankees"],
-        "ATH": ["athletics"],      "PHI": ["phillies"],
-        "PIT": ["pirates"],        "SD":  ["padres"],
-        "SF":  ["giants"],         "SEA": ["mariners"],
-        "STL": ["cardinals"],      "TB":  ["rays"],
-        "TEX": ["rangers"],        "TOR": ["blue jays"],
-        "WSH": ["nationals"],
-    }
-
-    def find_abbr(text):
-        """Busca qué equipo MLB aparece en un texto libre."""
-        text_lower = text.lower()
-        for abbr, keywords in ABBR_KEYWORDS.items():
-            if any(kw in text_lower for kw in keywords):
-                return abbr
-        return None
+    date_parts = TODAY.split("-")  # ["2026", "06", "15"]
+    yyyy, mm, dd = date_parts[0], date_parts[1], date_parts[2]
 
     poly_map = {}
-    try:
-        # Buscar eventos MLB activos
-        url = f"{GAMMA_API}/events"
-        params = {
-            "limit":   100,
-            "active":  "true",
-            "closed":  "false",
-            "tag":     "MLB",
-            "order":   "startDate",
-            "ascending": "true",
-        }
-        r = requests.get(url, params=params, timeout=10,
-                         headers={"User-Agent": "Mozilla/5.0"})
-        r.raise_for_status()
-        events = r.json()
+    headers  = {"User-Agent": "Mozilla/5.0"}
 
-        today = TODAY  # "YYYY-MM-DD"
+    for g in today_games:
+        if g["status"] == "Final":
+            continue
 
-        for event in events:
-            # Filtrar solo eventos de hoy
-            start = event.get("startDate", "")[:10]
-            end   = event.get("endDate",   "")[:10]
-            if start > today or (end and end < today):
+        away_poly = ABBR_TO_POLY.get(g["away"])
+        home_poly = ABBR_TO_POLY.get(g["home"])
+        if not away_poly or not home_poly:
+            continue
+
+        # Slug: mlb-{away}-{home}-{yyyy}-{mm}-{dd}
+        slug = f"mlb-{away_poly}-{home_poly}-{yyyy}-{mm}-{dd}"
+        url  = f"{GAMMA_API}/events?slug={slug}"
+
+        try:
+            r = requests.get(url, timeout=8, headers=headers)
+            r.raise_for_status()
+            events = r.json()
+            if not events:
                 continue
 
-            title    = event.get("title", "")
-            markets  = event.get("markets", [])
-            if not markets:
-                continue
+            event   = events[0]
+            markets = event.get("markets", [])
 
-            # Buscar el market de moneyline/winner (outcomes = Yes/No o Team A/Team B)
+            # Buscar el market de moneyline (winner): outcomes = ["Yes","No"] con 2 precios
             for m in markets:
-                question = m.get("question", "")
-                outcomes_raw     = m.get("outcomes", "[]")
-                outcome_prices   = m.get("outcomePrices", "[]")
+                q = m.get("question", "").lower()
+                # Solo el market de "who wins" — ignorar totales, innings, etc.
+                if not any(kw in q for kw in ["win", "beat", "defeat", "winner"]):
+                    continue
+                if any(kw in q for kw in ["series", "inning", "run", "score", "total", "hits"]):
+                    continue
+
+                prices_raw = m.get("outcomePrices", "[]")
                 try:
-                    outcomes = json.loads(outcomes_raw) if isinstance(outcomes_raw, str) else outcomes_raw
-                    prices   = json.loads(outcome_prices) if isinstance(outcome_prices, str) else outcome_prices
+                    prices = json.loads(prices_raw) if isinstance(prices_raw, str) else prices_raw
+                    p_yes  = float(prices[0])  # prob de que el "Yes" ocurra
+                    p_no   = float(prices[1])
                 except:
                     continue
 
-                if len(outcomes) != 2 or len(prices) != 2:
+                if len(prices) != 2:
                     continue
 
-                # Solo markets del tipo "Will [Team A] beat [Team B]?" o "[Team A] vs [Team B]"
-                q_lower = question.lower()
-                if not any(kw in q_lower for kw in ["beat", "win", "vs", "defeat"]):
-                    continue
-
-                # Identificar los dos equipos en la pregunta
-                teams_found = []
-                for abbr, keywords in ABBR_KEYWORDS.items():
-                    if any(kw in q_lower for kw in keywords):
-                        teams_found.append(abbr)
-
-                if len(teams_found) != 2:
-                    continue
-
-                # El outcome[0] generalmente corresponde al equipo mencionado primero (home o favorito)
-                # Necesitamos saber cuál es home y cuál es away
-                # Buscamos en el title del evento o en la pregunta el orden
-                # Polymarket usa "Team A vs Team B" o "Will Team A beat Team B"
-                # En "Will CHC beat COL?" => CHC es el favorito implícito => outcome[0]=Yes(CHC gana)
-
-                try:
-                    p0 = float(prices[0])
-                    p1 = float(prices[1])
-                except:
-                    continue
-
-                # Determinar home/away buscando en los partidos de hoy
-                # Hacemos matching por par de equipos sin importar orden
-                t1, t2 = teams_found[0], teams_found[1]
-
-                # La key puede ser t1@t2 o t2@t1 — guardamos ambas opciones
-                # y luego en main() buscamos la que matchea con el partido real
+                # En Polymarket el "Yes" en "Will AWAY beat HOME?" = AWAY gana
+                # Entonces: away_prob = p_yes, home_prob = p_no
                 volume = float(m.get("volumeNum", 0) or 0)
-
-                poly_map[f"{t1}|{t2}"] = {
-                    "teams":    [t1, t2],
-                    "probs":    [round(p0 * 100), round(p1 * 100)],
-                    "volume":   round(volume),
-                    "question": question,
+                key    = f"{g['away']}@{g['home']}"
+                poly_map[key] = {
+                    "home_prob": round(p_no  * 100),
+                    "away_prob": round(p_yes * 100),
+                    "volume":    round(volume),
+                    "question":  m.get("question", ""),
+                    "slug":      slug,
                 }
+                break  # Solo el primer market de winner
 
-        print(f"   Polymarket: {len(poly_map)} mercados MLB encontrados")
+        except Exception as e:
+            # No hay mercado para este partido — normal para algunos juegos
+            pass
 
-    except Exception as e:
-        print(f"   Error obteniendo Polymarket: {e}")
-
+    print(f"   Polymarket: {len(poly_map)}/{len([g for g in today_games if g['status'] != 'Final'])} partidos con mercado")
     return poly_map
 
 
 def match_polymarket(away, home, poly_map):
-    """
-    Busca en poly_map el mercado que corresponde a este partido (away@home).
-    Retorna {home_prob, away_prob, volume, question} o {}
-    """
-    for key, data in poly_map.items():
-        teams = data["teams"]
-        if set(teams) == {away, home}:
-            # Determinar cuál prob corresponde a home y cuál a away
-            # basado en el orden en que aparecen en "teams"
-            if teams[0] == home:
-                home_prob = data["probs"][0]
-                away_prob = data["probs"][1]
-            else:
-                home_prob = data["probs"][1]
-                away_prob = data["probs"][0]
-            return {
-                "home_prob": home_prob,
-                "away_prob": away_prob,
-                "volume":    data["volume"],
-                "question":  data["question"],
-            }
-    return {}
+    """Busca el mercado Polymarket para este partido."""
+    return poly_map.get(f"{away}@{home}", {})
 
 
 # 7. Modelo de prediccion
@@ -655,7 +577,7 @@ def main():
     odds_map = get_odds()
 
     print("\nObteniendo mercados Polymarket...")
-    poly_map = get_polymarket()
+    poly_map = get_polymarket(today_games)
 
     print("\nCalculando Top 5...")
     predictions = []
