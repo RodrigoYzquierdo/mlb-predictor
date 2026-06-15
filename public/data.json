@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "updated": "15/06/2026 14:49 CST",
+  "updated": "15/06/2026 16:26 CST",
   "standings": {
     "NYY": {
       "name": "Yankees",
@@ -453,11 +453,12 @@
         "bookmaker": "DraftKings"
       },
       "value": false,
-      "edge": 10.4
+      "edge": 10.4,
+      "polymarket": {}
     },
     {
       "id": 822724,
-      "status": "Preview",
+      "status": "Live",
       "home": "WSH",
       "away": "KC",
       "home_name": "Washington Nationals",
@@ -482,11 +483,12 @@
         "bookmaker": "DraftKings"
       },
       "value": false,
-      "edge": 20.2
+      "edge": 20.2,
+      "polymarket": {}
     },
     {
       "id": 823452,
-      "status": "Preview",
+      "status": "Live",
       "home": "PHI",
       "away": "MIA",
       "home_name": "Philadelphia Phillies",
@@ -511,7 +513,8 @@
         "bookmaker": "DraftKings"
       },
       "value": false,
-      "edge": 2.9
+      "edge": 2.9,
+      "polymarket": {}
     },
     {
       "id": 822887,
@@ -540,7 +543,8 @@
         "bookmaker": "DraftKings"
       },
       "value": false,
-      "edge": 0.2
+      "edge": 0.2,
+      "polymarket": {}
     },
     {
       "id": 824505,
@@ -564,12 +568,13 @@
       "mixed": true,
       "diff": 8,
       "odds": {
-        "home_ml": -137,
-        "away_ml": 114,
-        "bookmaker": "DraftKings"
+        "home_ml": 108,
+        "away_ml": -126,
+        "bookmaker": "FanDuel"
       },
-      "value": false,
-      "edge": 0.2
+      "value": true,
+      "edge": 9.9,
+      "polymarket": {}
     }
   ],
   "history": [
