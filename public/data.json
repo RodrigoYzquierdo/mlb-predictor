@@ -1,6 +1,6 @@
 {
   "date": "2026-06-16",
-  "updated": "16/06/2026 11:38 CST",
+  "updated": "16/06/2026 11:44 CST",
   "standings": {
     "NYY": {
       "name": "Yankees",
@@ -874,8 +874,8 @@
         "home_ml": -175,
         "away_ml": 144,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.7,
-        "consensus_away": 39.3,
+        "consensus_home": 60.5,
+        "consensus_away": 39.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -888,7 +888,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.3
+      "edge": 9.5
     },
     {
       "id": 824667,
