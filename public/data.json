@@ -1,6 +1,6 @@
 {
   "date": "2026-06-16",
-  "updated": "16/06/2026 12:56 CST",
+  "updated": "16/06/2026 13:42 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -410,10 +410,10 @@
       "k9": 9.82,
       "bullpen_era": 3.45,
       "bullpen_whip": 1.21,
-      "obp": 0.34,
-      "slg": 0.394,
-      "avg": 0.255,
-      "ops": 0.734
+      "obp": 0.341,
+      "slg": 0.395,
+      "avg": 0.256,
+      "ops": 0.736
     },
     "SEA": {
       "era": 3.69,
