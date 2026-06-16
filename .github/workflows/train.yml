@@ -1,0 +1,26 @@
+name: Entrenar modelo MLB
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Instalar dependencias
+        run: pip install requests pytz scikit-learn numpy
+      - name: Entrenar modelo
+        run: python train_model.py
+      - name: Guardar pesos del modelo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -f public/model_weights.json
+          git commit -m "Modelo entrenado - pesos actualizados" || echo "Sin cambios"
+          git push
