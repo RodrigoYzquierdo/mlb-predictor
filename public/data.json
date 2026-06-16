@@ -1,6 +1,6 @@
 {
   "date": "2026-06-16",
-  "updated": "16/06/2026 10:38 CST",
+  "updated": "16/06/2026 11:03 CST",
   "standings": {
     "NYY": {
       "name": "Yankees",
@@ -884,7 +884,7 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.2,
+        "spread": 1.5,
         "agreement": "Alta"
       },
       "value": false,
@@ -958,8 +958,8 @@
         "home_ml": -132,
         "away_ml": 109,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.7,
-        "consensus_away": 45.3,
+        "consensus_home": 54.6,
+        "consensus_away": 45.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -972,7 +972,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 10.3
+      "edge": 10.4
     },
     {
       "id": 822723,
@@ -1000,8 +1000,8 @@
         "home_ml": -144,
         "away_ml": 119,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.9,
-        "consensus_away": 44.1,
+        "consensus_home": 56.1,
+        "consensus_away": 43.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1010,11 +1010,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.9,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 6.1
+      "edge": 5.9
     },
     {
       "id": 823535,
@@ -1061,228 +1061,228 @@
   ],
   "history": [
     {
-      "date": "2026-06-09",
-      "home": "CLE",
-      "away": "NYY",
-      "hp": 50,
-      "pred": "CLE",
-      "actual": "NYY 3-2 CLE",
-      "hit": false
-    },
-    {
-      "date": "2026-06-09",
-      "home": "TOR",
-      "away": "PHI",
-      "hp": 46,
-      "pred": "PHI",
-      "actual": "TOR 3-2 PHI",
-      "hit": false
-    },
-    {
-      "date": "2026-06-09",
-      "home": "NYM",
-      "away": "STL",
-      "hp": 44,
-      "pred": "STL",
-      "actual": "STL 7-0 NYM",
-      "hit": true
-    },
-    {
-      "date": "2026-06-09",
-      "home": "KC",
-      "away": "TEX",
-      "hp": 40,
-      "pred": "TEX",
-      "actual": "KC 5-3 TEX",
-      "hit": false
-    },
-    {
-      "date": "2026-06-09",
-      "home": "CWS",
-      "away": "ATL",
-      "hp": 42,
-      "pred": "ATL",
-      "actual": "CWS 6-5 ATL",
-      "hit": false
-    },
-    {
-      "date": "2026-06-09",
-      "home": "COL",
-      "away": "CHC",
-      "hp": 31,
-      "pred": "CHC",
-      "actual": "COL 7-3 CHC",
-      "hit": false
-    },
-    {
-      "date": "2026-06-09",
-      "home": "LAA",
-      "away": "HOU",
-      "hp": 38,
-      "pred": "HOU",
-      "actual": "LAA 10-1 HOU",
-      "hit": false
-    },
-    {
-      "date": "2026-06-09",
-      "home": "SD",
-      "away": "CIN",
-      "hp": 58,
-      "pred": "SD",
-      "actual": "CIN 5-3 SD",
-      "hit": false
-    },
-    {
-      "date": "2026-06-09",
-      "home": "SF",
-      "away": "WSH",
-      "hp": 43,
-      "pred": "WSH",
-      "actual": "WSH 6-3 SF",
-      "hit": true
-    },
-    {
-      "date": "2026-06-09",
-      "home": "ATH",
-      "away": "MIL",
-      "hp": 43,
-      "pred": "MIL",
-      "actual": "ATH 7-5 MIL",
-      "hit": false
-    },
-    {
-      "date": "2026-06-10",
-      "home": "TB",
-      "away": "BOS",
-      "hp": 64,
-      "pred": "TB",
-      "actual": "TB 7-5 BOS",
-      "hit": true
-    },
-    {
-      "date": "2026-06-10",
-      "home": "CLE",
-      "away": "NYY",
-      "hp": 50,
-      "pred": "CLE",
-      "actual": "NYY 8-4 CLE",
-      "hit": false
-    },
-    {
-      "date": "2026-06-10",
-      "home": "SF",
-      "away": "WSH",
-      "hp": 43,
-      "pred": "WSH",
-      "actual": "SF 11-10 WSH",
-      "hit": false
-    },
-    {
-      "date": "2026-06-10",
-      "home": "SD",
-      "away": "CIN",
-      "hp": 58,
-      "pred": "SD",
-      "actual": "SD 5-4 CIN",
-      "hit": true
-    },
-    {
-      "date": "2026-06-10",
-      "home": "BAL",
-      "away": "SEA",
-      "hp": 45,
-      "pred": "SEA",
-      "actual": "BAL 7-2 SEA",
-      "hit": false
-    },
-    {
-      "date": "2026-06-10",
-      "home": "PIT",
-      "away": "LAD",
-      "hp": 41,
-      "pred": "LAD",
-      "actual": "PIT 9-8 LAD",
-      "hit": false
-    },
-    {
-      "date": "2026-06-10",
-      "home": "DET",
-      "away": "MIN",
-      "hp": 40,
-      "pred": "MIN",
-      "actual": "MIN 6-4 DET",
-      "hit": true
-    },
-    {
-      "date": "2026-06-10",
-      "home": "MIA",
+      "date": "2026-06-12",
+      "home": "CIN",
       "away": "AZ",
-      "hp": 42,
+      "hp": 45,
       "pred": "AZ",
-      "actual": "MIA 8-0 AZ",
-      "hit": false
-    },
-    {
-      "date": "2026-06-10",
-      "home": "TOR",
-      "away": "PHI",
-      "hp": 46,
-      "pred": "PHI",
-      "actual": "PHI 7-4 TOR",
+      "actual": "AZ 5-2 CIN",
       "hit": true
     },
     {
-      "date": "2026-06-10",
+      "date": "2026-06-12",
       "home": "NYM",
-      "away": "STL",
-      "hp": 44,
-      "pred": "STL",
-      "actual": "STL 9-2 NYM",
-      "hit": true
-    },
-    {
-      "date": "2026-06-10",
-      "home": "KC",
-      "away": "TEX",
-      "hp": 40,
-      "pred": "TEX",
-      "actual": "TEX 6-4 KC",
-      "hit": true
-    },
-    {
-      "date": "2026-06-10",
-      "home": "CWS",
       "away": "ATL",
-      "hp": 42,
+      "hp": 34,
       "pred": "ATL",
-      "actual": "CWS 2-1 ATL",
+      "actual": "NYM 7-5 ATL",
       "hit": false
     },
     {
-      "date": "2026-06-10",
-      "home": "COL",
-      "away": "CHC",
-      "hp": 31,
-      "pred": "CHC",
-      "actual": "COL 3-2 CHC",
+      "date": "2026-06-12",
+      "home": "TOR",
+      "away": "NYY",
+      "hp": 36,
+      "pred": "NYY",
+      "actual": "TOR 8-5 NYY",
       "hit": false
     },
     {
-      "date": "2026-06-10",
-      "home": "ATH",
-      "away": "MIL",
-      "hp": 43,
-      "pred": "MIL",
-      "actual": "ATH 4-3 MIL",
-      "hit": false
-    },
-    {
-      "date": "2026-06-10",
-      "home": "LAA",
-      "away": "HOU",
+      "date": "2026-06-12",
+      "home": "CWS",
+      "away": "LAD",
       "hp": 38,
-      "pred": "HOU",
-      "actual": "LAA 3-2 HOU",
+      "pred": "LAD",
+      "actual": "CWS 8-2 LAD",
+      "hit": false
+    },
+    {
+      "date": "2026-06-12",
+      "home": "MIL",
+      "away": "PHI",
+      "hp": 61,
+      "pred": "MIL",
+      "actual": "MIL 6-0 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-06-12",
+      "home": "KC",
+      "away": "HOU",
+      "hp": 59,
+      "pred": "KC",
+      "actual": "HOU 10-8 KC",
+      "hit": false
+    },
+    {
+      "date": "2026-06-12",
+      "home": "MIN",
+      "away": "STL",
+      "hp": 34,
+      "pred": "STL",
+      "actual": "MIN 9-8 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-06-12",
+      "home": "LAA",
+      "away": "TB",
+      "hp": 33,
+      "pred": "TB",
+      "actual": "LAA 4-3 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-06-12",
+      "home": "ATH",
+      "away": "COL",
+      "hp": 70,
+      "pred": "ATH",
+      "actual": "ATH 6-4 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-06-12",
+      "home": "SF",
+      "away": "CHC",
+      "hp": 44,
+      "pred": "CHC",
+      "actual": "CHC 5-1 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "MIN",
+      "away": "STL",
+      "hp": 34,
+      "pred": "STL",
+      "actual": "STL 9-6 MIN",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "TOR",
+      "away": "NYY",
+      "hp": 36,
+      "pred": "NYY",
+      "actual": "NYY 3-1 TOR",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "BAL",
+      "away": "SD",
+      "hp": 49,
+      "pred": "SD",
+      "actual": "SD 9-3 BAL",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "WSH",
+      "away": "SEA",
+      "hp": 41,
+      "pred": "SEA",
+      "actual": "WSH 8-3 SEA",
+      "hit": false
+    },
+    {
+      "date": "2026-06-13",
+      "home": "PIT",
+      "away": "MIA",
+      "hp": 50,
+      "pred": "PIT",
+      "actual": "PIT 3-2 MIA",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "CIN",
+      "away": "AZ",
+      "hp": 45,
+      "pred": "AZ",
+      "actual": "CIN 2-1 AZ",
+      "hit": false
+    },
+    {
+      "date": "2026-06-13",
+      "home": "CLE",
+      "away": "DET",
+      "hp": 51,
+      "pred": "CLE",
+      "actual": "CLE 3-1 DET",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "BOS",
+      "away": "TEX",
+      "hp": 45,
+      "pred": "TEX",
+      "actual": "BOS 6-3 TEX",
+      "hit": false
+    },
+    {
+      "date": "2026-06-13",
+      "home": "NYM",
+      "away": "ATL",
+      "hp": 34,
+      "pred": "ATL",
+      "actual": "ATL 3-1 NYM",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "CWS",
+      "away": "LAD",
+      "hp": 38,
+      "pred": "LAD",
+      "actual": "LAD 7-1 CWS",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "KC",
+      "away": "HOU",
+      "hp": 59,
+      "pred": "KC",
+      "actual": "HOU 8-7 KC",
+      "hit": false
+    },
+    {
+      "date": "2026-06-13",
+      "home": "MIL",
+      "away": "PHI",
+      "hp": 61,
+      "pred": "MIL",
+      "actual": "PHI 9-8 MIL",
+      "hit": false
+    },
+    {
+      "date": "2026-06-13",
+      "home": "ATH",
+      "away": "COL",
+      "hp": 70,
+      "pred": "ATH",
+      "actual": "ATH 7-5 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "SF",
+      "away": "CHC",
+      "hp": 44,
+      "pred": "CHC",
+      "actual": "CHC 6-1 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "LAA",
+      "away": "TB",
+      "hp": 33,
+      "pred": "TB",
+      "actual": "LAA 8-0 TB",
       "hit": false
     },
     {
@@ -1512,9 +1512,9 @@
     }
   ],
   "stats": {
-    "hits": 29,
-    "total": 63,
-    "pct": 46,
+    "hits": 600,
+    "total": 1071,
+    "pct": 56,
     "streak": 1,
     "streak_type": "W"
   }
