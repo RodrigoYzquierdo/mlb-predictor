@@ -21,6 +21,17 @@ YESTERDAY    = (datetime.now(MEXICO_TZ) - timedelta(days=1)).strftime("%Y-%m-%d"
 print(f"Actualizando datos para: {TODAY}")
 print(f"Resultados de ayer: {YESTERDAY}")
 
+# Cargar pesos del modelo entrenado (regresion logistica)
+import math
+MODEL_WEIGHTS = None
+try:
+    with open("public/model_weights.json") as f:
+        MODEL_WEIGHTS = json.load(f)
+    print(f"   Modelo cargado: {MODEL_WEIGHTS['n_games']} partidos, "
+          f"{round(MODEL_WEIGHTS['cv_accuracy']*100,1)}% cross-val")
+except Exception as e:
+    print(f"   model_weights.json no disponible, usando modelo heuristico: {e}")
+
 NAME_TO_ABBR = {
     "Arizona Diamondbacks": "AZ",   "Atlanta Braves": "ATL",
     "Baltimore Orioles": "BAL",     "Boston Red Sox": "BOS",
@@ -363,6 +374,10 @@ def get_odds():
 
 # 6. Modelo de prediccion v2.0
 def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
+    """
+    Modelo v3.0 — usa pesos de regresion logistica entrenada (model_weights.json).
+    Si no hay pesos disponibles, cae al modelo heuristico v2.0.
+    """
     hs_data = standings.get(h_abbr, {})
     as_data = standings.get(a_abbr, {})
 
@@ -374,81 +389,63 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     ht = {**DEFAULT, **team_stats.get(h_abbr, {})}
     at = {**DEFAULT, **team_stats.get(a_abbr, {})}
 
-    # Win percentage
-    h_w  = hs_data.get("w", 40)
-    h_l  = hs_data.get("l", 40)
-    a_w  = as_data.get("w", 40)
-    a_l  = as_data.get("l", 40)
+    h_w  = hs_data.get("w", 40); h_l = hs_data.get("l", 40)
+    a_w  = as_data.get("w", 40); a_l = as_data.get("l", 40)
     h_wp = h_w / (h_w + h_l) if (h_w + h_l) > 0 else 0.5
     a_wp = a_w / (a_w + a_l) if (a_w + a_l) > 0 else 0.5
 
-    # Forma reciente (ultimos 10 juegos)
-    h_l10 = hs_data.get("last10_pct")
-    a_l10 = as_data.get("last10_pct")
-    h_form = h_l10 if h_l10 is not None else h_wp
-    a_form = a_l10 if a_l10 is not None else a_wp
-
-    # Run differential
     h_rdiff = hs_data.get("rdiff", 0)
     a_rdiff = as_data.get("rdiff", 0)
 
-    # Park factor del estadio local
     pf = PARK_FACTORS.get(h_abbr, 1.0)
-    # Park factor ajusta ERA: en Coors la ERA efectiva es menor de lo que parece
-    pf_pitching_adj = 2.0 - pf   # Coors (1.18) → adj=0.82 (favorece al bateador)
-    pf_hitting_adj  = pf          # Coors (1.18) → adj=1.18 (mas runs)
-
+    pf_pitch = 2.0 - pf
     mixed = h_sera is not None and a_sera is not None
-    hs, as_ = 0, 0
 
-    # === PESOS v2.0 ===
+    # === MODELO v3.0: Regresion logistica ===
+    if MODEL_WEIGHTS:
+        # Construir las MISMAS features que en train_model.py (mismo orden)
+        # Si hay abridor confirmado, mezclar su ERA con la del staff
+        h_era_eff = (ht["era"] * 0.4 + h_sera * 0.6) if mixed else ht["era"]
+        a_era_eff = (at["era"] * 0.4 + a_sera * 0.6) if mixed else at["era"]
 
-    # 1. Win% temporada (20%) — menos peso que antes
-    hs  += h_wp * 20
-    as_ += a_wp * 20
+        features = [
+            h_wp - a_wp,                              # dif_winpct
+            (h_rdiff - a_rdiff) / 100.0,              # dif_rundiff
+            (a_era_eff - h_era_eff) * pf_pitch,       # dif_era
+            (at["bullpen_era"] - ht["bullpen_era"]) * pf_pitch,  # dif_bullpen
+            (ht["ops"] - at["ops"]) * pf,             # dif_ops
+            ht["obp"] - at["obp"],                    # dif_obp
+            pf - 1.0,                                 # park_factor
+            1.0,                                      # home_advantage
+        ]
 
-    # 2. Forma reciente ultimos 10 (15%) — nuevo
-    hs  += h_form * 15
-    as_ += a_form * 15
+        # Estandarizar con los parametros del scaler
+        mean  = MODEL_WEIGHTS["scaler_mean"]
+        scale = MODEL_WEIGHTS["scaler_scale"]
+        coef  = MODEL_WEIGHTS["coefficients"]
+        intercept = MODEL_WEIGHTS["intercept"]
 
-    # 3. ERA abridor ajustada por park factor (20%)
-    if mixed:
-        h_eff_era = (ht["era"] * 0.4 + h_sera * 0.6) * pf_pitching_adj
-        a_eff_era = (at["era"] * 0.4 + a_sera * 0.6) * pf_pitching_adj
-        hs  += (5.0 - min(h_eff_era, 5.5)) * 7
-        as_ += (5.0 - min(a_eff_era, 5.5)) * 7
+        z = intercept
+        for i, fv in enumerate(features):
+            standardized = (fv - mean[i]) / scale[i] if scale[i] != 0 else 0
+            z += standardized * coef[i]
+
+        # Sigmoide -> probabilidad de que gane el local
+        prob_home = 1.0 / (1.0 + math.exp(-z))
+        hp = round(prob_home * 100)
+        hp = max(25, min(75, hp))  # Cap razonable
     else:
-        hs  += (5.0 - min(ht["era"] * pf_pitching_adj, 5.5)) * 5
-        as_ += (5.0 - min(at["era"] * pf_pitching_adj, 5.5)) * 5
+        # Fallback heuristico v2.0
+        hs = h_wp * 20 + a_wp * 0
+        as_ = a_wp * 20
+        hs += (5.0 - min(ht["era"] * pf_pitch, 5.5)) * 5
+        as_ += (5.0 - min(at["era"] * pf_pitch, 5.5)) * 5
+        total = max(hs + as_, 1)
+        hp = max(30, min(70, round(hs / total * 100)))
 
-    # 4. Bullpen ERA (15%) — nuevo
-    h_bp = ht["bullpen_era"] * pf_pitching_adj
-    a_bp = at["bullpen_era"] * pf_pitching_adj
-    hs  += (5.0 - min(h_bp, 5.5)) * 5
-    as_ += (5.0 - min(a_bp, 5.5)) * 5
-
-    # 5. OPS ofensivo ajustado por park factor (15%)
-    hs  += (ht["ops"] * pf_hitting_adj - 0.680) * 30
-    as_ += (at["ops"] * pf_hitting_adj - 0.680) * 30
-
-    # 6. OBP (10%)
-    hs  += (ht["obp"] - 0.280) * 50
-    as_ += (at["obp"] - 0.280) * 50
-
-    # 7. Run differential (10%)
-    hs  += max(-1, min(1, h_rdiff / 150)) * 8
-    as_ += max(-1, min(1, a_rdiff / 150)) * 8
-
-    # 8. Ventaja de campo local (5%)
-    hs *= 1.045
-
-    total = hs + as_
-    if total <= 0:
-        total = 1
-    hp   = round(hs / total * 100)
-    hp   = max(30, min(70, hp))   # Cap entre 30-70: MLB es impredecible
     diff = abs(hp - 50)
-    conf = "Alta" if diff > 15 else ("Media" if diff > 8 else "Baja")
+    # Umbrales recalibrados v3.0: con regresion el modelo es mas conservador
+    conf = "Alta" if diff > 12 else ("Media" if diff > 6 else "Baja")
 
     return {
         "hp": hp, "ap": 100 - hp,
@@ -618,6 +615,13 @@ def main():
     output = {
         "date":       TODAY,
         "updated":    datetime.now(MEXICO_TZ).strftime("%d/%m/%Y %H:%M CST"),
+        "model_info": {
+            "version":      "3.0",
+            "type":         "Regresion logistica" if MODEL_WEIGHTS else "Heuristico",
+            "cv_accuracy":  round(MODEL_WEIGHTS["cv_accuracy"] * 100, 1) if MODEL_WEIGHTS else None,
+            "n_games":      MODEL_WEIGHTS["n_games"] if MODEL_WEIGHTS else None,
+            "trained_at":   MODEL_WEIGHTS["trained_at"] if MODEL_WEIGHTS else None,
+        },
         "standings":  standings,
         "team_stats": team_stats,
         "form":       form_summary,
