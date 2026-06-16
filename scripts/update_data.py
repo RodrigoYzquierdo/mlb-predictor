@@ -622,7 +622,7 @@ def main():
         "team_stats": team_stats,
         "form":       form_summary,
         "top5":       top5,
-        "history":    history[-50:],
+        "history":    history[-1000:],
         "stats": {
             "hits":        hits,
             "total":       total,
