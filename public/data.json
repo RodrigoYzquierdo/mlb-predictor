@@ -1,6 +1,6 @@
 {
   "date": "2026-06-16",
-  "updated": "16/06/2026 14:32 CST",
+  "updated": "16/06/2026 16:05 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -878,22 +878,22 @@
       "diff": 24,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -149,
-        "away_ml": 123,
+        "home_ml": -143,
+        "away_ml": 119,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.4,
-        "consensus_away": 43.6,
+        "consensus_home": 56.2,
+        "consensus_away": 43.8,
         "books_count": 3,
         "books": [
           "FanDuel",
           "BetMGM",
           "DraftKings"
         ],
-        "spread": 1.9,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 17.6
+      "edge": 17.8
     },
     {
       "id": 824667,
@@ -958,20 +958,22 @@
       "diff": 15,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -118,
-        "away_ml": 100,
-        "bookmaker": "FanDuel",
-        "consensus_home": 52.0,
-        "consensus_away": 48.0,
-        "books_count": 1,
+        "home_ml": -122,
+        "away_ml": 102,
+        "bookmaker": "DraftKings",
+        "consensus_home": 52.3,
+        "consensus_away": 47.7,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "BetMGM",
+          "DraftKings"
         ],
-        "spread": 0,
+        "spread": 0.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 13.0
+      "edge": 12.7
     },
     {
       "id": 825070,
@@ -996,16 +998,18 @@
       "diff": 13,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -164,
-        "away_ml": 138,
-        "bookmaker": "FanDuel",
+        "home_ml": -168,
+        "away_ml": 139,
+        "bookmaker": "DraftKings",
         "consensus_home": 59.7,
         "consensus_away": 40.3,
-        "books_count": 1,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 0.6,
         "agreement": "Alta"
       },
       "value": false,
