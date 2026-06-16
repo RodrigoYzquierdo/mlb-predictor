@@ -1,6 +1,13 @@
 {
   "date": "2026-06-16",
-  "updated": "16/06/2026 11:52 CST",
+  "updated": "16/06/2026 12:16 CST",
+  "model_info": {
+    "version": "3.0",
+    "type": "Regresion logistica",
+    "cv_accuracy": 56.9,
+    "n_games": 1077,
+    "trained_at": "2026-06-16 12:07 CST"
+  },
   "standings": {
     "NYY": {
       "name": "Yankees",
@@ -864,15 +871,15 @@
       "away_pitcher_id": 605288,
       "home_era": 4.05,
       "away_era": 5.54,
-      "hp": 70,
-      "ap": 30,
+      "hp": 74,
+      "ap": 26,
       "conf": "Alta",
       "mixed": true,
-      "diff": 20,
+      "diff": 24,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -175,
-        "away_ml": 144,
+        "home_ml": -171,
+        "away_ml": 141,
         "bookmaker": "DraftKings",
         "consensus_home": 60.5,
         "consensus_away": 39.5,
@@ -884,11 +891,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.5,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.5
+      "edge": 13.5
     },
     {
       "id": 824667,
@@ -906,11 +913,11 @@
       "away_pitcher_id": 663372,
       "home_era": 4.86,
       "away_era": 5.2,
-      "hp": 70,
-      "ap": 30,
+      "hp": 66,
+      "ap": 34,
       "conf": "Alta",
       "mixed": true,
-      "diff": 20,
+      "diff": 16,
       "park_factor": 1.03,
       "odds": {
         "home_ml": -198,
@@ -930,49 +937,7 @@
         "agreement": "Media"
       },
       "value": false,
-      "edge": 6.2
-    },
-    {
-      "id": 822888,
-      "status": "Preview",
-      "home": "TEX",
-      "away": "MIN",
-      "home_name": "Texas Rangers",
-      "away_name": "Minnesota Twins",
-      "time": "2026-06-17T00:05:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Kumar Rocker",
-      "home_pitcher_id": 677958,
-      "away_pitcher": "Zebby Matthews",
-      "away_pitcher_id": 805673,
-      "home_era": 3.56,
-      "away_era": 5.2,
-      "hp": 65,
-      "ap": 35,
-      "conf": "Media",
-      "mixed": true,
-      "diff": 15,
-      "park_factor": 1.05,
-      "odds": {
-        "home_ml": -132,
-        "away_ml": 109,
-        "bookmaker": "DraftKings",
-        "consensus_home": 54.6,
-        "consensus_away": 45.4,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers",
-          "Bovada"
-        ],
-        "spread": 2.3,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": 10.4
+      "edge": 2.2
     },
     {
       "id": 822723,
@@ -990,18 +955,18 @@
       "away_pitcher_id": 608379,
       "home_era": 3.46,
       "away_era": 3.58,
-      "hp": 62,
-      "ap": 38,
-      "conf": "Media",
+      "hp": 65,
+      "ap": 35,
+      "conf": "Alta",
       "mixed": true,
-      "diff": 12,
+      "diff": 15,
       "park_factor": 0.97,
       "odds": {
         "home_ml": -144,
         "away_ml": 119,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.1,
-        "consensus_away": 43.9,
+        "consensus_home": 56.2,
+        "consensus_away": 43.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1014,7 +979,49 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.9
+      "edge": 8.8
+    },
+    {
+      "id": 825070,
+      "status": "Preview",
+      "home": "AZ",
+      "away": "LAA",
+      "home_name": "Arizona Diamondbacks",
+      "away_name": "Los Angeles Angels",
+      "time": "2026-06-17T01:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Merrill Kelly",
+      "home_pitcher_id": 518876,
+      "away_pitcher": "Reid Detmers",
+      "away_pitcher_id": 672282,
+      "home_era": 5.46,
+      "away_era": 4.0,
+      "hp": 63,
+      "ap": 37,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 13,
+      "park_factor": 0.99,
+      "odds": {
+        "home_ml": -112,
+        "away_ml": -107,
+        "bookmaker": "DraftKings",
+        "consensus_home": 50.6,
+        "consensus_away": 49.4,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM",
+          "BetRivers",
+          "Bovada"
+        ],
+        "spread": 1.5,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": 12.4
     },
     {
       "id": 823535,
@@ -1032,18 +1039,18 @@
       "away_pitcher_id": 663436,
       "home_era": 2.45,
       "away_era": 2.41,
-      "hp": 59,
-      "ap": 41,
+      "hp": 60,
+      "ap": 40,
       "conf": "Media",
       "mixed": true,
-      "diff": 9,
+      "diff": 10,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -144,
-        "away_ml": 119,
+        "home_ml": -149,
+        "away_ml": 123,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.8,
-        "consensus_away": 43.2,
+        "consensus_home": 56.9,
+        "consensus_away": 43.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1056,7 +1063,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.2
+      "edge": 3.1
     }
   ],
   "history": [
