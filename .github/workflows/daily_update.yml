@@ -4,6 +4,7 @@ name: MLB Predictor - Actualizacion diaria
     - cron: "0 14 * * *"
     - cron: "0 15 * * *"
     - cron: "0 16 * * *"
+    - cron: "0 20 * * *"   # 2 PM CST — backup por si los anteriores fallan
   workflow_dispatch:
 jobs:
   update:
