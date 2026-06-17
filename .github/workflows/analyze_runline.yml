@@ -1,0 +1,21 @@
+name: Analizar Run Line
+
+on:
+  workflow_dispatch:  # Solo manual, no automatico
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install requests pytz
+
+      - name: Correr analisis
+        run: python analyze_runline.py
