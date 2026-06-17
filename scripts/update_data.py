@@ -73,38 +73,15 @@ TEAM_IDS = {
 }
 
 # Park factors — multplicador de runs en ese estadio (1.0 = neutro)
-# >1.0 = favorece la ofensiva (mas runs), <1.0 = favorece pitcheo
 PARK_FACTORS = {
-    "COL": 1.18,  # Coors Field - el mas extremo de MLB
-    "BOS": 1.08,  # Fenway Park - el monstruo verde
-    "CIN": 1.06,  # Great American Ball Park
-    "TEX": 1.05,  # Globe Life Field
-    "PHI": 1.04,  # Citizens Bank Park
-    "CHC": 1.03,  # Wrigley Field
-    "MIL": 1.02,  # American Family Field
-    "NYY": 1.02,  # Yankee Stadium
-    "ATL": 1.01,  # Truist Park
-    "HOU": 1.00,  # Minute Maid Park
-    "STL": 1.00,  # Busch Stadium
-    "TOR": 1.00,  # Rogers Centre
-    "MIN": 0.99,  # Target Field
-    "AZ":  0.99,  # Chase Field
-    "DET": 0.99,  # Comerica Park
-    "LAD": 0.98,  # Dodger Stadium
-    "ATH": 0.98,  # Oakland Coliseum
-    "MIA": 0.97,  # loanDepot park
-    "CLE": 0.97,  # Progressive Field
-    "WSH": 0.97,  # Nationals Park
-    "BAL": 0.97,  # Camden Yards
-    "PIT": 0.97,  # PNC Park
-    "CWS": 0.96,  # Guaranteed Rate Field
-    "KC":  0.96,  # Kauffman Stadium
-    "TB":  0.96,  # Tropicana Field
-    "NYM": 0.96,  # Citi Field
-    "SF":  0.95,  # Oracle Park
-    "LAA": 0.95,  # Angel Stadium
-    "SEA": 0.94,  # T-Mobile Park
-    "SD":  0.94,  # Petco Park
+    "COL": 1.18,  "BOS": 1.08,  "CIN": 1.06,  "TEX": 1.05,
+    "PHI": 1.04,  "CHC": 1.03,  "MIL": 1.02,  "NYY": 1.02,
+    "ATL": 1.01,  "HOU": 1.00,  "STL": 1.00,  "TOR": 1.00,
+    "MIN": 0.99,  "AZ":  0.99,  "DET": 0.99,  "LAD": 0.98,
+    "ATH": 0.98,  "MIA": 0.97,  "CLE": 0.97,  "WSH": 0.97,
+    "BAL": 0.97,  "PIT": 0.97,  "CWS": 0.96,  "KC":  0.96,
+    "TB":  0.96,  "NYM": 0.96,  "SF":  0.95,  "LAA": 0.95,
+    "SEA": 0.94,  "SD":  0.94,
 }
 
 def get_abbr(team_dict):
@@ -171,8 +148,6 @@ def get_standings():
             l  = tr.get("losses", 0)
             rs = tr.get("runsScored", 0)
             ra = tr.get("runsAllowed", 0)
-            # Forma reciente: record de ultimos 10 juegos
-            streak_info = tr.get("streak", {})
             last10      = tr.get("records", {}).get("splitRecords", [])
             last10_w = last10_l = None
             for rec in last10:
@@ -198,7 +173,6 @@ def get_standings():
 def get_team_stats():
     team_stats = {}
 
-    # ERA del staff completo (incluye bullpen)
     try:
         url = f"{MLB_API}/teams/stats?season=2026&group=pitching&stats=season&sportId=1"
         r = requests.get(url, timeout=10)
@@ -207,18 +181,12 @@ def get_team_stats():
             team = split.get("team", {})
             abbr = NAME_TO_ABBR.get(team.get("name", ""), team.get("name", "")[:3].upper())
             stat = split.get("stat", {})
-            try:
-                era = round(float(stat.get("era", "4.00")), 2)
-            except:
-                era = 4.00
-            try:
-                whip = round(float(stat.get("whip", "1.30")), 3)
-            except:
-                whip = 1.30
-            try:
-                k9 = round(float(stat.get("strikeoutsPer9Inn", "8.0")), 2)
-            except:
-                k9 = 8.0
+            try: era = round(float(stat.get("era", "4.00")), 2)
+            except: era = 4.00
+            try: whip = round(float(stat.get("whip", "1.30")), 3)
+            except: whip = 1.30
+            try: k9 = round(float(stat.get("strikeoutsPer9Inn", "8.0")), 2)
+            except: k9 = 8.0
             if abbr not in team_stats:
                 team_stats[abbr] = {}
             team_stats[abbr]["era"]  = era
@@ -228,7 +196,6 @@ def get_team_stats():
     except Exception as e:
         print(f"   Error pitching stats: {e}")
 
-    # Bullpen especifico (pitchers en relevo)
     try:
         url = f"{MLB_API}/teams/stats?season=2026&group=pitching&stats=season&sportId=1&pitchingType=bullpen"
         r = requests.get(url, timeout=10)
@@ -238,14 +205,10 @@ def get_team_stats():
             team = split.get("team", {})
             abbr = NAME_TO_ABBR.get(team.get("name", ""), team.get("name", "")[:3].upper())
             stat = split.get("stat", {})
-            try:
-                bp_era = round(float(stat.get("era", "4.00")), 2)
-            except:
-                bp_era = 4.00
-            try:
-                bp_whip = round(float(stat.get("whip", "1.30")), 3)
-            except:
-                bp_whip = 1.30
+            try: bp_era = round(float(stat.get("era", "4.00")), 2)
+            except: bp_era = 4.00
+            try: bp_whip = round(float(stat.get("whip", "1.30")), 3)
+            except: bp_whip = 1.30
             if abbr in team_stats:
                 team_stats[abbr]["bullpen_era"]  = bp_era
                 team_stats[abbr]["bullpen_whip"] = bp_whip
@@ -253,7 +216,6 @@ def get_team_stats():
     except Exception as e:
         print(f"   Error bullpen stats: {e}")
 
-    # Bateo (OBP, SLG, ISO)
     try:
         url = f"{MLB_API}/teams/stats?season=2026&group=hitting&stats=season&sportId=1"
         r = requests.get(url, timeout=10)
@@ -262,18 +224,12 @@ def get_team_stats():
             team = split.get("team", {})
             abbr = NAME_TO_ABBR.get(team.get("name", ""), team.get("name", "")[:3].upper())
             stat = split.get("stat", {})
-            try:
-                obp = round(float(stat.get("obp", ".310")), 3)
-            except:
-                obp = 0.310
-            try:
-                slg = round(float(stat.get("slg", ".410")), 3)
-            except:
-                slg = 0.410
-            try:
-                avg = round(float(stat.get("avg", ".245")), 3)
-            except:
-                avg = 0.245
+            try: obp = round(float(stat.get("obp", ".310")), 3)
+            except: obp = 0.310
+            try: slg = round(float(stat.get("slg", ".410")), 3)
+            except: slg = 0.410
+            try: avg = round(float(stat.get("avg", ".245")), 3)
+            except: avg = 0.245
             if abbr not in team_stats:
                 team_stats[abbr] = {}
             team_stats[abbr]["obp"] = obp
@@ -372,12 +328,8 @@ def get_odds():
         print(f"   Error momios: {e}")
         return {}
 
-# 6. Modelo de prediccion v2.0
+# 6. Modelo de prediccion
 def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
-    """
-    Modelo v3.0 — usa pesos de regresion logistica entrenada (model_weights.json).
-    Si no hay pesos disponibles, cae al modelo heuristico v2.0.
-    """
     hs_data = standings.get(h_abbr, {})
     as_data = standings.get(a_abbr, {})
 
@@ -401,25 +353,21 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     pf_pitch = 2.0 - pf
     mixed = h_sera is not None and a_sera is not None
 
-    # === MODELO v3.0: Regresion logistica ===
     if MODEL_WEIGHTS:
-        # Construir las MISMAS features que en train_model.py (mismo orden)
-        # Si hay abridor confirmado, mezclar su ERA con la del staff
         h_era_eff = (ht["era"] * 0.4 + h_sera * 0.6) if mixed else ht["era"]
         a_era_eff = (at["era"] * 0.4 + a_sera * 0.6) if mixed else at["era"]
 
         features = [
-            h_wp - a_wp,                              # dif_winpct
-            (h_rdiff - a_rdiff) / 100.0,              # dif_rundiff
-            (a_era_eff - h_era_eff) * pf_pitch,       # dif_era
-            (at["bullpen_era"] - ht["bullpen_era"]) * pf_pitch,  # dif_bullpen
-            (ht["ops"] - at["ops"]) * pf,             # dif_ops
-            ht["obp"] - at["obp"],                    # dif_obp
-            pf - 1.0,                                 # park_factor
-            1.0,                                      # home_advantage
+            h_wp - a_wp,
+            (h_rdiff - a_rdiff) / 100.0,
+            (a_era_eff - h_era_eff) * pf_pitch,
+            (at["bullpen_era"] - ht["bullpen_era"]) * pf_pitch,
+            (ht["ops"] - at["ops"]) * pf,
+            ht["obp"] - at["obp"],
+            pf - 1.0,
+            1.0,
         ]
 
-        # Estandarizar con los parametros del scaler
         mean  = MODEL_WEIGHTS["scaler_mean"]
         scale = MODEL_WEIGHTS["scaler_scale"]
         coef  = MODEL_WEIGHTS["coefficients"]
@@ -430,12 +378,10 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
             standardized = (fv - mean[i]) / scale[i] if scale[i] != 0 else 0
             z += standardized * coef[i]
 
-        # Sigmoide -> probabilidad de que gane el local
         prob_home = 1.0 / (1.0 + math.exp(-z))
         hp = round(prob_home * 100)
-        hp = max(25, min(75, hp))  # Cap razonable
+        hp = max(25, min(75, hp))
     else:
-        # Fallback heuristico v2.0
         hs = h_wp * 20 + a_wp * 0
         as_ = a_wp * 20
         hs += (5.0 - min(ht["era"] * pf_pitch, 5.5)) * 5
@@ -444,7 +390,6 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
         hp = max(30, min(70, round(hs / total * 100)))
 
     diff = abs(hp - 50)
-    # Umbrales recalibrados v3.0: con regresion el modelo es mas conservador
     conf = "Alta" if diff > 12 else ("Media" if diff > 6 else "Baja")
 
     return {
@@ -497,8 +442,12 @@ def clean_history(history):
         print(f"   Historial limpiado: {before - after} entradas UNK eliminadas")
     return history
 
-# 9. Actualizar historial
-def update_history(history, yesterday_games, standings, team_stats):
+# 9. Actualizar historial — SOLO guarda los partidos que fueron Top 5 del día
+def update_history(history, yesterday_games, standings, team_stats, top5_yesterday):
+    """
+    top5_yesterday: set de claves "HOME-AWAY" que estuvieron en el Top 5 de ayer.
+    Solo se registran en el historial esos 5 partidos.
+    """
     existing = {f"{h['home']}-{h['away']}-{h['date']}" for h in history}
     added = 0
     for g in yesterday_games:
@@ -508,9 +457,16 @@ def update_history(history, yesterday_games, standings, team_stats):
             continue
         if g["home"] == "UNK" or g["away"] == "UNK":
             continue
+
+        # ── NUEVO: solo registrar si el partido estaba en el Top 5 de ayer ──
+        game_key = f"{g['home']}-{g['away']}"
+        if game_key not in top5_yesterday:
+            continue
+
         key = f"{g['home']}-{g['away']}-{YESTERDAY}"
         if key in existing:
             continue
+
         pred = calc_model(g["home"], g["away"], standings, team_stats)
         fav  = g["home"] if pred["hp"] >= 50 else g["away"]
         win  = g["home"] if g["home_score"] > g["away_score"] else g["away"]
@@ -530,7 +486,7 @@ def update_history(history, yesterday_games, standings, team_stats):
             "hit":    hit,
         })
         added += 1
-    print(f"   {added} resultados de ayer agregados al historial")
+    print(f"   {added} resultados Top 5 de ayer agregados al historial")
     return history
 
 # 10. Main
@@ -558,7 +514,7 @@ def main():
     print("\nObteniendo momios + consensus...")
     odds_map = get_odds()
 
-    print("\nCalculando Top 5...")
+    print("\nCalculando predicciones...")
     predictions = []
     for g in today_games:
         if g["status"] == "Final":
@@ -576,17 +532,37 @@ def main():
         print("   No hay partidos pendientes hoy")
         top5 = []
     else:
-        top5 = sorted(predictions, key=lambda x: x["diff"], reverse=True)[:5]
-        print(f"   Lider: {top5[0]['away']} @ {top5[0]['home']} ({top5[0]['conf']} confianza)")
+        # ── CAMBIO PRINCIPAL: ordenar por probabilidad absoluta máxima ──
+        top5 = sorted(predictions, key=lambda x: max(x["hp"], x["ap"]), reverse=True)[:5]
+        best = top5[0]
+        print(f"   Lider: {best['away']} @ {best['home']} ({max(best['hp'], best['ap'])}% prob absoluta)")
         value_bets = [p for p in top5 if p.get("value")]
         if value_bets:
-            print(f"   Value bets: {len(value_bets)}")
+            print(f"   Value bets en Top 5: {len(value_bets)}")
+
+    # Construir set con los pares HOME-AWAY del Top 5 de HOY
+    # (se usará mañana para filtrar el historial)
+    top5_keys = {f"{g['home']}-{g['away']}" for g in top5}
 
     print("\nActualizando historial...")
     yesterday_games = get_games(YESTERDAY)
+
+    # Leer Top 5 de ayer del archivo de datos anterior (si existe)
+    top5_yesterday = set()
+    try:
+        with open("public/data.json") as f:
+            prev_data = json.load(f)
+        for g in prev_data.get("top5", []):
+            top5_yesterday.add(f"{g['home']}-{g['away']}")
+        print(f"   Top 5 de ayer recuperado: {len(top5_yesterday)} partidos")
+    except Exception as e:
+        print(f"   No se pudo leer Top 5 de ayer ({e}), se registran todos los finales")
+        # Fallback: si no hay data previa, guardar todos (comportamiento anterior)
+        top5_yesterday = {f"{g['home']}-{g['away']}" for g in yesterday_games}
+
     history = load_history()
     history = clean_history(history)
-    history = update_history(history, yesterday_games, standings, team_stats)
+    history = update_history(history, yesterday_games, standings, team_stats, top5_yesterday)
     save_history(history)
 
     hits  = sum(1 for h in history if h["hit"])
@@ -601,7 +577,6 @@ def main():
             else:
                 break
 
-    # Resumen de forma reciente por equipo para el output
     form_summary = {
         abbr: {
             "last10_w":   s.get("last10_w"),
@@ -639,9 +614,9 @@ def main():
     with open("public/data.json", "w") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✓ Listo: {total} predicciones historicas, {pct}% precision")
+    print(f"\n✓ Listo: {total} predicciones Top 5 en historial, {pct}% precision")
+    print(f"  Top 5 de hoy ordenado por probabilidad absoluta maxima")
     print(f"  Bullpen stats incluidos para {len([t for t in team_stats if 'bullpen_era' in team_stats[t]])} equipos")
-    print(f"  Park factors activos para 30 estadios")
     if odds_map:
         print(f"  Momios: {len(odds_map)} partidos")
 
