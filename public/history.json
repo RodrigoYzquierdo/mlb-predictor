@@ -3715,5 +3715,14 @@
     "pred": "NYY",
     "actual": "NYY 12-2 CWS",
     "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "AZ",
+    "away": "LAA",
+    "hp": 62,
+    "pred": "AZ",
+    "actual": "LAA 7-0 AZ",
+    "hit": false
   }
 ]
