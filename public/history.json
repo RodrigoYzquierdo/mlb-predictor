@@ -9637,5 +9637,131 @@
     "pred": "LAD",
     "actual": "LAD 4-3 TB",
     "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "PHI",
+    "away": "MIA",
+    "hp": 58,
+    "pred": "PHI",
+    "actual": "PHI 8-2 MIA",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "WSH",
+    "away": "KC",
+    "hp": 66,
+    "pred": "WSH",
+    "actual": "WSH 6-4 KC",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "BOS",
+    "away": "TOR",
+    "hp": 46,
+    "pred": "TOR",
+    "actual": "TOR 6-1 BOS",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "NYY",
+    "away": "CWS",
+    "hp": 61,
+    "pred": "NYY",
+    "actual": "NYY 12-2 CWS",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "CIN",
+    "away": "NYM",
+    "hp": 57,
+    "pred": "CIN",
+    "actual": "CIN 5-3 NYM",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "MIL",
+    "away": "CLE",
+    "hp": 62,
+    "pred": "MIL",
+    "actual": "MIL 2-1 CLE",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "STL",
+    "away": "SD",
+    "hp": 59,
+    "pred": "STL",
+    "actual": "STL 3-2 SD",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "CHC",
+    "away": "COL",
+    "hp": 65,
+    "pred": "CHC",
+    "actual": "COL 5-2 CHC",
+    "hit": false
+  },
+  {
+    "date": "2026-06-16",
+    "home": "TEX",
+    "away": "MIN",
+    "hp": 54,
+    "pred": "TEX",
+    "actual": "MIN 12-2 TEX",
+    "hit": false
+  },
+  {
+    "date": "2026-06-16",
+    "home": "HOU",
+    "away": "DET",
+    "hp": 57,
+    "pred": "HOU",
+    "actual": "HOU 4-2 DET",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "AZ",
+    "away": "LAA",
+    "hp": 62,
+    "pred": "AZ",
+    "actual": "LAA 7-0 AZ",
+    "hit": false
+  },
+  {
+    "date": "2026-06-16",
+    "home": "ATH",
+    "away": "PIT",
+    "hp": 53,
+    "pred": "ATH",
+    "actual": "PIT 6-5 ATH",
+    "hit": false
+  },
+  {
+    "date": "2026-06-16",
+    "home": "SEA",
+    "away": "BAL",
+    "hp": 59,
+    "pred": "SEA",
+    "actual": "SEA 3-1 BAL",
+    "hit": true
+  },
+  {
+    "date": "2026-06-16",
+    "home": "LAD",
+    "away": "TB",
+    "hp": 59,
+    "pred": "LAD",
+    "actual": "LAD 1-0 TB",
+    "hit": true
   }
 ]
