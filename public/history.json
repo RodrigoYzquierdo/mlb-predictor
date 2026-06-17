@@ -3724,5 +3724,14 @@
     "pred": "AZ",
     "actual": "LAA 7-0 AZ",
     "hit": false
+  },
+  {
+    "date": "2026-06-16",
+    "home": "ATL",
+    "away": "SF",
+    "hp": 73,
+    "pred": "ATL",
+    "actual": "SF 7-2 ATL",
+    "hit": false
   }
 ]
