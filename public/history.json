@@ -3733,5 +3733,59 @@
     "pred": "ATL",
     "actual": "SF 7-2 ATL",
     "hit": false
+  },
+  {
+    "date": "2026-06-17",
+    "home": "ATL",
+    "away": "SF",
+    "hp": 71,
+    "pred": "ATL",
+    "actual": "SF 7-2 ATL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-17",
+    "home": "AZ",
+    "away": "LAA",
+    "hp": 63,
+    "pred": "AZ",
+    "actual": "AZ 8-1 LAA",
+    "hit": true
+  },
+  {
+    "date": "2026-06-17",
+    "home": "NYY",
+    "away": "CWS",
+    "hp": 62,
+    "pred": "NYY",
+    "actual": "NYY 10-5 CWS",
+    "hit": true
+  },
+  {
+    "date": "2026-06-17",
+    "home": "ATL",
+    "away": "SF",
+    "hp": 71,
+    "pred": "ATL",
+    "actual": "SF 7-5 ATL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-17",
+    "home": "MIL",
+    "away": "CLE",
+    "hp": 63,
+    "pred": "MIL",
+    "actual": "MIL 9-4 CLE",
+    "hit": true
+  },
+  {
+    "date": "2026-06-17",
+    "home": "CHC",
+    "away": "COL",
+    "hp": 66,
+    "pred": "CHC",
+    "actual": "CHC 8-6 COL",
+    "hit": true
   }
 ]
