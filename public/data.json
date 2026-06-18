@@ -1,6 +1,6 @@
 {
   "date": "2026-06-18",
-  "updated": "18/06/2026 11:19 CST",
+  "updated": "18/06/2026 12:07 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -470,17 +470,6 @@
       "avg": 0.233,
       "ops": 0.705
     },
-    "BOS": {
-      "era": 3.92,
-      "whip": 1.28,
-      "k9": 8.59,
-      "bullpen_era": 3.92,
-      "bullpen_whip": 1.28,
-      "obp": 0.314,
-      "slg": 0.381,
-      "avg": 0.245,
-      "ops": 0.695
-    },
     "NYM": {
       "era": 3.93,
       "whip": 1.27,
@@ -491,6 +480,17 @@
       "slg": 0.37,
       "avg": 0.232,
       "ops": 0.668
+    },
+    "BOS": {
+      "era": 3.94,
+      "whip": 1.29,
+      "k9": 8.58,
+      "bullpen_era": 3.94,
+      "bullpen_whip": 1.29,
+      "obp": 0.314,
+      "slg": 0.381,
+      "avg": 0.245,
+      "ops": 0.695
     },
     "TB": {
       "era": 3.95,
@@ -509,10 +509,10 @@
       "k9": 9.06,
       "bullpen_era": 4.02,
       "bullpen_whip": 1.28,
-      "obp": 0.313,
-      "slg": 0.389,
-      "avg": 0.249,
-      "ops": 0.702
+      "obp": 0.314,
+      "slg": 0.391,
+      "avg": 0.25,
+      "ops": 0.705
     },
     "STL": {
       "era": 4.08,
@@ -899,7 +899,7 @@
     },
     {
       "id": 823772,
-      "status": "Preview",
+      "status": "Live",
       "home": "MIL",
       "away": "CLE",
       "home_name": "Milwaukee Brewers",
@@ -923,8 +923,8 @@
         "home_ml": -150,
         "away_ml": 124,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.6,
-        "consensus_away": 42.4,
+        "consensus_home": 57.2,
+        "consensus_away": 42.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -937,7 +937,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.4
+      "edge": 5.8
     },
     {
       "id": 823533,
@@ -1004,11 +1004,11 @@
       "diff": 12,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -157,
-        "away_ml": 130,
+        "home_ml": -167,
+        "away_ml": 138,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.6,
-        "consensus_away": 41.4,
+        "consensus_home": 59.1,
+        "consensus_away": 40.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 0.6,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.4
+      "edge": 2.9
     },
     {
       "id": 823448,
@@ -1049,8 +1049,8 @@
         "home_ml": -120,
         "away_ml": 100,
         "bookmaker": "DraftKings",
-        "consensus_home": 51.9,
-        "consensus_away": 48.1,
+        "consensus_home": 52.1,
+        "consensus_away": 47.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.6,
+        "spread": 0.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.1
+      "edge": 8.9
     }
   ],
   "history": [
