@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "updated": "19/06/2026 10:15 CST",
+  "updated": "19/06/2026 10:35 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -881,8 +881,8 @@
         "home_ml": -219,
         "away_ml": 178,
         "bookmaker": "DraftKings",
-        "consensus_home": 65.3,
-        "consensus_away": 34.7,
+        "consensus_home": 65.4,
+        "consensus_away": 34.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -895,7 +895,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.7
+      "edge": 4.6
     },
     {
       "id": 823534,
