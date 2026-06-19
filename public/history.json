@@ -3787,5 +3787,50 @@
     "pred": "CHC",
     "actual": "CHC 8-6 COL",
     "hit": true
+  },
+  {
+    "date": "2026-06-18",
+    "home": "SEA",
+    "away": "BAL",
+    "hp": 59,
+    "pred": "SEA",
+    "actual": "SEA 3-0 BAL",
+    "hit": true
+  },
+  {
+    "date": "2026-06-18",
+    "home": "PHI",
+    "away": "NYM",
+    "hp": 60,
+    "pred": "PHI",
+    "actual": "NYM 6-4 PHI",
+    "hit": false
+  },
+  {
+    "date": "2026-06-18",
+    "home": "NYY",
+    "away": "CWS",
+    "hp": 61,
+    "pred": "NYY",
+    "actual": "CWS 5-1 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-06-18",
+    "home": "KC",
+    "away": "STL",
+    "hp": 41,
+    "pred": "STL",
+    "actual": "KC 14-6 STL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-18",
+    "home": "ATH",
+    "away": "LAA",
+    "hp": 63,
+    "pred": "ATH",
+    "actual": "ATH 5-0 LAA",
+    "hit": true
   }
 ]
