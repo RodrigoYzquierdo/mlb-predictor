@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "updated": "19/06/2026 11:21 CST",
+  "updated": "19/06/2026 12:04 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -920,24 +920,20 @@
       "diff": 16,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -281,
-        "away_ml": 224,
-        "bookmaker": "DraftKings",
-        "consensus_home": 70.3,
-        "consensus_away": 29.7,
-        "books_count": 5,
+        "home_ml": -184,
+        "away_ml": 154,
+        "bookmaker": "FanDuel",
+        "consensus_home": 62.2,
+        "consensus_away": 37.8,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetMGM",
-          "BetRivers"
+          "FanDuel"
         ],
-        "spread": 1.4,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.3
+      "edge": 3.8
     },
     {
       "id": 823124,
@@ -1007,8 +1003,8 @@
         "home_ml": 119,
         "away_ml": -143,
         "bookmaker": "DraftKings",
-        "consensus_home": 44.0,
-        "consensus_away": 56.0,
+        "consensus_home": 44.1,
+        "consensus_away": 55.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1013,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.8,
+        "spread": 0.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.0
+      "edge": 7.1
     },
     {
       "id": 824990,
