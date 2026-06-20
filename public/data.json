@@ -1,6 +1,6 @@
 {
   "date": "2026-06-20",
-  "updated": "20/06/2026 09:48 CST",
+  "updated": "20/06/2026 10:22 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -878,11 +878,11 @@
       "diff": 21,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -248,
-        "away_ml": 200,
+        "home_ml": -238,
+        "away_ml": 193,
         "bookmaker": "DraftKings",
-        "consensus_home": 68.1,
-        "consensus_away": 31.9,
+        "consensus_home": 67.6,
+        "consensus_away": 32.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 3.4,
+        "spread": 4.3,
         "agreement": "Media"
       },
       "value": false,
-      "edge": 2.9
+      "edge": 3.4
     },
     {
       "id": 823532,
@@ -923,8 +923,8 @@
         "home_ml": -201,
         "away_ml": 164,
         "bookmaker": "DraftKings",
-        "consensus_home": 63.9,
-        "consensus_away": 36.1,
+        "consensus_home": 64.0,
+        "consensus_away": 36.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +933,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.8,
+        "spread": 1.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.1
+      "edge": 3.0
     },
     {
       "id": 824988,
@@ -965,8 +965,8 @@
         "home_ml": -171,
         "away_ml": 141,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.6,
-        "consensus_away": 39.4,
+        "consensus_home": 60.5,
+        "consensus_away": 39.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -979,7 +979,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.4
+      "edge": 3.5
     },
     {
       "id": 823126,
@@ -1049,8 +1049,8 @@
         "home_ml": -143,
         "away_ml": 119,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.1,
-        "consensus_away": 43.9,
+        "consensus_home": 56.0,
+        "consensus_away": 44.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.2,
+        "spread": 0.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.9
+      "edge": 6.0
     }
   ],
   "history": [
@@ -4945,13 +4945,22 @@
       "pred": "SEA",
       "actual": "BOS 6-2 SEA",
       "hit": false
+    },
+    {
+      "date": "2026-06-19",
+      "home": "MIA",
+      "away": "SF",
+      "hp": 62,
+      "pred": "MIA",
+      "actual": "MIA 4-3 SF",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 249,
-    "total": 431,
+    "hits": 250,
+    "total": 432,
     "pct": 58,
     "streak": 1,
-    "streak_type": "L"
+    "streak_type": "W"
   }
 }

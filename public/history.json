@@ -3877,5 +3877,14 @@
     "pred": "SEA",
     "actual": "BOS 6-2 SEA",
     "hit": false
+  },
+  {
+    "date": "2026-06-19",
+    "home": "MIA",
+    "away": "SF",
+    "hp": 62,
+    "pred": "MIA",
+    "actual": "MIA 4-3 SF",
+    "hit": true
   }
 ]
