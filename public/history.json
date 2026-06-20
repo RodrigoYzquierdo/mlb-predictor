@@ -3832,5 +3832,50 @@
     "pred": "ATH",
     "actual": "ATH 5-0 LAA",
     "hit": true
+  },
+  {
+    "date": "2026-06-19",
+    "home": "NYY",
+    "away": "CIN",
+    "hp": 67,
+    "pred": "NYY",
+    "actual": "NYY 5-0 CIN",
+    "hit": true
+  },
+  {
+    "date": "2026-06-19",
+    "home": "COL",
+    "away": "PIT",
+    "hp": 39,
+    "pred": "PIT",
+    "actual": "COL 4-3 PIT",
+    "hit": false
+  },
+  {
+    "date": "2026-06-19",
+    "home": "ATH",
+    "away": "LAA",
+    "hp": 64,
+    "pred": "ATH",
+    "actual": "ATH 12-11 LAA",
+    "hit": true
+  },
+  {
+    "date": "2026-06-19",
+    "home": "LAD",
+    "away": "BAL",
+    "hp": 71,
+    "pred": "LAD",
+    "actual": "LAD 6-5 BAL",
+    "hit": true
+  },
+  {
+    "date": "2026-06-19",
+    "home": "SEA",
+    "away": "BOS",
+    "hp": 63,
+    "pred": "SEA",
+    "actual": "BOS 6-2 SEA",
+    "hit": false
   }
 ]
