@@ -3931,5 +3931,14 @@
     "pred": "SEA",
     "actual": "BOS 5-1 SEA",
     "hit": false
+  },
+  {
+    "date": "2026-06-20",
+    "home": "NYY",
+    "away": "CIN",
+    "hp": 66,
+    "pred": "NYY",
+    "actual": "CIN 10-2 NYY",
+    "hit": false
   }
 ]
