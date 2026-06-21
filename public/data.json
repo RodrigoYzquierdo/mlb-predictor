@@ -1,6 +1,6 @@
 {
   "date": "2026-06-21",
-  "updated": "21/06/2026 10:47 CST",
+  "updated": "21/06/2026 11:44 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -372,10 +372,10 @@
   },
   "team_stats": {
     "NYY": {
-      "era": 3.34,
+      "era": 3.33,
       "whip": 1.18,
-      "k9": 8.89,
-      "bullpen_era": 3.34,
+      "k9": 8.88,
+      "bullpen_era": 3.33,
       "bullpen_whip": 1.18,
       "obp": 0.332,
       "slg": 0.44,
@@ -385,7 +385,7 @@
     "ATL": {
       "era": 3.34,
       "whip": 1.19,
-      "k9": 8.72,
+      "k9": 8.74,
       "bullpen_era": 3.34,
       "bullpen_whip": 1.19,
       "obp": 0.318,
@@ -407,13 +407,13 @@
     "MIL": {
       "era": 3.44,
       "whip": 1.2,
-      "k9": 9.89,
+      "k9": 9.88,
       "bullpen_era": 3.44,
       "bullpen_whip": 1.2,
       "obp": 0.339,
-      "slg": 0.393,
-      "avg": 0.255,
-      "ops": 0.732
+      "slg": 0.392,
+      "avg": 0.254,
+      "ops": 0.731
     },
     "SEA": {
       "era": 3.66,
@@ -439,10 +439,10 @@
     },
     "DET": {
       "era": 3.85,
-      "whip": 1.28,
-      "k9": 8.25,
+      "whip": 1.27,
+      "k9": 8.23,
       "bullpen_era": 3.85,
-      "bullpen_whip": 1.28,
+      "bullpen_whip": 1.27,
       "obp": 0.313,
       "slg": 0.392,
       "avg": 0.233,
@@ -472,9 +472,9 @@
     },
     "TB": {
       "era": 3.92,
-      "whip": 1.23,
-      "k9": 7.98,
-      "bullpen_era": 3.92,
+      "whip": 1.24,
+      "k9": 7.99,
+      "bullpen_era": 3.91,
       "bullpen_whip": 1.23,
       "obp": 0.335,
       "slg": 0.381,
@@ -517,7 +517,7 @@
     "MIA": {
       "era": 4.11,
       "whip": 1.26,
-      "k9": 8.84,
+      "k9": 8.83,
       "bullpen_era": 4.11,
       "bullpen_whip": 1.26,
       "obp": 0.324,
@@ -587,9 +587,9 @@
       "bullpen_era": 4.41,
       "bullpen_whip": 1.33,
       "obp": 0.321,
-      "slg": 0.412,
+      "slg": 0.411,
       "avg": 0.238,
-      "ops": 0.733
+      "ops": 0.732
     },
     "KC": {
       "era": 4.48,
@@ -608,10 +608,10 @@
       "k9": 8.08,
       "bullpen_era": 4.49,
       "bullpen_whip": 1.4,
-      "obp": 0.31,
+      "obp": 0.309,
       "slg": 0.421,
-      "avg": 0.259,
-      "ops": 0.731
+      "avg": 0.258,
+      "ops": 0.73
     },
     "BAL": {
       "era": 4.5,
@@ -881,92 +881,8 @@
         "home_ml": -238,
         "away_ml": 193,
         "bookmaker": "DraftKings",
-        "consensus_home": 67.5,
-        "consensus_away": 32.5,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetMGM",
-          "Bovada",
-          "BetRivers"
-        ],
-        "spread": 2.9,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": 1.5
-    },
-    {
-      "id": 823531,
-      "status": "Preview",
-      "home": "NYY",
-      "away": "CIN",
-      "home_name": "New York Yankees",
-      "away_name": "Cincinnati Reds",
-      "time": "2026-06-21T17:35:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Elmer Rodríguez",
-      "home_pitcher_id": 695684,
-      "away_pitcher": "Chase Burns",
-      "away_pitcher_id": 695505,
-      "home_era": 4.15,
-      "away_era": 2.01,
-      "hp": 65,
-      "ap": 35,
-      "conf": "Alta",
-      "mixed": true,
-      "diff": 15,
-      "park_factor": 1.02,
-      "odds": {
-        "home_ml": -118,
-        "away_ml": -102,
-        "bookmaker": "DraftKings",
-        "consensus_home": 50.9,
-        "consensus_away": 49.1,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetMGM",
-          "Bovada",
-          "BetRivers"
-        ],
-        "spread": 2.2,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": 14.1
-    },
-    {
-      "id": 823852,
-      "status": "Preview",
-      "home": "MIA",
-      "away": "SF",
-      "home_name": "Miami Marlins",
-      "away_name": "San Francisco Giants",
-      "time": "2026-06-21T17:40:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Ryan Gusto",
-      "home_pitcher_id": 687473,
-      "away_pitcher": "Logan Webb",
-      "away_pitcher_id": 657277,
-      "home_era": 7.24,
-      "away_era": 3.46,
-      "hp": 62,
-      "ap": 38,
-      "conf": "Media",
-      "mixed": true,
-      "diff": 12,
-      "park_factor": 0.97,
-      "odds": {
-        "home_ml": 119,
-        "away_ml": -144,
-        "bookmaker": "DraftKings",
-        "consensus_home": 43.2,
-        "consensus_away": 56.8,
+        "consensus_home": 67.0,
+        "consensus_away": 33.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -978,8 +894,92 @@
         "spread": 1.8,
         "agreement": "Alta"
       },
+      "value": false,
+      "edge": 2.0
+    },
+    {
+      "id": 823531,
+      "status": "Live",
+      "home": "NYY",
+      "away": "CIN",
+      "home_name": "New York Yankees",
+      "away_name": "Cincinnati Reds",
+      "time": "2026-06-21T17:35:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Elmer Rodríguez",
+      "home_pitcher_id": 695684,
+      "away_pitcher": "Chase Burns",
+      "away_pitcher_id": 695505,
+      "home_era": 4.05,
+      "away_era": 2.01,
+      "hp": 65,
+      "ap": 35,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 15,
+      "park_factor": 1.02,
+      "odds": {
+        "home_ml": -105,
+        "away_ml": -123,
+        "bookmaker": "DraftKings",
+        "consensus_home": 49.3,
+        "consensus_away": 50.7,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM",
+          "Bovada",
+          "BetRivers"
+        ],
+        "spread": 4.3,
+        "agreement": "Media"
+      },
       "value": true,
-      "edge": 18.8
+      "edge": 15.7
+    },
+    {
+      "id": 823852,
+      "status": "Live",
+      "home": "MIA",
+      "away": "SF",
+      "home_name": "Miami Marlins",
+      "away_name": "San Francisco Giants",
+      "time": "2026-06-21T17:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Ryan Gusto",
+      "home_pitcher_id": 687473,
+      "away_pitcher": "Logan Webb",
+      "away_pitcher_id": 657277,
+      "home_era": 6.91,
+      "away_era": 3.46,
+      "hp": 62,
+      "ap": 38,
+      "conf": "Media",
+      "mixed": true,
+      "diff": 12,
+      "park_factor": 0.97,
+      "odds": {
+        "home_ml": -110,
+        "away_ml": -118,
+        "bookmaker": "DraftKings",
+        "consensus_home": 49.0,
+        "consensus_away": 51.0,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM",
+          "Bovada",
+          "BetRivers"
+        ],
+        "spread": 2.3,
+        "agreement": "Alta"
+      },
+      "value": true,
+      "edge": 13.0
     },
     {
       "id": 824987,
@@ -1007,8 +1007,8 @@
         "home_ml": -136,
         "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.8,
-        "consensus_away": 45.2,
+        "consensus_home": 54.2,
+        "consensus_away": 45.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 1.4,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.2
+      "edge": 7.8
     },
     {
       "id": 823123,
@@ -1046,11 +1046,11 @@
       "diff": 12,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -126,
-        "away_ml": 105,
+        "home_ml": -136,
+        "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 53.7,
-        "consensus_away": 46.3,
+        "consensus_home": 54.2,
+        "consensus_away": 45.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.8,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 8.3
+      "edge": 7.8
     }
   ],
   "history": [
