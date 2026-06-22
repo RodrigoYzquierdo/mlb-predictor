@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "updated": "22/06/2026 12:49 CST",
+  "updated": "22/06/2026 13:03 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -1183,6 +1183,15 @@
       "hit": true
     },
     {
+      "date": "2026-03-28",
+      "home": "PHI",
+      "away": "TEX",
+      "hp": 75,
+      "pred": "PHI",
+      "actual": "TEX 5-4 PHI",
+      "hit": false
+    },
+    {
       "date": "2026-03-29",
       "home": "BAL",
       "away": "MIN",
@@ -1228,6 +1237,15 @@
       "hit": true
     },
     {
+      "date": "2026-03-29",
+      "home": "PHI",
+      "away": "TEX",
+      "hp": 75,
+      "pred": "PHI",
+      "actual": "TEX 8-3 PHI",
+      "hit": false
+    },
+    {
       "date": "2026-03-30",
       "home": "KC",
       "away": "MIN",
@@ -1270,6 +1288,33 @@
       "hp": 30,
       "pred": "BOS",
       "actual": "HOU 8-1 BOS",
+      "hit": false
+    },
+    {
+      "date": "2026-03-30",
+      "home": "CIN",
+      "away": "PIT",
+      "hp": 75,
+      "pred": "CIN",
+      "actual": "CIN 2-0 PIT",
+      "hit": true
+    },
+    {
+      "date": "2026-03-30",
+      "home": "PHI",
+      "away": "WSH",
+      "hp": 25,
+      "pred": "WSH",
+      "actual": "WSH 13-2 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-03-30",
+      "home": "TOR",
+      "away": "COL",
+      "hp": 75,
+      "pred": "TOR",
+      "actual": "COL 14-5 TOR",
       "hit": false
     },
     {
@@ -1318,6 +1363,42 @@
       "hit": false
     },
     {
+      "date": "2026-03-31",
+      "home": "CIN",
+      "away": "PIT",
+      "hp": 75,
+      "pred": "CIN",
+      "actual": "PIT 8-3 CIN",
+      "hit": false
+    },
+    {
+      "date": "2026-03-31",
+      "home": "PHI",
+      "away": "WSH",
+      "hp": 25,
+      "pred": "WSH",
+      "actual": "PHI 3-2 WSH",
+      "hit": false
+    },
+    {
+      "date": "2026-03-31",
+      "home": "TOR",
+      "away": "COL",
+      "hp": 75,
+      "pred": "TOR",
+      "actual": "TOR 5-1 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-03-31",
+      "home": "ATL",
+      "away": "ATH",
+      "hp": 75,
+      "pred": "ATL",
+      "actual": "ATH 5-2 ATL",
+      "hit": false
+    },
+    {
       "date": "2026-04-01",
       "home": "ATL",
       "away": "ATH",
@@ -1360,6 +1441,15 @@
       "hp": 66,
       "pred": "MIL",
       "actual": "MIL 8-2 TB",
+      "hit": true
+    },
+    {
+      "date": "2026-04-01",
+      "home": "HOU",
+      "away": "BOS",
+      "hp": 75,
+      "pred": "HOU",
+      "actual": "HOU 6-4 BOS",
       "hit": true
     },
     {
@@ -1435,6 +1525,33 @@
       "hit": true
     },
     {
+      "date": "2026-04-03",
+      "home": "DET",
+      "away": "STL",
+      "hp": 25,
+      "pred": "STL",
+      "actual": "DET 4-0 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-03",
+      "home": "TEX",
+      "away": "CIN",
+      "hp": 67,
+      "pred": "TEX",
+      "actual": "CIN 5-3 TEX",
+      "hit": false
+    },
+    {
+      "date": "2026-04-03",
+      "home": "COL",
+      "away": "PHI",
+      "hp": 35,
+      "pred": "PHI",
+      "actual": "PHI 10-1 COL",
+      "hit": true
+    },
+    {
       "date": "2026-04-04",
       "home": "CWS",
       "away": "TOR",
@@ -1477,6 +1594,15 @@
       "hp": 33,
       "pred": "MIL",
       "actual": "KC 8-2 MIL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-04",
+      "home": "DET",
+      "away": "STL",
+      "hp": 25,
+      "pred": "STL",
+      "actual": "DET 11-6 STL",
       "hit": false
     },
     {
@@ -1525,6 +1651,24 @@
       "hit": true
     },
     {
+      "date": "2026-04-05",
+      "home": "DET",
+      "away": "STL",
+      "hp": 25,
+      "pred": "STL",
+      "actual": "STL 5-3 DET",
+      "hit": true
+    },
+    {
+      "date": "2026-04-05",
+      "home": "TEX",
+      "away": "CIN",
+      "hp": 67,
+      "pred": "TEX",
+      "actual": "CIN 2-1 TEX",
+      "hit": false
+    },
+    {
       "date": "2026-04-06",
       "home": "BOS",
       "away": "MIL",
@@ -1567,6 +1711,24 @@
       "hp": 36,
       "pred": "BAL",
       "actual": "BAL 2-1 CWS",
+      "hit": true
+    },
+    {
+      "date": "2026-04-06",
+      "home": "COL",
+      "away": "HOU",
+      "hp": 25,
+      "pred": "HOU",
+      "actual": "COL 9-7 HOU",
+      "hit": false
+    },
+    {
+      "date": "2026-04-06",
+      "home": "TEX",
+      "away": "SEA",
+      "hp": 72,
+      "pred": "TEX",
+      "actual": "TEX 2-1 SEA",
       "hit": true
     },
     {
@@ -1615,6 +1777,24 @@
       "hit": false
     },
     {
+      "date": "2026-04-07",
+      "home": "COL",
+      "away": "HOU",
+      "hp": 25,
+      "pred": "HOU",
+      "actual": "COL 5-1 HOU",
+      "hit": false
+    },
+    {
+      "date": "2026-04-07",
+      "home": "CWS",
+      "away": "BAL",
+      "hp": 26,
+      "pred": "BAL",
+      "actual": "BAL 4-2 CWS",
+      "hit": true
+    },
+    {
       "date": "2026-04-08",
       "home": "NYY",
       "away": "ATH",
@@ -1657,6 +1837,24 @@
       "hp": 66,
       "pred": "MIA",
       "actual": "MIA 7-4 CIN",
+      "hit": true
+    },
+    {
+      "date": "2026-04-08",
+      "home": "COL",
+      "away": "HOU",
+      "hp": 25,
+      "pred": "HOU",
+      "actual": "COL 9-1 HOU",
+      "hit": false
+    },
+    {
+      "date": "2026-04-08",
+      "home": "CWS",
+      "away": "BAL",
+      "hp": 26,
+      "pred": "BAL",
+      "actual": "BAL 5-3 CWS",
       "hit": true
     },
     {
@@ -1705,6 +1903,15 @@
       "hit": true
     },
     {
+      "date": "2026-04-09",
+      "home": "NYM",
+      "away": "AZ",
+      "hp": 54,
+      "pred": "NYM",
+      "actual": "AZ 7-1 NYM",
+      "hit": false
+    },
+    {
       "date": "2026-04-10",
       "home": "TOR",
       "away": "MIN",
@@ -1747,6 +1954,42 @@
       "hp": 33,
       "pred": "NYY",
       "actual": "TB 5-3 NYY",
+      "hit": false
+    },
+    {
+      "date": "2026-04-10",
+      "home": "STL",
+      "away": "BOS",
+      "hp": 75,
+      "pred": "STL",
+      "actual": "STL 3-2 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-04-10",
+      "home": "LAD",
+      "away": "TEX",
+      "hp": 74,
+      "pred": "LAD",
+      "actual": "LAD 8-7 TEX",
+      "hit": true
+    },
+    {
+      "date": "2026-04-10",
+      "home": "MIL",
+      "away": "WSH",
+      "hp": 73,
+      "pred": "MIL",
+      "actual": "WSH 7-3 MIL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-10",
+      "home": "DET",
+      "away": "MIA",
+      "hp": 34,
+      "pred": "MIA",
+      "actual": "DET 2-0 MIA",
       "hit": false
     },
     {
@@ -1795,6 +2038,42 @@
       "hit": false
     },
     {
+      "date": "2026-04-11",
+      "home": "STL",
+      "away": "BOS",
+      "hp": 75,
+      "pred": "STL",
+      "actual": "BOS 7-1 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-11",
+      "home": "LAD",
+      "away": "TEX",
+      "hp": 74,
+      "pred": "LAD",
+      "actual": "LAD 6-3 TEX",
+      "hit": true
+    },
+    {
+      "date": "2026-04-11",
+      "home": "MIL",
+      "away": "WSH",
+      "hp": 73,
+      "pred": "MIL",
+      "actual": "WSH 3-1 MIL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-11",
+      "home": "DET",
+      "away": "MIA",
+      "hp": 34,
+      "pred": "MIA",
+      "actual": "DET 6-1 MIA",
+      "hit": false
+    },
+    {
       "date": "2026-04-12",
       "home": "TOR",
       "away": "MIN",
@@ -1837,6 +2116,42 @@
       "hp": 33,
       "pred": "NYY",
       "actual": "TB 5-4 NYY",
+      "hit": false
+    },
+    {
+      "date": "2026-04-12",
+      "home": "STL",
+      "away": "BOS",
+      "hp": 75,
+      "pred": "STL",
+      "actual": "BOS 9-3 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-12",
+      "home": "LAD",
+      "away": "TEX",
+      "hp": 74,
+      "pred": "LAD",
+      "actual": "TEX 5-2 LAD",
+      "hit": false
+    },
+    {
+      "date": "2026-04-12",
+      "home": "MIL",
+      "away": "WSH",
+      "hp": 73,
+      "pred": "MIL",
+      "actual": "WSH 8-6 MIL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-12",
+      "home": "DET",
+      "away": "MIA",
+      "hp": 34,
+      "pred": "MIA",
+      "actual": "DET 8-2 MIA",
       "hit": false
     },
     {
@@ -1885,6 +2200,24 @@
       "hit": true
     },
     {
+      "date": "2026-04-13",
+      "home": "PIT",
+      "away": "WSH",
+      "hp": 73,
+      "pred": "PIT",
+      "actual": "PIT 16-5 WSH",
+      "hit": true
+    },
+    {
+      "date": "2026-04-13",
+      "home": "ATL",
+      "away": "MIA",
+      "hp": 60,
+      "pred": "ATL",
+      "actual": "MIA 10-4 ATL",
+      "hit": false
+    },
+    {
       "date": "2026-04-14",
       "home": "NYY",
       "away": "LAA",
@@ -1930,6 +2263,42 @@
       "hit": true
     },
     {
+      "date": "2026-04-14",
+      "home": "PIT",
+      "away": "WSH",
+      "hp": 73,
+      "pred": "PIT",
+      "actual": "WSH 5-4 PIT",
+      "hit": false
+    },
+    {
+      "date": "2026-04-14",
+      "home": "SD",
+      "away": "SEA",
+      "hp": 72,
+      "pred": "SD",
+      "actual": "SD 4-1 SEA",
+      "hit": true
+    },
+    {
+      "date": "2026-04-14",
+      "home": "MIN",
+      "away": "BOS",
+      "hp": 70,
+      "pred": "MIN",
+      "actual": "MIN 6-0 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-04-14",
+      "home": "MIL",
+      "away": "TOR",
+      "hp": 67,
+      "pred": "MIL",
+      "actual": "TOR 9-7 MIL",
+      "hit": false
+    },
+    {
       "date": "2026-04-15",
       "home": "NYY",
       "away": "LAA",
@@ -1972,6 +2341,42 @@
       "hp": 64,
       "pred": "LAD",
       "actual": "LAD 8-2 NYM",
+      "hit": true
+    },
+    {
+      "date": "2026-04-15",
+      "home": "PIT",
+      "away": "WSH",
+      "hp": 73,
+      "pred": "PIT",
+      "actual": "PIT 2-0 WSH",
+      "hit": true
+    },
+    {
+      "date": "2026-04-15",
+      "home": "SD",
+      "away": "SEA",
+      "hp": 72,
+      "pred": "SD",
+      "actual": "SD 7-6 SEA",
+      "hit": true
+    },
+    {
+      "date": "2026-04-15",
+      "home": "MIN",
+      "away": "BOS",
+      "hp": 70,
+      "pred": "MIN",
+      "actual": "BOS 9-5 MIN",
+      "hit": false
+    },
+    {
+      "date": "2026-04-15",
+      "home": "MIL",
+      "away": "TOR",
+      "hp": 67,
+      "pred": "MIL",
+      "actual": "MIL 2-1 TOR",
       "hit": true
     },
     {
@@ -2020,6 +2425,33 @@
       "hit": true
     },
     {
+      "date": "2026-04-16",
+      "home": "PIT",
+      "away": "WSH",
+      "hp": 73,
+      "pred": "PIT",
+      "actual": "WSH 8-7 PIT",
+      "hit": false
+    },
+    {
+      "date": "2026-04-16",
+      "home": "SD",
+      "away": "SEA",
+      "hp": 72,
+      "pred": "SD",
+      "actual": "SD 5-2 SEA",
+      "hit": true
+    },
+    {
+      "date": "2026-04-16",
+      "home": "CIN",
+      "away": "SF",
+      "hp": 65,
+      "pred": "CIN",
+      "actual": "SF 3-0 CIN",
+      "hit": false
+    },
+    {
       "date": "2026-04-17",
       "home": "COL",
       "away": "LAD",
@@ -2062,6 +2494,24 @@
       "hp": 39,
       "pred": "ATL",
       "actual": "ATL 9-0 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-17",
+      "home": "PIT",
+      "away": "TB",
+      "hp": 67,
+      "pred": "PIT",
+      "actual": "PIT 5-1 TB",
+      "hit": true
+    },
+    {
+      "date": "2026-04-17",
+      "home": "HOU",
+      "away": "STL",
+      "hp": 36,
+      "pred": "STL",
+      "actual": "STL 9-4 HOU",
       "hit": true
     },
     {
@@ -2110,6 +2560,24 @@
       "hit": true
     },
     {
+      "date": "2026-04-18",
+      "home": "PIT",
+      "away": "TB",
+      "hp": 67,
+      "pred": "PIT",
+      "actual": "TB 8-7 PIT",
+      "hit": false
+    },
+    {
+      "date": "2026-04-18",
+      "home": "HOU",
+      "away": "STL",
+      "hp": 36,
+      "pred": "STL",
+      "actual": "STL 7-5 HOU",
+      "hit": true
+    },
+    {
       "date": "2026-04-19",
       "home": "COL",
       "away": "LAD",
@@ -2152,6 +2620,24 @@
       "hp": 39,
       "pred": "ATL",
       "actual": "ATL 4-2 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-19",
+      "home": "PIT",
+      "away": "TB",
+      "hp": 67,
+      "pred": "PIT",
+      "actual": "PIT 6-3 TB",
+      "hit": true
+    },
+    {
+      "date": "2026-04-19",
+      "home": "HOU",
+      "away": "STL",
+      "hp": 36,
+      "pred": "STL",
+      "actual": "STL 7-5 HOU",
       "hit": true
     },
     {
@@ -2200,6 +2686,24 @@
       "hit": false
     },
     {
+      "date": "2026-04-20",
+      "home": "CHC",
+      "away": "PHI",
+      "hp": 72,
+      "pred": "CHC",
+      "actual": "CHC 5-1 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-20",
+      "home": "KC",
+      "away": "BAL",
+      "hp": 38,
+      "pred": "BAL",
+      "actual": "BAL 7-5 KC",
+      "hit": true
+    },
+    {
       "date": "2026-04-21",
       "home": "BOS",
       "away": "NYY",
@@ -2243,6 +2747,42 @@
       "pred": "MIL",
       "actual": "MIL 12-4 DET",
       "hit": true
+    },
+    {
+      "date": "2026-04-21",
+      "home": "COL",
+      "away": "SD",
+      "hp": 26,
+      "pred": "SD",
+      "actual": "SD 1-0 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-04-21",
+      "home": "CHC",
+      "away": "PHI",
+      "hp": 72,
+      "pred": "CHC",
+      "actual": "CHC 7-4 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-21",
+      "home": "AZ",
+      "away": "CWS",
+      "hp": 72,
+      "pred": "AZ",
+      "actual": "CWS 11-5 AZ",
+      "hit": false
+    },
+    {
+      "date": "2026-04-21",
+      "home": "WSH",
+      "away": "ATL",
+      "hp": 31,
+      "pred": "ATL",
+      "actual": "WSH 11-4 ATL",
+      "hit": false
     },
     {
       "date": "2026-04-22",
@@ -2290,6 +2830,42 @@
       "hit": false
     },
     {
+      "date": "2026-04-22",
+      "home": "COL",
+      "away": "SD",
+      "hp": 26,
+      "pred": "SD",
+      "actual": "COL 8-3 SD",
+      "hit": false
+    },
+    {
+      "date": "2026-04-22",
+      "home": "CHC",
+      "away": "PHI",
+      "hp": 72,
+      "pred": "CHC",
+      "actual": "CHC 7-2 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-22",
+      "home": "AZ",
+      "away": "CWS",
+      "hp": 72,
+      "pred": "AZ",
+      "actual": "AZ 11-7 CWS",
+      "hit": true
+    },
+    {
+      "date": "2026-04-22",
+      "home": "WSH",
+      "away": "ATL",
+      "hp": 31,
+      "pred": "ATL",
+      "actual": "ATL 8-6 WSH",
+      "hit": true
+    },
+    {
       "date": "2026-04-23",
       "home": "SF",
       "away": "LAD",
@@ -2333,6 +2909,33 @@
       "pred": "AZ",
       "actual": "CWS 4-1 AZ",
       "hit": false
+    },
+    {
+      "date": "2026-04-23",
+      "home": "COL",
+      "away": "SD",
+      "hp": 26,
+      "pred": "SD",
+      "actual": "SD 10-8 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-04-23",
+      "home": "CHC",
+      "away": "PHI",
+      "hp": 72,
+      "pred": "CHC",
+      "actual": "CHC 8-7 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-23",
+      "home": "WSH",
+      "away": "ATL",
+      "hp": 31,
+      "pred": "ATL",
+      "actual": "ATL 7-2 WSH",
+      "hit": true
     },
     {
       "date": "2026-04-24",
@@ -2380,6 +2983,51 @@
       "hit": false
     },
     {
+      "date": "2026-04-24",
+      "home": "ATL",
+      "away": "PHI",
+      "hp": 75,
+      "pred": "ATL",
+      "actual": "ATL 5-3 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-24",
+      "home": "STL",
+      "away": "SEA",
+      "hp": 69,
+      "pred": "STL",
+      "actual": "SEA 3-2 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-24",
+      "home": "HOU",
+      "away": "NYY",
+      "hp": 33,
+      "pred": "NYY",
+      "actual": "NYY 12-4 HOU",
+      "hit": true
+    },
+    {
+      "date": "2026-04-24",
+      "home": "LAD",
+      "away": "CHC",
+      "hp": 66,
+      "pred": "LAD",
+      "actual": "CHC 6-4 LAD",
+      "hit": false
+    },
+    {
+      "date": "2026-04-24",
+      "home": "CIN",
+      "away": "DET",
+      "hp": 63,
+      "pred": "CIN",
+      "actual": "CIN 9-8 DET",
+      "hit": true
+    },
+    {
       "date": "2026-04-25",
       "home": "SF",
       "away": "MIA",
@@ -2425,6 +3073,51 @@
       "hit": false
     },
     {
+      "date": "2026-04-25",
+      "home": "ATL",
+      "away": "PHI",
+      "hp": 75,
+      "pred": "ATL",
+      "actual": "PHI 8-5 ATL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-25",
+      "home": "STL",
+      "away": "SEA",
+      "hp": 69,
+      "pred": "STL",
+      "actual": "SEA 11-9 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-25",
+      "home": "HOU",
+      "away": "NYY",
+      "hp": 33,
+      "pred": "NYY",
+      "actual": "NYY 8-3 HOU",
+      "hit": true
+    },
+    {
+      "date": "2026-04-25",
+      "home": "LAD",
+      "away": "CHC",
+      "hp": 66,
+      "pred": "LAD",
+      "actual": "LAD 12-4 CHC",
+      "hit": true
+    },
+    {
+      "date": "2026-04-25",
+      "home": "CIN",
+      "away": "DET",
+      "hp": 63,
+      "pred": "CIN",
+      "actual": "CIN 9-2 DET",
+      "hit": true
+    },
+    {
       "date": "2026-04-26",
       "home": "NYM",
       "away": "COL",
@@ -2467,6 +3160,51 @@
       "hp": 30,
       "pred": "MIA",
       "actual": "SF 6-3 MIA",
+      "hit": false
+    },
+    {
+      "date": "2026-04-26",
+      "home": "ATL",
+      "away": "PHI",
+      "hp": 75,
+      "pred": "ATL",
+      "actual": "ATL 6-2 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-04-26",
+      "home": "STL",
+      "away": "SEA",
+      "hp": 69,
+      "pred": "STL",
+      "actual": "SEA 3-2 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-04-26",
+      "home": "HOU",
+      "away": "NYY",
+      "hp": 33,
+      "pred": "NYY",
+      "actual": "HOU 7-4 NYY",
+      "hit": false
+    },
+    {
+      "date": "2026-04-26",
+      "home": "LAD",
+      "away": "CHC",
+      "hp": 66,
+      "pred": "LAD",
+      "actual": "LAD 6-0 CHC",
+      "hit": true
+    },
+    {
+      "date": "2026-04-26",
+      "home": "CIN",
+      "away": "DET",
+      "hp": 63,
+      "pred": "CIN",
+      "actual": "DET 8-3 CIN",
       "hit": false
     },
     {
@@ -2515,6 +3253,33 @@
       "hit": true
     },
     {
+      "date": "2026-04-27",
+      "home": "LAD",
+      "away": "MIA",
+      "hp": 75,
+      "pred": "LAD",
+      "actual": "LAD 5-4 MIA",
+      "hit": true
+    },
+    {
+      "date": "2026-04-27",
+      "home": "SD",
+      "away": "CHC",
+      "hp": 61,
+      "pred": "SD",
+      "actual": "SD 9-7 CHC",
+      "hit": true
+    },
+    {
+      "date": "2026-04-27",
+      "home": "PIT",
+      "away": "STL",
+      "hp": 54,
+      "pred": "PIT",
+      "actual": "STL 4-2 PIT",
+      "hit": false
+    },
+    {
       "date": "2026-04-28",
       "home": "MIN",
       "away": "SEA",
@@ -2557,6 +3322,33 @@
       "hp": 66,
       "pred": "MIL",
       "actual": "MIL 13-2 AZ",
+      "hit": true
+    },
+    {
+      "date": "2026-04-28",
+      "home": "LAD",
+      "away": "MIA",
+      "hp": 75,
+      "pred": "LAD",
+      "actual": "MIA 2-1 LAD",
+      "hit": false
+    },
+    {
+      "date": "2026-04-28",
+      "home": "ATL",
+      "away": "DET",
+      "hp": 69,
+      "pred": "ATL",
+      "actual": "ATL 5-2 DET",
+      "hit": true
+    },
+    {
+      "date": "2026-04-28",
+      "home": "BAL",
+      "away": "HOU",
+      "hp": 63,
+      "pred": "BAL",
+      "actual": "BAL 5-3 HOU",
       "hit": true
     },
     {
@@ -2605,6 +3397,24 @@
       "hit": false
     },
     {
+      "date": "2026-04-29",
+      "home": "LAD",
+      "away": "MIA",
+      "hp": 75,
+      "pred": "LAD",
+      "actual": "MIA 3-2 LAD",
+      "hit": false
+    },
+    {
+      "date": "2026-04-29",
+      "home": "ATL",
+      "away": "DET",
+      "hp": 69,
+      "pred": "ATL",
+      "actual": "ATL 4-3 DET",
+      "hit": true
+    },
+    {
       "date": "2026-04-30",
       "home": "MIN",
       "away": "TOR",
@@ -2650,6 +3460,15 @@
       "hit": false
     },
     {
+      "date": "2026-04-30",
+      "home": "BAL",
+      "away": "HOU",
+      "hp": 64,
+      "pred": "BAL",
+      "actual": "BAL 10-3 HOU",
+      "hit": true
+    },
+    {
       "date": "2026-05-01",
       "home": "NYY",
       "away": "BAL",
@@ -2692,6 +3511,24 @@
       "hp": 37,
       "pred": "TOR",
       "actual": "TOR 7-3 MIN",
+      "hit": true
+    },
+    {
+      "date": "2026-05-01",
+      "home": "SD",
+      "away": "CWS",
+      "hp": 66,
+      "pred": "SD",
+      "actual": "CWS 8-2 SD",
+      "hit": false
+    },
+    {
+      "date": "2026-05-01",
+      "home": "CHC",
+      "away": "AZ",
+      "hp": 63,
+      "pred": "CHC",
+      "actual": "CHC 6-5 AZ",
       "hit": true
     },
     {
@@ -2740,6 +3577,24 @@
       "hit": true
     },
     {
+      "date": "2026-05-02",
+      "home": "SD",
+      "away": "CWS",
+      "hp": 66,
+      "pred": "SD",
+      "actual": "CWS 4-0 SD",
+      "hit": false
+    },
+    {
+      "date": "2026-05-02",
+      "home": "CHC",
+      "away": "AZ",
+      "hp": 63,
+      "pred": "CHC",
+      "actual": "CHC 2-0 AZ",
+      "hit": true
+    },
+    {
       "date": "2026-05-03",
       "home": "NYY",
       "away": "BAL",
@@ -2783,6 +3638,24 @@
       "pred": "TOR",
       "actual": "MIN 4-3 TOR",
       "hit": false
+    },
+    {
+      "date": "2026-05-03",
+      "home": "SD",
+      "away": "CWS",
+      "hp": 66,
+      "pred": "SD",
+      "actual": "SD 4-3 CWS",
+      "hit": true
+    },
+    {
+      "date": "2026-05-03",
+      "home": "CHC",
+      "away": "AZ",
+      "hp": 63,
+      "pred": "CHC",
+      "actual": "CHC 8-4 AZ",
+      "hit": true
     },
     {
       "date": "2026-05-04",
@@ -2830,6 +3703,15 @@
       "hit": true
     },
     {
+      "date": "2026-05-04",
+      "home": "SEA",
+      "away": "ATL",
+      "hp": 35,
+      "pred": "ATL",
+      "actual": "SEA 5-4 ATL",
+      "hit": false
+    },
+    {
       "date": "2026-05-05",
       "home": "HOU",
       "away": "LAD",
@@ -2873,6 +3755,24 @@
       "pred": "WSH",
       "actual": "MIN 11-3 WSH",
       "hit": false
+    },
+    {
+      "date": "2026-05-05",
+      "home": "TB",
+      "away": "TOR",
+      "hp": 67,
+      "pred": "TB",
+      "actual": "TB 4-3 TOR",
+      "hit": true
+    },
+    {
+      "date": "2026-05-05",
+      "home": "SEA",
+      "away": "ATL",
+      "hp": 35,
+      "pred": "ATL",
+      "actual": "ATL 3-2 SEA",
+      "hit": true
     },
     {
       "date": "2026-05-06",
@@ -2920,6 +3820,24 @@
       "hit": true
     },
     {
+      "date": "2026-05-06",
+      "home": "TB",
+      "away": "TOR",
+      "hp": 67,
+      "pred": "TB",
+      "actual": "TB 3-0 TOR",
+      "hit": true
+    },
+    {
+      "date": "2026-05-06",
+      "home": "SEA",
+      "away": "ATL",
+      "hp": 35,
+      "pred": "ATL",
+      "actual": "SEA 3-1 ATL",
+      "hit": false
+    },
+    {
       "date": "2026-05-07",
       "home": "NYY",
       "away": "TEX",
@@ -2962,6 +3880,24 @@
       "hp": 43,
       "pred": "TB",
       "actual": "TB 8-4 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-05-07",
+      "home": "PHI",
+      "away": "ATH",
+      "hp": 41,
+      "pred": "ATH",
+      "actual": "ATH 12-1 PHI",
+      "hit": true
+    },
+    {
+      "date": "2026-05-07",
+      "home": "COL",
+      "away": "NYM",
+      "hp": 58,
+      "pred": "COL",
+      "actual": "COL 6-2 NYM",
       "hit": true
     },
     {
@@ -3010,6 +3946,24 @@
       "hit": false
     },
     {
+      "date": "2026-05-08",
+      "home": "AZ",
+      "away": "NYM",
+      "hp": 69,
+      "pred": "AZ",
+      "actual": "NYM 3-1 AZ",
+      "hit": false
+    },
+    {
+      "date": "2026-05-08",
+      "home": "BOS",
+      "away": "TB",
+      "hp": 33,
+      "pred": "TB",
+      "actual": "BOS 2-0 TB",
+      "hit": false
+    },
+    {
       "date": "2026-05-09",
       "home": "CLE",
       "away": "MIN",
@@ -3053,6 +4007,24 @@
       "pred": "PIT",
       "actual": "PIT 13-3 SF",
       "hit": true
+    },
+    {
+      "date": "2026-05-09",
+      "home": "AZ",
+      "away": "NYM",
+      "hp": 69,
+      "pred": "AZ",
+      "actual": "AZ 2-1 NYM",
+      "hit": true
+    },
+    {
+      "date": "2026-05-09",
+      "home": "TEX",
+      "away": "CHC",
+      "hp": 41,
+      "pred": "CHC",
+      "actual": "TEX 6-0 CHC",
+      "hit": false
     },
     {
       "date": "2026-05-10",
@@ -3100,6 +4072,33 @@
       "hit": false
     },
     {
+      "date": "2026-05-10",
+      "home": "BOS",
+      "away": "TB",
+      "hp": 30,
+      "pred": "TB",
+      "actual": "TB 4-1 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-05-10",
+      "home": "TEX",
+      "away": "CHC",
+      "hp": 36,
+      "pred": "CHC",
+      "actual": "TEX 3-0 CHC",
+      "hit": false
+    },
+    {
+      "date": "2026-05-10",
+      "home": "AZ",
+      "away": "NYM",
+      "hp": 64,
+      "pred": "AZ",
+      "actual": "AZ 5-1 NYM",
+      "hit": true
+    },
+    {
       "date": "2026-05-11",
       "home": "LAD",
       "away": "SF",
@@ -3145,6 +4144,15 @@
       "hit": false
     },
     {
+      "date": "2026-05-11",
+      "home": "TOR",
+      "away": "TB",
+      "hp": 34,
+      "pred": "TB",
+      "actual": "TB 8-5 TOR",
+      "hit": true
+    },
+    {
       "date": "2026-05-12",
       "home": "LAD",
       "away": "SF",
@@ -3187,6 +4195,15 @@
       "hp": 32,
       "pred": "SEA",
       "actual": "SEA 10-2 HOU",
+      "hit": true
+    },
+    {
+      "date": "2026-05-12",
+      "home": "TOR",
+      "away": "TB",
+      "hp": 34,
+      "pred": "TB",
+      "actual": "TB 7-6 TOR",
       "hit": true
     },
     {
@@ -3235,6 +4252,15 @@
       "hit": false
     },
     {
+      "date": "2026-05-13",
+      "home": "TOR",
+      "away": "TB",
+      "hp": 34,
+      "pred": "TB",
+      "actual": "TOR 5-3 TB",
+      "hit": false
+    },
+    {
       "date": "2026-05-14",
       "home": "LAD",
       "away": "SF",
@@ -3278,6 +4304,33 @@
       "pred": "MIL",
       "actual": "MIL 7-1 SD",
       "hit": true
+    },
+    {
+      "date": "2026-05-14",
+      "home": "CIN",
+      "away": "WSH",
+      "hp": 58,
+      "pred": "CIN",
+      "actual": "CIN 15-1 WSH",
+      "hit": true
+    },
+    {
+      "date": "2026-05-14",
+      "home": "NYM",
+      "away": "DET",
+      "hp": 45,
+      "pred": "DET",
+      "actual": "NYM 9-4 DET",
+      "hit": false
+    },
+    {
+      "date": "2026-05-14",
+      "home": "ATL",
+      "away": "CHC",
+      "hp": 55,
+      "pred": "ATL",
+      "actual": "CHC 2-0 ATL",
+      "hit": false
     },
     {
       "date": "2026-05-15",
@@ -3325,6 +4378,24 @@
       "hit": false
     },
     {
+      "date": "2026-05-15",
+      "home": "TB",
+      "away": "MIA",
+      "hp": 71,
+      "pred": "TB",
+      "actual": "TB 7-2 MIA",
+      "hit": true
+    },
+    {
+      "date": "2026-05-15",
+      "home": "ATH",
+      "away": "SF",
+      "hp": 65,
+      "pred": "ATH",
+      "actual": "ATH 5-2 SF",
+      "hit": true
+    },
+    {
       "date": "2026-05-16",
       "home": "MIN",
       "away": "MIL",
@@ -3367,6 +4438,24 @@
       "hp": 35,
       "pred": "TEX",
       "actual": "HOU 4-1 TEX",
+      "hit": false
+    },
+    {
+      "date": "2026-05-16",
+      "home": "TB",
+      "away": "MIA",
+      "hp": 71,
+      "pred": "TB",
+      "actual": "MIA 10-5 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-05-16",
+      "home": "ATH",
+      "away": "SF",
+      "hp": 65,
+      "pred": "ATH",
+      "actual": "SF 6-4 ATH",
       "hit": false
     },
     {
@@ -3415,6 +4504,24 @@
       "hit": true
     },
     {
+      "date": "2026-05-17",
+      "home": "TB",
+      "away": "MIA",
+      "hp": 71,
+      "pred": "TB",
+      "actual": "TB 6-3 MIA",
+      "hit": true
+    },
+    {
+      "date": "2026-05-17",
+      "home": "ATH",
+      "away": "SF",
+      "hp": 65,
+      "pred": "ATH",
+      "actual": "SF 10-1 ATH",
+      "hit": false
+    },
+    {
       "date": "2026-05-18",
       "home": "TB",
       "away": "BAL",
@@ -3460,6 +4567,24 @@
       "hit": false
     },
     {
+      "date": "2026-05-18",
+      "home": "WSH",
+      "away": "NYM",
+      "hp": 62,
+      "pred": "WSH",
+      "actual": "NYM 16-7 WSH",
+      "hit": false
+    },
+    {
+      "date": "2026-05-18",
+      "home": "AZ",
+      "away": "SF",
+      "hp": 61,
+      "pred": "AZ",
+      "actual": "AZ 12-2 SF",
+      "hit": true
+    },
+    {
       "date": "2026-05-19",
       "home": "MIA",
       "away": "ATL",
@@ -3502,6 +4627,24 @@
       "hp": 40,
       "pred": "TEX",
       "actual": "TEX 10-0 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-05-19",
+      "home": "WSH",
+      "away": "NYM",
+      "hp": 62,
+      "pred": "WSH",
+      "actual": "WSH 9-6 NYM",
+      "hit": true
+    },
+    {
+      "date": "2026-05-19",
+      "home": "AZ",
+      "away": "SF",
+      "hp": 61,
+      "pred": "AZ",
+      "actual": "AZ 5-3 SF",
       "hit": true
     },
     {
@@ -3550,6 +4693,24 @@
       "hit": true
     },
     {
+      "date": "2026-05-20",
+      "home": "AZ",
+      "away": "SF",
+      "hp": 64,
+      "pred": "AZ",
+      "actual": "AZ 6-3 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-05-20",
+      "home": "DET",
+      "away": "CLE",
+      "hp": 39,
+      "pred": "CLE",
+      "actual": "CLE 3-2 DET",
+      "hit": true
+    },
+    {
       "date": "2026-05-21",
       "home": "MIA",
       "away": "ATL",
@@ -3592,6 +4753,24 @@
       "hp": 55,
       "pred": "STL",
       "actual": "PIT 6-2 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-05-21",
+      "home": "DET",
+      "away": "CLE",
+      "hp": 39,
+      "pred": "CLE",
+      "actual": "CLE 3-1 DET",
+      "hit": true
+    },
+    {
+      "date": "2026-05-21",
+      "home": "WSH",
+      "away": "NYM",
+      "hp": 61,
+      "pred": "WSH",
+      "actual": "NYM 2-1 WSH",
       "hit": false
     },
     {
@@ -3640,6 +4819,15 @@
       "hit": true
     },
     {
+      "date": "2026-05-22",
+      "home": "SD",
+      "away": "ATH",
+      "hp": 61,
+      "pred": "SD",
+      "actual": "SD 7-3 ATH",
+      "hit": true
+    },
+    {
       "date": "2026-05-23",
       "home": "CHC",
       "away": "HOU",
@@ -3685,6 +4873,15 @@
       "hit": false
     },
     {
+      "date": "2026-05-23",
+      "home": "SD",
+      "away": "ATH",
+      "hp": 61,
+      "pred": "SD",
+      "actual": "SD 2-0 ATH",
+      "hit": true
+    },
+    {
       "date": "2026-05-24",
       "home": "CHC",
       "away": "HOU",
@@ -3727,6 +4924,15 @@
       "hp": 39,
       "pred": "SEA",
       "actual": "KC 8-6 SEA",
+      "hit": false
+    },
+    {
+      "date": "2026-05-24",
+      "home": "SD",
+      "away": "ATH",
+      "hp": 61,
+      "pred": "SD",
+      "actual": "ATH 5-2 SD",
       "hit": false
     },
     {
@@ -3775,6 +4981,15 @@
       "hit": false
     },
     {
+      "date": "2026-05-25",
+      "home": "SD",
+      "away": "PHI",
+      "hp": 62,
+      "pred": "SD",
+      "actual": "PHI 3-0 SD",
+      "hit": false
+    },
+    {
       "date": "2026-05-26",
       "home": "LAD",
       "away": "COL",
@@ -3820,6 +5035,33 @@
       "hit": true
     },
     {
+      "date": "2026-05-26",
+      "home": "BAL",
+      "away": "TB",
+      "hp": 30,
+      "pred": "TB",
+      "actual": "BAL 6-1 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-05-26",
+      "home": "BOS",
+      "away": "ATL",
+      "hp": 31,
+      "pred": "ATL",
+      "actual": "ATL 7-6 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-05-26",
+      "home": "SD",
+      "away": "PHI",
+      "hp": 62,
+      "pred": "SD",
+      "actual": "PHI 4-3 SD",
+      "hit": false
+    },
+    {
       "date": "2026-05-27",
       "home": "LAD",
       "away": "COL",
@@ -3862,6 +5104,33 @@
       "hp": 65,
       "pred": "TEX",
       "actual": "HOU 4-3 TEX",
+      "hit": false
+    },
+    {
+      "date": "2026-05-27",
+      "home": "BAL",
+      "away": "TB",
+      "hp": 30,
+      "pred": "TB",
+      "actual": "BAL 11-2 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-05-27",
+      "home": "BOS",
+      "away": "ATL",
+      "hp": 31,
+      "pred": "ATL",
+      "actual": "BOS 8-0 ATL",
+      "hit": false
+    },
+    {
+      "date": "2026-05-27",
+      "home": "SD",
+      "away": "PHI",
+      "hp": 62,
+      "pred": "SD",
+      "actual": "PHI 3-0 SD",
       "hit": false
     },
     {
@@ -3910,6 +5179,15 @@
       "hit": true
     },
     {
+      "date": "2026-05-28",
+      "home": "BAL",
+      "away": "TOR",
+      "hp": 52,
+      "pred": "BAL",
+      "actual": "TOR 2-1 BAL",
+      "hit": false
+    },
+    {
       "date": "2026-05-29",
       "home": "TB",
       "away": "LAA",
@@ -3952,6 +5230,24 @@
       "hp": 34,
       "pred": "NYY",
       "actual": "NYY 8-2 ATH",
+      "hit": true
+    },
+    {
+      "date": "2026-05-29",
+      "home": "CLE",
+      "away": "BOS",
+      "hp": 64,
+      "pred": "CLE",
+      "actual": "CLE 4-3 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-05-29",
+      "home": "CWS",
+      "away": "DET",
+      "hp": 64,
+      "pred": "CWS",
+      "actual": "CWS 4-3 DET",
       "hit": true
     },
     {
@@ -4000,6 +5296,24 @@
       "hit": false
     },
     {
+      "date": "2026-05-30",
+      "home": "CWS",
+      "away": "DET",
+      "hp": 68,
+      "pred": "CWS",
+      "actual": "CWS 7-1 DET",
+      "hit": true
+    },
+    {
+      "date": "2026-05-30",
+      "home": "CLE",
+      "away": "BOS",
+      "hp": 66,
+      "pred": "CLE",
+      "actual": "BOS 9-1 CLE",
+      "hit": false
+    },
+    {
       "date": "2026-05-31",
       "home": "TB",
       "away": "LAA",
@@ -4045,6 +5359,33 @@
       "hit": true
     },
     {
+      "date": "2026-05-31",
+      "home": "CWS",
+      "away": "DET",
+      "hp": 68,
+      "pred": "CWS",
+      "actual": "CWS 2-1 DET",
+      "hit": true
+    },
+    {
+      "date": "2026-05-31",
+      "home": "CLE",
+      "away": "BOS",
+      "hp": 66,
+      "pred": "CLE",
+      "actual": "BOS 9-4 CLE",
+      "hit": false
+    },
+    {
+      "date": "2026-05-31",
+      "home": "CIN",
+      "away": "ATL",
+      "hp": 37,
+      "pred": "ATL",
+      "actual": "CIN 6-4 ATL",
+      "hit": false
+    },
+    {
       "date": "2026-06-01",
       "home": "MIL",
       "away": "SF",
@@ -4087,6 +5428,24 @@
       "hp": 61,
       "pred": "TB",
       "actual": "DET 10-9 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-06-01",
+      "home": "CIN",
+      "away": "KC",
+      "hp": 63,
+      "pred": "CIN",
+      "actual": "KC 9-2 CIN",
+      "hit": false
+    },
+    {
+      "date": "2026-06-01",
+      "home": "WSH",
+      "away": "MIA",
+      "hp": 60,
+      "pred": "WSH",
+      "actual": "MIA 7-3 WSH",
       "hit": false
     },
     {
@@ -4135,6 +5494,24 @@
       "hit": true
     },
     {
+      "date": "2026-06-02",
+      "home": "TB",
+      "away": "DET",
+      "hp": 75,
+      "pred": "TB",
+      "actual": "DET 8-0 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-06-02",
+      "home": "CIN",
+      "away": "KC",
+      "hp": 63,
+      "pred": "CIN",
+      "actual": "CIN 4-3 KC",
+      "hit": true
+    },
+    {
       "date": "2026-06-03",
       "home": "MIL",
       "away": "SF",
@@ -4178,6 +5555,24 @@
       "pred": "LAD",
       "actual": "LAD 7-0 AZ",
       "hit": true
+    },
+    {
+      "date": "2026-06-03",
+      "home": "TB",
+      "away": "DET",
+      "hp": 75,
+      "pred": "TB",
+      "actual": "DET 7-2 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-06-03",
+      "home": "CIN",
+      "away": "KC",
+      "hp": 63,
+      "pred": "CIN",
+      "actual": "KC 5-2 CIN",
+      "hit": false
     },
     {
       "date": "2026-06-04",
@@ -4225,6 +5620,15 @@
       "hit": true
     },
     {
+      "date": "2026-06-04",
+      "home": "MIN",
+      "away": "KC",
+      "hp": 60,
+      "pred": "MIN",
+      "actual": "KC 8-6 MIN",
+      "hit": false
+    },
+    {
       "date": "2026-06-05",
       "home": "COL",
       "away": "MIL",
@@ -4270,6 +5674,15 @@
       "hit": false
     },
     {
+      "date": "2026-06-05",
+      "home": "ATL",
+      "away": "PIT",
+      "hp": 65,
+      "pred": "ATL",
+      "actual": "ATL 6-3 PIT",
+      "hit": true
+    },
+    {
       "date": "2026-06-06",
       "home": "COL",
       "away": "MIL",
@@ -4312,6 +5725,15 @@
       "hp": 60,
       "pred": "ATL",
       "actual": "ATL 6-3 PIT",
+      "hit": true
+    },
+    {
+      "date": "2026-06-06",
+      "home": "SD",
+      "away": "NYM",
+      "hp": 65,
+      "pred": "SD",
+      "actual": "SD 3-2 NYM",
       "hit": true
     },
     {
@@ -4360,6 +5782,15 @@
       "hit": false
     },
     {
+      "date": "2026-06-07",
+      "home": "ATL",
+      "away": "PIT",
+      "hp": 65,
+      "pred": "ATL",
+      "actual": "ATL 3-2 PIT",
+      "hit": true
+    },
+    {
       "date": "2026-06-08",
       "home": "ATH",
       "away": "MIL",
@@ -4402,6 +5833,15 @@
       "hp": 57,
       "pred": "TB",
       "actual": "TB 3-1 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-06-08",
+      "home": "SD",
+      "away": "CIN",
+      "hp": 58,
+      "pred": "SD",
+      "actual": "SD 6-2 CIN",
       "hit": true
     },
     {
@@ -4450,6 +5890,24 @@
       "hit": false
     },
     {
+      "date": "2026-06-09",
+      "home": "TB",
+      "away": "BOS",
+      "hp": 71,
+      "pred": "TB",
+      "actual": "TB 4-3 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-06-09",
+      "home": "SD",
+      "away": "CIN",
+      "hp": 58,
+      "pred": "SD",
+      "actual": "CIN 5-3 SD",
+      "hit": false
+    },
+    {
       "date": "2026-06-10",
       "home": "ATH",
       "away": "MIL",
@@ -4495,6 +5953,33 @@
       "hit": false
     },
     {
+      "date": "2026-06-10",
+      "home": "TB",
+      "away": "BOS",
+      "hp": 72,
+      "pred": "TB",
+      "actual": "TB 7-5 BOS",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "NYM",
+      "away": "STL",
+      "hp": 41,
+      "pred": "STL",
+      "actual": "STL 9-2 NYM",
+      "hit": true
+    },
+    {
+      "date": "2026-06-10",
+      "home": "SD",
+      "away": "CIN",
+      "hp": 58,
+      "pred": "SD",
+      "actual": "SD 5-4 CIN",
+      "hit": true
+    },
+    {
       "date": "2026-06-11",
       "home": "KC",
       "away": "TEX",
@@ -4537,6 +6022,24 @@
       "hp": 56,
       "pred": "DET",
       "actual": "DET 11-0 MIN",
+      "hit": true
+    },
+    {
+      "date": "2026-06-11",
+      "home": "NYM",
+      "away": "STL",
+      "hp": 41,
+      "pred": "STL",
+      "actual": "NYM 5-4 STL",
+      "hit": false
+    },
+    {
+      "date": "2026-06-11",
+      "home": "MIA",
+      "away": "AZ",
+      "hp": 52,
+      "pred": "MIA",
+      "actual": "MIA 2-0 AZ",
       "hit": true
     },
     {
@@ -4585,6 +6088,24 @@
       "hit": true
     },
     {
+      "date": "2026-06-12",
+      "home": "LAA",
+      "away": "TB",
+      "hp": 34,
+      "pred": "TB",
+      "actual": "LAA 4-3 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-06-12",
+      "home": "CLE",
+      "away": "DET",
+      "hp": 64,
+      "pred": "CLE",
+      "actual": "CLE 3-2 DET",
+      "hit": true
+    },
+    {
       "date": "2026-06-13",
       "home": "ATH",
       "away": "COL",
@@ -4627,6 +6148,24 @@
       "hp": 36,
       "pred": "CHC",
       "actual": "CHC 6-1 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-06-13",
+      "home": "LAA",
+      "away": "TB",
+      "hp": 34,
+      "pred": "TB",
+      "actual": "LAA 8-0 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-06-13",
+      "home": "CLE",
+      "away": "DET",
+      "hp": 64,
+      "pred": "CLE",
+      "actual": "CLE 3-1 DET",
       "hit": true
     },
     {
@@ -4675,6 +6214,24 @@
       "hit": false
     },
     {
+      "date": "2026-06-14",
+      "home": "LAA",
+      "away": "TB",
+      "hp": 34,
+      "pred": "TB",
+      "actual": "TB 8-3 LAA",
+      "hit": true
+    },
+    {
+      "date": "2026-06-14",
+      "home": "TOR",
+      "away": "NYY",
+      "hp": 40,
+      "pred": "NYY",
+      "actual": "NYY 8-3 TOR",
+      "hit": true
+    },
+    {
       "date": "2026-06-15",
       "home": "CHC",
       "away": "COL",
@@ -4718,6 +6275,33 @@
       "pred": "TEX",
       "actual": "MIN 4-2 TEX",
       "hit": false
+    },
+    {
+      "date": "2026-06-15",
+      "home": "AZ",
+      "away": "LAA",
+      "hp": 63,
+      "pred": "AZ",
+      "actual": "AZ 4-3 LAA",
+      "hit": true
+    },
+    {
+      "date": "2026-06-15",
+      "home": "STL",
+      "away": "SD",
+      "hp": 58,
+      "pred": "STL",
+      "actual": "STL 3-0 SD",
+      "hit": true
+    },
+    {
+      "date": "2026-06-15",
+      "home": "PHI",
+      "away": "MIA",
+      "hp": 57,
+      "pred": "PHI",
+      "actual": "PHI 7-0 MIA",
+      "hit": true
     },
     {
       "date": "2026-06-16",
@@ -4783,6 +6367,15 @@
       "hit": false
     },
     {
+      "date": "2026-06-16",
+      "home": "MIL",
+      "away": "CLE",
+      "hp": 62,
+      "pred": "MIL",
+      "actual": "MIL 2-1 CLE",
+      "hit": true
+    },
+    {
       "date": "2026-06-17",
       "home": "ATL",
       "away": "SF",
@@ -4837,6 +6430,15 @@
       "hit": true
     },
     {
+      "date": "2026-06-17",
+      "home": "WSH",
+      "away": "KC",
+      "hp": 62,
+      "pred": "WSH",
+      "actual": "KC 6-2 WSH",
+      "hit": false
+    },
+    {
       "date": "2026-06-18",
       "home": "SEA",
       "away": "BAL",
@@ -4880,6 +6482,15 @@
       "pred": "ATH",
       "actual": "ATH 5-0 LAA",
       "hit": true
+    },
+    {
+      "date": "2026-06-18",
+      "home": "MIL",
+      "away": "CLE",
+      "hp": 62,
+      "pred": "MIL",
+      "actual": "CLE 4-2 MIL",
+      "hit": false
     },
     {
       "date": "2026-06-19",
@@ -4933,6 +6544,15 @@
       "hp": 62,
       "pred": "MIA",
       "actual": "MIA 4-3 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-06-19",
+      "home": "TB",
+      "away": "WSH",
+      "hp": 64,
+      "pred": "TB",
+      "actual": "TB 5-2 WSH",
       "hit": true
     },
     {
@@ -5033,13 +6653,31 @@
       "pred": "PHI",
       "actual": "PHI 6-2 NYM",
       "hit": true
+    },
+    {
+      "date": "2026-06-21",
+      "home": "NYY",
+      "away": "CIN",
+      "hp": 66,
+      "pred": "NYY",
+      "actual": "CIN 4-1 NYY",
+      "hit": false
+    },
+    {
+      "date": "2026-06-21",
+      "home": "MIA",
+      "away": "SF",
+      "hp": 63,
+      "pred": "MIA",
+      "actual": "MIA 2-1 SF",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 254,
-    "total": 443,
-    "pct": 57,
-    "streak": 2,
+    "hits": 353,
+    "total": 625,
+    "pct": 56,
+    "streak": 1,
     "streak_type": "W"
   }
 }
