@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "updated": "22/06/2026 13:03 CST",
+  "updated": "22/06/2026 13:36 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -943,14 +943,14 @@
       "away_score": null,
       "home_pitcher": "Brady Singer",
       "home_pitcher_id": 663903,
-      "away_pitcher": null,
-      "away_pitcher_id": null,
+      "away_pitcher": "Brandon Woodruff",
+      "away_pitcher_id": 605540,
       "home_era": 5.32,
-      "away_era": null,
+      "away_era": 3.6,
       "hp": 40,
       "ap": 60,
       "conf": "Media",
-      "mixed": false,
+      "mixed": true,
       "diff": 10,
       "park_factor": 1.06,
       "odds": {
