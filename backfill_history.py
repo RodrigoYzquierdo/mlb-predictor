@@ -311,12 +311,10 @@ def main():
     dates = date_range(SEASON_START, SEASON_END)
     print(f"   {len(dates)} dias a procesar ({SEASON_START} → {SEASON_END})")
 
-    print("\n3. Cargando historial existente...")
-    history = load_history()
-    # Limpiar UNK
-    history = [h for h in history if h.get("home") != "UNK" and h.get("away") != "UNK"]
-    existing = {f"{h['home']}-{h['away']}-{h['date']}" for h in history}
-    print(f"   {len(history)} entradas existentes")
+    print("\n3. Empezando historial desde cero (reconstruccion completa)...")
+    history  = []
+    existing = set()
+    print(f"   Historial reiniciado — se reconstruira todo limpio")
 
     print("\n4. Procesando partidos historicos...")
     added   = 0
