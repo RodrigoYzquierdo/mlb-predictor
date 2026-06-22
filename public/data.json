@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "updated": "22/06/2026 12:02 CST",
+  "updated": "22/06/2026 12:15 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -923,8 +923,8 @@
         "home_ml": 108,
         "away_ml": -131,
         "bookmaker": "DraftKings",
-        "consensus_home": 45.7,
-        "consensus_away": 54.3,
+        "consensus_home": 45.9,
+        "consensus_away": 54.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +933,11 @@
           "Bovada",
           "BetMGM"
         ],
-        "spread": 2.0,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 8.7
+      "edge": 8.9
     },
     {
       "id": 824502,
