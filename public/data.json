@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "updated": "22/06/2026 14:49 CST",
+  "updated": "22/06/2026 15:54 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -878,24 +878,26 @@
       "diff": 19,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -180,
-        "away_ml": 152,
-        "bookmaker": "FanDuel",
-        "consensus_home": 61.8,
-        "consensus_away": 38.2,
-        "books_count": 1,
+        "home_ml": -194,
+        "away_ml": 159,
+        "bookmaker": "DraftKings",
+        "consensus_home": 62.9,
+        "consensus_away": 37.1,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 2.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.2
+      "edge": 6.1
     },
     {
       "id": 824261,
-      "status": "Preview",
+      "status": "Live",
       "home": "DET",
       "away": "NYY",
       "home_name": "Detroit Tigers",
@@ -916,20 +918,22 @@
       "diff": 13,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -104,
-        "away_ml": -112,
-        "bookmaker": "FanDuel",
-        "consensus_home": 49.1,
-        "consensus_away": 50.9,
-        "books_count": 1,
+        "home_ml": -105,
+        "away_ml": -115,
+        "bookmaker": "DraftKings",
+        "consensus_home": 49.0,
+        "consensus_away": 51.0,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 0.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 12.1
+      "edge": 12.0
     },
     {
       "id": 824502,
@@ -954,20 +958,22 @@
       "diff": 10,
       "park_factor": 1.06,
       "odds": {
-        "home_ml": 102,
+        "home_ml": 100,
         "away_ml": -120,
-        "bookmaker": "FanDuel",
-        "consensus_home": 47.6,
-        "consensus_away": 52.4,
-        "books_count": 1,
+        "bookmaker": "DraftKings",
+        "consensus_home": 47.7,
+        "consensus_away": 52.3,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 0.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.6
+      "edge": 7.7
     },
     {
       "id": 823692,
@@ -992,20 +998,22 @@
       "diff": 10,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": 116,
+        "home_ml": 113,
         "away_ml": -136,
-        "bookmaker": "FanDuel",
-        "consensus_home": 44.5,
-        "consensus_away": 55.5,
-        "books_count": 1,
+        "bookmaker": "DraftKings",
+        "consensus_home": 44.6,
+        "consensus_away": 55.4,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.5
+      "edge": 4.6
     },
     {
       "id": 823040,
@@ -1030,16 +1038,18 @@
       "diff": 8,
       "park_factor": 1.0,
       "odds": {
-        "home_ml": -112,
-        "away_ml": -104,
-        "bookmaker": "FanDuel",
+        "home_ml": -118,
+        "away_ml": -102,
+        "bookmaker": "DraftKings",
         "consensus_home": 50.9,
         "consensus_away": 49.1,
-        "books_count": 1,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": false,
