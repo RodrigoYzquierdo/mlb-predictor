@@ -3913,5 +3913,14 @@
     "pred": "SEA",
     "actual": "SEA 3-1 BOS",
     "hit": true
+  },
+  {
+    "date": "2026-06-21",
+    "home": "PHI",
+    "away": "NYM",
+    "hp": 62,
+    "pred": "PHI",
+    "actual": "PHI 6-2 NYM",
+    "hit": true
   }
 ]
