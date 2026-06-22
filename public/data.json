@@ -1,6 +1,6 @@
 {
   "date": "2026-06-22",
-  "updated": "22/06/2026 12:15 CST",
+  "updated": "22/06/2026 12:49 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -878,24 +878,20 @@
       "diff": 19,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -194,
-        "away_ml": 159,
-        "bookmaker": "DraftKings",
-        "consensus_home": 63.2,
-        "consensus_away": 36.8,
-        "books_count": 5,
+        "home_ml": -180,
+        "away_ml": 152,
+        "bookmaker": "FanDuel",
+        "consensus_home": 61.8,
+        "consensus_away": 38.2,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetRivers",
-          "Bovada",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 2.2,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.8
+      "edge": 7.2
     },
     {
       "id": 824261,
@@ -920,24 +916,20 @@
       "diff": 13,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": 108,
-        "away_ml": -131,
-        "bookmaker": "DraftKings",
-        "consensus_home": 45.9,
-        "consensus_away": 54.1,
-        "books_count": 5,
+        "home_ml": -104,
+        "away_ml": -112,
+        "bookmaker": "FanDuel",
+        "consensus_home": 49.1,
+        "consensus_away": 50.9,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetRivers",
-          "Bovada",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.4,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 8.9
+      "edge": 12.1
     },
     {
       "id": 824502,
@@ -962,24 +954,20 @@
       "diff": 10,
       "park_factor": 1.06,
       "odds": {
-        "home_ml": 124,
-        "away_ml": -149,
-        "bookmaker": "DraftKings",
-        "consensus_home": 42.4,
-        "consensus_away": 57.6,
-        "books_count": 5,
+        "home_ml": 104,
+        "away_ml": -122,
+        "bookmaker": "FanDuel",
+        "consensus_home": 47.1,
+        "consensus_away": 52.9,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetRivers",
-          "Bovada",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.0,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.4
+      "edge": 7.1
     },
     {
       "id": 823692,
@@ -1004,24 +992,20 @@
       "diff": 10,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": 128,
-        "away_ml": -155,
-        "bookmaker": "DraftKings",
-        "consensus_home": 41.8,
-        "consensus_away": 58.2,
-        "books_count": 5,
+        "home_ml": 116,
+        "away_ml": -136,
+        "bookmaker": "FanDuel",
+        "consensus_home": 44.5,
+        "consensus_away": 55.5,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetRivers",
-          "BetMGM",
-          "Bovada"
+          "FanDuel"
         ],
-        "spread": 1.7,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.8
+      "edge": 4.5
     },
     {
       "id": 823040,
@@ -1046,24 +1030,20 @@
       "diff": 8,
       "park_factor": 1.0,
       "odds": {
-        "home_ml": -144,
-        "away_ml": 119,
-        "bookmaker": "DraftKings",
-        "consensus_home": 56.8,
-        "consensus_away": 43.2,
-        "books_count": 5,
+        "home_ml": -112,
+        "away_ml": -104,
+        "bookmaker": "FanDuel",
+        "consensus_home": 50.9,
+        "consensus_away": 49.1,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetRivers",
-          "Bovada",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.6,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.2
+      "edge": 7.1
     }
   ],
   "history": [
