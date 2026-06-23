@@ -1,6 +1,6 @@
 {
   "date": "2026-06-23",
-  "updated": "23/06/2026 10:30 CST",
+  "updated": "23/06/2026 11:20 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -881,8 +881,8 @@
         "home_ml": -194,
         "away_ml": 159,
         "bookmaker": "DraftKings",
-        "consensus_home": 62.9,
-        "consensus_away": 37.1,
+        "consensus_home": 63.1,
+        "consensus_away": 36.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 2.4,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.1
+      "edge": 4.9
     },
     {
       "id": 824262,
@@ -923,8 +923,8 @@
         "home_ml": -105,
         "away_ml": -114,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.9,
-        "consensus_away": 51.1,
+        "consensus_home": 49.0,
+        "consensus_away": 51.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -937,7 +937,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.9
+      "edge": 10.0
     },
     {
       "id": 824501,
@@ -1007,8 +1007,8 @@
         "home_ml": 149,
         "away_ml": -181,
         "bookmaker": "DraftKings",
-        "consensus_home": 39.0,
-        "consensus_away": 61.0,
+        "consensus_home": 39.1,
+        "consensus_away": 60.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 3.5,
+        "spread": 3.6,
         "agreement": "Media"
       },
       "value": false,
-      "edge": 0.0
+      "edge": 0.1
     },
     {
       "id": 823043,
@@ -1049,8 +1049,8 @@
         "home_ml": -115,
         "away_ml": -105,
         "bookmaker": "DraftKings",
-        "consensus_home": 50.7,
-        "consensus_away": 49.3,
+        "consensus_home": 50.8,
+        "consensus_away": 49.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.3,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.3
+      "edge": 7.2
     }
   ],
   "history": [
