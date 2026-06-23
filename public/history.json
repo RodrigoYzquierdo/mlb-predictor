@@ -3922,5 +3922,50 @@
     "pred": "PHI",
     "actual": "PHI 6-2 NYM",
     "hit": true
+  },
+  {
+    "date": "2026-06-22",
+    "home": "TB",
+    "away": "KC",
+    "hp": 68,
+    "pred": "TB",
+    "actual": "KC 2-1 TB",
+    "hit": false
+  },
+  {
+    "date": "2026-06-22",
+    "home": "DET",
+    "away": "NYY",
+    "hp": 38,
+    "pred": "NYY",
+    "actual": "DET 5-3 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-06-22",
+    "home": "MIN",
+    "away": "LAD",
+    "hp": 38,
+    "pred": "LAD",
+    "actual": "LAD 2-1 MIN",
+    "hit": true
+  },
+  {
+    "date": "2026-06-22",
+    "home": "CIN",
+    "away": "MIL",
+    "hp": 39,
+    "pred": "MIL",
+    "actual": "MIL 2-1 CIN",
+    "hit": true
+  },
+  {
+    "date": "2026-06-22",
+    "home": "STL",
+    "away": "AZ",
+    "hp": 59,
+    "pred": "STL",
+    "actual": "STL 3-2 AZ",
+    "hit": true
   }
 ]
