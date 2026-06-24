@@ -1,6 +1,6 @@
 {
   "date": "2026-06-24",
-  "updated": "24/06/2026 09:50 CST",
+  "updated": "24/06/2026 10:26 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -487,15 +487,15 @@
       "k9": 8.57,
       "bullpen_era": 3.96,
       "bullpen_whip": 1.25,
-      "obp": 0.319,
+      "obp": 0.318,
       "slg": 0.389,
-      "avg": 0.243,
-      "ops": 0.708
+      "avg": 0.242,
+      "ops": 0.707
     },
     "MIA": {
       "era": 4.07,
       "whip": 1.26,
-      "k9": 8.76,
+      "k9": 8.74,
       "bullpen_era": 4.07,
       "bullpen_whip": 1.26,
       "obp": 0.323,
@@ -891,7 +891,7 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.4,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": false,
@@ -920,11 +920,11 @@
       "diff": 13,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": 144,
-        "away_ml": -175,
+        "home_ml": 148,
+        "away_ml": -180,
         "bookmaker": "DraftKings",
-        "consensus_home": 38.9,
-        "consensus_away": 61.1,
+        "consensus_home": 38.8,
+        "consensus_away": 61.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -937,7 +937,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.9
+      "edge": 1.8
     },
     {
       "id": 824259,
@@ -1007,8 +1007,8 @@
         "home_ml": 122,
         "away_ml": -148,
         "bookmaker": "DraftKings",
-        "consensus_home": 44.3,
-        "consensus_away": 55.7,
+        "consensus_home": 44.5,
+        "consensus_away": 55.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,40 +1017,40 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.8,
-        "agreement": "Alta"
+        "spread": 3.7,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 6.3
+      "edge": 6.5
     },
     {
-      "id": 823041,
-      "status": "Preview",
-      "home": "STL",
-      "away": "AZ",
-      "home_name": "St. Louis Cardinals",
-      "away_name": "Arizona Diamondbacks",
-      "time": "2026-06-24T23:45:00Z",
+      "id": 823850,
+      "status": "Live",
+      "home": "MIA",
+      "away": "TEX",
+      "home_name": "Miami Marlins",
+      "away_name": "Texas Rangers",
+      "time": "2026-06-24T16:10:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Matthew Liberatore",
-      "home_pitcher_id": 669461,
-      "away_pitcher": "Mitch Bratt",
-      "away_pitcher_id": 683352,
-      "home_era": 5.23,
-      "away_era": null,
+      "home_pitcher": "Eury Pérez",
+      "home_pitcher_id": 691587,
+      "away_pitcher": "Jacob deGrom",
+      "away_pitcher_id": 594798,
+      "home_era": 4.52,
+      "away_era": 3.56,
       "hp": 57,
       "ap": 43,
       "conf": "Media",
-      "mixed": false,
+      "mixed": true,
       "diff": 7,
-      "park_factor": 1.0,
+      "park_factor": 0.97,
       "odds": {
-        "home_ml": -118,
-        "away_ml": -102,
+        "home_ml": -107,
+        "away_ml": -121,
         "bookmaker": "DraftKings",
-        "consensus_home": 51.9,
-        "consensus_away": 48.1,
+        "consensus_home": 48.0,
+        "consensus_away": 52.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 1.0,
+        "spread": 1.9,
         "agreement": "Alta"
       },
-      "value": false,
-      "edge": 5.1
+      "value": true,
+      "edge": 9.0
     }
   ],
   "history": [
