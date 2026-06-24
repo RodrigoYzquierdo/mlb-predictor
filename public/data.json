@@ -1,6 +1,6 @@
 {
   "date": "2026-06-24",
-  "updated": "24/06/2026 12:01 CST",
+  "updated": "24/06/2026 15:16 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -156,11 +156,11 @@
     "TEX": {
       "name": "Rangers",
       "w": 38,
-      "l": 41,
-      "pct": 0.481,
+      "l": 42,
+      "pct": 0.475,
       "div": "",
       "conf": "",
-      "rdiff": -12,
+      "rdiff": -14,
       "last10_w": 4,
       "last10_l": 6,
       "last10_pct": 0.4
@@ -215,15 +215,15 @@
     },
     "MIA": {
       "name": "Marlins",
-      "w": 41,
+      "w": 42,
       "l": 39,
-      "pct": 0.512,
+      "pct": 0.519,
       "div": "",
       "conf": "",
-      "rdiff": 1,
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
+      "rdiff": 3,
+      "last10_w": 7,
+      "last10_l": 3,
+      "last10_pct": 0.7
     },
     "WSH": {
       "name": "Nationals",
@@ -240,14 +240,14 @@
     "NYM": {
       "name": "Mets",
       "w": 34,
-      "l": 44,
-      "pct": 0.436,
+      "l": 45,
+      "pct": 0.43,
       "div": "",
       "conf": "",
-      "rdiff": -34,
-      "last10_w": 4,
-      "last10_l": 6,
-      "last10_pct": 0.4
+      "rdiff": -41,
+      "last10_w": 3,
+      "last10_l": 7,
+      "last10_pct": 0.3
     },
     "MIL": {
       "name": "Brewers",
@@ -275,12 +275,12 @@
     },
     "CHC": {
       "name": "Cubs",
-      "w": 41,
+      "w": 42,
       "l": 37,
-      "pct": 0.526,
+      "pct": 0.532,
       "div": "",
       "conf": "",
-      "rdiff": 24,
+      "rdiff": 31,
       "last10_w": 7,
       "last10_l": 3,
       "last10_pct": 0.7
@@ -429,24 +429,24 @@
     "CLE": {
       "era": 3.8,
       "whip": 1.25,
-      "k9": 9.37,
+      "k9": 9.36,
       "bullpen_era": 3.8,
       "bullpen_whip": 1.25,
       "obp": 0.313,
-      "slg": 0.369,
+      "slg": 0.368,
       "avg": 0.228,
-      "ops": 0.682
+      "ops": 0.681
     },
     "BOS": {
       "era": 3.82,
       "whip": 1.26,
-      "k9": 8.58,
+      "k9": 8.63,
       "bullpen_era": 3.82,
       "bullpen_whip": 1.26,
-      "obp": 0.312,
-      "slg": 0.381,
-      "avg": 0.243,
-      "ops": 0.693
+      "obp": 0.313,
+      "slg": 0.386,
+      "avg": 0.244,
+      "ops": 0.699
     },
     "DET": {
       "era": 3.83,
@@ -482,37 +482,26 @@
       "ops": 0.716
     },
     "TEX": {
-      "era": 3.96,
+      "era": 3.97,
       "whip": 1.25,
-      "k9": 8.6,
-      "bullpen_era": 3.96,
+      "k9": 8.61,
+      "bullpen_era": 3.97,
       "bullpen_whip": 1.25,
-      "obp": 0.318,
+      "obp": 0.317,
       "slg": 0.389,
-      "avg": 0.243,
-      "ops": 0.707
+      "avg": 0.242,
+      "ops": 0.706
     },
     "MIA": {
-      "era": 4.05,
-      "whip": 1.26,
-      "k9": 8.72,
-      "bullpen_era": 4.05,
-      "bullpen_whip": 1.26,
+      "era": 4.04,
+      "whip": 1.25,
+      "k9": 8.73,
+      "bullpen_era": 4.04,
+      "bullpen_whip": 1.25,
       "obp": 0.323,
-      "slg": 0.389,
+      "slg": 0.39,
       "avg": 0.246,
-      "ops": 0.712
-    },
-    "NYM": {
-      "era": 4.12,
-      "whip": 1.28,
-      "k9": 9.13,
-      "bullpen_era": 4.12,
-      "bullpen_whip": 1.28,
-      "obp": 0.298,
-      "slg": 0.372,
-      "avg": 0.231,
-      "ops": 0.67
+      "ops": 0.713
     },
     "PHI": {
       "era": 4.13,
@@ -547,6 +536,17 @@
       "avg": 0.255,
       "ops": 0.742
     },
+    "NYM": {
+      "era": 4.21,
+      "whip": 1.29,
+      "k9": 9.17,
+      "bullpen_era": 4.21,
+      "bullpen_whip": 1.29,
+      "obp": 0.298,
+      "slg": 0.373,
+      "avg": 0.231,
+      "ops": 0.671
+    },
     "STL": {
       "era": 4.25,
       "whip": 1.34,
@@ -559,15 +559,15 @@
       "ops": 0.727
     },
     "CHC": {
-      "era": 4.28,
+      "era": 4.29,
       "whip": 1.24,
       "k9": 7.97,
-      "bullpen_era": 4.28,
+      "bullpen_era": 4.29,
       "bullpen_whip": 1.24,
       "obp": 0.338,
-      "slg": 0.402,
-      "avg": 0.243,
-      "ops": 0.74
+      "slg": 0.406,
+      "avg": 0.244,
+      "ops": 0.744
     },
     "AZ": {
       "era": 4.29,
@@ -581,10 +581,10 @@
       "ops": 0.692
     },
     "CWS": {
-      "era": 4.37,
+      "era": 4.36,
       "whip": 1.34,
-      "k9": 8.38,
-      "bullpen_era": 4.37,
+      "k9": 8.39,
+      "bullpen_era": 4.36,
       "bullpen_whip": 1.34,
       "obp": 0.317,
       "slg": 0.409,
@@ -603,15 +603,15 @@
       "ops": 0.729
     },
     "BAL": {
-      "era": 4.42,
+      "era": 4.43,
       "whip": 1.38,
-      "k9": 7.93,
-      "bullpen_era": 4.42,
+      "k9": 7.94,
+      "bullpen_era": 4.43,
       "bullpen_whip": 1.38,
       "obp": 0.32,
-      "slg": 0.402,
+      "slg": 0.404,
       "avg": 0.241,
-      "ops": 0.722
+      "ops": 0.724
     },
     "CIN": {
       "era": 4.49,
@@ -636,10 +636,10 @@
       "ops": 0.717
     },
     "LAA": {
-      "era": 4.62,
+      "era": 4.66,
       "whip": 1.42,
       "k9": 8.87,
-      "bullpen_era": 4.62,
+      "bullpen_era": 4.66,
       "bullpen_whip": 1.42,
       "obp": 0.319,
       "slg": 0.4,
@@ -691,15 +691,15 @@
       "ops": 0.745
     },
     "COL": {
-      "era": 5.47,
+      "era": 5.5,
       "whip": 1.52,
-      "k9": 7.32,
-      "bullpen_era": 5.47,
+      "k9": 7.31,
+      "bullpen_era": 5.5,
       "bullpen_whip": 1.52,
       "obp": 0.323,
-      "slg": 0.41,
+      "slg": 0.409,
       "avg": 0.253,
-      "ops": 0.733
+      "ops": 0.732
     }
   },
   "form": {
@@ -789,9 +789,9 @@
       "last10_pct": 0.6
     },
     "MIA": {
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
+      "last10_w": 7,
+      "last10_l": 3,
+      "last10_pct": 0.7
     },
     "WSH": {
       "last10_w": 6,
@@ -799,9 +799,9 @@
       "last10_pct": 0.6
     },
     "NYM": {
-      "last10_w": 4,
-      "last10_l": 6,
-      "last10_pct": 0.4
+      "last10_w": 3,
+      "last10_l": 7,
+      "last10_pct": 0.3
     },
     "MIL": {
       "last10_w": 6,
@@ -878,24 +878,21 @@
       "diff": 17,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -156,
-        "away_ml": 129,
+        "home_ml": -149,
+        "away_ml": 123,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.7,
-        "consensus_away": 42.3,
-        "books_count": 5,
+        "consensus_home": 56.3,
+        "consensus_away": 43.7,
+        "books_count": 2,
         "books": [
           "FanDuel",
-          "DraftKings",
-          "BetMGM",
-          "Bovada",
-          "BetRivers"
+          "DraftKings"
         ],
-        "spread": 1.6,
+        "spread": 2.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.3
+      "edge": 10.7
     },
     {
       "id": 823691,
@@ -920,11 +917,11 @@
       "diff": 13,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": 148,
-        "away_ml": -180,
+        "home_ml": 135,
+        "away_ml": -163,
         "bookmaker": "DraftKings",
-        "consensus_home": 38.8,
-        "consensus_away": 61.2,
+        "consensus_home": 40.5,
+        "consensus_away": 59.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +930,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 0.8,
+        "spread": 0.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.8
+      "edge": 3.5
     },
     {
       "id": 824259,
@@ -962,11 +959,11 @@
       "diff": 12,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -132,
-        "away_ml": 109,
+        "home_ml": -131,
+        "away_ml": 108,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.9,
-        "consensus_away": 45.1,
+        "consensus_home": 54.4,
+        "consensus_away": 45.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -975,11 +972,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 3.2,
-        "agreement": "Media"
+        "spread": 1.5,
+        "agreement": "Alta"
       },
       "value": true,
-      "edge": 16.9
+      "edge": 16.4
     },
     {
       "id": 824500,
@@ -1004,11 +1001,11 @@
       "diff": 12,
       "park_factor": 1.06,
       "odds": {
-        "home_ml": 116,
-        "away_ml": -140,
+        "home_ml": 109,
+        "away_ml": -132,
         "bookmaker": "DraftKings",
-        "consensus_home": 44.7,
-        "consensus_away": 55.3,
+        "consensus_home": 45.0,
+        "consensus_away": 55.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,53 +1014,50 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 3.3,
-        "agreement": "Media"
+        "spread": 1.8,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 6.7
+      "edge": 7.0
     },
     {
-      "id": 823850,
-      "status": "Live",
-      "home": "MIA",
-      "away": "TEX",
-      "home_name": "Miami Marlins",
-      "away_name": "Texas Rangers",
-      "time": "2026-06-24T16:10:00Z",
+      "id": 823041,
+      "status": "Preview",
+      "home": "STL",
+      "away": "AZ",
+      "home_name": "St. Louis Cardinals",
+      "away_name": "Arizona Diamondbacks",
+      "time": "2026-06-24T23:45:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Eury Pérez",
-      "home_pitcher_id": 691587,
-      "away_pitcher": "Jacob deGrom",
-      "away_pitcher_id": 594798,
-      "home_era": 4.41,
-      "away_era": 3.55,
+      "home_pitcher": "Matthew Liberatore",
+      "home_pitcher_id": 669461,
+      "away_pitcher": "Mitch Bratt",
+      "away_pitcher_id": 683352,
+      "home_era": 5.23,
+      "away_era": null,
       "hp": 57,
       "ap": 43,
       "conf": "Media",
-      "mixed": true,
+      "mixed": false,
       "diff": 7,
-      "park_factor": 0.97,
+      "park_factor": 1.0,
       "odds": {
-        "home_ml": -340,
-        "away_ml": 243,
+        "home_ml": -136,
+        "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 73.4,
-        "consensus_away": 26.6,
-        "books_count": 5,
+        "consensus_home": 54.9,
+        "consensus_away": 45.1,
+        "books_count": 2,
         "books": [
           "FanDuel",
-          "BetRivers",
-          "DraftKings",
-          "BetMGM",
-          "Bovada"
+          "DraftKings"
         ],
-        "spread": 3.5,
-        "agreement": "Media"
+        "spread": 0.7,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -16.4
+      "edge": 2.1
     }
   ],
   "history": [
