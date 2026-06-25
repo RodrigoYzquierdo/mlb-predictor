@@ -1,6 +1,6 @@
 {
   "date": "2026-06-25",
-  "updated": "25/06/2026 10:30 CST",
+  "updated": "25/06/2026 11:13 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -418,13 +418,13 @@
     "SEA": {
       "era": 3.69,
       "whip": 1.19,
-      "k9": 8.86,
+      "k9": 8.9,
       "bullpen_era": 3.69,
       "bullpen_whip": 1.19,
-      "obp": 0.311,
-      "slg": 0.386,
+      "obp": 0.31,
+      "slg": 0.385,
       "avg": 0.231,
-      "ops": 0.697
+      "ops": 0.695
     },
     "CLE": {
       "era": 3.79,
@@ -471,15 +471,15 @@
       "ops": 0.658
     },
     "TB": {
-      "era": 3.89,
+      "era": 3.87,
       "whip": 1.22,
-      "k9": 7.98,
-      "bullpen_era": 3.89,
+      "k9": 8.01,
+      "bullpen_era": 3.87,
       "bullpen_whip": 1.22,
       "obp": 0.335,
-      "slg": 0.383,
-      "avg": 0.257,
-      "ops": 0.718
+      "slg": 0.384,
+      "avg": 0.256,
+      "ops": 0.719
     },
     "TEX": {
       "era": 3.97,
@@ -503,6 +503,17 @@
       "avg": 0.246,
       "ops": 0.713
     },
+    "PIT": {
+      "era": 4.1,
+      "whip": 1.29,
+      "k9": 9.19,
+      "bullpen_era": 4.1,
+      "bullpen_whip": 1.29,
+      "obp": 0.335,
+      "slg": 0.411,
+      "avg": 0.256,
+      "ops": 0.746
+    },
     "TOR": {
       "era": 4.1,
       "whip": 1.31,
@@ -513,17 +524,6 @@
       "slg": 0.392,
       "avg": 0.249,
       "ops": 0.704
-    },
-    "PIT": {
-      "era": 4.12,
-      "whip": 1.3,
-      "k9": 9.21,
-      "bullpen_era": 4.12,
-      "bullpen_whip": 1.3,
-      "obp": 0.336,
-      "slg": 0.411,
-      "avg": 0.257,
-      "ops": 0.747
     },
     "PHI": {
       "era": 4.12,
@@ -625,15 +625,15 @@
       "ops": 0.698
     },
     "KC": {
-      "era": 4.57,
+      "era": 4.59,
       "whip": 1.4,
-      "k9": 7.89,
-      "bullpen_era": 4.57,
+      "k9": 7.87,
+      "bullpen_era": 4.59,
       "bullpen_whip": 1.4,
-      "obp": 0.319,
-      "slg": 0.396,
+      "obp": 0.318,
+      "slg": 0.395,
       "avg": 0.247,
-      "ops": 0.715
+      "ops": 0.713
     },
     "LAA": {
       "era": 4.63,
@@ -870,7 +870,7 @@
       "away_pitcher": "Seth Lugo",
       "away_pitcher_id": 607625,
       "home_era": 3.31,
-      "away_era": 3.86,
+      "away_era": 4.03,
       "hp": 68,
       "ap": 32,
       "conf": "Alta",
@@ -878,24 +878,22 @@
       "diff": 18,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -610,
-        "away_ml": 388,
+        "home_ml": -10000,
+        "away_ml": 1400,
         "bookmaker": "DraftKings",
-        "consensus_home": 80.6,
-        "consensus_away": 19.4,
-        "books_count": 5,
+        "consensus_home": 94.6,
+        "consensus_away": 5.4,
+        "books_count": 3,
         "books": [
           "FanDuel",
           "DraftKings",
-          "BetMGM",
-          "BetRivers",
-          "Bovada"
+          "BetMGM"
         ],
-        "spread": 0.7,
+        "spread": 0.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -12.6
+      "edge": -26.6
     },
     {
       "id": 824747,
@@ -923,8 +921,8 @@
         "home_ml": 123,
         "away_ml": -149,
         "bookmaker": "DraftKings",
-        "consensus_home": 42.6,
-        "consensus_away": 57.4,
+        "consensus_home": 42.7,
+        "consensus_away": 57.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +931,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.8,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.6
+      "edge": 9.7
     },
     {
       "id": 823612,
