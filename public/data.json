@@ -1,6 +1,6 @@
 {
   "date": "2026-06-26",
-  "updated": "26/06/2026 11:02 CST",
+  "updated": "26/06/2026 11:56 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -923,8 +923,8 @@
         "home_ml": -136,
         "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.1,
-        "consensus_away": 44.9,
+        "consensus_home": 55.0,
+        "consensus_away": 45.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +933,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 1.1,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.9
+      "edge": 8.0
     },
     {
       "id": 823206,
@@ -975,7 +975,7 @@
           "Bovada",
           "BetMGM"
         ],
-        "spread": 1.2,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": false,
@@ -1007,8 +1007,8 @@
         "home_ml": -137,
         "away_ml": 114,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.5,
-        "consensus_away": 44.5,
+        "consensus_home": 55.6,
+        "consensus_away": 44.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1021,7 +1021,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.5
+      "edge": 5.4
     },
     {
       "id": 823773,
@@ -1049,8 +1049,8 @@
         "home_ml": -245,
         "away_ml": 198,
         "bookmaker": "DraftKings",
-        "consensus_home": 68.3,
-        "consensus_away": 31.7,
+        "consensus_home": 68.1,
+        "consensus_away": 31.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "DraftKings",
           "Bovada"
         ],
-        "spread": 3.9,
+        "spread": 3.4,
         "agreement": "Media"
       },
       "value": false,
-      "edge": -7.3
+      "edge": -7.1
     }
   ],
   "history": [
