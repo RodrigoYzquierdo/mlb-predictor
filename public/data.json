@@ -1,6 +1,6 @@
 {
   "date": "2026-06-26",
-  "updated": "26/06/2026 10:22 CST",
+  "updated": "26/06/2026 11:02 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -965,8 +965,8 @@
         "home_ml": 100,
         "away_ml": -120,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.2,
-        "consensus_away": 51.8,
+        "consensus_home": 48.1,
+        "consensus_away": 51.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -975,11 +975,11 @@
           "Bovada",
           "BetMGM"
         ],
-        "spread": 1.5,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 11.2
+      "edge": 11.1
     },
     {
       "id": 822962,
@@ -1007,8 +1007,8 @@
         "home_ml": -137,
         "away_ml": 114,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.3,
-        "consensus_away": 44.7,
+        "consensus_home": 55.5,
+        "consensus_away": 44.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 1.8,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.7
+      "edge": 5.5
     },
     {
       "id": 823773,
@@ -1046,11 +1046,11 @@
       "diff": 11,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -267,
-        "away_ml": 215,
+        "home_ml": -245,
+        "away_ml": 198,
         "bookmaker": "DraftKings",
-        "consensus_home": 69.8,
-        "consensus_away": 30.2,
+        "consensus_home": 68.3,
+        "consensus_away": 31.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "DraftKings",
           "Bovada"
         ],
-        "spread": 1.9,
-        "agreement": "Alta"
+        "spread": 3.9,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": -8.8
+      "edge": -7.3
     }
   ],
   "history": [
