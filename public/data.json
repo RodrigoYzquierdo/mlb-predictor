@@ -1,6 +1,6 @@
 {
   "date": "2026-06-27",
-  "updated": "27/06/2026 10:08 CST",
+  "updated": "27/06/2026 11:18 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -372,15 +372,15 @@
   },
   "team_stats": {
     "NYY": {
-      "era": 3.32,
+      "era": 3.33,
       "whip": 1.19,
-      "k9": 8.8,
-      "bullpen_era": 3.32,
+      "k9": 8.79,
+      "bullpen_era": 3.33,
       "bullpen_whip": 1.19,
-      "obp": 0.327,
+      "obp": 0.326,
       "slg": 0.433,
-      "avg": 0.243,
-      "ops": 0.76
+      "avg": 0.242,
+      "ops": 0.759
     },
     "MIL": {
       "era": 3.36,
@@ -427,10 +427,10 @@
       "ops": 0.695
     },
     "DET": {
-      "era": 3.76,
+      "era": 3.75,
       "whip": 1.24,
-      "k9": 8.33,
-      "bullpen_era": 3.76,
+      "k9": 8.32,
+      "bullpen_era": 3.75,
       "bullpen_whip": 1.24,
       "obp": 0.314,
       "slg": 0.392,
@@ -438,15 +438,15 @@
       "ops": 0.706
     },
     "BOS": {
-      "era": 3.77,
+      "era": 3.76,
       "whip": 1.26,
-      "k9": 8.63,
-      "bullpen_era": 3.77,
+      "k9": 8.61,
+      "bullpen_era": 3.76,
       "bullpen_whip": 1.26,
       "obp": 0.313,
-      "slg": 0.386,
+      "slg": 0.387,
       "avg": 0.244,
-      "ops": 0.699
+      "ops": 0.7
     },
     "CLE": {
       "era": 3.78,
@@ -653,9 +653,9 @@
       "bullpen_era": 4.76,
       "bullpen_whip": 1.39,
       "obp": 0.315,
-      "slg": 0.408,
+      "slg": 0.407,
       "avg": 0.241,
-      "ops": 0.723
+      "ops": 0.722
     },
     "MIN": {
       "era": 4.85,
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 824745,
-      "status": "Preview",
+      "status": "Live",
       "home": "BOS",
       "away": "NYY",
       "home_name": "Boston Red Sox",
@@ -869,7 +869,7 @@
       "home_pitcher_id": 687562,
       "away_pitcher": "Gerrit Cole",
       "away_pitcher_id": 543037,
-      "home_era": 3.71,
+      "home_era": 3.58,
       "away_era": 3.62,
       "hp": 36,
       "ap": 64,
@@ -878,11 +878,11 @@
       "diff": 14,
       "park_factor": 1.08,
       "odds": {
-        "home_ml": 102,
-        "away_ml": -123,
+        "home_ml": -184,
+        "away_ml": 140,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.3,
-        "consensus_away": 51.7,
+        "consensus_home": 58.4,
+        "consensus_away": 41.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.7,
-        "agreement": "Alta"
+        "spread": 14.5,
+        "agreement": "Baja"
       },
-      "value": false,
-      "edge": 12.3
+      "value": true,
+      "edge": 22.4
     },
     {
       "id": 824581,
@@ -920,11 +920,11 @@
       "diff": 14,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -123,
-        "away_ml": 102,
+        "home_ml": -128,
+        "away_ml": 107,
         "bookmaker": "DraftKings",
-        "consensus_home": 53.0,
-        "consensus_away": 47.0,
+        "consensus_home": 53.2,
+        "consensus_away": 46.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +933,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.1,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 11.0
+      "edge": 10.8
     },
     {
       "id": 823207,
@@ -965,8 +965,8 @@
         "home_ml": -131,
         "away_ml": 109,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.4,
-        "consensus_away": 45.6,
+        "consensus_home": 54.5,
+        "consensus_away": 45.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -979,7 +979,7 @@
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 18.4
+      "edge": 18.5
     },
     {
       "id": 823770,
@@ -1007,8 +1007,8 @@
         "home_ml": -163,
         "away_ml": 135,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.7,
-        "consensus_away": 40.3,
+        "consensus_home": 59.6,
+        "consensus_away": 40.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 0.7,
+        "spread": 0.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.3
+      "edge": 2.4
     },
     {
       "id": 823689,
