@@ -4147,5 +4147,50 @@
     "pred": "MIL",
     "actual": "MIL 6-2 CHC",
     "hit": true
+  },
+  {
+    "date": "2026-06-27",
+    "home": "CWS",
+    "away": "KC",
+    "hp": 65,
+    "pred": "CWS",
+    "actual": "CWS 2-1 KC",
+    "hit": true
+  },
+  {
+    "date": "2026-06-27",
+    "home": "BOS",
+    "away": "NYY",
+    "hp": 37,
+    "pred": "NYY",
+    "actual": "BOS 4-1 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-06-27",
+    "home": "TB",
+    "away": "AZ",
+    "hp": 63,
+    "pred": "TB",
+    "actual": "TB 4-2 AZ",
+    "hit": true
+  },
+  {
+    "date": "2026-06-27",
+    "home": "SF",
+    "away": "ATL",
+    "hp": 37,
+    "pred": "ATL",
+    "actual": "SF 5-0 ATL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-27",
+    "home": "MIL",
+    "away": "CHC",
+    "hp": 60,
+    "pred": "MIL",
+    "actual": "CHC 8-2 MIL",
+    "hit": false
   }
 ]
