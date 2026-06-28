@@ -4192,5 +4192,14 @@
     "pred": "MIL",
     "actual": "CHC 8-2 MIL",
     "hit": false
+  },
+  {
+    "date": "2026-06-27",
+    "home": "MIN",
+    "away": "COL",
+    "hp": 60,
+    "pred": "MIN",
+    "actual": "COL 8-5 MIN",
+    "hit": false
   }
 ]
