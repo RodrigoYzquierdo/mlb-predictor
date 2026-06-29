@@ -4201,5 +4201,50 @@
     "pred": "MIN",
     "actual": "COL 8-5 MIN",
     "hit": false
+  },
+  {
+    "date": "2026-06-28",
+    "home": "TB",
+    "away": "AZ",
+    "hp": 64,
+    "pred": "TB",
+    "actual": "TB 5-1 AZ",
+    "hit": true
+  },
+  {
+    "date": "2026-06-28",
+    "home": "CWS",
+    "away": "KC",
+    "hp": 64,
+    "pred": "CWS",
+    "actual": "KC 5-4 CWS",
+    "hit": false
+  },
+  {
+    "date": "2026-06-28",
+    "home": "SF",
+    "away": "ATL",
+    "hp": 38,
+    "pred": "ATL",
+    "actual": "SF 3-2 ATL",
+    "hit": false
+  },
+  {
+    "date": "2026-06-28",
+    "home": "BOS",
+    "away": "NYY",
+    "hp": 39,
+    "pred": "NYY",
+    "actual": "BOS 5-4 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-06-28",
+    "home": "MIN",
+    "away": "COL",
+    "hp": 60,
+    "pred": "MIN",
+    "actual": "MIN 3-2 COL",
+    "hit": true
   }
 ]
