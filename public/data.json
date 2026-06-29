@@ -1,6 +1,6 @@
 {
   "date": "2026-06-29",
-  "updated": "29/06/2026 11:40 CST",
+  "updated": "29/06/2026 12:12 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -878,24 +878,20 @@
       "diff": 17,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -132,
-        "away_ml": 109,
-        "bookmaker": "DraftKings",
-        "consensus_home": 55.0,
-        "consensus_away": 45.0,
-        "books_count": 5,
+        "home_ml": -134,
+        "away_ml": 116,
+        "bookmaker": "FanDuel",
+        "consensus_home": 55.3,
+        "consensus_away": 44.7,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers",
-          "Bovada"
+          "FanDuel"
         ],
-        "spread": 2.0,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 12.0
+      "edge": 11.7
     },
     {
       "id": 823771,
@@ -920,11 +916,11 @@
       "diff": 16,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -144,
-        "away_ml": 119,
+        "home_ml": -137,
+        "away_ml": 114,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.5,
-        "consensus_away": 43.5,
+        "consensus_home": 56.3,
+        "consensus_away": 43.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +929,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.8,
-        "agreement": "Alta"
+        "spread": 3.3,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 9.5
+      "edge": 9.7
     },
     {
       "id": 824339,
@@ -949,16 +945,16 @@
       "time": "2026-06-30T00:40:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": null,
-      "home_pitcher_id": null,
+      "home_pitcher": "Sean Sullivan",
+      "home_pitcher_id": 807743,
       "away_pitcher": "Sandy Alcantara",
       "away_pitcher_id": 645261,
-      "home_era": null,
+      "home_era": 8.25,
       "away_era": 4.01,
       "hp": 38,
       "ap": 62,
       "conf": "Media",
-      "mixed": false,
+      "mixed": true,
       "diff": 12,
       "park_factor": 1.18,
       "odds": {
