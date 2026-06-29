@@ -1,6 +1,6 @@
 {
   "date": "2026-06-29",
-  "updated": "29/06/2026 10:11 CST",
+  "updated": "29/06/2026 10:55 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -878,11 +878,11 @@
       "diff": 17,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -136,
-        "away_ml": 113,
+        "home_ml": -132,
+        "away_ml": 109,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.1,
-        "consensus_away": 44.9,
+        "consensus_home": 54.8,
+        "consensus_away": 45.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.6,
+        "spread": 2.3,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 11.9
+      "edge": 12.2
     },
     {
       "id": 823771,
@@ -920,11 +920,11 @@
       "diff": 16,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -145,
-        "away_ml": 120,
+        "home_ml": -144,
+        "away_ml": 119,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.7,
-        "consensus_away": 43.3,
+        "consensus_home": 56.6,
+        "consensus_away": 43.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -937,7 +937,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.3
+      "edge": 9.4
     },
     {
       "id": 824339,
@@ -975,7 +975,7 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.8,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": false,
@@ -1007,8 +1007,8 @@
         "home_ml": -208,
         "away_ml": 170,
         "bookmaker": "DraftKings",
-        "consensus_home": 64.9,
-        "consensus_away": 35.1,
+        "consensus_home": 64.8,
+        "consensus_away": 35.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.5,
+        "spread": 2.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.9
+      "edge": -2.8
     },
     {
       "id": 824986,
