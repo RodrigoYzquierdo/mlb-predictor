@@ -1,6 +1,6 @@
 {
   "date": "2026-06-30",
-  "updated": "30/06/2026 10:24 CST",
+  "updated": "30/06/2026 10:25 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -1059,7 +1059,7 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.8,
+        "spread": 1.6,
         "agreement": "Alta"
       },
       "value": false,
