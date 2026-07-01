@@ -1,6 +1,6 @@
 {
   "date": "2026-07-01",
-  "updated": "01/07/2026 10:31 CST",
+  "updated": "01/07/2026 10:49 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -537,10 +537,10 @@
       "ops": 0.706
     },
     "CWS": {
-      "era": 4.21,
+      "era": 4.2,
       "whip": 1.32,
       "k9": 8.46,
-      "bullpen_era": 4.21,
+      "bullpen_era": 4.2,
       "bullpen_whip": 1.32,
       "obp": 0.324,
       "slg": 0.418,
@@ -603,15 +603,15 @@
       "ops": 0.724
     },
     "BAL": {
-      "era": 4.43,
+      "era": 4.44,
       "whip": 1.38,
-      "k9": 8.15,
-      "bullpen_era": 4.43,
+      "k9": 8.17,
+      "bullpen_era": 4.44,
       "bullpen_whip": 1.38,
       "obp": 0.318,
-      "slg": 0.396,
+      "slg": 0.395,
       "avg": 0.238,
-      "ops": 0.714
+      "ops": 0.713
     },
     "CIN": {
       "era": 4.62,
@@ -923,8 +923,8 @@
         "home_ml": -148,
         "away_ml": 123,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.3,
-        "consensus_away": 43.7,
+        "consensus_home": 55.8,
+        "consensus_away": 44.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +933,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 2.0,
+        "spread": 2.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 8.7
+      "edge": 9.2
     },
     {
       "id": 824094,
@@ -975,7 +975,7 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.1,
+        "spread": 1.3,
         "agreement": "Alta"
       },
       "value": false,
