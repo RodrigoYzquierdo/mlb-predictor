@@ -4336,5 +4336,50 @@
     "pred": "MIA",
     "actual": "MIA 14-3 COL",
     "hit": true
+  },
+  {
+    "date": "2026-07-01",
+    "home": "MIL",
+    "away": "CIN",
+    "hp": 68,
+    "pred": "MIL",
+    "actual": "MIL 4-2 CIN",
+    "hit": true
+  },
+  {
+    "date": "2026-07-01",
+    "home": "KC",
+    "away": "TB",
+    "hp": 35,
+    "pred": "TB",
+    "actual": "TB 4-0 KC",
+    "hit": true
+  },
+  {
+    "date": "2026-07-01",
+    "home": "NYY",
+    "away": "DET",
+    "hp": 64,
+    "pred": "NYY",
+    "actual": "DET 6-2 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-07-01",
+    "home": "ATH",
+    "away": "LAD",
+    "hp": 37,
+    "pred": "LAD",
+    "actual": "ATH 7-1 LAD",
+    "hit": false
+  },
+  {
+    "date": "2026-07-01",
+    "home": "COL",
+    "away": "MIA",
+    "hp": 38,
+    "pred": "MIA",
+    "actual": "COL 6-3 MIA",
+    "hit": false
   }
 ]
