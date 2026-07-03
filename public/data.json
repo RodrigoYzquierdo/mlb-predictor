@@ -1,6 +1,6 @@
 {
   "date": "2026-07-03",
-  "updated": "03/07/2026 11:01 CST",
+  "updated": "03/07/2026 11:39 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -878,24 +878,20 @@
       "diff": 18,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -112,
-        "away_ml": -108,
-        "bookmaker": "DraftKings",
-        "consensus_home": 50.1,
-        "consensus_away": 49.9,
-        "books_count": 5,
+        "home_ml": -162,
+        "away_ml": 136,
+        "bookmaker": "FanDuel",
+        "consensus_home": 59.3,
+        "consensus_away": 40.7,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetRivers",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.6,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 17.9
+      "edge": 8.7
     },
     {
       "id": 823933,
@@ -920,24 +916,20 @@
       "diff": 18,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -251,
-        "away_ml": 203,
-        "bookmaker": "DraftKings",
-        "consensus_home": 68.5,
-        "consensus_away": 31.5,
-        "books_count": 5,
+        "home_ml": -255,
+        "away_ml": 210,
+        "bookmaker": "FanDuel",
+        "consensus_home": 69.0,
+        "consensus_away": 31.0,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetRivers",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.2,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.5
+      "edge": -1.0
     },
     {
       "id": 823527,
@@ -962,24 +954,20 @@
       "diff": 10,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -193,
-        "away_ml": 158,
-        "bookmaker": "DraftKings",
-        "consensus_home": 62.5,
-        "consensus_away": 37.5,
-        "books_count": 5,
+        "home_ml": -162,
+        "away_ml": 136,
+        "bookmaker": "FanDuel",
+        "consensus_home": 59.3,
+        "consensus_away": 40.7,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetRivers",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.3,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.5
+      "edge": 0.7
     },
     {
       "id": 824173,
@@ -1005,23 +993,19 @@
       "park_factor": 1.0,
       "odds": {
         "home_ml": -108,
-        "away_ml": -111,
-        "bookmaker": "DraftKings",
-        "consensus_home": 49.5,
-        "consensus_away": 50.5,
-        "books_count": 5,
+        "away_ml": -108,
+        "bookmaker": "FanDuel",
+        "consensus_home": 50.0,
+        "consensus_away": 50.0,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "BetRivers",
-          "BetMGM",
-          "DraftKings",
-          "Bovada"
+          "FanDuel"
         ],
-        "spread": 0.9,
+        "spread": 0,
         "agreement": "Alta"
       },
-      "value": false,
-      "edge": 8.5
+      "value": true,
+      "edge": 9.0
     },
     {
       "id": 825062,
@@ -1046,24 +1030,20 @@
       "diff": 8,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": 119,
-        "away_ml": -144,
-        "bookmaker": "DraftKings",
-        "consensus_home": 42.9,
-        "consensus_away": 57.1,
-        "books_count": 5,
+        "home_ml": 120,
+        "away_ml": -142,
+        "bookmaker": "FanDuel",
+        "consensus_home": 43.7,
+        "consensus_away": 56.3,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetRivers",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.8,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.9
+      "edge": 1.7
     }
   ],
   "history": [
