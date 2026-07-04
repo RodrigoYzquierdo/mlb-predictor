@@ -4426,5 +4426,50 @@
     "pred": "MIA",
     "actual": "COL 14-4 MIA",
     "hit": false
+  },
+  {
+    "date": "2026-07-03",
+    "home": "ATL",
+    "away": "NYM",
+    "hp": 69,
+    "pred": "ATL",
+    "actual": "ATL 5-3 NYM",
+    "hit": true
+  },
+  {
+    "date": "2026-07-03",
+    "home": "LAD",
+    "away": "SD",
+    "hp": 69,
+    "pred": "LAD",
+    "actual": "LAD 4-3 SD",
+    "hit": true
+  },
+  {
+    "date": "2026-07-03",
+    "home": "NYY",
+    "away": "MIN",
+    "hp": 62,
+    "pred": "NYY",
+    "actual": "NYY 5-2 MIN",
+    "hit": true
+  },
+  {
+    "date": "2026-07-03",
+    "home": "HOU",
+    "away": "TB",
+    "hp": 40,
+    "pred": "TB",
+    "actual": "TB 3-1 HOU",
+    "hit": true
+  },
+  {
+    "date": "2026-07-03",
+    "home": "AZ",
+    "away": "MIL",
+    "hp": 41,
+    "pred": "MIL",
+    "actual": "MIL 7-4 AZ",
+    "hit": true
   }
 ]
