@@ -1,6 +1,6 @@
 {
   "date": "2026-07-04",
-  "updated": "04/07/2026 10:06 CST",
+  "updated": "04/07/2026 11:13 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -559,15 +559,15 @@
       "ops": 0.676
     },
     "PIT": {
-      "era": 4.3,
+      "era": 4.28,
       "whip": 1.31,
-      "k9": 9.25,
-      "bullpen_era": 4.3,
+      "k9": 9.24,
+      "bullpen_era": 4.28,
       "bullpen_whip": 1.31,
       "obp": 0.339,
-      "slg": 0.423,
-      "avg": 0.262,
-      "ops": 0.762
+      "slg": 0.421,
+      "avg": 0.261,
+      "ops": 0.76
     },
     "AZ": {
       "era": 4.31,
@@ -636,14 +636,14 @@
       "ops": 0.707
     },
     "WSH": {
-      "era": 4.67,
-      "whip": 1.39,
-      "k9": 7.91,
-      "bullpen_era": 4.67,
-      "bullpen_whip": 1.39,
+      "era": 4.65,
+      "whip": 1.38,
+      "k9": 7.9,
+      "bullpen_era": 4.65,
+      "bullpen_whip": 1.38,
       "obp": 0.322,
       "slg": 0.431,
-      "avg": 0.248,
+      "avg": 0.249,
       "ops": 0.753
     },
     "HOU": {
@@ -920,11 +920,11 @@
       "diff": 18,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -259,
-        "away_ml": 209,
+        "home_ml": -274,
+        "away_ml": 220,
         "bookmaker": "DraftKings",
-        "consensus_home": 68.8,
-        "consensus_away": 31.2,
+        "consensus_home": 69.0,
+        "consensus_away": 31.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +933,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.2,
+        "spread": 1.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.8
+      "edge": -1.0
     },
     {
       "id": 823526,
@@ -962,11 +962,11 @@
       "diff": 11,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -149,
-        "away_ml": 124,
+        "home_ml": -156,
+        "away_ml": 129,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.6,
-        "consensus_away": 42.4,
+        "consensus_home": 57.9,
+        "consensus_away": 42.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -975,11 +975,11 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 1.1,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.4
+      "edge": 3.1
     },
     {
       "id": 822882,
@@ -991,11 +991,11 @@
       "time": "2026-07-04T20:05:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Kumar Rocker",
-      "home_pitcher_id": 677958,
+      "home_pitcher": "Cal Quantrill",
+      "home_pitcher_id": 615698,
       "away_pitcher": "Jack Flaherty",
       "away_pitcher_id": 656427,
-      "home_era": 3.83,
+      "home_era": 3.31,
       "away_era": 4.97,
       "hp": 60,
       "ap": 40,
@@ -1004,11 +1004,11 @@
       "diff": 10,
       "park_factor": 1.05,
       "odds": {
-        "home_ml": -101,
-        "away_ml": -120,
+        "home_ml": -102,
+        "away_ml": -118,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.5,
-        "consensus_away": 51.5,
+        "consensus_home": 47.1,
+        "consensus_away": 52.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.0,
+        "spread": 2.0,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 11.5
+      "edge": 12.9
     },
     {
       "id": 824092,
@@ -1049,8 +1049,8 @@
         "home_ml": 129,
         "away_ml": -156,
         "bookmaker": "DraftKings",
-        "consensus_home": 41.5,
-        "consensus_away": 58.5,
+        "consensus_home": 41.6,
+        "consensus_away": 58.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.6,
+        "spread": 1.3,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.5
+      "edge": 1.6
     }
   ],
   "history": [
