@@ -1,6 +1,6 @@
 {
   "date": "2026-07-04",
-  "updated": "04/07/2026 09:12 CST",
+  "updated": "04/07/2026 10:06 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -561,13 +561,13 @@
     "PIT": {
       "era": 4.3,
       "whip": 1.31,
-      "k9": 9.22,
+      "k9": 9.25,
       "bullpen_era": 4.3,
       "bullpen_whip": 1.31,
       "obp": 0.339,
-      "slg": 0.422,
-      "avg": 0.261,
-      "ops": 0.761
+      "slg": 0.423,
+      "avg": 0.262,
+      "ops": 0.762
     },
     "AZ": {
       "era": 4.31,
@@ -636,14 +636,14 @@
       "ops": 0.707
     },
     "WSH": {
-      "era": 4.63,
+      "era": 4.67,
       "whip": 1.39,
       "k9": 7.91,
-      "bullpen_era": 4.63,
+      "bullpen_era": 4.67,
       "bullpen_whip": 1.39,
       "obp": 0.322,
       "slg": 0.431,
-      "avg": 0.249,
+      "avg": 0.248,
       "ops": 0.753
     },
     "HOU": {
@@ -909,22 +909,22 @@
       "away_score": null,
       "home_pitcher": "Yoshinobu Yamamoto",
       "home_pitcher_id": 808967,
-      "away_pitcher": "Griffin Canning",
-      "away_pitcher_id": 656288,
+      "away_pitcher": "Wandy Peralta",
+      "away_pitcher_id": 593974,
       "home_era": 2.67,
-      "away_era": 7.09,
-      "hp": 69,
-      "ap": 31,
+      "away_era": 2.38,
+      "hp": 68,
+      "ap": 32,
       "conf": "Alta",
       "mixed": true,
-      "diff": 19,
+      "diff": 18,
       "park_factor": 0.98,
       "odds": {
         "home_ml": -259,
         "away_ml": 209,
         "bookmaker": "DraftKings",
-        "consensus_home": 68.9,
-        "consensus_away": 31.1,
+        "consensus_home": 68.8,
+        "consensus_away": 31.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -933,11 +933,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.9,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.1
+      "edge": -0.8
     },
     {
       "id": 823526,
@@ -965,8 +965,8 @@
         "home_ml": -149,
         "away_ml": 124,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.4,
-        "consensus_away": 41.6,
+        "consensus_home": 57.6,
+        "consensus_away": 42.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -975,11 +975,11 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 3.8,
-        "agreement": "Media"
+        "spread": 1.1,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.6
+      "edge": 3.4
     },
     {
       "id": 822882,
@@ -1007,8 +1007,8 @@
         "home_ml": -101,
         "away_ml": -120,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.4,
-        "consensus_away": 51.6,
+        "consensus_home": 48.5,
+        "consensus_away": 51.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.5,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 11.6
+      "edge": 11.5
     },
     {
       "id": 824092,
@@ -1059,7 +1059,7 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.7,
+        "spread": 0.6,
         "agreement": "Alta"
       },
       "value": false,
