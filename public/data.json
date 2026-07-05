@@ -1,6 +1,6 @@
 {
   "date": "2026-07-05",
-  "updated": "05/07/2026 10:11 CST",
+  "updated": "05/07/2026 11:19 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -581,10 +581,10 @@
       "ops": 0.69
     },
     "BAL": {
-      "era": 4.35,
+      "era": 4.34,
       "whip": 1.38,
       "k9": 8.09,
-      "bullpen_era": 4.35,
+      "bullpen_era": 4.34,
       "bullpen_whip": 1.38,
       "obp": 0.319,
       "slg": 0.396,
@@ -614,15 +614,15 @@
       "ops": 0.727
     },
     "CIN": {
-      "era": 4.6,
+      "era": 4.59,
       "whip": 1.46,
-      "k9": 8.14,
-      "bullpen_era": 4.6,
+      "k9": 8.13,
+      "bullpen_era": 4.59,
       "bullpen_whip": 1.46,
       "obp": 0.31,
-      "slg": 0.389,
+      "slg": 0.388,
       "avg": 0.228,
-      "ops": 0.699
+      "ops": 0.698
     },
     "LAA": {
       "era": 4.64,
@@ -636,10 +636,10 @@
       "ops": 0.705
     },
     "WSH": {
-      "era": 4.66,
+      "era": 4.65,
       "whip": 1.39,
-      "k9": 7.91,
-      "bullpen_era": 4.66,
+      "k9": 7.92,
+      "bullpen_era": 4.65,
       "bullpen_whip": 1.39,
       "obp": 0.322,
       "slg": 0.429,
@@ -878,11 +878,11 @@
       "diff": 20,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -108,
-        "away_ml": -112,
+        "home_ml": -103,
+        "away_ml": -117,
         "bookmaker": "DraftKings",
-        "consensus_home": 49.8,
-        "consensus_away": 50.2,
+        "consensus_home": 48.8,
+        "consensus_away": 51.2,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -891,11 +891,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.6,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 20.2
+      "edge": 21.2
     },
     {
       "id": 823931,
@@ -923,8 +923,8 @@
         "home_ml": -219,
         "away_ml": 178,
         "bookmaker": "DraftKings",
-        "consensus_home": 65.3,
-        "consensus_away": 34.7,
+        "consensus_home": 65.4,
+        "consensus_away": 34.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -937,7 +937,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.7
+      "edge": 3.6
     },
     {
       "id": 824091,
@@ -962,11 +962,11 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": 119,
-        "away_ml": -143,
+        "home_ml": 114,
+        "away_ml": -137,
         "bookmaker": "DraftKings",
-        "consensus_home": 43.6,
-        "consensus_away": 56.4,
+        "consensus_home": 44.6,
+        "consensus_away": 55.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -975,15 +975,15 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.9,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.6
+      "edge": 5.6
     },
     {
       "id": 823525,
-      "status": "Preview",
+      "status": "Live",
       "home": "NYY",
       "away": "MIN",
       "home_name": "New York Yankees",
@@ -1004,11 +1004,11 @@
       "diff": 10,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -131,
-        "away_ml": 109,
+        "home_ml": -136,
+        "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.5,
-        "consensus_away": 45.5,
+        "consensus_home": 55.0,
+        "consensus_away": 45.0,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1017,11 +1017,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.7,
+        "spread": 2.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.5
+      "edge": 5.0
     },
     {
       "id": 824172,
@@ -1035,22 +1035,22 @@
       "away_score": null,
       "home_pitcher": "Peter Lambert",
       "home_pitcher_id": 663567,
-      "away_pitcher": null,
-      "away_pitcher_id": null,
+      "away_pitcher": "Mason Englert",
+      "away_pitcher_id": 669438,
       "home_era": 3.51,
-      "away_era": null,
+      "away_era": 3.96,
       "hp": 42,
       "ap": 58,
       "conf": "Media",
-      "mixed": false,
+      "mixed": true,
       "diff": 8,
       "park_factor": 1.0,
       "odds": {
         "home_ml": -118,
         "away_ml": -102,
         "bookmaker": "DraftKings",
-        "consensus_home": 51.5,
-        "consensus_away": 48.5,
+        "consensus_home": 51.7,
+        "consensus_away": 48.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 1.5,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 9.5
+      "edge": 9.7
     }
   ],
   "history": [
