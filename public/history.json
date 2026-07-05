@@ -4471,5 +4471,50 @@
     "pred": "MIL",
     "actual": "MIL 7-4 AZ",
     "hit": true
+  },
+  {
+    "date": "2026-07-04",
+    "home": "ATL",
+    "away": "NYM",
+    "hp": 70,
+    "pred": "ATL",
+    "actual": "ATL 14-3 NYM",
+    "hit": true
+  },
+  {
+    "date": "2026-07-04",
+    "home": "LAD",
+    "away": "SD",
+    "hp": 69,
+    "pred": "LAD",
+    "actual": "LAD 3-0 SD",
+    "hit": true
+  },
+  {
+    "date": "2026-07-04",
+    "home": "KC",
+    "away": "PHI",
+    "hp": 39,
+    "pred": "PHI",
+    "actual": "PHI 6-1 KC",
+    "hit": true
+  },
+  {
+    "date": "2026-07-04",
+    "home": "NYY",
+    "away": "MIN",
+    "hp": 60,
+    "pred": "NYY",
+    "actual": "MIN 11-4 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-07-04",
+    "home": "TEX",
+    "away": "DET",
+    "hp": 59,
+    "pred": "TEX",
+    "actual": "DET 3-0 TEX",
+    "hit": false
   }
 ]
