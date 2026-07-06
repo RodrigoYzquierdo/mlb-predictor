@@ -135,6 +135,12 @@
     .hr{font-size:11px;font-weight:600;padding:2px 9px;border-radius:10px;white-space:nowrap}
     .rh{background:var(--bgS);color:var(--txS)}.rm{background:var(--bgD);color:var(--txD)}
 
+    /* Precision por confianza */
+    .conf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:1.25rem}
+    .conf-card{background:var(--bg2);border-radius:var(--r);padding:12px;text-align:center}
+    .conf-pct{font-size:20px;font-weight:500;margin-top:6px}
+    .conf-n{font-size:11px;color:var(--tx2);margin-top:2px}
+
     .footer{text-align:center;font-size:11px;color:var(--tx2);margin-top:2rem;line-height:1.6}
     .note{font-size:11px;color:var(--tx2);text-align:center;padding:.75rem 0 0}
 
@@ -457,6 +463,28 @@ function renderHistory() {
         <div class="acc-card"><div class="av">${stats.hits||0}</div><div class="al">✓ Aciertos</div></div>
         <div class="acc-card"><div class="av r">${(stats.total||0)-(stats.hits||0)}</div><div class="al">✗ Fallos</div></div>
         <div class="acc-card"><div class="av">${stats.streak_type==='W'?'✓':'✗'} ${stats.streak||0}</div><div class="al">Racha</div></div>
+      </div>
+      <div class="clabel" style="margin-bottom:.5rem">Precisión por confianza</div>
+      <div class="conf-grid">
+        ${(() => {
+          const buckets = { Alta: {h:0,t:0}, Media: {h:0,t:0}, Baja: {h:0,t:0} };
+          history.forEach(h => {
+            const diff = Math.abs(h.hp - 50);
+            const lvl = diff > 12 ? 'Alta' : diff > 6 ? 'Media' : 'Baja';
+            buckets[lvl].t++;
+            if (h.hit) buckets[lvl].h++;
+          });
+          return ['Alta','Media','Baja'].map(lvl => {
+            const b = buckets[lvl];
+            const pct = b.t > 0 ? Math.round(b.h / b.t * 100) : 0;
+            const cls = lvl==='Alta'?'c-hi':lvl==='Media'?'c-med':'c-lo';
+            return `<div class="conf-card">
+              <span class="conf-pill ${cls}">${lvl}</span>
+              <div class="conf-pct">${b.t>0?pct+'%':'—'}</div>
+              <div class="conf-n">${b.h}/${b.t} partidos</div>
+            </div>`;
+          }).join('');
+        })()}
       </div>
       <div class="clabel" style="margin-bottom:.5rem">Últimas predicciones</div>
       <div class="sbar">${history.slice(-25).map(h=>`<div class="sd ${h.hit?'h':'m'}" title="${h.away}@${h.home} ${h.date}">${h.hit?'✓':'✗'}</div>`).join('')}</div>
