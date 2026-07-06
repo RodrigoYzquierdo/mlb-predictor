@@ -1,7 +1,8 @@
 """
 MLB Predictor - Script de actualizacion diaria
 Corre automaticamente via GitHub Actions cada dia a las 9 AM CST
-v2.0 - Bullpen stats, forma reciente, park factors, historial limpio
+v3.1 - Recalibracion de sobreconfianza, penalizacion de estadios ofensivos,
+       registro de consensus del mercado en el historial
 """
 
 import requests
@@ -107,9 +108,20 @@ PARK_FACTORS = {
     "SD":  0.94,  # Petco Park
 }
 
+# Umbral de estadio ofensivo: el analisis de fallos mostro 52% de acierto
+# en parques >=1.04 vs 62% en parques de pitcheo. Se penaliza su conviccion
+# al armar el Top 5 para que entren menos a las recomendaciones.
+OFFENSIVE_PARK_THRESHOLD = 1.04
+OFFENSIVE_PARK_PENALTY   = 0.7
+
 def get_abbr(team_dict):
     name = team_dict.get("name", "UNK")
     return NAME_TO_ABBR.get(name, name[:3].upper())
+
+def sel_diff(pred):
+    """Conviccion ajustada para seleccionar el Top 5: penaliza estadios ofensivos."""
+    pen = OFFENSIVE_PARK_PENALTY if pred["park_factor"] >= OFFENSIVE_PARK_THRESHOLD else 1.0
+    return round(pred["diff"] * pen, 2)
 
 # 1. Obtener partidos
 def get_games(date):
@@ -372,10 +384,12 @@ def get_odds():
         print(f"   Error momios: {e}")
         return {}
 
-# 6. Modelo de prediccion v2.0
+# 6. Modelo de prediccion v3.1
 def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     """
-    Modelo v3.0 — usa pesos de regresion logistica entrenada (model_weights.json).
+    Modelo v3.1 — regresion logistica entrenada + recalibracion de sobreconfianza.
+    El analisis de fallos (jul 2026, 507 partidos) mostro que las predicciones
+    de 65-76% solo acertaban 57-58%. Se comprimen las probabilidades extremas.
     Si no hay pesos disponibles, cae al modelo heuristico v2.0.
     """
     hs_data = standings.get(h_abbr, {})
@@ -401,7 +415,7 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
     pf_pitch = 2.0 - pf
     mixed = h_sera is not None and a_sera is not None
 
-    # === MODELO v3.0: Regresion logistica ===
+    # === MODELO v3.1: Regresion logistica + recalibracion ===
     if MODEL_WEIGHTS:
         # Construir las MISMAS features que en train_model.py (mismo orden)
         # Si hay abridor confirmado, mezclar su ERA con la del staff
@@ -432,8 +446,17 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
 
         # Sigmoide -> probabilidad de que gane el local
         prob_home = 1.0 / (1.0 + math.exp(-z))
-        hp = round(prob_home * 100)
-        hp = max(25, min(75, hp))  # Cap razonable
+        hp = prob_home * 100
+
+        # Recalibracion v3.1: comprimir probabilidades extremas
+        # El analisis mostro buena calibracion hasta 62%, sobreconfianza arriba.
+        # El exceso sobre 62 (o bajo 38) se reduce a la mitad, con techo 68 / piso 32.
+        if hp > 62:
+            hp = 62 + (hp - 62) * 0.5
+        elif hp < 38:
+            hp = 38 - (38 - hp) * 0.5
+        hp = round(hp)
+        hp = max(32, min(68, hp))
     else:
         # Fallback heuristico v2.0
         hs = h_wp * 20 + a_wp * 0
@@ -444,7 +467,7 @@ def calc_model(h_abbr, a_abbr, standings, team_stats, h_sera=None, a_sera=None):
         hp = max(30, min(70, round(hs / total * 100)))
 
     diff = abs(hp - 50)
-    # Umbrales recalibrados v3.0: con regresion el modelo es mas conservador
+    # Umbrales v3.1 (con la compresion, la escala efectiva es 32-68)
     conf = "Alta" if diff > 12 else ("Media" if diff > 6 else "Baja")
 
     return {
@@ -497,12 +520,28 @@ def clean_history(history):
         print(f"   Historial limpiado: {before - after} entradas UNK eliminadas")
     return history
 
-# 9. Actualizar historial — guarda solo el Top 5 (mismos criterios que las predicciones de hoy)
-def update_history(history, yesterday_games, standings, team_stats):
+def load_prev_top5():
+    """
+    Lee el data.json del dia anterior (antes de sobreescribirlo) para recuperar
+    el Top 5 EXACTO que la app recomendo ayer, incluyendo sus momios/consensus.
+    Solo es valido si el data.json en disco corresponde a YESTERDAY (primer run del dia).
+    """
+    try:
+        with open("public/data.json") as f:
+            prev = json.load(f)
+        if prev.get("date") == YESTERDAY and prev.get("top5"):
+            print(f"   Top 5 de ayer recuperado del data.json ({len(prev['top5'])} partidos, con momios)")
+            return prev["top5"]
+    except Exception:
+        pass
+    return None
+
+# 9. Actualizar historial — guarda solo el Top 5 (lo que la app realmente recomendo)
+def update_history(history, yesterday_games, standings, team_stats, prev_top5=None):
     existing = {f"{h['home']}-{h['away']}-{h['date']}" for h in history}
 
-    # 1. Calcular prediccion de TODOS los partidos de ayer
-    preds = []
+    # Resultados finales de ayer, indexados por matchup (dedup doble-headers: primer juego)
+    finals = {}
     for g in yesterday_games:
         if g["status"] != "Final":
             continue
@@ -510,19 +549,48 @@ def update_history(history, yesterday_games, standings, team_stats):
             continue
         if g["home"] == "UNK" or g["away"] == "UNK":
             continue
-        pred = calc_model(g["home"], g["away"], standings, team_stats)
-        preds.append({**g, **pred})
+        key = f"{g['away']}@{g['home']}"
+        if key not in finals:
+            finals[key] = g
 
-    # 2. Ordenar por conviccion (diff) y tomar el Top 5 — IGUAL que el Top 5 de hoy
-    top5_ayer = sorted(preds, key=lambda x: x["diff"], reverse=True)[:5]
+    records = []
 
-    # 3. Guardar solo esos 5 en el historial
+    if prev_top5:
+        # Usar EXACTAMENTE el Top 5 que la app mostro ayer, con su consensus
+        for p in prev_top5:
+            key = f"{p['away']}@{p['home']}"
+            g = finals.get(key)
+            if not g:
+                continue  # pospuesto o sin resultado final
+            odds = p.get("odds") or {}
+            records.append({
+                "home": p["home"], "away": p["away"], "hp": p["hp"],
+                "mkt_home": odds.get("consensus_home"),
+                "mkt_away": odds.get("consensus_away"),
+                "g": g,
+            })
+    else:
+        # Fallback (ej. tras varios dias sin correr): recalcular Top 5 de ayer
+        preds = []
+        for key, g in finals.items():
+            pred = calc_model(g["home"], g["away"], standings, team_stats)
+            preds.append({**g, **pred, "_sel": sel_diff(pred)})
+        top5_ayer = sorted(preds, key=lambda x: x["_sel"], reverse=True)[:5]
+        for p in top5_ayer:
+            records.append({
+                "home": p["home"], "away": p["away"], "hp": p["hp"],
+                "mkt_home": None, "mkt_away": None,
+                "g": p,
+            })
+
     added = 0
-    for g in top5_ayer:
-        key = f"{g['home']}-{g['away']}-{YESTERDAY}"
+    for r in records:
+        key = f"{r['home']}-{r['away']}-{YESTERDAY}"
         if key in existing:
             continue
-        fav = g["home"] if g["hp"] >= 50 else g["away"]
+        g   = r["g"]
+        hp  = r["hp"]
+        fav = r["home"] if hp >= 50 else r["away"]
         win = g["home"] if g["home_score"] > g["away_score"] else g["away"]
         hit = fav == win
         score = (
@@ -530,15 +598,21 @@ def update_history(history, yesterday_games, standings, team_stats):
             if g["away_score"] > g["home_score"]
             else f"{g['home']} {g['home_score']}-{g['away_score']} {g['away']}"
         )
-        history.append({
+        entry = {
             "date":   YESTERDAY,
-            "home":   g["home"],
-            "away":   g["away"],
-            "hp":     g["hp"],
+            "home":   r["home"],
+            "away":   r["away"],
+            "hp":     hp,
             "pred":   fav,
             "actual": score,
             "hit":    hit,
-        })
+        }
+        # Consensus del mercado (para futuro analisis modelo-vs-mercado)
+        if r["mkt_home"] is not None:
+            entry["mkt_home"] = r["mkt_home"]
+            entry["mkt_away"] = r["mkt_away"]
+        history.append(entry)
+        existing.add(key)
         added += 1
     print(f"   {added} predicciones del Top 5 de ayer agregadas al historial")
     return history
@@ -580,23 +654,32 @@ def main():
         odds_key  = f"{g['away']}@{g['home']}"
         game_odds = odds_map.get(odds_key, {})
         is_value, edge = calc_value_bet(pred["hp"], pred["ap"], game_odds)
-        predictions.append({**g, **pred, "odds": game_odds, "value": is_value, "edge": edge})
+        predictions.append({
+            **g, **pred,
+            "odds": game_odds, "value": is_value, "edge": edge,
+            "sel_diff": sel_diff(pred),
+        })
 
     if not predictions:
         print("   No hay partidos pendientes hoy")
         top5 = []
     else:
-        top5 = sorted(predictions, key=lambda x: x["diff"], reverse=True)[:5]
+        # Seleccion v3.1: ordenar por conviccion ajustada (penaliza estadios ofensivos)
+        top5 = sorted(predictions, key=lambda x: x["sel_diff"], reverse=True)[:5]
         print(f"   Lider: {top5[0]['away']} @ {top5[0]['home']} ({top5[0]['conf']} confianza)")
+        park_penalized = [p for p in top5 if p["park_factor"] >= OFFENSIVE_PARK_THRESHOLD]
+        if park_penalized:
+            print(f"   Nota: {len(park_penalized)} del Top 5 en estadio ofensivo (conviccion penalizada)")
         value_bets = [p for p in top5 if p.get("value")]
         if value_bets:
             print(f"   Value bets: {len(value_bets)}")
 
     print("\nActualizando historial...")
+    prev_top5 = load_prev_top5()  # DEBE leerse antes de sobreescribir data.json
     yesterday_games = get_games(YESTERDAY)
     history = load_history()
     history = clean_history(history)
-    history = update_history(history, yesterday_games, standings, team_stats)
+    history = update_history(history, yesterday_games, standings, team_stats, prev_top5)
     save_history(history)
 
     hits  = sum(1 for h in history if h["hit"])
@@ -626,8 +709,8 @@ def main():
         "date":       TODAY,
         "updated":    datetime.now(MEXICO_TZ).strftime("%d/%m/%Y %H:%M CST"),
         "model_info": {
-            "version":      "3.0",
-            "type":         "Regresion logistica" if MODEL_WEIGHTS else "Heuristico",
+            "version":      "3.1",
+            "type":         "Regresion logistica recalibrada" if MODEL_WEIGHTS else "Heuristico",
             "cv_accuracy":  round(MODEL_WEIGHTS["cv_accuracy"] * 100, 1) if MODEL_WEIGHTS else None,
             "n_games":      MODEL_WEIGHTS["n_games"] if MODEL_WEIGHTS else None,
             "trained_at":   MODEL_WEIGHTS["trained_at"] if MODEL_WEIGHTS else None,
@@ -650,8 +733,7 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     print(f"\n✓ Listo: {total} predicciones historicas, {pct}% precision")
-    print(f"  Bullpen stats incluidos para {len([t for t in team_stats if 'bullpen_era' in team_stats[t]])} equipos")
-    print(f"  Park factors activos para 30 estadios")
+    print(f"  Modelo v3.1: recalibrado (cap 68%) + penalizacion estadios ofensivos")
     if odds_map:
         print(f"  Momios: {len(odds_map)} partidos")
 
