@@ -1,6 +1,6 @@
 {
   "date": "2026-07-06",
-  "updated": "06/07/2026 10:55 CST",
+  "updated": "06/07/2026 11:45 CST",
   "model_info": {
     "version": "3.0",
     "type": "Regresion logistica",
@@ -680,10 +680,10 @@
       "ops": 0.698
     },
     "ATH": {
-      "era": 5.11,
+      "era": 5.1,
       "whip": 1.47,
       "k9": 8.45,
-      "bullpen_era": 5.11,
+      "bullpen_era": 5.1,
       "bullpen_whip": 1.47,
       "obp": 0.326,
       "slg": 0.41,
@@ -923,8 +923,8 @@
         "home_ml": -131,
         "away_ml": 109,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.1,
-        "consensus_away": 45.9,
+        "consensus_home": 54.2,
+        "consensus_away": 45.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -937,11 +937,11 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 14.9
+      "edge": 14.8
     },
     {
       "id": 824089,
-      "status": "Preview",
+      "status": "Live",
       "home": "KC",
       "away": "PHI",
       "home_name": "Kansas City Royals",
@@ -963,10 +963,10 @@
       "park_factor": 0.96,
       "odds": {
         "home_ml": 178,
-        "away_ml": -218,
+        "away_ml": -219,
         "bookmaker": "DraftKings",
-        "consensus_home": 34.6,
-        "consensus_away": 65.4,
+        "consensus_home": 34.1,
+        "consensus_away": 65.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -975,11 +975,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.1,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.4
+      "edge": -4.9
     },
     {
       "id": 822958,
@@ -1007,8 +1007,8 @@
         "home_ml": -112,
         "away_ml": -108,
         "bookmaker": "DraftKings",
-        "consensus_home": 50.6,
-        "consensus_away": 49.4,
+        "consensus_home": 50.5,
+        "consensus_away": 49.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1017,11 +1017,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.4,
+        "spread": 2.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.4
+      "edge": 7.5
     },
     {
       "id": 822712,
@@ -1049,8 +1049,8 @@
         "home_ml": -120,
         "away_ml": -101,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.0,
-        "consensus_away": 48.0,
+        "consensus_home": 51.9,
+        "consensus_away": 48.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.0,
+        "spread": 0.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.0
+      "edge": 3.1
     }
   ],
   "history": [
