@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odds Edge — Track Record</title>
+
+<!-- ============================================================= -->
+<!--  CONFIGURACION  —  ajusta SOLO si tus campos tienen otro nombre -->
+<!-- ============================================================= -->
+<script>
+const CONFIG = {
+  // De donde se leen las predicciones. Por defecto usa data.json (mismo
+  // que consume tu frontend). Si prefieres history.json directo, cambialo.
+  DATA_URL: "data.json",
+
+  // Si el historial viene DENTRO de data.json bajo una llave (ej. "history"),
+  // ponla aqui. Si el archivo YA ES un array de predicciones, deja "".
+  HISTORY_KEY: "history",
+
+  // Nombres de campo de cada prediccion. Ajusta si difieren en tu JSON.
+  FIELD: {
+    hit:   "hit",     // booleano: acerto o no
+    conf:  "conf",    // texto ("Alta"/"Media"/"Baja") o numero (0-100)
+    date:  "date",    // fecha de la prediccion
+    home:  "home",    // equipo local (abreviatura)
+    away:  "away",    // equipo visitante
+    prob:  "prob",    // probabilidad del modelo (0-1 o 0-100), opcional
+    odds:  "odds"     // momio consenso, opcional
+  },
+
+  // Umbral de rentabilidad break-even (para la linea de referencia).
+  // A momio -110 estandar el break-even es 52.4%.
+  BREAKEVEN_PCT: 52.4,
+
+  // ROI simulado a mostrar (tu analisis de run line dio +19% a 2.5x).
+  // Si prefieres calcularlo dinamicamente mas adelante, aqui va el valor fijo.
+  SIM_ROI_PCT: 19,
+  SIM_ROI_NOTE: "run line a 2.5x"
+};
+</script>
+
+<style>
+  :root{
+    --bg:#faf9f5; --card:#ffffff; --ink:#1a1a17; --ink2:#5f5e5a;
+    --ink3:#898781; --line:#e7e5dd; --green:#0f6e56; --green-bg:#e1f5ee;
+    --red:#a32d2d; --red-bg:#fcebeb; --accent:#1B5E20;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#17171a; --card:#1f1f22; --ink:#f2f2ef; --ink2:#b8b7b0;
+      --ink3:#8a8981; --line:#2f2f31; --green:#5dcaa5; --green-bg:#0f3d31;
+      --red:#f09595; --red-bg:#4a1717; --accent:#5dcaa5;
+    }
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; padding:20px; max-width:820px; margin:0 auto;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+  header{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:20px;}
+  .brand{display:flex; align-items:center; gap:11px;}
+  .brand .logo{width:36px;height:36px;border-radius:9px;background:var(--green-bg);display:flex;align-items:center;justify-content:center;font-size:20px;}
+  .brand h1{font-size:17px;font-weight:600;line-height:1.2;}
+  .brand p{font-size:12px;color:var(--ink3);}
+  .badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--green);background:var(--green-bg);padding:6px 12px;border-radius:999px;font-weight:500;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px;}
+  .stat{background:var(--card);border:0.5px solid var(--line);border-radius:12px;padding:16px;}
+  .stat .lbl{font-size:13px;color:var(--ink2);margin-bottom:4px;}
+  .stat .val{font-size:30px;font-weight:600;font-variant-numeric:tabular-nums;}
+  .stat .val.pos{color:var(--green);}
+  .stat .sub{font-size:11px;color:var(--ink3);margin-top:2px;}
+  .panel{background:var(--card);border:0.5px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px;}
+  .panel-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:6px;}
+  .panel-h .t{font-size:14px;font-weight:600;}
+  .panel-h .n{font-size:11px;color:var(--ink3);}
+  .chart-wrap{position:relative;width:100%;height:220px;}
+  .conf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;}
+  .conf{border:0.5px solid var(--line);border-radius:9px;padding:13px;}
+  .conf .dot{display:inline-block;width:9px;height:9px;border-radius:2px;vertical-align:middle;margin-right:6px;}
+  .conf .k{font-size:12px;color:var(--ink2);}
+  .conf .p{font-size:21px;font-weight:600;font-variant-numeric:tabular-nums;margin-top:5px;}
+  .conf .c{font-size:11px;color:var(--ink3);}
+  .row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:0.5px solid var(--line);}
+  .row:last-child{border-bottom:none;}
+  .row .g{display:flex;align-items:center;gap:11px;}
+  .row .ico{font-size:17px;line-height:1;}
+  .row .m{font-size:13px;font-weight:500;}
+  .row .d{font-size:11px;color:var(--ink3);}
+  .row .res{font-size:12px;font-weight:600;}
+  .res.hit{color:var(--green);} .res.miss{color:var(--red);}
+  .disc{border-left:3px solid var(--line);padding:10px 0 10px 14px;margin-top:4px;}
+  .disc p{font-size:11px;color:var(--ink3);line-height:1.6;}
+  .disc strong{font-weight:600;color:var(--ink2);}
+  .loading{text-align:center;color:var(--ink3);font-size:13px;padding:40px 0;}
+  .err{background:var(--red-bg);color:var(--red);border-radius:10px;padding:14px;font-size:13px;}
+</style>
+</head>
+<body>
+<h2 class="sr-only">Dashboard público de Odds Edge: precisión histórica, ROI simulado y registro de predicciones del modelo MLB.</h2>
+
+<header>
+  <div class="brand">
+    <div class="logo">&#9918;</div>
+    <div>
+      <h1>Odds Edge — track record</h1>
+      <p id="subtitle">Temporada MLB 2026 · cargando…</p>
+    </div>
+  </div>
+  <span class="badge">&#128274; Historial inmutable en GitHub</span>
+</header>
+
+<div id="root"><div class="loading">Cargando historial de predicciones…</div></div>
+
+<div class="disc">
+  <p>Solo con fines informativos y de entretenimiento. El ROI mostrado es <strong>simulado</strong>
+  sobre resultados históricos y no representa ganancias reales. El rendimiento pasado no garantiza
+  resultados futuros. Odds Edge no es una casa de apuestas y no acepta apuestas. 18+/21+.
+  Juega responsablemente — 1-800-GAMBLER.</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+(function(){
+  "use strict";
+  const F = CONFIG.FIELD;
+  const root = document.getElementById("root");
+
+  // -------- helpers de lectura defensiva de campos --------
+  function pick(obj, name, fallbacks){
+    if(obj == null) return undefined;
+    if(name in obj) return obj[name];
+    for(const fb of (fallbacks||[])) if(fb in obj) return obj[fb];
+    return undefined;
+  }
+  function isHit(p){
+    let v = pick(p, F.hit, ["hit","acierto","won","win","correct"]);
+    if(typeof v === "string") v = v.toLowerCase();
+    return v === true || v === 1 || v === "true" || v === "w" || v === "win" || v === "si" || v === "sí";
+  }
+  function isResolved(p){
+    const v = pick(p, F.hit, ["hit","acierto","won","win","correct"]);
+    if(v === undefined || v === null) return false;
+    if(typeof v === "string"){
+      const s = v.toLowerCase();
+      return s !== "unk" && s !== "" && s !== "pending" && s !== "n/a";
+    }
+    return true;
+  }
+  function confBucket(p){
+    let c = pick(p, F.conf, ["conf","confidence","conviction","nivel"]);
+    if(typeof c === "number"){
+      const pct = c <= 1 ? c*100 : c;
+      if(pct >= 62) return "alta";
+      if(pct >= 55) return "media";
+      return "baja";
+    }
+    if(typeof c === "string"){
+      const s = c.toLowerCase();
+      if(s.startsWith("alta")||s.startsWith("high")) return "alta";
+      if(s.startsWith("media")||s.startsWith("med")) return "media";
+      if(s.startsWith("baja")||s.startsWith("low")) return "baja";
+    }
+    return "media";
+  }
+  function matchLabel(p){
+    const a = pick(p, F.away, ["away","visitante","away_abbr","road"]);
+    const h = pick(p, F.home, ["home","local","home_abbr"]);
+    if(a && h) return a + " @ " + h;
+    return pick(p, "game", ["matchup","name"]) || "—";
+  }
+  function dateLabel(p){
+    const d = pick(p, F.date, ["date","fecha","game_date","day"]);
+    return d ? String(d) : "";
+  }
+  function confText(p){
+    let c = pick(p, F.conf, ["conf","confidence"]);
+    if(typeof c === "number"){ const pct = c<=1?c*100:c; return Math.round(pct)+"% conf"; }
+    return c ? String(c) : "";
+  }
+
+  function render(preds){
+    const resolved = preds.filter(isResolved);
+    const total = resolved.length;
+    const hits = resolved.filter(isHit).length;
+    const pct = total ? Math.round(hits/total*100) : 0;
+
+    // racha desde el final
+    let streak = 0, stype = null;
+    for(let i = resolved.length-1; i >= 0; i--){
+      const h = isHit(resolved[i]);
+      if(stype === null){ stype = h; streak = 1; }
+      else if(h === stype){ streak++; }
+      else break;
+    }
+    const streakTxt = (stype ? "W" : "L") + streak;
+
+    // buckets de confianza
+    const buckets = {alta:[a=>0], media:[], baja:[]};
+    ["alta","media","baja"].forEach(b=>buckets[b]=[]);
+    resolved.forEach(p=>buckets[confBucket(p)].push(p));
+    function bstat(arr){
+      const t = arr.length, h = arr.filter(isHit).length;
+      return {t, pct: t ? Math.round(h/t*100) : 0};
+    }
+    const bA = bstat(buckets.alta), bM = bstat(buckets.media), bB = bstat(buckets.baja);
+
+    // agregado mensual para el chart
+    const byMonth = {};
+    resolved.forEach(p=>{
+      const d = dateLabel(p);
+      const m = monthKey(d);
+      if(!m) return;
+      (byMonth[m] = byMonth[m] || []).push(p);
+    });
+    const months = Object.keys(byMonth).sort();
+    const monthLabels = months.map(monthName);
+    const monthAcc = months.map(m=>{
+      const arr = byMonth[m], t = arr.length, h = arr.filter(isHit).length;
+      return t ? Math.round(h/t*100) : 0;
+    });
+
+    // ultimas predicciones (mas recientes primero)
+    const recent = resolved.slice(-6).reverse();
+
+    root.innerHTML =
+      cardsHTML(pct, hits, total, streakTxt, stype) +
+      chartPanelHTML() +
+      confPanelHTML(bA, bM, bB) +
+      recentPanelHTML(recent);
+
+    document.getElementById("subtitle").textContent =
+      "Temporada MLB 2026 · " + total + " predicciones · actualizado diariamente";
+
+    drawChart(monthLabels.length ? monthLabels : ["—"],
+              monthAcc.length ? monthAcc : [pct]);
+  }
+
+  function cardsHTML(pct, hits, total, streakTxt, stype){
+    return '<div class="cards">'
+      + stat("Precisión Top 5", pct+'<span style="font-size:18px">%</span>', hits+" de "+total+" aciertos", false)
+      + stat("ROI simulado", '<span class="pos">+'+CONFIG.SIM_ROI_PCT+'<span style="font-size:18px">%</span></span>', CONFIG.SIM_ROI_NOTE+" · ver nota", false)
+      + stat("Predicciones", total, "registradas con timestamp", false)
+      + stat("Racha actual", '<span class="'+(stype?'pos':'')+'">'+streakTxt+'</span>', "días consecutivos", false)
+      + '</div>';
+  }
+  function stat(lbl, val, sub){
+    return '<div class="stat"><div class="lbl">'+lbl+'</div><div class="val">'+val+'</div><div class="sub">'+sub+'</div></div>';
+  }
+  function chartPanelHTML(){
+    return '<div class="panel"><div class="panel-h"><span class="t">Precisión por mes</span>'
+      + '<span class="n">línea punteada = break-even ('+CONFIG.BREAKEVEN_PCT+'%)</span></div>'
+      + '<div class="chart-wrap"><canvas id="accChart" role="img" aria-label="Precisión mensual del modelo"></canvas></div></div>';
+  }
+  function confPanelHTML(a,m,b){
+    function c(color,label,st){
+      return '<div class="conf"><div><span class="dot" style="background:'+color+'"></span>'
+        + '<span class="k">'+label+'</span></div><div class="p">'+st.pct+'%</div>'
+        + '<div class="c">'+st.t+' picks</div></div>';
+    }
+    return '<div class="panel"><div class="panel-h"><span class="t">Desglose por confianza</span></div>'
+      + '<div class="conf-grid">'
+      + c('#199e70','Alta (&gt;62%)',a)
+      + c('#eda100','Media (55–62%)',m)
+      + c('#898781','Baja (&lt;55%)',b)
+      + '</div></div>';
+  }
+  function recentPanelHTML(recent){
+    let rows = "";
+    recent.forEach(p=>{
+      const hit = isHit(p);
+      rows += '<div class="row"><div class="g">'
+        + '<span class="ico" style="color:'+(hit?'var(--green)':'var(--red)')+'">'+(hit?'&#9989;':'&#10060;')+'</span>'
+        + '<div><div class="m">'+matchLabel(p)+'</div>'
+        + '<div class="d">'+dateLabel(p)+' · '+confText(p)+'</div></div></div>'
+        + '<span class="res '+(hit?'hit':'miss')+'">'+(hit?'Acierto':'Falla')+'</span></div>';
+    });
+    if(!rows) rows = '<div class="loading">Sin predicciones resueltas aún.</div>';
+    return '<div class="panel"><div class="panel-h"><span class="t">Últimas predicciones</span>'
+      + '<span class="n">timestamp fijo, imposible de editar</span></div>'+rows+'</div>';
+  }
+
+  // -------- fechas --------
+  function monthKey(d){
+    if(!d) return null;
+    // intenta ISO YYYY-MM-DD
+    let m = String(d).match(/(\d{4})-(\d{2})/);
+    if(m) return m[1]+"-"+m[2];
+    // intenta DD/MM/YYYY
+    m = String(d).match(/(\d{2})\/(\d{2})\/(\d{4})/);
+    if(m) return m[3]+"-"+m[2];
+    return null;
+  }
+  const MES=["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+  function monthName(key){ const p=key.split("-"); return MES[parseInt(p[1],10)-1]||key; }
+
+  // -------- chart --------
+  function drawChart(labels, data){
+    const el = document.getElementById("accChart");
+    if(!el || !window.Chart) return;
+    const be = CONFIG.BREAKEVEN_PCT;
+    new Chart(el, {
+      type:"line",
+      data:{ labels:labels, datasets:[
+        { label:"Precisión", data:data, borderColor:"#1d9e75",
+          backgroundColor:"rgba(29,158,117,0.10)", borderWidth:2, tension:0.3,
+          fill:true, pointRadius:5, pointBackgroundColor:"#1d9e75",
+          pointBorderColor:"#faf9f5", pointBorderWidth:2 },
+        { label:"Break-even", data:labels.map(()=>be), borderColor:"#898781",
+          borderWidth:1.5, borderDash:[5,4], pointRadius:0, fill:false }
+      ]},
+      options:{ responsive:true, maintainAspectRatio:false,
+        plugins:{ legend:{ display:false } },
+        scales:{
+          y:{ min:45, max:70, ticks:{ callback:v=>v+"%", color:"#898781", font:{size:11} },
+              grid:{ color:"rgba(137,135,129,0.15)" } },
+          x:{ ticks:{ color:"#898781", font:{size:11} }, grid:{ display:false } }
+        }
+      }
+    });
+  }
+
+  // -------- carga --------
+  fetch(CONFIG.DATA_URL, {cache:"no-store"})
+    .then(r=>{ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
+    .then(json=>{
+      let preds = CONFIG.HISTORY_KEY ? json[CONFIG.HISTORY_KEY] : json;
+      if(!Array.isArray(preds)){
+        // fallback: si data.json es objeto pero el array esta en otra llave comun
+        preds = json.history || json.predictions || json.top5 || [];
+      }
+      if(!Array.isArray(preds) || preds.length===0){
+        root.innerHTML = '<div class="err">No se encontraron predicciones en '
+          + CONFIG.DATA_URL + (CONFIG.HISTORY_KEY?(' bajo la llave "'+CONFIG.HISTORY_KEY+'"'):"")
+          + '. Revisa CONFIG.DATA_URL y CONFIG.HISTORY_KEY.</div>';
+        return;
+      }
+      render(preds);
+    })
+    .catch(err=>{
+      root.innerHTML = '<div class="err">No se pudo cargar el historial ('
+        + err.message + '). Verifica que "'+CONFIG.DATA_URL+'" exista y sea accesible.</div>';
+    });
+})();
+</script>
+</body>
+</html>
