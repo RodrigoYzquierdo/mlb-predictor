@@ -1,6 +1,6 @@
 {
   "date": "2026-07-07",
-  "updated": "07/07/2026 10:36 CST",
+  "updated": "07/07/2026 11:19 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,8 +881,8 @@
         "home_ml": -292,
         "away_ml": 233,
         "bookmaker": "DraftKings",
-        "consensus_home": 70.8,
-        "consensus_away": 29.2,
+        "consensus_home": 70.9,
+        "consensus_away": 29.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -895,7 +895,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.8,
+      "edge": -2.9,
       "sel_diff": 18.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -163,
         "away_ml": 135,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.8,
-        "consensus_away": 40.2,
+        "consensus_home": 59.7,
+        "consensus_away": 40.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.9,
+        "spread": 2.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.2,
+      "edge": 2.3,
       "sel_diff": 8.4
     },
     {
