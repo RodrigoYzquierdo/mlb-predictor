@@ -1,6 +1,6 @@
 {
   "date": "2026-07-07",
-  "updated": "07/07/2026 11:19 CST",
+  "updated": "07/07/2026 12:05 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,8 +881,8 @@
         "home_ml": -292,
         "away_ml": 233,
         "bookmaker": "DraftKings",
-        "consensus_home": 70.9,
-        "consensus_away": 29.1,
+        "consensus_home": 71.0,
+        "consensus_away": 29.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.4,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.9,
+      "edge": -3.0,
       "sel_diff": 18.0
     },
     {
@@ -986,7 +986,7 @@
     },
     {
       "id": 823062,
-      "status": "Preview",
+      "status": "Live",
       "home": "STL",
       "away": "MIL",
       "home_name": "St. Louis Cardinals",
@@ -1007,11 +1007,11 @@
       "diff": 7,
       "park_factor": 1.0,
       "odds": {
-        "home_ml": 104,
-        "away_ml": -125,
+        "home_ml": 101,
+        "away_ml": -122,
         "bookmaker": "DraftKings",
-        "consensus_home": 46.8,
-        "consensus_away": 53.2,
+        "consensus_home": 47.1,
+        "consensus_away": 52.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1024,7 +1024,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.8,
+      "edge": 4.1,
       "sel_diff": 7.0
     },
     {
