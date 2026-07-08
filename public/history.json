@@ -4678,5 +4678,14 @@
     "hit": true,
     "mkt_home": 53.1,
     "mkt_away": 46.9
+  },
+  {
+    "date": "2026-07-07",
+    "home": "STL",
+    "away": "MIL",
+    "hp": 42,
+    "pred": "MIL",
+    "actual": "MIL 4-3 STL",
+    "hit": true
   }
 ]

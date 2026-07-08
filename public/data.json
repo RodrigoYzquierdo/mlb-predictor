@@ -1,6 +1,6 @@
 {
   "date": "2026-07-08",
-  "updated": "08/07/2026 10:04 CST",
+  "updated": "08/07/2026 10:42 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -891,7 +891,7 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.3,
+        "spread": 0.8,
         "agreement": "Alta"
       },
       "value": false,
@@ -934,7 +934,7 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 0.9,
+        "spread": 0.6,
         "agreement": "Alta"
       },
       "value": false,
@@ -967,8 +967,8 @@
         "home_ml": -120,
         "away_ml": -101,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.5,
-        "consensus_away": 47.5,
+        "consensus_home": 52.4,
+        "consensus_away": 47.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 2.2,
+        "spread": 2.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 6.5,
+      "edge": 6.6,
       "sel_diff": 9.0
     },
     {
@@ -1020,7 +1020,7 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 2.2,
+        "spread": 2.5,
         "agreement": "Alta"
       },
       "value": false,
@@ -5751,13 +5751,22 @@
       "hit": true,
       "mkt_home": 53.1,
       "mkt_away": 46.9
+    },
+    {
+      "date": "2026-07-07",
+      "home": "STL",
+      "away": "MIL",
+      "hp": 42,
+      "pred": "MIL",
+      "actual": "MIL 4-3 STL",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 304,
-    "total": 518,
+    "hits": 305,
+    "total": 519,
     "pct": 59,
-    "streak": 3,
+    "streak": 4,
     "streak_type": "W"
   }
 }
