@@ -4797,5 +4797,23 @@
     "hit": true,
     "mkt_home": 54.7,
     "mkt_away": 45.3
+  },
+  {
+    "date": "2026-07-09",
+    "home": "TB",
+    "away": "NYY",
+    "hp": 58,
+    "pred": "TB",
+    "actual": "NYY 12-4 TB",
+    "hit": false
+  },
+  {
+    "date": "2026-07-09",
+    "home": "CWS",
+    "away": "BOS",
+    "hp": 57,
+    "pred": "CWS",
+    "actual": "BOS 2-1 CWS",
+    "hit": false
   }
 ]
