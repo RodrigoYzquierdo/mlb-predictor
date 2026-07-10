@@ -1,6 +1,6 @@
 {
   "date": "2026-07-10",
-  "updated": "10/07/2026 11:51 CST",
+  "updated": "10/07/2026 14:58 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -865,33 +865,34 @@
       "time": "2026-07-11T02:10:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Shohei Ohtani",
-      "home_pitcher_id": 660271,
+      "home_pitcher": null,
+      "home_pitcher_id": null,
       "away_pitcher": "Eduardo Rodriguez",
       "away_pitcher_id": 593958,
-      "home_era": 1.79,
+      "home_era": null,
       "away_era": 2.25,
       "hp": 65,
       "ap": 35,
       "conf": "Alta",
-      "mixed": true,
+      "mixed": false,
       "diff": 15,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -260,
-        "away_ml": 215,
-        "bookmaker": "FanDuel",
-        "consensus_home": 69.5,
-        "consensus_away": 30.5,
-        "books_count": 1,
+        "home_ml": -282,
+        "away_ml": 225,
+        "bookmaker": "DraftKings",
+        "consensus_home": 70.5,
+        "consensus_away": 29.5,
+        "books_count": 2,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings"
         ],
-        "spread": 0,
+        "spread": 0.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.5,
+      "edge": -5.5,
       "sel_diff": 15.0
     },
     {
@@ -917,20 +918,21 @@
       "diff": 13,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -116,
-        "away_ml": -102,
-        "bookmaker": "FanDuel",
-        "consensus_home": 51.5,
-        "consensus_away": 48.5,
-        "books_count": 1,
+        "home_ml": -115,
+        "away_ml": -105,
+        "bookmaker": "DraftKings",
+        "consensus_home": 51.3,
+        "consensus_away": 48.7,
+        "books_count": 2,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings"
         ],
-        "spread": 0,
+        "spread": 0.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 11.5,
+      "edge": 11.7,
       "sel_diff": 13.0
     },
     {
@@ -957,10 +959,10 @@
       "park_factor": 0.99,
       "odds": {
         "home_ml": -149,
-        "away_ml": 124,
+        "away_ml": 123,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.2,
-        "consensus_away": 42.8,
+        "consensus_home": 57.4,
+        "consensus_away": 42.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -969,11 +971,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 1.3,
+        "spread": 0.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.8,
+      "edge": 4.6,
       "sel_diff": 12.0
     },
     {
@@ -999,20 +1001,21 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -102,
-        "away_ml": -116,
-        "bookmaker": "FanDuel",
-        "consensus_home": 48.5,
-        "consensus_away": 51.5,
-        "books_count": 1,
+        "home_ml": -105,
+        "away_ml": -115,
+        "bookmaker": "DraftKings",
+        "consensus_home": 48.7,
+        "consensus_away": 51.3,
+        "books_count": 2,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings"
         ],
-        "spread": 0,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 12.5,
+      "edge": 12.3,
       "sel_diff": 11.0
     },
     {
@@ -1038,20 +1041,21 @@
       "diff": 9,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -158,
-        "away_ml": 134,
-        "bookmaker": "FanDuel",
-        "consensus_home": 58.9,
-        "consensus_away": 41.1,
-        "books_count": 1,
+        "home_ml": -156,
+        "away_ml": 129,
+        "bookmaker": "DraftKings",
+        "consensus_home": 58.6,
+        "consensus_away": 41.4,
+        "books_count": 2,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "DraftKings"
         ],
-        "spread": 0,
+        "spread": 0.3,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.1,
+      "edge": 0.4,
       "sel_diff": 9.0
     }
   ],
