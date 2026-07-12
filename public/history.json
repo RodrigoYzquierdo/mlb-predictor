@@ -4925,5 +4925,14 @@
     "hit": false,
     "mkt_home": 45.9,
     "mkt_away": 54.1
+  },
+  {
+    "date": "2026-07-11",
+    "home": "CWS",
+    "away": "ATH",
+    "hp": 62,
+    "pred": "CWS",
+    "actual": "CWS 1-0 ATH",
+    "hit": true
   }
 ]
