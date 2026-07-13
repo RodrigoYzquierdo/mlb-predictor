@@ -1,6 +1,6 @@
 {
   "date": "2026-07-13",
-  "updated": "13/07/2026 10:38 CST",
+  "updated": "13/07/2026 11:15 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -5844,11 +5844,29 @@
       "hit": true,
       "mkt_home": 50.9,
       "mkt_away": 49.1
+    },
+    {
+      "date": "2026-07-12",
+      "home": "TB",
+      "away": "SEA",
+      "hp": 63,
+      "pred": "TB",
+      "actual": "SEA 8-2 TB",
+      "hit": false
+    },
+    {
+      "date": "2026-07-12",
+      "home": "CWS",
+      "away": "ATH",
+      "hp": 62,
+      "pred": "CWS",
+      "actual": "CWS 9-1 ATH",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 322,
-    "total": 547,
+    "hits": 323,
+    "total": 549,
     "pct": 59,
     "streak": 1,
     "streak_type": "W"

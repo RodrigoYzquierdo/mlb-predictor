@@ -4987,5 +4987,23 @@
     "hit": true,
     "mkt_home": 50.9,
     "mkt_away": 49.1
+  },
+  {
+    "date": "2026-07-12",
+    "home": "TB",
+    "away": "SEA",
+    "hp": 63,
+    "pred": "TB",
+    "actual": "SEA 8-2 TB",
+    "hit": false
+  },
+  {
+    "date": "2026-07-12",
+    "home": "CWS",
+    "away": "ATH",
+    "hp": 62,
+    "pred": "CWS",
+    "actual": "CWS 9-1 ATH",
+    "hit": true
   }
 ]
