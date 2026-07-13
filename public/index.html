@@ -159,6 +159,14 @@
     .agr-hi{color:var(--txS);font-weight:500}
     .agr-med{color:var(--txW);font-weight:500}
     .agr-lo{color:var(--txD);font-weight:500}
+
+/* Enlace al track record publico */
+    .trackrec-link{display:flex;align-items:center;justify-content:center;gap:6px;
+      text-decoration:none;font-size:12px;font-weight:500;color:var(--txS);
+      background:var(--bgS);border:.5px solid var(--bdS);border-radius:20px;
+      padding:6px 14px;margin:-.5rem auto 1.25rem;width:fit-content;transition:opacity .15s}
+    .trackrec-link:hover{opacity:.8}
+   
   </style>
 </head>
 <body>
@@ -174,7 +182,11 @@
     </div>
     <div class="updated-pill" id="updated-pill">⏳ Actualizando</div>
   </header>
-
+  
+  <a class="trackrec-link" href="dashboard.html">
+    📊 Ver track record completo &amp; ROI →
+  </a>
+  
   <div id="main-content">
     <div class="loading">
       <div class="spinner"></div>
