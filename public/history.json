@@ -4934,5 +4934,58 @@
     "pred": "CWS",
     "actual": "CWS 1-0 ATH",
     "hit": true
+  },
+  {
+    "date": "2026-07-12",
+    "home": "LAD",
+    "away": "AZ",
+    "hp": 64,
+    "pred": "LAD",
+    "actual": "AZ 5-3 LAD",
+    "hit": false,
+    "mkt_home": 71.6,
+    "mkt_away": 28.4
+  },
+  {
+    "date": "2026-07-12",
+    "home": "MIN",
+    "away": "LAA",
+    "hp": 62,
+    "pred": "MIN",
+    "actual": "MIN 4-2 LAA",
+    "hit": true,
+    "mkt_home": 95.9,
+    "mkt_away": 4.1
+  },
+  {
+    "date": "2026-07-12",
+    "home": "BAL",
+    "away": "KC",
+    "hp": 61,
+    "pred": "BAL",
+    "actual": "BAL 8-2 KC",
+    "hit": true
+  },
+  {
+    "date": "2026-07-12",
+    "home": "MIA",
+    "away": "CLE",
+    "hp": 56,
+    "pred": "MIA",
+    "actual": "CLE 5-2 MIA",
+    "hit": false,
+    "mkt_home": 2.9,
+    "mkt_away": 97.1
+  },
+  {
+    "date": "2026-07-12",
+    "home": "SF",
+    "away": "COL",
+    "hp": 56,
+    "pred": "SF",
+    "actual": "SF 3-1 COL",
+    "hit": true,
+    "mkt_home": 50.9,
+    "mkt_away": 49.1
   }
 ]
