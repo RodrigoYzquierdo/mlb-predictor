@@ -97,6 +97,13 @@ const CONFIG = {
   .disc strong{font-weight:600;color:var(--ink2);}
   .loading{text-align:center;color:var(--ink3);font-size:13px;padding:40px 0;}
   .err{background:var(--red-bg);color:var(--red);border-radius:10px;padding:14px;font-size:13px;}
+  .cta-wrap{margin:4px 0 20px;text-align:center;}
+  .cta{display:inline-flex;align-items:center;gap:9px;background:var(--green);color:#fff;
+    text-decoration:none;font-size:15px;font-weight:600;padding:13px 26px;border-radius:11px;
+    transition:opacity .15s;box-shadow:0 2px 8px rgba(15,110,86,0.25);}
+  .cta:hover{opacity:0.9;}
+  .cta .arrow{font-size:18px;line-height:1;}
+  .cta-sub{display:block;font-size:12px;color:var(--ink3);margin-top:8px;}
 </style>
 </head>
 <body>
@@ -114,6 +121,13 @@ const CONFIG = {
 </header>
 
 <div id="root"><div class="loading">Cargando historial de predicciones…</div></div>
+
+<div class="cta-wrap">
+  <a class="cta" href="index.html">
+    Ver las predicciones de hoy <span class="arrow">&#8594;</span>
+  </a>
+  <span class="cta-sub">Top 5 diario del modelo, con momios y análisis</span>
+</div>
 
 <div class="disc">
   <p>Solo con fines informativos y de entretenimiento. El ROI mostrado es <strong>simulado</strong>
@@ -151,18 +165,22 @@ const CONFIG = {
     return true;
   }
   function confBucket(p){
+    // Si existe un campo de confianza explicito (texto o numero), usalo.
     let c = pick(p, F.conf, ["conf","confidence","conviction","nivel"]);
-    if(typeof c === "number"){
-      const pct = c <= 1 ? c*100 : c;
-      if(pct >= 62) return "alta";
-      if(pct >= 55) return "media";
-      return "baja";
-    }
-    if(typeof c === "string"){
+    if(typeof c === "string" && c){
       const s = c.toLowerCase();
       if(s.startsWith("alta")||s.startsWith("high")) return "alta";
       if(s.startsWith("media")||s.startsWith("med")) return "media";
       if(s.startsWith("baja")||s.startsWith("low")) return "baja";
+    }
+    // Si no, deriva la confianza desde hp (prob del local), IGUAL que index.html:
+    // diff = |hp - 50|;  >12 = Alta,  >6 = Media,  resto = Baja
+    const hp = pick(p, "hp", ["home_prob","prob_home"]);
+    if(typeof hp === "number"){
+      const diff = Math.abs(hp - 50);
+      if(diff > 12) return "alta";
+      if(diff > 6)  return "media";
+      return "baja";
     }
     return "media";
   }
@@ -177,9 +195,17 @@ const CONFIG = {
     return d ? String(d) : "";
   }
   function confText(p){
-    let c = pick(p, F.conf, ["conf","confidence"]);
-    if(typeof c === "number"){ const pct = c<=1?c*100:c; return Math.round(pct)+"% conf"; }
-    return c ? String(c) : "";
+    const b = confBucket(p);
+    const label = b === "alta" ? "Alta" : b === "baja" ? "Baja" : "Media";
+    // Muestra tambien el % del modelo si esta disponible
+    const hp = pick(p, "hp", ["home_prob","prob_home"]);
+    const ap = pick(p, "ap", ["away_prob","prob_away"]);
+    let pct = "";
+    if(typeof hp === "number"){
+      const fav = (typeof ap === "number") ? Math.max(hp, ap) : (hp > 50 ? hp : 100 - hp);
+      pct = " · " + Math.round(fav) + "%";
+    }
+    return label + pct;
   }
 
   function render(preds){
@@ -263,9 +289,9 @@ const CONFIG = {
     }
     return '<div class="panel"><div class="panel-h"><span class="t">Desglose por confianza</span></div>'
       + '<div class="conf-grid">'
-      + c('#199e70','Alta (&gt;62%)',a)
-      + c('#eda100','Media (55–62%)',m)
-      + c('#898781','Baja (&lt;55%)',b)
+      + c('#199e70','Alta (&gt;62% modelo)',a)
+      + c('#eda100','Media (56–62%)',m)
+      + c('#898781','Baja (&lt;56%)',b)
       + '</div></div>';
   }
   function recentPanelHTML(recent){
