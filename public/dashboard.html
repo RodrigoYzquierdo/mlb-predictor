@@ -72,6 +72,8 @@ const CONFIG = {
   .stat .lbl{font-size:13px;color:var(--ink2);margin-bottom:4px;}
   .stat .val{font-size:30px;font-weight:600;font-variant-numeric:tabular-nums;}
   .stat .val.pos{color:var(--green);}
+  .stat .val .pos{color:var(--green);}
+  .stat .val .neg{color:var(--red);}
   .stat .sub{font-size:11px;color:var(--ink3);margin-top:2px;}
   .panel{background:var(--card);border:0.5px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:16px;}
   .panel-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:6px;}
@@ -104,6 +106,46 @@ const CONFIG = {
   .cta:hover{opacity:0.9;}
   .cta .arrow{font-size:18px;line-height:1;}
   .cta-sub{display:block;font-size:12px;color:var(--ink3);margin-top:8px;}
+
+  /* Calculadora */
+  .calc-intro{font-size:13px;color:var(--ink2);margin-bottom:16px;line-height:1.55;}
+  .calc-controls{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;}
+  .calc-field{display:flex;flex-direction:column;gap:6px;}
+  .calc-field label{font-size:12px;color:var(--ink2);font-weight:500;}
+  .calc-input-wrap{display:flex;align-items:center;background:var(--bg);border:1px solid var(--line);
+    border-radius:9px;padding:0 12px;transition:border-color .15s;}
+  .calc-input-wrap:focus-within{border-color:var(--green);}
+  .calc-prefix{font-size:15px;color:var(--ink3);margin-right:4px;}
+  .calc-input-wrap input{border:none;background:transparent;outline:none;font-size:16px;
+    color:var(--ink);width:100%;padding:11px 0;font-variant-numeric:tabular-nums;}
+  .calc-toggle{display:flex;background:var(--bg);border:1px solid var(--line);border-radius:9px;
+    padding:3px;gap:2px;}
+  .fmt-btn{border:none;background:transparent;font-size:12px;font-weight:500;color:var(--ink3);
+    padding:9px 12px;border-radius:6px;cursor:pointer;font-family:inherit;transition:all .15s;white-space:nowrap;}
+  .fmt-btn.on{background:var(--green-bg);color:var(--green);}
+  .calc-hint{font-size:11px;color:var(--ink3);margin-top:10px;line-height:1.5;}
+  .calc-results{margin-top:18px;}
+  .calc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+  .calc-cell{background:var(--bg);border:0.5px solid var(--line);border-radius:11px;padding:14px;}
+  .calc-cell-l{font-size:12px;color:var(--ink2);margin-bottom:5px;}
+  .calc-cell-v{font-size:24px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.1;}
+  .calc-cell-s{font-size:11px;color:var(--ink3);margin-top:3px;}
+  .calc-cell-hero.good{background:var(--green-bg);border-color:transparent;}
+  .calc-cell-hero.good .calc-cell-v,.calc-cell-hero.good .calc-cell-l{color:var(--green);}
+  .calc-cell-hero.bad{background:var(--red-bg);border-color:transparent;}
+  .calc-cell-hero.bad .calc-cell-v,.calc-cell-hero.bad .calc-cell-l{color:var(--red);}
+  .calc-note{font-size:13px;margin-top:14px;padding:11px 14px;border-radius:9px;line-height:1.5;}
+  .calc-note.ok{background:var(--green-bg);color:var(--green);}
+  .calc-note.bad{background:var(--red-bg);color:var(--red);}
+  .calc-warn{font-size:13px;color:var(--ink2);padding:14px;background:var(--bg);border-radius:9px;text-align:center;}
+  .calc-disc{font-size:10px;color:var(--ink3);margin-top:12px;line-height:1.5;font-style:italic;}
+  @media(max-width:560px){
+    .calc-controls{grid-template-columns:1fr 1fr;}
+    .calc-field-toggle{grid-column:1 / -1;}
+    .calc-toggle{width:100%;}
+    .fmt-btn{flex:1;}
+    .calc-grid{grid-template-columns:1fr;}
+  }
 </style>
 </head>
 <body>
@@ -252,9 +294,14 @@ const CONFIG = {
     // ultimas predicciones (mas recientes primero)
     const recent = resolved.slice(-6).reverse();
 
+    // guardar para la calculadora
+    window.__RESOLVED__ = resolved;
+    window.__PCT__ = pct;
+
     root.innerHTML =
-      cardsHTML(pct, hits, total, streakTxt, stype) +
+      cardsHTML(pct, hits, total, streakTxt, stype, streak) +
       chartPanelHTML() +
+      calcPanelHTML(total, pct) +
       confPanelHTML(bA, bM, bB) +
       recentPanelHTML(recent);
 
@@ -263,14 +310,19 @@ const CONFIG = {
 
     drawChart(monthLabels.length ? monthLabels : ["—"],
               monthAcc.length ? monthAcc : [pct]);
+
+    initCalculator();
   }
 
-  function cardsHTML(pct, hits, total, streakTxt, stype){
+  function cardsHTML(pct, hits, total, streakTxt, stype, streakN){
+    const streakLabel = (stype ? "✓ " : "✗ ") + streakN + " " +
+      (streakN === 1 ? (stype ? "acierto" : "fallo") : (stype ? "aciertos" : "fallos"));
+    const streakSub = stype ? "seguidos · en racha" : "seguidos";
     return '<div class="cards">'
       + stat("Precisión Top 5", pct+'<span style="font-size:18px">%</span>', hits+" de "+total+" aciertos", false)
-      + stat("ROI simulado", '<span class="pos">+'+CONFIG.SIM_ROI_PCT+'<span style="font-size:18px">%</span></span>', CONFIG.SIM_ROI_NOTE+" · ver nota", false)
+      + stat("ROI simulado", '<span class="pos" id="roi-card-val">+'+CONFIG.SIM_ROI_PCT+'<span style="font-size:18px">%</span></span>', "según tu apuesta ↓", false)
       + stat("Predicciones", total, "registradas con timestamp", false)
-      + stat("Racha actual", '<span class="'+(stype?'pos':'')+'">'+streakTxt+'</span>', "días consecutivos", false)
+      + stat("Racha actual", '<span class="'+(stype?'pos':'')+'" style="font-size:24px">'+streakLabel+'</span>', streakSub, false)
       + '</div>';
   }
   function stat(lbl, val, sub){
@@ -280,6 +332,38 @@ const CONFIG = {
     return '<div class="panel"><div class="panel-h"><span class="t">Precisión por mes</span>'
       + '<span class="n">línea punteada = break-even ('+CONFIG.BREAKEVEN_PCT+'%)</span></div>'
       + '<div class="chart-wrap"><canvas id="accChart" role="img" aria-label="Precisión mensual del modelo"></canvas></div></div>';
+  }
+
+  function calcPanelHTML(total, pct){
+    return ''
+      + '<div class="panel calc-panel">'
+      + '  <div class="panel-h"><span class="t">🧮 Calcula tu ROI</span>'
+      + '    <span class="n">sobre los '+total+' picks del historial</span></div>'
+      + '  <p class="calc-intro">Simula qué habría pasado si apostaras a <strong>cada</strong> pick del Top 5, '
+      + '     con tu propio monto y momio. Precisión histórica del modelo: <strong>'+pct+'%</strong>.</p>'
+      + '  <div class="calc-controls">'
+      + '    <div class="calc-field">'
+      + '      <label for="calc-stake">Monto por pick</label>'
+      + '      <div class="calc-input-wrap"><span class="calc-prefix">$</span>'
+      + '        <input id="calc-stake" type="number" value="100" min="1" step="10" inputmode="decimal"></div>'
+      + '    </div>'
+      + '    <div class="calc-field">'
+      + '      <label for="calc-odds">Momio / cuota</label>'
+      + '      <div class="calc-input-wrap">'
+      + '        <input id="calc-odds" type="number" value="2.5" step="0.1" inputmode="decimal">'
+      + '      </div>'
+      + '    </div>'
+      + '    <div class="calc-field calc-field-toggle">'
+      + '      <label>Formato</label>'
+      + '      <div class="calc-toggle" role="group" aria-label="Formato de momio">'
+      + '        <button type="button" id="fmt-dec" class="fmt-btn on">Decimal</button>'
+      + '        <button type="button" id="fmt-us" class="fmt-btn">Americano</button>'
+      + '      </div>'
+      + '    </div>'
+      + '  </div>'
+      + '  <div class="calc-hint" id="calc-hint">Decimal: 2.5 significa que ganas 2.5× lo apostado (incluye tu apuesta).</div>'
+      + '  <div class="calc-results" id="calc-results"></div>'
+      + '</div>';
   }
   function confPanelHTML(a,m,b){
     function c(color,label,st){
@@ -307,6 +391,111 @@ const CONFIG = {
     if(!rows) rows = '<div class="loading">Sin predicciones resueltas aún.</div>';
     return '<div class="panel"><div class="panel-h"><span class="t">Últimas predicciones</span>'
       + '<span class="n">timestamp fijo, imposible de editar</span></div>'+rows+'</div>';
+  }
+
+  // -------- calculadora de ROI --------
+  var CALC = { fmt: "dec" };
+
+  // Convierte momio americano a decimal
+  function usToDecimal(us){
+    if(us > 0) return 1 + us/100;
+    if(us < 0) return 1 + 100/Math.abs(us);
+    return NaN;
+  }
+  // Devuelve la cuota decimal segun el formato activo
+  function currentDecimalOdds(){
+    const raw = parseFloat(document.getElementById("calc-odds").value);
+    if(isNaN(raw)) return NaN;
+    return CALC.fmt === "us" ? usToDecimal(raw) : raw;
+  }
+  function money(n){
+    const sign = n < 0 ? "-" : "";
+    const v = Math.abs(n).toLocaleString("es-MX", {maximumFractionDigits:0});
+    return sign + "$" + v;
+  }
+  function computeROI(){
+    const resolved = window.__RESOLVED__ || [];
+    const stake = parseFloat(document.getElementById("calc-stake").value);
+    const dec = currentDecimalOdds();
+    const res = document.getElementById("calc-results");
+    if(!res) return;
+
+    if(isNaN(stake) || stake <= 0 || isNaN(dec) || dec <= 1){
+      res.innerHTML = '<div class="calc-warn">Ingresa un monto y un momio válidos. '
+        + '(La cuota decimal debe ser mayor a 1.)</div>';
+      return;
+    }
+
+    const n = resolved.length;
+    const hits = resolved.filter(isHit).length;
+    const misses = n - hits;
+    const invested = n * stake;
+    // ganancia neta por acierto = stake*(dec-1); perdida por fallo = stake
+    const profit = hits * stake * (dec - 1) - misses * stake;
+    const roi = invested > 0 ? (profit / invested * 100) : 0;
+    const returned = invested + profit;
+    const pos = profit >= 0;
+
+    // actualizar la tarjeta de ROI de arriba en vivo
+    const roiCard = document.getElementById("roi-card-val");
+    if(roiCard){
+      roiCard.innerHTML = (pos?'+':'') + roi.toFixed(1) + '<span style="font-size:18px">%</span>';
+      roiCard.className = pos ? "pos" : "neg";
+    }
+
+    // cuota de equilibrio: 1/prob
+    const prob = n > 0 ? hits/n : 0;
+    const breakevenOdds = prob > 0 ? (1/prob) : Infinity;
+
+    res.innerHTML = ''
+      + '<div class="calc-grid">'
+      + '  <div class="calc-cell"><div class="calc-cell-l">Apostarías en total</div>'
+      + '    <div class="calc-cell-v">'+money(invested)+'</div>'
+      + '    <div class="calc-cell-s">'+n+' picks × '+money(stake)+'</div></div>'
+      + '  <div class="calc-cell"><div class="calc-cell-l">Recuperarías</div>'
+      + '    <div class="calc-cell-v">'+money(returned)+'</div>'
+      + '    <div class="calc-cell-s">'+hits+' aciertos / '+misses+' fallos</div></div>'
+      + '  <div class="calc-cell calc-cell-hero '+(pos?'good':'bad')+'">'
+      + '    <div class="calc-cell-l">Resultado neto</div>'
+      + '    <div class="calc-cell-v">'+(pos?'+':'')+money(profit)+'</div>'
+      + '    <div class="calc-cell-s">ROI '+(pos?'+':'')+roi.toFixed(1)+'%</div></div>'
+      + '</div>'
+      + '<div class="calc-note '+(pos?'ok':'bad')+'">'
+      + (pos
+          ? '✓ Con estos parámetros el modelo habría sido rentable en el histórico.'
+          : '✗ Con estos parámetros habrías perdido dinero. Necesitas una cuota de al menos '
+            + '<strong>'+breakevenOdds.toFixed(2)+'</strong> (decimal) para equilibrar al '
+            + Math.round(prob*100)+'% de aciertos.')
+      + '</div>'
+      + '<div class="calc-disc">Simulación sobre resultados históricos. No representa ganancias reales '
+      + 'ni predice resultados futuros. Los momios reales varían por partido y casa.</div>';
+  }
+  function setFormat(fmt){
+    CALC.fmt = fmt;
+    const dec = document.getElementById("fmt-dec");
+    const us  = document.getElementById("fmt-us");
+    const odds = document.getElementById("calc-odds");
+    const hint = document.getElementById("calc-hint");
+    if(fmt === "us"){
+      us.classList.add("on"); dec.classList.remove("on");
+      odds.value = "150"; odds.step = "5";
+      hint.textContent = "Americano: 150 gana $150 por cada $100 apostado. Usa números negativos para favoritos (ej. -200).";
+    } else {
+      dec.classList.add("on"); us.classList.remove("on");
+      odds.value = "2.5"; odds.step = "0.1";
+      hint.textContent = "Decimal: 2.5 significa que ganas 2.5× lo apostado (incluye tu apuesta).";
+    }
+    computeROI();
+  }
+  function initCalculator(){
+    const stake = document.getElementById("calc-stake");
+    const odds  = document.getElementById("calc-odds");
+    if(!stake || !odds) return;
+    stake.addEventListener("input", computeROI);
+    odds.addEventListener("input", computeROI);
+    document.getElementById("fmt-dec").addEventListener("click", function(){ setFormat("dec"); });
+    document.getElementById("fmt-us").addEventListener("click", function(){ setFormat("us"); });
+    computeROI();
   }
 
   // -------- fechas --------
