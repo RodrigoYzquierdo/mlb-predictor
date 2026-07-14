@@ -1,6 +1,6 @@
 {
   "date": "2026-07-14",
-  "updated": "14/07/2026 11:21 CST",
+  "updated": "14/07/2026 14:48 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -372,10 +372,10 @@
   },
   "team_stats": {
     "NYY": {
-      "era": 3.37,
+      "era": 3.39,
       "whip": 1.19,
       "k9": 8.79,
-      "bullpen_era": 3.37,
+      "bullpen_era": 3.39,
       "bullpen_whip": 1.19,
       "obp": 0.317,
       "slg": 0.424,
@@ -570,10 +570,10 @@
       "ops": 0.684
     },
     "BAL": {
-      "era": 4.29,
+      "era": 4.3,
       "whip": 1.35,
       "k9": 8.01,
-      "bullpen_era": 4.29,
+      "bullpen_era": 4.3,
       "bullpen_whip": 1.35,
       "obp": 0.321,
       "slg": 0.401,
@@ -642,9 +642,9 @@
       "bullpen_era": 4.65,
       "bullpen_whip": 1.4,
       "obp": 0.315,
-      "slg": 0.393,
+      "slg": 0.392,
       "avg": 0.24,
-      "ops": 0.708
+      "ops": 0.707
     },
     "WSH": {
       "era": 4.75,
@@ -675,15 +675,15 @@
       "bullpen_era": 4.95,
       "bullpen_whip": 1.45,
       "obp": 0.315,
-      "slg": 0.396,
+      "slg": 0.397,
       "avg": 0.246,
-      "ops": 0.711
+      "ops": 0.712
     },
     "ATH": {
-      "era": 5.21,
+      "era": 5.2,
       "whip": 1.47,
       "k9": 8.58,
-      "bullpen_era": 5.21,
+      "bullpen_era": 5.2,
       "bullpen_whip": 1.47,
       "obp": 0.321,
       "slg": 0.4,
@@ -878,21 +878,21 @@
       "diff": 3,
       "park_factor": 1.0,
       "odds": {
-        "home_ml": -130,
-        "away_ml": 110,
+        "home_ml": -134,
+        "away_ml": 116,
         "bookmaker": "FanDuel",
-        "consensus_home": 54.3,
-        "consensus_away": 45.7,
+        "consensus_home": 54.8,
+        "consensus_away": 45.2,
         "books_count": 2,
         "books": [
           "FanDuel",
           "BetMGM"
         ],
-        "spread": 0.0,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -1.3,
+      "edge": -1.8,
       "sel_diff": 3.0
     }
   ],
