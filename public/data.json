@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-14",
-  "updated": "14/07/2026 14:48 CST",
+  "date": "2026-07-15",
+  "updated": "15/07/2026 09:38 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,48 +854,7 @@
       "last10_pct": 0.4
     }
   },
-  "top5": [
-    {
-      "id": 823443,
-      "status": "Preview",
-      "home": "NAT",
-      "away": "AME",
-      "home_name": "National League All-Stars",
-      "away_name": "American League All-Stars",
-      "time": "2026-07-15T00:00:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Cristopher Sánchez",
-      "home_pitcher_id": 650911,
-      "away_pitcher": "Dylan Cease",
-      "away_pitcher_id": 656302,
-      "home_era": 2.62,
-      "away_era": 2.56,
-      "hp": 53,
-      "ap": 47,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 3,
-      "park_factor": 1.0,
-      "odds": {
-        "home_ml": -134,
-        "away_ml": 116,
-        "bookmaker": "FanDuel",
-        "consensus_home": 54.8,
-        "consensus_away": 45.2,
-        "books_count": 2,
-        "books": [
-          "FanDuel",
-          "BetMGM"
-        ],
-        "spread": 0.7,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": -1.8,
-      "sel_diff": 3.0
-    }
-  ],
+  "top5": [],
   "history": [
     {
       "date": "2026-03-26",
@@ -5903,13 +5862,24 @@
       "pred": "CWS",
       "actual": "CWS 9-1 ATH",
       "hit": true
+    },
+    {
+      "date": "2026-07-14",
+      "home": "NAT",
+      "away": "AME",
+      "hp": 53,
+      "pred": "NAT",
+      "actual": "AME 4-0 NAT",
+      "hit": false,
+      "mkt_home": 54.8,
+      "mkt_away": 45.2
     }
   ],
   "stats": {
     "hits": 323,
-    "total": 549,
+    "total": 550,
     "pct": 59,
     "streak": 1,
-    "streak_type": "W"
+    "streak_type": "L"
   }
 }

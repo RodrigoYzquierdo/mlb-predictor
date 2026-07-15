@@ -5005,5 +5005,16 @@
     "pred": "CWS",
     "actual": "CWS 9-1 ATH",
     "hit": true
+  },
+  {
+    "date": "2026-07-14",
+    "home": "NAT",
+    "away": "AME",
+    "hp": 53,
+    "pred": "NAT",
+    "actual": "AME 4-0 NAT",
+    "hit": false,
+    "mkt_home": 54.8,
+    "mkt_away": 45.2
   }
 ]
