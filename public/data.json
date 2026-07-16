@@ -1,6 +1,6 @@
 {
-  "date": "2026-07-15",
-  "updated": "15/07/2026 14:48 CST",
+  "date": "2026-07-16",
+  "updated": "16/07/2026 09:41 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,7 +854,51 @@
       "last10_pct": 0.4
     }
   },
-  "top5": [],
+  "top5": [
+    {
+      "id": 823440,
+      "status": "Preview",
+      "home": "PHI",
+      "away": "NYM",
+      "home_name": "Philadelphia Phillies",
+      "away_name": "New York Mets",
+      "time": "2026-07-16T23:10:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Aaron Nola",
+      "home_pitcher_id": 605400,
+      "away_pitcher": "Christian Scott",
+      "away_pitcher_id": 681035,
+      "home_era": 5.75,
+      "away_era": 3.17,
+      "hp": 63,
+      "ap": 37,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 13,
+      "park_factor": 1.04,
+      "odds": {
+        "home_ml": -131,
+        "away_ml": 109,
+        "bookmaker": "DraftKings",
+        "consensus_home": 54.3,
+        "consensus_away": 45.7,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "BetMGM",
+          "Bovada",
+          "DraftKings",
+          "BetRivers"
+        ],
+        "spread": 1.5,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": 8.7,
+      "sel_diff": 9.1
+    }
+  ],
   "history": [
     {
       "date": "2026-03-26",
