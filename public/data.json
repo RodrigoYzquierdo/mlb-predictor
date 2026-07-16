@@ -1,6 +1,6 @@
 {
   "date": "2026-07-16",
-  "updated": "16/07/2026 11:24 CST",
+  "updated": "16/07/2026 14:44 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -862,7 +862,7 @@
       "away": "NYM",
       "home_name": "Philadelphia Phillies",
       "away_name": "New York Mets",
-      "time": "2026-07-16T23:10:00Z",
+      "time": "2026-07-16T22:10:00Z",
       "home_score": null,
       "away_score": null,
       "home_pitcher": "Aaron Nola",
@@ -878,11 +878,11 @@
       "diff": 13,
       "park_factor": 1.04,
       "odds": {
-        "home_ml": -131,
-        "away_ml": 109,
+        "home_ml": -130,
+        "away_ml": 108,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.4,
-        "consensus_away": 45.6,
+        "consensus_home": 53.9,
+        "consensus_away": 46.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 0.9,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 8.6,
+      "edge": 9.1,
       "sel_diff": 9.1
     }
   ],
