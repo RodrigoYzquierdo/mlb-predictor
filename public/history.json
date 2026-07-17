@@ -5016,5 +5016,16 @@
     "hit": false,
     "mkt_home": 54.8,
     "mkt_away": 45.2
+  },
+  {
+    "date": "2026-07-16",
+    "home": "PHI",
+    "away": "NYM",
+    "hp": 63,
+    "pred": "PHI",
+    "actual": "NYM 4-1 PHI",
+    "hit": false,
+    "mkt_home": 53.9,
+    "mkt_away": 46.1
   }
 ]
