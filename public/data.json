@@ -1,6 +1,6 @@
 {
   "date": "2026-07-20",
-  "updated": "20/07/2026 09:55 CST",
+  "updated": "20/07/2026 10:26 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -460,10 +460,10 @@
       "ops": 0.678
     },
     "TB": {
-      "era": 3.9,
+      "era": 3.91,
       "whip": 1.18,
       "k9": 8.15,
-      "bullpen_era": 3.9,
+      "bullpen_era": 3.91,
       "bullpen_whip": 1.18,
       "obp": 0.332,
       "slg": 0.399,
@@ -977,7 +977,7 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 0.9,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
@@ -1010,8 +1010,8 @@
         "home_ml": -149,
         "away_ml": 123,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.4,
-        "consensus_away": 42.6,
+        "consensus_home": 57.5,
+        "consensus_away": 42.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 1.8,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.6,
+      "edge": 3.5,
       "sel_diff": 11.0
     },
     {
@@ -6270,13 +6270,22 @@
       "hit": true,
       "mkt_home": 46.3,
       "mkt_away": 53.7
+    },
+    {
+      "date": "2026-07-19",
+      "home": "ATL",
+      "away": "TEX",
+      "hp": 60,
+      "pred": "ATL",
+      "actual": "ATL 8-5 TEX",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 333,
-    "total": 567,
+    "hits": 334,
+    "total": 568,
     "pct": 59,
-    "streak": 2,
+    "streak": 3,
     "streak_type": "W"
   }
 }

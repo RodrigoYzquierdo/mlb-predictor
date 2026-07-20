@@ -5197,5 +5197,14 @@
     "hit": true,
     "mkt_home": 46.3,
     "mkt_away": 53.7
+  },
+  {
+    "date": "2026-07-19",
+    "home": "ATL",
+    "away": "TEX",
+    "hp": 60,
+    "pred": "ATL",
+    "actual": "ATL 8-5 TEX",
+    "hit": true
   }
 ]
