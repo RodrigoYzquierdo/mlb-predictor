@@ -5404,5 +5404,23 @@
     "hit": false,
     "mkt_home": 52.7,
     "mkt_away": 47.3
+  },
+  {
+    "date": "2026-07-23",
+    "home": "ATL",
+    "away": "SD",
+    "hp": 62,
+    "pred": "ATL",
+    "actual": "ATL 6-5 SD",
+    "hit": true
+  },
+  {
+    "date": "2026-07-23",
+    "home": "CLE",
+    "away": "MIN",
+    "hp": 56,
+    "pred": "CLE",
+    "actual": "MIN 3-1 CLE",
+    "hit": false
   }
 ]
