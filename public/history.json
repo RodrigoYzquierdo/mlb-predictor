@@ -5371,5 +5371,38 @@
     "hit": true,
     "mkt_home": 49.6,
     "mkt_away": 50.4
+  },
+  {
+    "date": "2026-07-23",
+    "home": "TOR",
+    "away": "TB",
+    "hp": 40,
+    "pred": "TB",
+    "actual": "TOR 3-1 TB",
+    "hit": false,
+    "mkt_home": 78.9,
+    "mkt_away": 21.1
+  },
+  {
+    "date": "2026-07-23",
+    "home": "DET",
+    "away": "KC",
+    "hp": 58,
+    "pred": "DET",
+    "actual": "DET 4-3 KC",
+    "hit": true,
+    "mkt_home": 69.1,
+    "mkt_away": 30.9
+  },
+  {
+    "date": "2026-07-23",
+    "home": "STL",
+    "away": "AZ",
+    "hp": 53,
+    "pred": "STL",
+    "actual": "AZ 10-6 STL",
+    "hit": false,
+    "mkt_home": 52.7,
+    "mkt_away": 47.3
   }
 ]
