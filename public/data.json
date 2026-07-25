@@ -1,6 +1,6 @@
 {
   "date": "2026-07-25",
-  "updated": "25/07/2026 09:09 CST",
+  "updated": "25/07/2026 10:06 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,11 +878,11 @@
       "diff": 17,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -232,
-        "away_ml": 188,
+        "home_ml": -238,
+        "away_ml": 193,
         "bookmaker": "DraftKings",
-        "consensus_home": 67.1,
-        "consensus_away": 32.9,
+        "consensus_home": 67.2,
+        "consensus_away": 32.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -895,7 +895,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.1,
+      "edge": -0.2,
       "sel_diff": 17.0
     },
     {
@@ -924,8 +924,8 @@
         "home_ml": 129,
         "away_ml": -156,
         "bookmaker": "DraftKings",
-        "consensus_home": 41.8,
-        "consensus_away": 58.2,
+        "consensus_home": 41.6,
+        "consensus_away": 58.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -938,7 +938,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.8,
+      "edge": 5.6,
       "sel_diff": 14.0
     },
     {
@@ -964,11 +964,11 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -122,
-        "away_ml": 101,
+        "home_ml": -125,
+        "away_ml": 104,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.4,
-        "consensus_away": 47.6,
+        "consensus_home": 52.0,
+        "consensus_away": 48.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 3.1,
-        "agreement": "Media"
+        "spread": 2.5,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 8.6,
+      "edge": 9.0,
       "sel_diff": 11.0
     },
     {
@@ -1007,11 +1007,11 @@
       "diff": 10,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -162,
-        "away_ml": 134,
+        "home_ml": -167,
+        "away_ml": 138,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.1,
-        "consensus_away": 40.9,
+        "consensus_home": 59.7,
+        "consensus_away": 40.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 0.6,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.9,
+      "edge": 0.3,
       "sel_diff": 10.0
     },
     {
@@ -1039,10 +1039,10 @@
       "away_score": null,
       "home_pitcher": null,
       "home_pitcher_id": null,
-      "away_pitcher": "Mason Barnett",
-      "away_pitcher_id": 686930,
+      "away_pitcher": "Brady Basso",
+      "away_pitcher_id": 669620,
       "home_era": null,
-      "away_era": 4.64,
+      "away_era": 6.48,
       "hp": 59,
       "ap": 41,
       "conf": "Media",
