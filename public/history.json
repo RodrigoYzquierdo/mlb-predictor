@@ -5532,5 +5532,14 @@
     "hit": false,
     "mkt_home": 51.1,
     "mkt_away": 48.9
+  },
+  {
+    "date": "2026-07-25",
+    "home": "DET",
+    "away": "KC",
+    "hp": 59,
+    "pred": "DET",
+    "actual": "KC 3-2 DET",
+    "hit": false
   }
 ]
