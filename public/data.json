@@ -1,6 +1,6 @@
 {
   "date": "2026-07-27",
-  "updated": "27/07/2026 10:26 CST",
+  "updated": "27/07/2026 11:00 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -899,6 +899,49 @@
       "sel_diff": 13.0
     },
     {
+      "id": 822705,
+      "status": "Preview",
+      "home": "WSH",
+      "away": "TOR",
+      "home_name": "Washington Nationals",
+      "away_name": "Toronto Blue Jays",
+      "time": "2026-07-27T22:45:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Eddy Yean",
+      "home_pitcher_id": 678868,
+      "away_pitcher": "Max Scherzer",
+      "away_pitcher_id": 453286,
+      "home_era": 0.0,
+      "away_era": 10.23,
+      "hp": 62,
+      "ap": 38,
+      "conf": "Media",
+      "mixed": true,
+      "diff": 12,
+      "park_factor": 0.97,
+      "odds": {
+        "home_ml": -123,
+        "away_ml": 102,
+        "bookmaker": "DraftKings",
+        "consensus_home": 53.2,
+        "consensus_away": 46.8,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "Bovada",
+          "BetRivers",
+          "DraftKings",
+          "BetMGM"
+        ],
+        "spread": 2.0,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": 8.8,
+      "sel_diff": 12.0
+    },
+    {
       "id": 823597,
       "status": "Preview",
       "home": "NYM",
@@ -921,11 +964,11 @@
       "diff": 12,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -112,
-        "away_ml": -108,
+        "home_ml": -110,
+        "away_ml": -109,
         "bookmaker": "DraftKings",
-        "consensus_home": 49.8,
-        "consensus_away": 50.2,
+        "consensus_home": 49.7,
+        "consensus_away": 50.3,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -934,55 +977,12 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 2.1,
+        "spread": 1.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 11.8,
+      "edge": 11.7,
       "sel_diff": 12.0
-    },
-    {
-      "id": 822705,
-      "status": "Preview",
-      "home": "WSH",
-      "away": "TOR",
-      "home_name": "Washington Nationals",
-      "away_name": "Toronto Blue Jays",
-      "time": "2026-07-27T22:45:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Andrew Alvarez",
-      "home_pitcher_id": 674841,
-      "away_pitcher": "Max Scherzer",
-      "away_pitcher_id": 453286,
-      "home_era": 4.22,
-      "away_era": 10.23,
-      "hp": 61,
-      "ap": 39,
-      "conf": "Media",
-      "mixed": true,
-      "diff": 11,
-      "park_factor": 0.97,
-      "odds": {
-        "home_ml": -120,
-        "away_ml": -101,
-        "bookmaker": "DraftKings",
-        "consensus_home": 52.8,
-        "consensus_away": 47.2,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "Bovada",
-          "BetRivers",
-          "DraftKings",
-          "BetMGM"
-        ],
-        "spread": 2.0,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": 8.2,
-      "sel_diff": 11.0
     },
     {
       "id": 824977,
@@ -1010,8 +1010,8 @@
         "home_ml": 152,
         "away_ml": -185,
         "bookmaker": "DraftKings",
-        "consensus_home": 38.5,
-        "consensus_away": 61.5,
+        "consensus_home": 38.4,
+        "consensus_away": 61.6,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1024,7 +1024,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -5.5,
+      "edge": -5.6,
       "sel_diff": 6.0
     },
     {
@@ -6665,13 +6665,22 @@
       "hit": true,
       "mkt_home": 97.1,
       "mkt_away": 2.9
+    },
+    {
+      "date": "2026-07-26",
+      "home": "TB",
+      "away": "CLE",
+      "hp": 62,
+      "pred": "TB",
+      "actual": "TB 1-0 CLE",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 356,
-    "total": 604,
+    "hits": 357,
+    "total": 605,
     "pct": 59,
-    "streak": 1,
+    "streak": 2,
     "streak_type": "W"
   }
 }

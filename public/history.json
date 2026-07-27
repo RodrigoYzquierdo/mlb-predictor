@@ -5592,5 +5592,14 @@
     "hit": true,
     "mkt_home": 97.1,
     "mkt_away": 2.9
+  },
+  {
+    "date": "2026-07-26",
+    "home": "TB",
+    "away": "CLE",
+    "hp": 62,
+    "pred": "TB",
+    "actual": "TB 1-0 CLE",
+    "hit": true
   }
 ]
