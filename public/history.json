@@ -5656,5 +5656,14 @@
     "hit": true,
     "mkt_home": 51.1,
     "mkt_away": 48.9
+  },
+  {
+    "date": "2026-07-27",
+    "home": "LAA",
+    "away": "HOU",
+    "hp": 45,
+    "pred": "HOU",
+    "actual": "HOU 6-4 LAA",
+    "hit": true
   }
 ]
