@@ -1,6 +1,6 @@
 {
   "date": "2026-07-29",
-  "updated": "29/07/2026 10:24 CST",
+  "updated": "29/07/2026 11:21 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -405,14 +405,14 @@
       "ops": 0.707
     },
     "DET": {
-      "era": 3.6,
+      "era": 3.59,
       "whip": 1.22,
       "k9": 8.52,
-      "bullpen_era": 3.6,
+      "bullpen_era": 3.59,
       "bullpen_whip": 1.22,
       "obp": 0.314,
       "slg": 0.403,
-      "avg": 0.239,
+      "avg": 0.238,
       "ops": 0.717
     },
     "LAD": {
@@ -439,10 +439,10 @@
     },
     "ATL": {
       "era": 3.74,
-      "whip": 1.26,
+      "whip": 1.25,
       "k9": 8.68,
       "bullpen_era": 3.74,
-      "bullpen_whip": 1.26,
+      "bullpen_whip": 1.25,
       "obp": 0.315,
       "slg": 0.416,
       "avg": 0.249,
@@ -471,15 +471,15 @@
       "ops": 0.677
     },
     "MIA": {
-      "era": 4.06,
-      "whip": 1.25,
-      "k9": 8.55,
-      "bullpen_era": 4.06,
-      "bullpen_whip": 1.25,
+      "era": 4.11,
+      "whip": 1.26,
+      "k9": 8.56,
+      "bullpen_era": 4.11,
+      "bullpen_whip": 1.26,
       "obp": 0.326,
-      "slg": 0.406,
+      "slg": 0.405,
       "avg": 0.25,
-      "ops": 0.732
+      "ops": 0.731
     },
     "CWS": {
       "era": 4.14,
@@ -493,10 +493,10 @@
       "ops": 0.727
     },
     "TOR": {
-      "era": 4.17,
+      "era": 4.16,
       "whip": 1.31,
       "k9": 9.07,
-      "bullpen_era": 4.17,
+      "bullpen_era": 4.16,
       "bullpen_whip": 1.31,
       "obp": 0.303,
       "slg": 0.379,
@@ -504,15 +504,15 @@
       "ops": 0.682
     },
     "NYM": {
-      "era": 4.18,
+      "era": 4.17,
       "whip": 1.3,
       "k9": 9.17,
-      "bullpen_era": 4.18,
+      "bullpen_era": 4.17,
       "bullpen_whip": 1.3,
-      "obp": 0.307,
-      "slg": 0.387,
+      "obp": 0.306,
+      "slg": 0.386,
       "avg": 0.235,
-      "ops": 0.694
+      "ops": 0.692
     },
     "CHC": {
       "era": 4.2,
@@ -536,16 +536,16 @@
       "avg": 0.234,
       "ops": 0.696
     },
-    "STL": {
+    "PHI": {
       "era": 4.21,
-      "whip": 1.35,
-      "k9": 7.77,
+      "whip": 1.31,
+      "k9": 9.92,
       "bullpen_era": 4.21,
-      "bullpen_whip": 1.35,
-      "obp": 0.315,
-      "slg": 0.38,
-      "avg": 0.239,
-      "ops": 0.695
+      "bullpen_whip": 1.31,
+      "obp": 0.304,
+      "slg": 0.401,
+      "avg": 0.237,
+      "ops": 0.705
     },
     "BAL": {
       "era": 4.21,
@@ -558,27 +558,27 @@
       "avg": 0.237,
       "ops": 0.717
     },
-    "PHI": {
-      "era": 4.22,
-      "whip": 1.31,
-      "k9": 9.91,
-      "bullpen_era": 4.22,
-      "bullpen_whip": 1.31,
-      "obp": 0.303,
-      "slg": 0.399,
-      "avg": 0.236,
-      "ops": 0.702
+    "STL": {
+      "era": 4.21,
+      "whip": 1.35,
+      "k9": 7.77,
+      "bullpen_era": 4.21,
+      "bullpen_whip": 1.35,
+      "obp": 0.315,
+      "slg": 0.38,
+      "avg": 0.239,
+      "ops": 0.695
     },
     "AZ": {
-      "era": 4.24,
+      "era": 4.22,
       "whip": 1.3,
-      "k9": 6.89,
-      "bullpen_era": 4.24,
+      "k9": 6.87,
+      "bullpen_era": 4.22,
       "bullpen_whip": 1.3,
-      "obp": 0.314,
+      "obp": 0.313,
       "slg": 0.394,
       "avg": 0.242,
-      "ops": 0.708
+      "ops": 0.707
     },
     "TEX": {
       "era": 4.26,
@@ -593,14 +593,14 @@
     },
     "PIT": {
       "era": 4.29,
-      "whip": 1.32,
+      "whip": 1.31,
       "k9": 9.27,
       "bullpen_era": 4.29,
-      "bullpen_whip": 1.32,
+      "bullpen_whip": 1.31,
       "obp": 0.337,
-      "slg": 0.422,
+      "slg": 0.421,
       "avg": 0.26,
-      "ops": 0.759
+      "ops": 0.758
     },
     "SF": {
       "era": 4.38,
@@ -663,10 +663,10 @@
       "k9": 7.78,
       "bullpen_era": 4.75,
       "bullpen_whip": 1.4,
-      "obp": 0.33,
+      "obp": 0.329,
       "slg": 0.446,
       "avg": 0.254,
-      "ops": 0.776
+      "ops": 0.775
     },
     "KC": {
       "era": 4.83,
@@ -878,11 +878,11 @@
       "diff": 14,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -158,
-        "away_ml": 131,
+        "home_ml": -168,
+        "away_ml": 139,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.5,
-        "consensus_away": 40.5,
+        "consensus_home": 60.1,
+        "consensus_away": 39.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 2.0,
+        "spread": 2.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.5,
+      "edge": 3.9,
       "sel_diff": 14.0
     },
     {
@@ -921,11 +921,11 @@
       "diff": 13,
       "park_factor": 0.95,
       "odds": {
-        "home_ml": 108,
-        "away_ml": -130,
+        "home_ml": -113,
+        "away_ml": -107,
         "bookmaker": "DraftKings",
-        "consensus_home": 47.1,
-        "consensus_away": 52.9,
+        "consensus_home": 49.8,
+        "consensus_away": 50.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +934,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 3.4,
+        "spread": 4.0,
         "agreement": "Media"
       },
       "value": false,
-      "edge": 10.1,
+      "edge": 12.8,
       "sel_diff": 13.0
     },
     {
@@ -951,24 +951,24 @@
       "time": "2026-07-29T20:10:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": null,
-      "home_pitcher_id": null,
+      "home_pitcher": "Kyle Hart",
+      "home_pitcher_id": 606996,
       "away_pitcher": "Gabriel Hughes",
       "away_pitcher_id": 687312,
-      "home_era": null,
+      "home_era": 5.21,
       "away_era": 2.79,
       "hp": 63,
       "ap": 37,
       "conf": "Alta",
-      "mixed": false,
+      "mixed": true,
       "diff": 13,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -163,
-        "away_ml": 135,
+        "home_ml": -158,
+        "away_ml": 131,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.7,
-        "consensus_away": 40.3,
+        "consensus_home": 59.5,
+        "consensus_away": 40.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,16 +977,16 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 1.1,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.3,
+      "edge": 3.5,
       "sel_diff": 13.0
     },
     {
       "id": 823596,
-      "status": "Preview",
+      "status": "Live",
       "home": "NYM",
       "away": "ATL",
       "home_name": "New York Mets",
@@ -998,20 +998,20 @@
       "home_pitcher_id": 640455,
       "away_pitcher": "AJ Smith-Shawver",
       "away_pitcher_id": 700363,
-      "home_era": 4.52,
-      "away_era": null,
-      "hp": 39,
-      "ap": 61,
+      "home_era": 4.47,
+      "away_era": 0.0,
+      "hp": 38,
+      "ap": 62,
       "conf": "Media",
-      "mixed": false,
-      "diff": 11,
+      "mixed": true,
+      "diff": 12,
       "park_factor": 0.96,
       "odds": {
         "home_ml": 129,
         "away_ml": -156,
         "bookmaker": "DraftKings",
-        "consensus_home": 41.5,
-        "consensus_away": 58.5,
+        "consensus_home": 41.6,
+        "consensus_away": 58.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,12 +1020,12 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 1.8,
+        "spread": 2.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.5,
-      "sel_diff": 11.0
+      "edge": 3.6,
+      "sel_diff": 12.0
     },
     {
       "id": 823598,
@@ -1053,8 +1053,8 @@
         "home_ml": 129,
         "away_ml": -156,
         "bookmaker": "DraftKings",
-        "consensus_home": 41.5,
-        "consensus_away": 58.5,
+        "consensus_home": 41.6,
+        "consensus_away": 58.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1063,11 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 1.8,
+        "spread": 2.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.5,
+      "edge": 2.6,
       "sel_diff": 11.0
     }
   ],
