@@ -1,6 +1,6 @@
 {
   "date": "2026-07-29",
-  "updated": "29/07/2026 09:53 CST",
+  "updated": "29/07/2026 10:24 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -471,14 +471,14 @@
       "ops": 0.677
     },
     "MIA": {
-      "era": 4.07,
+      "era": 4.06,
       "whip": 1.25,
-      "k9": 8.56,
-      "bullpen_era": 4.07,
+      "k9": 8.55,
+      "bullpen_era": 4.06,
       "bullpen_whip": 1.25,
       "obp": 0.326,
       "slg": 0.406,
-      "avg": 0.251,
+      "avg": 0.25,
       "ops": 0.732
     },
     "CWS": {
@@ -561,7 +561,7 @@
     "PHI": {
       "era": 4.22,
       "whip": 1.31,
-      "k9": 9.93,
+      "k9": 9.91,
       "bullpen_era": 4.22,
       "bullpen_whip": 1.31,
       "obp": 0.303,
@@ -910,22 +910,22 @@
       "away_score": null,
       "home_pitcher": "Logan Webb",
       "home_pitcher_id": 657277,
-      "away_pitcher": "Shane Drohan",
-      "away_pitcher_id": 675660,
+      "away_pitcher": "Thomas Pannone",
+      "away_pitcher_id": 623381,
       "home_era": 3.98,
-      "away_era": 3.51,
+      "away_era": null,
       "hp": 37,
       "ap": 63,
       "conf": "Alta",
-      "mixed": true,
+      "mixed": false,
       "diff": 13,
       "park_factor": 0.95,
       "odds": {
         "home_ml": 108,
         "away_ml": -130,
         "bookmaker": "DraftKings",
-        "consensus_home": 46.4,
-        "consensus_away": 53.6,
+        "consensus_home": 47.1,
+        "consensus_away": 52.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +934,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.2,
-        "agreement": "Alta"
+        "spread": 3.4,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 9.4,
+      "edge": 10.1,
       "sel_diff": 13.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -163,
         "away_ml": 135,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.6,
-        "consensus_away": 40.4,
+        "consensus_home": 59.7,
+        "consensus_away": 40.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -981,7 +981,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.4,
+      "edge": 3.3,
       "sel_diff": 13.0
     },
     {
@@ -1010,8 +1010,8 @@
         "home_ml": 129,
         "away_ml": -156,
         "bookmaker": "DraftKings",
-        "consensus_home": 41.7,
-        "consensus_away": 58.3,
+        "consensus_home": 41.5,
+        "consensus_away": 58.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 2.4,
+        "spread": 1.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.7,
+      "edge": 2.5,
       "sel_diff": 11.0
     },
     {
@@ -1053,8 +1053,8 @@
         "home_ml": 129,
         "away_ml": -156,
         "bookmaker": "DraftKings",
-        "consensus_home": 41.7,
-        "consensus_away": 58.3,
+        "consensus_home": 41.5,
+        "consensus_away": 58.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1063,11 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 2.4,
+        "spread": 1.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.7,
+      "edge": 2.5,
       "sel_diff": 11.0
     }
   ],
