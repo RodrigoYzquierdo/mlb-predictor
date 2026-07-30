@@ -5775,5 +5775,14 @@
     "hit": false,
     "mkt_home": 55.5,
     "mkt_away": 44.5
+  },
+  {
+    "date": "2026-07-29",
+    "home": "NYM",
+    "away": "ATL",
+    "hp": 39,
+    "pred": "ATL",
+    "actual": "NYM 3-2 ATL",
+    "hit": false
   }
 ]

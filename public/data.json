@@ -1,6 +1,6 @@
 {
   "date": "2026-07-30",
-  "updated": "30/07/2026 09:54 CST",
+  "updated": "30/07/2026 10:37 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -426,6 +426,17 @@
       "avg": 0.238,
       "ops": 0.717
     },
+    "TB": {
+      "era": 3.7,
+      "whip": 1.15,
+      "k9": 8.15,
+      "bullpen_era": 3.7,
+      "bullpen_whip": 1.15,
+      "obp": 0.33,
+      "slg": 0.401,
+      "avg": 0.258,
+      "ops": 0.731
+    },
     "ATL": {
       "era": 3.71,
       "whip": 1.25,
@@ -436,17 +447,6 @@
       "slg": 0.414,
       "avg": 0.248,
       "ops": 0.729
-    },
-    "TB": {
-      "era": 3.71,
-      "whip": 1.15,
-      "k9": 8.15,
-      "bullpen_era": 3.71,
-      "bullpen_whip": 1.15,
-      "obp": 0.33,
-      "slg": 0.402,
-      "avg": 0.258,
-      "ops": 0.732
     },
     "SEA": {
       "era": 3.71,
@@ -572,7 +572,7 @@
     "TEX": {
       "era": 4.25,
       "whip": 1.26,
-      "k9": 8.68,
+      "k9": 8.67,
       "bullpen_era": 4.25,
       "bullpen_whip": 1.26,
       "obp": 0.319,
@@ -881,8 +881,8 @@
         "home_ml": -157,
         "away_ml": 130,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.7,
-        "consensus_away": 41.3,
+        "consensus_home": 58.8,
+        "consensus_away": 41.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,16 +891,16 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 0.8,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.3,
+      "edge": 5.2,
       "sel_diff": 14.0
     },
     {
       "id": 822946,
-      "status": "Preview",
+      "status": "Live",
       "home": "TB",
       "away": "TEX",
       "home_name": "Tampa Bay Rays",
@@ -912,8 +912,8 @@
       "home_pitcher_id": 663556,
       "away_pitcher": "Cole Winn",
       "away_pitcher_id": 668390,
-      "home_era": 3.09,
-      "away_era": 6.11,
+      "home_era": 3.03,
+      "away_era": 5.94,
       "hp": 62,
       "ap": 38,
       "conf": "Media",
@@ -921,11 +921,11 @@
       "diff": 12,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -185,
-        "away_ml": 152,
+        "home_ml": -246,
+        "away_ml": 183,
         "bookmaker": "DraftKings",
-        "consensus_home": 61.9,
-        "consensus_away": 38.1,
+        "consensus_home": 64.7,
+        "consensus_away": 35.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +934,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 1.1,
-        "agreement": "Alta"
+        "spread": 4.4,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 0.1,
+      "edge": -2.7,
       "sel_diff": 12.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -161,
         "away_ml": 133,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.4,
-        "consensus_away": 41.6,
+        "consensus_home": 58.7,
+        "consensus_away": 41.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 2.0,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.6,
+      "edge": 2.3,
       "sel_diff": 11.0
     },
     {
@@ -1007,8 +1007,8 @@
       "diff": 10,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -137,
-        "away_ml": 114,
+        "home_ml": -142,
+        "away_ml": 118,
         "bookmaker": "DraftKings",
         "consensus_home": 55.8,
         "consensus_away": 44.2,
@@ -1020,7 +1020,7 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 1.6,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
@@ -6848,13 +6848,22 @@
       "hit": false,
       "mkt_home": 55.5,
       "mkt_away": 44.5
+    },
+    {
+      "date": "2026-07-29",
+      "home": "NYM",
+      "away": "ATL",
+      "hp": 39,
+      "pred": "ATL",
+      "actual": "NYM 3-2 ATL",
+      "hit": false
     }
   ],
   "stats": {
     "hits": 366,
-    "total": 621,
+    "total": 622,
     "pct": 59,
-    "streak": 1,
+    "streak": 2,
     "streak_type": "L"
   }
 }
