@@ -1,6 +1,6 @@
 {
   "date": "2026-07-30",
-  "updated": "30/07/2026 10:37 CST",
+  "updated": "30/07/2026 11:41 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -426,17 +426,6 @@
       "avg": 0.238,
       "ops": 0.717
     },
-    "TB": {
-      "era": 3.7,
-      "whip": 1.15,
-      "k9": 8.15,
-      "bullpen_era": 3.7,
-      "bullpen_whip": 1.15,
-      "obp": 0.33,
-      "slg": 0.401,
-      "avg": 0.258,
-      "ops": 0.731
-    },
     "ATL": {
       "era": 3.71,
       "whip": 1.25,
@@ -447,6 +436,17 @@
       "slg": 0.414,
       "avg": 0.248,
       "ops": 0.729
+    },
+    "TB": {
+      "era": 3.71,
+      "whip": 1.15,
+      "k9": 8.16,
+      "bullpen_era": 3.71,
+      "bullpen_whip": 1.15,
+      "obp": 0.331,
+      "slg": 0.402,
+      "avg": 0.259,
+      "ops": 0.733
     },
     "SEA": {
       "era": 3.71,
@@ -570,15 +570,15 @@
       "ops": 0.715
     },
     "TEX": {
-      "era": 4.25,
+      "era": 4.24,
       "whip": 1.26,
-      "k9": 8.67,
-      "bullpen_era": 4.25,
+      "k9": 8.66,
+      "bullpen_era": 4.24,
       "bullpen_whip": 1.26,
       "obp": 0.319,
-      "slg": 0.405,
-      "avg": 0.247,
-      "ops": 0.724
+      "slg": 0.404,
+      "avg": 0.246,
+      "ops": 0.723
     },
     "PHI": {
       "era": 4.26,
@@ -878,11 +878,11 @@
       "diff": 14,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -157,
-        "away_ml": 130,
+        "home_ml": -162,
+        "away_ml": 134,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.8,
-        "consensus_away": 41.2,
+        "consensus_home": 58.9,
+        "consensus_away": 41.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 1.0,
+        "spread": 0.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.2,
+      "edge": 5.1,
       "sel_diff": 14.0
     },
     {
@@ -912,7 +912,7 @@
       "home_pitcher_id": 663556,
       "away_pitcher": "Cole Winn",
       "away_pitcher_id": 668390,
-      "home_era": 3.03,
+      "home_era": 3.09,
       "away_era": 5.94,
       "hp": 62,
       "ap": 38,
@@ -921,11 +921,11 @@
       "diff": 12,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -246,
-        "away_ml": 183,
+        "home_ml": 102,
+        "away_ml": -132,
         "bookmaker": "DraftKings",
-        "consensus_home": 64.7,
-        "consensus_away": 35.3,
+        "consensus_home": 44.0,
+        "consensus_away": 56.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +934,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 4.4,
+        "spread": 5.1,
         "agreement": "Media"
       },
-      "value": false,
-      "edge": -2.7,
+      "value": true,
+      "edge": 18.0,
       "sel_diff": 12.0
     },
     {
@@ -986,7 +986,7 @@
     },
     {
       "id": 823674,
-      "status": "Preview",
+      "status": "Live",
       "home": "MIN",
       "away": "KC",
       "home_name": "Minnesota Twins",
@@ -1007,11 +1007,11 @@
       "diff": 10,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -142,
-        "away_ml": 118,
+        "home_ml": -147,
+        "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.8,
-        "consensus_away": 44.2,
+        "consensus_home": 55.6,
+        "consensus_away": 44.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 1.1,
+        "spread": 2.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.2,
+      "edge": 4.4,
       "sel_diff": 10.0
     },
     {
@@ -1063,7 +1063,7 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 0.5,
+        "spread": 0.3,
         "agreement": "Alta"
       },
       "value": false,
