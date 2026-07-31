@@ -1,6 +1,6 @@
 {
   "date": "2026-07-31",
-  "updated": "31/07/2026 10:03 CST",
+  "updated": "31/07/2026 10:47 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,11 +878,11 @@
       "diff": 15,
       "park_factor": 0.95,
       "odds": {
-        "home_ml": 132,
+        "home_ml": 133,
         "away_ml": -160,
         "bookmaker": "DraftKings",
-        "consensus_home": 40.0,
-        "consensus_away": 60.0,
+        "consensus_home": 40.2,
+        "consensus_away": 59.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.1,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.0,
+      "edge": 5.2,
       "sel_diff": 15.0
     },
     {
@@ -964,24 +964,20 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -142,
-        "away_ml": 118,
-        "bookmaker": "DraftKings",
-        "consensus_home": 56.4,
-        "consensus_away": 43.6,
-        "books_count": 5,
+        "home_ml": -160,
+        "away_ml": 148,
+        "bookmaker": "FanDuel",
+        "consensus_home": 60.4,
+        "consensus_away": 39.6,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "BetMGM",
-          "DraftKings",
-          "Bovada",
-          "BetRivers"
+          "FanDuel"
         ],
-        "spread": 2.8,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.6,
+      "edge": 0.6,
       "sel_diff": 11.0
     },
     {
@@ -1053,8 +1049,8 @@
         "home_ml": -118,
         "away_ml": -102,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.2,
-        "consensus_away": 47.8,
+        "consensus_home": 52.1,
+        "consensus_away": 47.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1067,7 +1063,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.8,
+      "edge": 7.9,
       "sel_diff": 10.0
     }
   ],
@@ -6912,13 +6908,31 @@
       "hit": false,
       "mkt_home": 54.2,
       "mkt_away": 45.8
+    },
+    {
+      "date": "2026-07-30",
+      "home": "TB",
+      "away": "TEX",
+      "hp": 62,
+      "pred": "TB",
+      "actual": "TB 3-2 TEX",
+      "hit": true
+    },
+    {
+      "date": "2026-07-30",
+      "home": "MIN",
+      "away": "KC",
+      "hp": 61,
+      "pred": "MIN",
+      "actual": "MIN 4-3 KC",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 369,
-    "total": 627,
+    "hits": 371,
+    "total": 629,
     "pct": 59,
-    "streak": 1,
-    "streak_type": "L"
+    "streak": 2,
+    "streak_type": "W"
   }
 }

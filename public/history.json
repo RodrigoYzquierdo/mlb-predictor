@@ -5839,5 +5839,23 @@
     "hit": false,
     "mkt_home": 54.2,
     "mkt_away": 45.8
+  },
+  {
+    "date": "2026-07-30",
+    "home": "TB",
+    "away": "TEX",
+    "hp": 62,
+    "pred": "TB",
+    "actual": "TB 3-2 TEX",
+    "hit": true
+  },
+  {
+    "date": "2026-07-30",
+    "home": "MIN",
+    "away": "KC",
+    "hp": 61,
+    "pred": "MIN",
+    "actual": "MIN 4-3 KC",
+    "hit": true
   }
 ]
