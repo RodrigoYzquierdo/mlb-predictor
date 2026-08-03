@@ -1,6 +1,6 @@
 {
   "date": "2026-08-03",
-  "updated": "03/08/2026 10:30 CST",
+  "updated": "03/08/2026 11:11 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,8 +881,8 @@
         "home_ml": -150,
         "away_ml": 124,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.5,
-        "consensus_away": 42.5,
+        "consensus_home": 57.7,
+        "consensus_away": 42.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.3,
+        "spread": 2.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.5,
+      "edge": 5.3,
       "sel_diff": 13.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": 141,
         "away_ml": -171,
         "bookmaker": "DraftKings",
-        "consensus_home": 39.5,
-        "consensus_away": 60.5,
+        "consensus_home": 39.3,
+        "consensus_away": 60.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.3,
+        "spread": 1.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.5,
+      "edge": 3.3,
       "sel_diff": 9.8
     },
     {
@@ -1010,8 +1010,8 @@
         "home_ml": -132,
         "away_ml": 110,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.3,
-        "consensus_away": 45.7,
+        "consensus_home": 54.6,
+        "consensus_away": 45.4,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1024,7 +1024,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.7,
+      "edge": 3.4,
       "sel_diff": 8.0
     },
     {
@@ -7095,11 +7095,29 @@
       "hit": false,
       "mkt_home": 31.5,
       "mkt_away": 68.5
+    },
+    {
+      "date": "2026-08-02",
+      "home": "ATL",
+      "away": "WSH",
+      "hp": 62,
+      "pred": "ATL",
+      "actual": "ATL 4-2 WSH",
+      "hit": true
+    },
+    {
+      "date": "2026-08-02",
+      "home": "TB",
+      "away": "CWS",
+      "hp": 59,
+      "pred": "TB",
+      "actual": "CWS 9-1 TB",
+      "hit": false
     }
   ],
   "stats": {
-    "hits": 380,
-    "total": 644,
+    "hits": 381,
+    "total": 646,
     "pct": 59,
     "streak": 1,
     "streak_type": "L"

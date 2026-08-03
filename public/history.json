@@ -6022,5 +6022,23 @@
     "hit": false,
     "mkt_home": 31.5,
     "mkt_away": 68.5
+  },
+  {
+    "date": "2026-08-02",
+    "home": "ATL",
+    "away": "WSH",
+    "hp": 62,
+    "pred": "ATL",
+    "actual": "ATL 4-2 WSH",
+    "hit": true
+  },
+  {
+    "date": "2026-08-02",
+    "home": "TB",
+    "away": "CWS",
+    "hp": 59,
+    "pred": "TB",
+    "actual": "CWS 9-1 TB",
+    "hit": false
   }
 ]
