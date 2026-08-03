@@ -1,6 +1,6 @@
 {
   "date": "2026-08-03",
-  "updated": "03/08/2026 11:11 CST",
+  "updated": "03/08/2026 11:57 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -891,8 +891,8 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.4,
-        "agreement": "Alta"
+        "spread": 3.1,
+        "agreement": "Media"
       },
       "value": false,
       "edge": 5.3,
@@ -924,8 +924,8 @@
         "home_ml": -217,
         "away_ml": 177,
         "bookmaker": "DraftKings",
-        "consensus_home": 66.0,
-        "consensus_away": 34.0,
+        "consensus_home": 65.6,
+        "consensus_away": 34.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +934,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.5,
+        "spread": 2.3,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -6.0,
+      "edge": -5.6,
       "sel_diff": 10.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": 141,
         "away_ml": -171,
         "bookmaker": "DraftKings",
-        "consensus_home": 39.3,
-        "consensus_away": 60.7,
+        "consensus_home": 39.4,
+        "consensus_away": 60.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.5,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.3,
+      "edge": 3.4,
       "sel_diff": 9.8
     },
     {
@@ -1010,8 +1010,8 @@
         "home_ml": -132,
         "away_ml": 110,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.6,
-        "consensus_away": 45.4,
+        "consensus_home": 54.5,
+        "consensus_away": 45.5,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1024,7 +1024,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.4,
+      "edge": 3.5,
       "sel_diff": 8.0
     },
     {
