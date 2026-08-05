@@ -1,6 +1,6 @@
 {
   "date": "2026-08-05",
-  "updated": "05/08/2026 10:03 CST",
+  "updated": "05/08/2026 10:43 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,8 +881,8 @@
         "home_ml": -118,
         "away_ml": 111,
         "bookmaker": "DraftKings",
-        "consensus_home": 53.5,
-        "consensus_away": 46.5,
+        "consensus_home": 53.4,
+        "consensus_away": 46.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.4,
+        "spread": 2.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.5,
+      "edge": 9.6,
       "sel_diff": 13.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -110,
         "away_ml": 103,
         "bookmaker": "DraftKings",
-        "consensus_home": 50.7,
-        "consensus_away": 49.3,
+        "consensus_home": 51.0,
+        "consensus_away": 49.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.6,
+        "spread": 2.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 10.3,
+      "edge": 10.0,
       "sel_diff": 11.0
     },
     {
@@ -1007,11 +1007,11 @@
       "diff": 11,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -117,
-        "away_ml": 110,
+        "home_ml": -122,
+        "away_ml": 115,
         "bookmaker": "DraftKings",
-        "consensus_home": 53.7,
-        "consensus_away": 46.3,
+        "consensus_home": 53.8,
+        "consensus_away": 46.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.8,
+        "spread": 1.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.3,
+      "edge": 7.2,
       "sel_diff": 11.0
     },
     {
@@ -1050,11 +1050,11 @@
       "diff": 15,
       "park_factor": 1.18,
       "odds": {
-        "home_ml": 148,
-        "away_ml": -158,
+        "home_ml": 143,
+        "away_ml": -152,
         "bookmaker": "DraftKings",
-        "consensus_home": 40.1,
-        "consensus_away": 59.9,
+        "consensus_home": 40.9,
+        "consensus_away": 59.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1063,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.2,
+        "spread": 2.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.1,
+      "edge": 5.9,
       "sel_diff": 10.5
     }
   ],
