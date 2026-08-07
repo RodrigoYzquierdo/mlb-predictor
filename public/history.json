@@ -6258,5 +6258,41 @@
     "hit": true,
     "mkt_home": 69.7,
     "mkt_away": 30.3
+  },
+  {
+    "date": "2026-08-06",
+    "home": "MIL",
+    "away": "PIT",
+    "hp": 64,
+    "pred": "MIL",
+    "actual": "MIL 5-2 PIT",
+    "hit": true
+  },
+  {
+    "date": "2026-08-06",
+    "home": "BAL",
+    "away": "LAA",
+    "hp": 63,
+    "pred": "BAL",
+    "actual": "LAA 4-1 BAL",
+    "hit": false
+  },
+  {
+    "date": "2026-08-06",
+    "home": "CHC",
+    "away": "TOR",
+    "hp": 63,
+    "pred": "CHC",
+    "actual": "CHC 3-2 TOR",
+    "hit": true
+  },
+  {
+    "date": "2026-08-06",
+    "home": "CLE",
+    "away": "NYM",
+    "hp": 59,
+    "pred": "CLE",
+    "actual": "NYM 13-6 CLE",
+    "hit": false
   }
 ]

@@ -1,6 +1,6 @@
 {
   "date": "2026-08-07",
-  "updated": "07/08/2026 08:59 CST",
+  "updated": "07/08/2026 09:59 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,11 +878,11 @@
       "diff": 14,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -147,
-        "away_ml": 137,
+        "home_ml": -142,
+        "away_ml": 132,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.3,
-        "consensus_away": 41.7,
+        "consensus_home": 58.0,
+        "consensus_away": 42.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -895,7 +895,7 @@
         "agreement": "Media"
       },
       "value": false,
-      "edge": 5.7,
+      "edge": 6.0,
       "sel_diff": 14.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -162,
         "away_ml": 151,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.6,
-        "consensus_away": 39.4,
+        "consensus_home": 60.5,
+        "consensus_away": 39.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -981,7 +981,7 @@
         "agreement": "Media"
       },
       "value": false,
-      "edge": 1.4,
+      "edge": 1.5,
       "sel_diff": 12.0
     },
     {
@@ -1053,8 +1053,8 @@
         "home_ml": -261,
         "away_ml": 240,
         "bookmaker": "DraftKings",
-        "consensus_home": 70.5,
-        "consensus_away": 29.5,
+        "consensus_home": 70.6,
+        "consensus_away": 29.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1067,7 +1067,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -6.5,
+      "edge": -6.6,
       "sel_diff": 9.8
     }
   ],
@@ -7331,13 +7331,49 @@
       "hit": true,
       "mkt_home": 69.7,
       "mkt_away": 30.3
+    },
+    {
+      "date": "2026-08-06",
+      "home": "MIL",
+      "away": "PIT",
+      "hp": 64,
+      "pred": "MIL",
+      "actual": "MIL 5-2 PIT",
+      "hit": true
+    },
+    {
+      "date": "2026-08-06",
+      "home": "BAL",
+      "away": "LAA",
+      "hp": 63,
+      "pred": "BAL",
+      "actual": "LAA 4-1 BAL",
+      "hit": false
+    },
+    {
+      "date": "2026-08-06",
+      "home": "CHC",
+      "away": "TOR",
+      "hp": 63,
+      "pred": "CHC",
+      "actual": "CHC 3-2 TOR",
+      "hit": true
+    },
+    {
+      "date": "2026-08-06",
+      "home": "CLE",
+      "away": "NYM",
+      "hp": 59,
+      "pred": "CLE",
+      "actual": "NYM 13-6 CLE",
+      "hit": false
     }
   ],
   "stats": {
-    "hits": 394,
-    "total": 666,
+    "hits": 396,
+    "total": 670,
     "pct": 59,
-    "streak": 3,
-    "streak_type": "W"
+    "streak": 1,
+    "streak_type": "L"
   }
 }
