@@ -6349,5 +6349,60 @@
     "hit": true,
     "mkt_home": 66.3,
     "mkt_away": 33.7
+  },
+  {
+    "date": "2026-08-08",
+    "home": "MIA",
+    "away": "LAA",
+    "hp": 63,
+    "pred": "MIA",
+    "actual": "MIA 7-0 LAA",
+    "hit": true,
+    "mkt_home": 58.5,
+    "mkt_away": 41.5
+  },
+  {
+    "date": "2026-08-08",
+    "home": "MIL",
+    "away": "MIN",
+    "hp": 63,
+    "pred": "MIL",
+    "actual": "MIL 4-3 MIN",
+    "hit": true,
+    "mkt_home": 67.7,
+    "mkt_away": 32.3
+  },
+  {
+    "date": "2026-08-08",
+    "home": "STL",
+    "away": "COL",
+    "hp": 63,
+    "pred": "STL",
+    "actual": "COL 8-6 STL",
+    "hit": false,
+    "mkt_home": 59.8,
+    "mkt_away": 40.2
+  },
+  {
+    "date": "2026-08-08",
+    "home": "KC",
+    "away": "CHC",
+    "hp": 38,
+    "pred": "CHC",
+    "actual": "KC 6-3 CHC",
+    "hit": false,
+    "mkt_home": 40.5,
+    "mkt_away": 59.5
+  },
+  {
+    "date": "2026-08-08",
+    "home": "BOS",
+    "away": "ATH",
+    "hp": 64,
+    "pred": "BOS",
+    "actual": "ATH 7-3 BOS",
+    "hit": false,
+    "mkt_home": 75.9,
+    "mkt_away": 24.1
   }
 ]
