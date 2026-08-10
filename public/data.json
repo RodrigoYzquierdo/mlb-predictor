@@ -1,6 +1,6 @@
 {
   "date": "2026-08-10",
-  "updated": "10/08/2026 10:59 CST",
+  "updated": "10/08/2026 14:29 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -609,9 +609,9 @@
       "bullpen_era": 4.37,
       "bullpen_whip": 1.36,
       "obp": 0.307,
-      "slg": 0.409,
+      "slg": 0.408,
       "avg": 0.249,
-      "ops": 0.716
+      "ops": 0.715
     },
     "CIN": {
       "era": 4.48,
@@ -878,24 +878,21 @@
       "diff": 16,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -266,
-        "away_ml": 245,
+        "home_ml": -280,
+        "away_ml": 224,
         "bookmaker": "DraftKings",
-        "consensus_home": 71.2,
-        "consensus_away": 28.8,
-        "books_count": 5,
+        "consensus_home": 70.2,
+        "consensus_away": 29.8,
+        "books_count": 2,
         "books": [
-          "DraftKings",
           "FanDuel",
-          "BetMGM",
-          "Bovada",
-          "BetRivers"
+          "DraftKings"
         ],
-        "spread": 2.6,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -5.2,
+      "edge": -4.2,
       "sel_diff": 16.0
     },
     {
@@ -921,24 +918,21 @@
       "diff": 15,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -140,
-        "away_ml": 130,
+        "home_ml": -131,
+        "away_ml": 109,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.4,
-        "consensus_away": 42.6,
-        "books_count": 5,
+        "consensus_home": 54.0,
+        "consensus_away": 46.0,
+        "books_count": 2,
         "books": [
-          "DraftKings",
-          "BetMGM",
           "FanDuel",
-          "Bovada",
-          "BetRivers"
+          "DraftKings"
         ],
-        "spread": 2.0,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.6,
+      "edge": 11.0,
       "sel_diff": 15.0
     },
     {
@@ -964,24 +958,21 @@
       "diff": 14,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -194,
-        "away_ml": 180,
+        "home_ml": -175,
+        "away_ml": 144,
         "bookmaker": "DraftKings",
-        "consensus_home": 64.9,
-        "consensus_away": 35.1,
-        "books_count": 5,
+        "consensus_home": 60.5,
+        "consensus_away": 39.5,
+        "books_count": 2,
         "books": [
-          "DraftKings",
-          "BetMGM",
           "FanDuel",
-          "Bovada",
-          "BetRivers"
+          "DraftKings"
         ],
-        "spread": 2.3,
+        "spread": 0.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.9,
+      "edge": 3.5,
       "sel_diff": 14.0
     },
     {
@@ -1007,11 +998,11 @@
       "diff": 14,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": 143,
-        "away_ml": -154,
+        "home_ml": 144,
+        "away_ml": -155,
         "bookmaker": "DraftKings",
-        "consensus_home": 40.9,
-        "consensus_away": 59.1,
+        "consensus_home": 40.7,
+        "consensus_away": 59.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1011,11 @@
           "BetMGM",
           "DraftKings"
         ],
-        "spread": 2.0,
+        "spread": 2.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.9,
+      "edge": 4.7,
       "sel_diff": 14.0
     },
     {
@@ -1050,11 +1041,11 @@
       "diff": 7,
       "park_factor": 0.95,
       "odds": {
-        "home_ml": 103,
-        "away_ml": -111,
+        "home_ml": -101,
+        "away_ml": -106,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.3,
-        "consensus_away": 51.7,
+        "consensus_home": 48.8,
+        "consensus_away": 51.2,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1063,11 +1054,11 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 2.0,
+        "spread": 1.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.3,
+      "edge": 5.8,
       "sel_diff": 7.0
     }
   ],
