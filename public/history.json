@@ -6453,5 +6453,14 @@
     "pred": "PIT",
     "actual": "NYM 11-1 PIT",
     "hit": false
+  },
+  {
+    "date": "2026-08-09",
+    "home": "BOS",
+    "away": "ATH",
+    "hp": 64,
+    "pred": "BOS",
+    "actual": "ATH 4-3 BOS",
+    "hit": false
   }
 ]
