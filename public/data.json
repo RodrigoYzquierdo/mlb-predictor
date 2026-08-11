@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "updated": "11/08/2026 10:02 CST",
+  "updated": "11/08/2026 11:03 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -921,11 +921,11 @@
       "diff": 14,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -130,
-        "away_ml": 121,
+        "home_ml": -124,
+        "away_ml": 116,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.6,
-        "consensus_away": 45.4,
+        "consensus_home": 54.5,
+        "consensus_away": 45.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -938,7 +938,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.4,
+      "edge": 9.5,
       "sel_diff": 14.0
     },
     {
