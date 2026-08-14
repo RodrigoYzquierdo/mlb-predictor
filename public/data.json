@@ -1,6 +1,6 @@
 {
   "date": "2026-08-14",
-  "updated": "14/08/2026 10:59 CST",
+  "updated": "14/08/2026 14:20 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -498,10 +498,21 @@
       "k9": 7.69,
       "bullpen_era": 4.07,
       "bullpen_whip": 1.34,
-      "obp": 0.316,
-      "slg": 0.379,
-      "avg": 0.241,
-      "ops": 0.695
+      "obp": 0.315,
+      "slg": 0.377,
+      "avg": 0.24,
+      "ops": 0.692
+    },
+    "CHC": {
+      "era": 4.08,
+      "whip": 1.25,
+      "k9": 7.71,
+      "bullpen_era": 4.08,
+      "bullpen_whip": 1.25,
+      "obp": 0.338,
+      "slg": 0.418,
+      "avg": 0.249,
+      "ops": 0.756
     },
     "SD": {
       "era": 4.1,
@@ -524,17 +535,6 @@
       "slg": 0.407,
       "avg": 0.238,
       "ops": 0.724
-    },
-    "CHC": {
-      "era": 4.1,
-      "whip": 1.26,
-      "k9": 7.74,
-      "bullpen_era": 4.1,
-      "bullpen_whip": 1.26,
-      "obp": 0.339,
-      "slg": 0.418,
-      "avg": 0.249,
-      "ops": 0.757
     },
     "AZ": {
       "era": 4.12,
@@ -867,40 +867,37 @@
       "away_score": null,
       "home_pitcher": "Steven Matz",
       "home_pitcher_id": 571927,
-      "away_pitcher": null,
-      "away_pitcher_id": null,
+      "away_pitcher": "Chris Bassitt",
+      "away_pitcher_id": 605135,
       "home_era": 5.46,
-      "away_era": null,
+      "away_era": 5.27,
       "hp": 64,
       "ap": 36,
       "conf": "Alta",
-      "mixed": false,
+      "mixed": true,
       "diff": 14,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -158,
-        "away_ml": 147,
+        "home_ml": -150,
+        "away_ml": 124,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.1,
-        "consensus_away": 39.9,
-        "books_count": 5,
+        "consensus_home": 56.4,
+        "consensus_away": 43.6,
+        "books_count": 2,
         "books": [
           "FanDuel",
-          "Bovada",
-          "BetRivers",
-          "DraftKings",
-          "BetMGM"
+          "DraftKings"
         ],
-        "spread": 3.0,
-        "agreement": "Media"
+        "spread": 2.4,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.9,
+      "edge": 7.6,
       "sel_diff": 14.0
     },
     {
       "id": 824643,
-      "status": "Preview",
+      "status": "Live",
       "home": "CHC",
       "away": "STL",
       "home_name": "Chicago Cubs",
@@ -912,8 +909,8 @@
       "home_pitcher_id": 605280,
       "away_pitcher": "Matthew Liberatore",
       "away_pitcher_id": 669461,
-      "home_era": 2.86,
-      "away_era": 5.15,
+      "home_era": 2.56,
+      "away_era": 5.07,
       "hp": 61,
       "ap": 39,
       "conf": "Media",
@@ -921,24 +918,21 @@
       "diff": 11,
       "park_factor": 1.03,
       "odds": {
-        "home_ml": -180,
-        "away_ml": 168,
+        "home_ml": -181,
+        "away_ml": 149,
         "bookmaker": "DraftKings",
-        "consensus_home": 63.2,
-        "consensus_away": 36.8,
-        "books_count": 5,
+        "consensus_home": 61.3,
+        "consensus_away": 38.7,
+        "books_count": 2,
         "books": [
-          "DraftKings",
           "FanDuel",
-          "BetRivers",
-          "Bovada",
-          "BetMGM"
+          "DraftKings"
         ],
-        "spread": 2.4,
+        "spread": 0.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.2,
+      "edge": -0.3,
       "sel_diff": 11.0
     },
     {
@@ -964,24 +958,21 @@
       "diff": 10,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -187,
-        "away_ml": 173,
+        "home_ml": -150,
+        "away_ml": 124,
         "bookmaker": "DraftKings",
-        "consensus_home": 63.5,
-        "consensus_away": 36.5,
-        "books_count": 5,
+        "consensus_home": 56.2,
+        "consensus_away": 43.8,
+        "books_count": 2,
         "books": [
-          "FanDuel",
-          "Bovada",
-          "BetRivers",
           "DraftKings",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 2.4,
+        "spread": 2.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -3.5,
+      "edge": 3.8,
       "sel_diff": 10.0
     },
     {
@@ -1007,24 +998,21 @@
       "diff": 8,
       "park_factor": 1.0,
       "odds": {
-        "home_ml": -114,
-        "away_ml": 106,
+        "home_ml": -131,
+        "away_ml": 108,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.1,
-        "consensus_away": 47.9,
-        "books_count": 5,
+        "consensus_home": 53.1,
+        "consensus_away": 46.9,
+        "books_count": 2,
         "books": [
           "FanDuel",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers",
-          "Bovada"
+          "DraftKings"
         ],
-        "spread": 1.5,
+        "spread": 2.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.9,
+      "edge": 4.9,
       "sel_diff": 8.0
     },
     {
