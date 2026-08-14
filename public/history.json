@@ -6682,5 +6682,41 @@
     "hit": false,
     "mkt_home": 50.2,
     "mkt_away": 49.8
+  },
+  {
+    "date": "2026-08-13",
+    "home": "NYY",
+    "away": "SEA",
+    "hp": 62,
+    "pred": "NYY",
+    "actual": "SEA 1-0 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-08-13",
+    "home": "CWS",
+    "away": "CIN",
+    "hp": 57,
+    "pred": "CWS",
+    "actual": "CIN 9-8 CWS",
+    "hit": false
+  },
+  {
+    "date": "2026-08-13",
+    "home": "MIA",
+    "away": "PIT",
+    "hp": 56,
+    "pred": "MIA",
+    "actual": "PIT 13-1 MIA",
+    "hit": false
+  },
+  {
+    "date": "2026-08-13",
+    "home": "DET",
+    "away": "CLE",
+    "hp": 55,
+    "pred": "DET",
+    "actual": "DET 3-0 CLE",
+    "hit": true
   }
 ]
