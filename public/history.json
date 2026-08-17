@@ -6883,5 +6883,23 @@
     "hit": true,
     "mkt_home": 12.7,
     "mkt_away": 87.3
+  },
+  {
+    "date": "2026-08-16",
+    "home": "TB",
+    "away": "BAL",
+    "hp": 63,
+    "pred": "TB",
+    "actual": "BAL 10-2 TB",
+    "hit": false
+  },
+  {
+    "date": "2026-08-16",
+    "home": "ATL",
+    "away": "AZ",
+    "hp": 59,
+    "pred": "ATL",
+    "actual": "ATL 5-3 AZ",
+    "hit": true
   }
 ]
