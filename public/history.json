@@ -7121,5 +7121,23 @@
     "hit": true,
     "mkt_home": 61.6,
     "mkt_away": 38.4
+  },
+  {
+    "date": "2026-08-20",
+    "home": "TB",
+    "away": "TOR",
+    "hp": 63,
+    "pred": "TB",
+    "actual": "TOR 5-1 TB",
+    "hit": false
+  },
+  {
+    "date": "2026-08-20",
+    "home": "CLE",
+    "away": "SF",
+    "hp": 60,
+    "pred": "CLE",
+    "actual": "CLE 5-2 SF",
+    "hit": true
   }
 ]
