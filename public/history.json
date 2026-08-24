@@ -7304,5 +7304,14 @@
     "hit": true,
     "mkt_home": 51.2,
     "mkt_away": 48.8
+  },
+  {
+    "date": "2026-08-23",
+    "home": "SD",
+    "away": "MIN",
+    "hp": 60,
+    "pred": "SD",
+    "actual": "SD 8-1 MIN",
+    "hit": true
   }
 ]

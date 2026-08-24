@@ -1,6 +1,6 @@
 {
   "date": "2026-08-24",
-  "updated": "24/08/2026 08:49 CST",
+  "updated": "24/08/2026 09:41 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -964,11 +964,11 @@
       "diff": 8,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": 121,
-        "away_ml": -130,
+        "home_ml": 115,
+        "away_ml": -124,
         "bookmaker": "DraftKings",
-        "consensus_home": 44.1,
-        "consensus_away": 55.9,
+        "consensus_home": 45.5,
+        "consensus_away": 54.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.9,
+        "spread": 2.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.1,
+      "edge": 3.5,
       "sel_diff": 8.0
     },
     {
@@ -994,16 +994,16 @@
       "time": "2026-08-24T23:40:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": null,
-      "home_pitcher_id": null,
+      "home_pitcher": "José Urquidy",
+      "home_pitcher_id": 664353,
       "away_pitcher": "Kumar Rocker",
       "away_pitcher_id": 677958,
-      "home_era": null,
+      "home_era": 5.06,
       "away_era": 4.46,
       "hp": 56,
       "ap": 44,
       "conf": "Baja",
-      "mixed": false,
+      "mixed": true,
       "diff": 6,
       "park_factor": 0.96,
       "odds": {
@@ -1053,8 +1053,8 @@
         "home_ml": 147,
         "away_ml": -158,
         "bookmaker": "DraftKings",
-        "consensus_home": 40.2,
-        "consensus_away": 59.8,
+        "consensus_home": 39.9,
+        "consensus_away": 60.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1063,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.4,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.8,
+      "edge": -5.1,
       "sel_diff": 5.0
     }
   ],
@@ -8377,13 +8377,22 @@
       "hit": true,
       "mkt_home": 51.2,
       "mkt_away": 48.8
+    },
+    {
+      "date": "2026-08-23",
+      "home": "SD",
+      "away": "MIN",
+      "hp": 60,
+      "pred": "SD",
+      "actual": "SD 8-1 MIN",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 450,
-    "total": 764,
+    "hits": 451,
+    "total": 765,
     "pct": 59,
-    "streak": 3,
+    "streak": 4,
     "streak_type": "W"
   }
 }
