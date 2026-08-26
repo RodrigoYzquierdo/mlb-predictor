@@ -1,6 +1,6 @@
 {
   "date": "2026-08-26",
-  "updated": "26/08/2026 08:51 CST",
+  "updated": "26/08/2026 10:20 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,8 +881,8 @@
         "home_ml": 139,
         "away_ml": -149,
         "bookmaker": "DraftKings",
-        "consensus_home": 41.6,
-        "consensus_away": 58.4,
+        "consensus_home": 41.5,
+        "consensus_away": 58.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 2.6,
+        "spread": 2.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.6,
+      "edge": 2.5,
       "sel_diff": 11.0
     },
     {
@@ -934,55 +934,12 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.7,
+        "spread": 2.9,
         "agreement": "Alta"
       },
       "value": false,
       "edge": 5.6,
       "sel_diff": 10.0
-    },
-    {
-      "id": 823506,
-      "status": "Preview",
-      "home": "NYY",
-      "away": "HOU",
-      "home_name": "New York Yankees",
-      "away_name": "Houston Astros",
-      "time": "2026-08-26T23:05:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": null,
-      "home_pitcher_id": null,
-      "away_pitcher": "Peter Lambert",
-      "away_pitcher_id": 663567,
-      "home_era": null,
-      "away_era": 3.68,
-      "hp": 59,
-      "ap": 41,
-      "conf": "Media",
-      "mixed": false,
-      "diff": 9,
-      "park_factor": 1.02,
-      "odds": {
-        "home_ml": -119,
-        "away_ml": 111,
-        "bookmaker": "DraftKings",
-        "consensus_home": 53.6,
-        "consensus_away": 46.4,
-        "books_count": 5,
-        "books": [
-          "DraftKings",
-          "BetMGM",
-          "FanDuel",
-          "Bovada",
-          "BetRivers"
-        ],
-        "spread": 3.9,
-        "agreement": "Media"
-      },
-      "value": false,
-      "edge": 5.4,
-      "sel_diff": 9.0
     },
     {
       "id": 823255,
@@ -1010,8 +967,8 @@
         "home_ml": -129,
         "away_ml": 120,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.6,
-        "consensus_away": 44.4,
+        "consensus_home": 55.7,
+        "consensus_away": 44.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1024,7 +981,50 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.4,
+      "edge": 2.3,
+      "sel_diff": 8.0
+    },
+    {
+      "id": 823506,
+      "status": "Preview",
+      "home": "NYY",
+      "away": "HOU",
+      "home_name": "New York Yankees",
+      "away_name": "Houston Astros",
+      "time": "2026-08-26T23:05:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Elmer Rodríguez",
+      "home_pitcher_id": 695684,
+      "away_pitcher": "Peter Lambert",
+      "away_pitcher_id": 663567,
+      "home_era": 4.76,
+      "away_era": 3.68,
+      "hp": 58,
+      "ap": 42,
+      "conf": "Media",
+      "mixed": true,
+      "diff": 8,
+      "park_factor": 1.02,
+      "odds": {
+        "home_ml": -115,
+        "away_ml": 107,
+        "bookmaker": "DraftKings",
+        "consensus_home": 52.8,
+        "consensus_away": 47.2,
+        "books_count": 5,
+        "books": [
+          "DraftKings",
+          "BetMGM",
+          "FanDuel",
+          "Bovada",
+          "BetRivers"
+        ],
+        "spread": 2.1,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": 5.2,
       "sel_diff": 8.0
     },
     {
@@ -1050,11 +1050,11 @@
       "diff": 7,
       "park_factor": 0.99,
       "odds": {
-        "home_ml": -113,
-        "away_ml": 105,
+        "home_ml": -116,
+        "away_ml": 108,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.4,
-        "consensus_away": 47.6,
+        "consensus_home": 52.3,
+        "consensus_away": 47.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1063,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 2.5,
+        "spread": 1.5,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 9.4,
+      "edge": 9.3,
       "sel_diff": 7.0
     }
   ],
