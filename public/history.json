@@ -7478,5 +7478,14 @@
     "hit": true,
     "mkt_home": 83.1,
     "mkt_away": 16.9
+  },
+  {
+    "date": "2026-08-26",
+    "home": "DET",
+    "away": "TB",
+    "hp": 42,
+    "pred": "TB",
+    "actual": "TB 3-0 DET",
+    "hit": true
   }
 ]
