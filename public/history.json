@@ -7487,5 +7487,16 @@
     "pred": "TB",
     "actual": "TB 3-0 DET",
     "hit": true
+  },
+  {
+    "date": "2026-08-27",
+    "home": "SF",
+    "away": "AZ",
+    "hp": 43,
+    "pred": "AZ",
+    "actual": "SF 6-1 AZ",
+    "hit": false,
+    "mkt_home": 84.7,
+    "mkt_away": 15.3
   }
 ]
