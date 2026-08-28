@@ -7498,5 +7498,41 @@
     "hit": false,
     "mkt_home": 84.7,
     "mkt_away": 15.3
+  },
+  {
+    "date": "2026-08-27",
+    "home": "NYM",
+    "away": "MIL",
+    "hp": 38,
+    "pred": "MIL",
+    "actual": "MIL 8-2 NYM",
+    "hit": true
+  },
+  {
+    "date": "2026-08-27",
+    "home": "WSH",
+    "away": "COL",
+    "hp": 61,
+    "pred": "WSH",
+    "actual": "WSH 7-1 COL",
+    "hit": true
+  },
+  {
+    "date": "2026-08-27",
+    "home": "NYY",
+    "away": "HOU",
+    "hp": 59,
+    "pred": "NYY",
+    "actual": "HOU 5-1 NYY",
+    "hit": false
+  },
+  {
+    "date": "2026-08-27",
+    "home": "TOR",
+    "away": "KC",
+    "hp": 57,
+    "pred": "TOR",
+    "actual": "KC 13-2 TOR",
+    "hit": false
   }
 ]
