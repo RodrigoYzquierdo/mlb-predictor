@@ -1,6 +1,6 @@
 {
   "date": "2026-08-29",
-  "updated": "29/08/2026 11:37 CST",
+  "updated": "29/08/2026 12:13 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -372,11 +372,11 @@
   },
   "team_stats": {
     "NYY": {
-      "era": 3.22,
-      "whip": 1.18,
-      "k9": 9.03,
-      "bullpen_era": 3.22,
-      "bullpen_whip": 1.18,
+      "era": 3.21,
+      "whip": 1.17,
+      "k9": 9.02,
+      "bullpen_era": 3.21,
+      "bullpen_whip": 1.17,
       "obp": 0.309,
       "slg": 0.407,
       "avg": 0.23,
@@ -396,7 +396,7 @@
     "BOS": {
       "era": 3.45,
       "whip": 1.22,
-      "k9": 8.67,
+      "k9": 8.68,
       "bullpen_era": 3.45,
       "bullpen_whip": 1.22,
       "obp": 0.323,
@@ -405,10 +405,10 @@
       "ops": 0.727
     },
     "DET": {
-      "era": 3.58,
+      "era": 3.57,
       "whip": 1.22,
-      "k9": 8.25,
-      "bullpen_era": 3.58,
+      "k9": 8.23,
+      "bullpen_era": 3.57,
       "bullpen_whip": 1.22,
       "obp": 0.315,
       "slg": 0.4,
@@ -429,12 +429,12 @@
     "LAD": {
       "era": 3.65,
       "whip": 1.16,
-      "k9": 9.28,
+      "k9": 9.29,
       "bullpen_era": 3.65,
       "bullpen_whip": 1.16,
       "obp": 0.335,
       "slg": 0.422,
-      "avg": 0.258,
+      "avg": 0.257,
       "ops": 0.757
     },
     "CLE": {
@@ -867,10 +867,10 @@
       "away_score": null,
       "home_pitcher": "Martín Pérez",
       "home_pitcher_id": 527048,
-      "away_pitcher": "Ryan Feltner",
-      "away_pitcher_id": 663372,
+      "away_pitcher": "Zach Agnos",
+      "away_pitcher_id": 688642,
       "home_era": 3.12,
-      "away_era": 6.08,
+      "away_era": 5.68,
       "hp": 66,
       "ap": 34,
       "conf": "Alta",
@@ -878,11 +878,11 @@
       "diff": 16,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -223,
-        "away_ml": 206,
+        "home_ml": -224,
+        "away_ml": 207,
         "bookmaker": "DraftKings",
-        "consensus_home": 67.5,
-        "consensus_away": 32.5,
+        "consensus_home": 68.0,
+        "consensus_away": 32.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 2.3,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -1.5,
+      "edge": -2.0,
       "sel_diff": 16.0
     },
     {
@@ -924,8 +924,8 @@
         "home_ml": -156,
         "away_ml": 145,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.0,
-        "consensus_away": 40.0,
+        "consensus_home": 60.1,
+        "consensus_away": 39.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -938,7 +938,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.0,
+      "edge": 2.9,
       "sel_diff": 13.0
     },
     {
@@ -986,7 +986,7 @@
     },
     {
       "id": 824637,
-      "status": "Preview",
+      "status": "Live",
       "home": "CHC",
       "away": "CIN",
       "home_name": "Chicago Cubs",
@@ -1010,8 +1010,8 @@
         "home_ml": -204,
         "away_ml": 189,
         "bookmaker": "DraftKings",
-        "consensus_home": 65.8,
-        "consensus_away": 34.2,
+        "consensus_home": 65.9,
+        "consensus_away": 34.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 3.0,
+        "spread": 3.9,
         "agreement": "Media"
       },
       "value": false,
-      "edge": -4.8,
+      "edge": -4.9,
       "sel_diff": 11.0
     },
     {
@@ -8662,13 +8662,49 @@
       "hit": true,
       "mkt_home": 52.8,
       "mkt_away": 47.2
+    },
+    {
+      "date": "2026-08-28",
+      "home": "ATL",
+      "away": "COL",
+      "hp": 66,
+      "pred": "ATL",
+      "actual": "ATL 6-4 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-08-28",
+      "home": "MIL",
+      "away": "TEX",
+      "hp": 63,
+      "pred": "MIL",
+      "actual": "MIL 6-1 TEX",
+      "hit": true
+    },
+    {
+      "date": "2026-08-28",
+      "home": "CHC",
+      "away": "CIN",
+      "hp": 61,
+      "pred": "CHC",
+      "actual": "CIN 10-8 CHC",
+      "hit": false
+    },
+    {
+      "date": "2026-08-28",
+      "home": "TB",
+      "away": "SD",
+      "hp": 60,
+      "pred": "TB",
+      "actual": "TB 9-4 SD",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 466,
-    "total": 791,
+    "hits": 469,
+    "total": 795,
     "pct": 59,
-    "streak": 5,
+    "streak": 1,
     "streak_type": "W"
   }
 }

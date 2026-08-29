@@ -7589,5 +7589,41 @@
     "hit": true,
     "mkt_home": 52.8,
     "mkt_away": 47.2
+  },
+  {
+    "date": "2026-08-28",
+    "home": "ATL",
+    "away": "COL",
+    "hp": 66,
+    "pred": "ATL",
+    "actual": "ATL 6-4 COL",
+    "hit": true
+  },
+  {
+    "date": "2026-08-28",
+    "home": "MIL",
+    "away": "TEX",
+    "hp": 63,
+    "pred": "MIL",
+    "actual": "MIL 6-1 TEX",
+    "hit": true
+  },
+  {
+    "date": "2026-08-28",
+    "home": "CHC",
+    "away": "CIN",
+    "hp": 61,
+    "pred": "CHC",
+    "actual": "CIN 10-8 CHC",
+    "hit": false
+  },
+  {
+    "date": "2026-08-28",
+    "home": "TB",
+    "away": "SD",
+    "hp": 60,
+    "pred": "TB",
+    "actual": "TB 9-4 SD",
+    "hit": true
   }
 ]
