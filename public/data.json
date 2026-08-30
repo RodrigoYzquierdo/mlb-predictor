@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-29",
-  "updated": "29/08/2026 16:05 CST",
+  "date": "2026-08-30",
+  "updated": "30/08/2026 12:00 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -11,24 +11,24 @@
   "standings": {
     "TB": {
       "name": "Rays",
-      "w": 80,
+      "w": 81,
       "l": 54,
-      "pct": 0.597,
+      "pct": 0.6,
       "div": "",
       "conf": "",
-      "rdiff": 52,
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
+      "rdiff": 53,
+      "last10_w": 6,
+      "last10_l": 4,
+      "last10_pct": 0.6
     },
     "NYY": {
       "name": "Yankees",
-      "w": 76,
+      "w": 77,
       "l": 59,
-      "pct": 0.563,
+      "pct": 0.566,
       "div": "",
       "conf": "",
-      "rdiff": 95,
+      "rdiff": 102,
       "last10_w": 6,
       "last10_l": 4,
       "last10_pct": 0.6
@@ -36,35 +36,35 @@
     "BOS": {
       "name": "Red Sox",
       "w": 74,
-      "l": 61,
-      "pct": 0.548,
+      "l": 62,
+      "pct": 0.544,
       "div": "",
       "conf": "",
-      "rdiff": 106,
-      "last10_w": 7,
-      "last10_l": 3,
-      "last10_pct": 0.7
+      "rdiff": 99,
+      "last10_w": 6,
+      "last10_l": 4,
+      "last10_pct": 0.6
     },
     "BAL": {
       "name": "Orioles",
-      "w": 66,
+      "w": 67,
       "l": 69,
-      "pct": 0.489,
+      "pct": 0.493,
       "div": "",
       "conf": "",
-      "rdiff": -23,
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
+      "rdiff": -21,
+      "last10_w": 6,
+      "last10_l": 4,
+      "last10_pct": 0.6
     },
     "TOR": {
       "name": "Blue Jays",
-      "w": 66,
+      "w": 67,
       "l": 70,
-      "pct": 0.485,
+      "pct": 0.489,
       "div": "",
       "conf": "",
-      "rdiff": -58,
+      "rdiff": -57,
       "last10_w": 5,
       "last10_l": 5,
       "last10_pct": 0.5
@@ -84,14 +84,14 @@
     "CLE": {
       "name": "Guardians",
       "w": 68,
-      "l": 67,
-      "pct": 0.504,
+      "l": 68,
+      "pct": 0.5,
       "div": "",
       "conf": "",
-      "rdiff": -7,
-      "last10_w": 8,
-      "last10_l": 2,
-      "last10_pct": 0.8
+      "rdiff": -12,
+      "last10_w": 7,
+      "last10_l": 3,
+      "last10_pct": 0.7
     },
     "MIN": {
       "name": "Twins",
@@ -119,12 +119,12 @@
     },
     "KC": {
       "name": "Royals",
-      "w": 61,
+      "w": 62,
       "l": 75,
-      "pct": 0.449,
+      "pct": 0.453,
       "div": "",
       "conf": "",
-      "rdiff": -78,
+      "rdiff": -73,
       "last10_w": 9,
       "last10_l": 1,
       "last10_pct": 0.9
@@ -132,11 +132,11 @@
     "HOU": {
       "name": "Astros",
       "w": 68,
-      "l": 67,
-      "pct": 0.504,
+      "l": 68,
+      "pct": 0.5,
       "div": "",
       "conf": "",
-      "rdiff": -42,
+      "rdiff": -46,
       "last10_w": 5,
       "last10_l": 5,
       "last10_pct": 0.5
@@ -144,104 +144,8 @@
     "TEX": {
       "name": "Rangers",
       "w": 66,
-      "l": 69,
-      "pct": 0.489,
-      "div": "",
-      "conf": "",
-      "rdiff": -52,
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
-    },
-    "SEA": {
-      "name": "Mariners",
-      "w": 64,
-      "l": 71,
-      "pct": 0.474,
-      "div": "",
-      "conf": "",
-      "rdiff": -64,
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
-    },
-    "ATH": {
-      "name": "Athletics",
-      "w": 53,
-      "l": 82,
-      "pct": 0.393,
-      "div": "",
-      "conf": "",
-      "rdiff": -186,
-      "last10_w": 4,
-      "last10_l": 6,
-      "last10_pct": 0.4
-    },
-    "LAA": {
-      "name": "Angels",
-      "w": 52,
-      "l": 83,
-      "pct": 0.385,
-      "div": "",
-      "conf": "",
-      "rdiff": -77,
-      "last10_w": 3,
-      "last10_l": 7,
-      "last10_pct": 0.3
-    },
-    "ATL": {
-      "name": "Braves",
-      "w": 80,
-      "l": 55,
-      "pct": 0.593,
-      "div": "",
-      "conf": "",
-      "rdiff": 115,
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
-    },
-    "PHI": {
-      "name": "Phillies",
-      "w": 75,
-      "l": 60,
-      "pct": 0.556,
-      "div": "",
-      "conf": "",
-      "rdiff": 25,
-      "last10_w": 8,
-      "last10_l": 2,
-      "last10_pct": 0.8
-    },
-    "MIA": {
-      "name": "Marlins",
-      "w": 68,
-      "l": 67,
-      "pct": 0.504,
-      "div": "",
-      "conf": "",
-      "rdiff": 12,
-      "last10_w": 4,
-      "last10_l": 6,
-      "last10_pct": 0.4
-    },
-    "WSH": {
-      "name": "Nationals",
-      "w": 64,
-      "l": 73,
-      "pct": 0.467,
-      "div": "",
-      "conf": "",
-      "rdiff": 19,
-      "last10_w": 4,
-      "last10_l": 6,
-      "last10_pct": 0.4
-    },
-    "NYM": {
-      "name": "Mets",
-      "w": 60,
-      "l": 75,
-      "pct": 0.444,
+      "l": 70,
+      "pct": 0.485,
       "div": "",
       "conf": "",
       "rdiff": -54,
@@ -249,14 +153,110 @@
       "last10_l": 6,
       "last10_pct": 0.4
     },
-    "MIL": {
-      "name": "Brewers",
-      "w": 84,
-      "l": 51,
-      "pct": 0.622,
+    "SEA": {
+      "name": "Mariners",
+      "w": 64,
+      "l": 72,
+      "pct": 0.471,
       "div": "",
       "conf": "",
-      "rdiff": 178,
+      "rdiff": -65,
+      "last10_w": 5,
+      "last10_l": 5,
+      "last10_pct": 0.5
+    },
+    "ATH": {
+      "name": "Athletics",
+      "w": 53,
+      "l": 83,
+      "pct": 0.39,
+      "div": "",
+      "conf": "",
+      "rdiff": -188,
+      "last10_w": 4,
+      "last10_l": 6,
+      "last10_pct": 0.4
+    },
+    "LAA": {
+      "name": "Angels",
+      "w": 52,
+      "l": 84,
+      "pct": 0.382,
+      "div": "",
+      "conf": "",
+      "rdiff": -79,
+      "last10_w": 2,
+      "last10_l": 8,
+      "last10_pct": 0.2
+    },
+    "ATL": {
+      "name": "Braves",
+      "w": 81,
+      "l": 55,
+      "pct": 0.596,
+      "div": "",
+      "conf": "",
+      "rdiff": 116,
+      "last10_w": 7,
+      "last10_l": 3,
+      "last10_pct": 0.7
+    },
+    "PHI": {
+      "name": "Phillies",
+      "w": 76,
+      "l": 60,
+      "pct": 0.559,
+      "div": "",
+      "conf": "",
+      "rdiff": 27,
+      "last10_w": 8,
+      "last10_l": 2,
+      "last10_pct": 0.8
+    },
+    "MIA": {
+      "name": "Marlins",
+      "w": 68,
+      "l": 68,
+      "pct": 0.5,
+      "div": "",
+      "conf": "",
+      "rdiff": 11,
+      "last10_w": 4,
+      "last10_l": 6,
+      "last10_pct": 0.4
+    },
+    "WSH": {
+      "name": "Nationals",
+      "w": 65,
+      "l": 73,
+      "pct": 0.471,
+      "div": "",
+      "conf": "",
+      "rdiff": 20,
+      "last10_w": 4,
+      "last10_l": 6,
+      "last10_pct": 0.4
+    },
+    "NYM": {
+      "name": "Mets",
+      "w": 61,
+      "l": 75,
+      "pct": 0.449,
+      "div": "",
+      "conf": "",
+      "rdiff": -50,
+      "last10_w": 4,
+      "last10_l": 6,
+      "last10_pct": 0.4
+    },
+    "MIL": {
+      "name": "Brewers",
+      "w": 85,
+      "l": 51,
+      "pct": 0.625,
+      "div": "",
+      "conf": "",
+      "rdiff": 180,
       "last10_w": 7,
       "last10_l": 3,
       "last10_pct": 0.7
@@ -324,35 +324,35 @@
     "SD": {
       "name": "Padres",
       "w": 72,
-      "l": 63,
-      "pct": 0.533,
+      "l": 64,
+      "pct": 0.529,
       "div": "",
       "conf": "",
-      "rdiff": 12,
+      "rdiff": 11,
       "last10_w": 5,
       "last10_l": 5,
       "last10_pct": 0.5
     },
     "AZ": {
       "name": "D-backs",
-      "w": 72,
-      "l": 64,
+      "w": 73,
+      "l": 65,
       "pct": 0.529,
       "div": "",
       "conf": "",
-      "rdiff": 4,
+      "rdiff": 5,
       "last10_w": 6,
       "last10_l": 4,
       "last10_pct": 0.6
     },
     "SF": {
       "name": "Giants",
-      "w": 55,
-      "l": 80,
-      "pct": 0.407,
+      "w": 56,
+      "l": 81,
+      "pct": 0.409,
       "div": "",
       "conf": "",
-      "rdiff": -73,
+      "rdiff": -74,
       "last10_w": 4,
       "last10_l": 6,
       "last10_pct": 0.4
@@ -360,11 +360,11 @@
     "COL": {
       "name": "Rockies",
       "w": 52,
-      "l": 83,
-      "pct": 0.385,
+      "l": 84,
+      "pct": 0.382,
       "div": "",
       "conf": "",
-      "rdiff": -140,
+      "rdiff": -141,
       "last10_w": 2,
       "last10_l": 8,
       "last10_pct": 0.2
@@ -372,37 +372,48 @@
   },
   "team_stats": {
     "NYY": {
-      "era": 3.24,
+      "era": 3.23,
       "whip": 1.18,
-      "k9": 9.01,
-      "bullpen_era": 3.24,
+      "k9": 9.02,
+      "bullpen_era": 3.23,
       "bullpen_whip": 1.18,
-      "obp": 0.308,
-      "slg": 0.406,
-      "avg": 0.229,
+      "obp": 0.309,
+      "slg": 0.405,
+      "avg": 0.23,
       "ops": 0.714
     },
     "MIL": {
       "era": 3.36,
       "whip": 1.16,
-      "k9": 9.73,
+      "k9": 9.71,
       "bullpen_era": 3.36,
       "bullpen_whip": 1.16,
-      "obp": 0.339,
+      "obp": 0.338,
       "slg": 0.398,
       "avg": 0.256,
-      "ops": 0.737
+      "ops": 0.736
     },
     "BOS": {
-      "era": 3.43,
+      "era": 3.47,
       "whip": 1.22,
-      "k9": 8.68,
-      "bullpen_era": 3.43,
+      "k9": 8.66,
+      "bullpen_era": 3.47,
       "bullpen_whip": 1.22,
-      "obp": 0.324,
+      "obp": 0.323,
       "slg": 0.404,
       "avg": 0.249,
-      "ops": 0.728
+      "ops": 0.727
+    },
+    "ATL": {
+      "era": 3.56,
+      "whip": 1.25,
+      "k9": 8.58,
+      "bullpen_era": 3.56,
+      "bullpen_whip": 1.25,
+      "obp": 0.312,
+      "slg": 0.412,
+      "avg": 0.248,
+      "ops": 0.724
     },
     "DET": {
       "era": 3.56,
@@ -414,17 +425,6 @@
       "slg": 0.4,
       "avg": 0.239,
       "ops": 0.716
-    },
-    "ATL": {
-      "era": 3.57,
-      "whip": 1.25,
-      "k9": 8.57,
-      "bullpen_era": 3.57,
-      "bullpen_whip": 1.25,
-      "obp": 0.311,
-      "slg": 0.412,
-      "avg": 0.248,
-      "ops": 0.723
     },
     "LAD": {
       "era": 3.64,
@@ -438,10 +438,10 @@
       "ops": 0.757
     },
     "CLE": {
-      "era": 3.74,
+      "era": 3.75,
       "whip": 1.26,
       "k9": 9.44,
-      "bullpen_era": 3.74,
+      "bullpen_era": 3.75,
       "bullpen_whip": 1.26,
       "obp": 0.314,
       "slg": 0.369,
@@ -449,31 +449,31 @@
       "ops": 0.683
     },
     "TB": {
-      "era": 3.8,
+      "era": 3.79,
       "whip": 1.15,
       "k9": 8.21,
-      "bullpen_era": 3.8,
+      "bullpen_era": 3.79,
       "bullpen_whip": 1.15,
       "obp": 0.329,
       "slg": 0.404,
-      "avg": 0.26,
+      "avg": 0.261,
       "ops": 0.733
     },
     "MIA": {
-      "era": 3.93,
+      "era": 3.91,
       "whip": 1.25,
-      "k9": 8.36,
-      "bullpen_era": 3.93,
+      "k9": 8.34,
+      "bullpen_era": 3.91,
       "bullpen_whip": 1.25,
-      "obp": 0.326,
-      "slg": 0.397,
-      "avg": 0.248,
-      "ops": 0.723
+      "obp": 0.325,
+      "slg": 0.396,
+      "avg": 0.247,
+      "ops": 0.721
     },
     "SD": {
       "era": 3.94,
       "whip": 1.29,
-      "k9": 8.19,
+      "k9": 8.2,
       "bullpen_era": 3.94,
       "bullpen_whip": 1.29,
       "obp": 0.315,
@@ -482,37 +482,37 @@
       "ops": 0.702
     },
     "TOR": {
-      "era": 3.98,
+      "era": 3.97,
       "whip": 1.31,
-      "k9": 8.82,
-      "bullpen_era": 3.98,
+      "k9": 8.84,
+      "bullpen_era": 3.97,
       "bullpen_whip": 1.31,
       "obp": 0.307,
       "slg": 0.381,
       "avg": 0.246,
       "ops": 0.688
     },
+    "PHI": {
+      "era": 4.07,
+      "whip": 1.29,
+      "k9": 9.99,
+      "bullpen_era": 4.07,
+      "bullpen_whip": 1.29,
+      "obp": 0.313,
+      "slg": 0.401,
+      "avg": 0.243,
+      "ops": 0.714
+    },
     "NYM": {
       "era": 4.08,
       "whip": 1.3,
-      "k9": 9.04,
+      "k9": 9.05,
       "bullpen_era": 4.08,
       "bullpen_whip": 1.3,
       "obp": 0.306,
       "slg": 0.388,
       "avg": 0.236,
       "ops": 0.694
-    },
-    "PHI": {
-      "era": 4.1,
-      "whip": 1.3,
-      "k9": 9.99,
-      "bullpen_era": 4.1,
-      "bullpen_whip": 1.3,
-      "obp": 0.313,
-      "slg": 0.403,
-      "avg": 0.243,
-      "ops": 0.716
     },
     "CHC": {
       "era": 4.12,
@@ -525,17 +525,6 @@
       "avg": 0.251,
       "ops": 0.767
     },
-    "SEA": {
-      "era": 4.14,
-      "whip": 1.24,
-      "k9": 8.64,
-      "bullpen_era": 4.14,
-      "bullpen_whip": 1.24,
-      "obp": 0.308,
-      "slg": 0.374,
-      "avg": 0.228,
-      "ops": 0.682
-    },
     "CWS": {
       "era": 4.14,
       "whip": 1.31,
@@ -547,15 +536,37 @@
       "avg": 0.238,
       "ops": 0.73
     },
+    "SEA": {
+      "era": 4.14,
+      "whip": 1.24,
+      "k9": 8.64,
+      "bullpen_era": 4.14,
+      "bullpen_whip": 1.24,
+      "obp": 0.308,
+      "slg": 0.374,
+      "avg": 0.228,
+      "ops": 0.682
+    },
     "AZ": {
-      "era": 4.17,
-      "whip": 1.28,
-      "k9": 6.93,
-      "bullpen_era": 4.17,
-      "bullpen_whip": 1.28,
+      "era": 4.18,
+      "whip": 1.29,
+      "k9": 6.95,
+      "bullpen_era": 4.18,
+      "bullpen_whip": 1.29,
       "obp": 0.316,
-      "slg": 0.399,
+      "slg": 0.398,
       "avg": 0.244,
+      "ops": 0.714
+    },
+    "BAL": {
+      "era": 4.19,
+      "whip": 1.34,
+      "k9": 8.04,
+      "bullpen_era": 4.19,
+      "bullpen_whip": 1.34,
+      "obp": 0.318,
+      "slg": 0.397,
+      "avg": 0.236,
       "ops": 0.715
     },
     "PIT": {
@@ -569,17 +580,6 @@
       "avg": 0.252,
       "ops": 0.732
     },
-    "BAL": {
-      "era": 4.19,
-      "whip": 1.34,
-      "k9": 8.05,
-      "bullpen_era": 4.19,
-      "bullpen_whip": 1.34,
-      "obp": 0.318,
-      "slg": 0.398,
-      "avg": 0.236,
-      "ops": 0.716
-    },
     "STL": {
       "era": 4.23,
       "whip": 1.34,
@@ -592,20 +592,20 @@
       "ops": 0.696
     },
     "LAA": {
-      "era": 4.28,
+      "era": 4.27,
       "whip": 1.35,
-      "k9": 9.12,
-      "bullpen_era": 4.28,
+      "k9": 9.09,
+      "bullpen_era": 4.27,
       "bullpen_whip": 1.35,
       "obp": 0.309,
-      "slg": 0.373,
-      "avg": 0.235,
-      "ops": 0.682
+      "slg": 0.372,
+      "avg": 0.234,
+      "ops": 0.681
     },
     "TEX": {
       "era": 4.29,
       "whip": 1.31,
-      "k9": 8.63,
+      "k9": 8.66,
       "bullpen_era": 4.29,
       "bullpen_whip": 1.31,
       "obp": 0.316,
@@ -614,48 +614,48 @@
       "ops": 0.711
     },
     "SF": {
-      "era": 4.36,
-      "whip": 1.35,
-      "k9": 7.67,
-      "bullpen_era": 4.36,
-      "bullpen_whip": 1.35,
-      "obp": 0.306,
-      "slg": 0.406,
+      "era": 4.35,
+      "whip": 1.36,
+      "k9": 7.69,
+      "bullpen_era": 4.35,
+      "bullpen_whip": 1.36,
+      "obp": 0.307,
+      "slg": 0.405,
       "avg": 0.247,
       "ops": 0.712
     },
-    "HOU": {
+    "KC": {
       "era": 4.63,
+      "whip": 1.39,
+      "k9": 7.44,
+      "bullpen_era": 4.63,
+      "bullpen_whip": 1.39,
+      "obp": 0.316,
+      "slg": 0.402,
+      "avg": 0.248,
+      "ops": 0.718
+    },
+    "WSH": {
+      "era": 4.64,
+      "whip": 1.39,
+      "k9": 7.88,
+      "bullpen_era": 4.64,
+      "bullpen_whip": 1.39,
+      "obp": 0.324,
+      "slg": 0.43,
+      "avg": 0.248,
+      "ops": 0.754
+    },
+    "HOU": {
+      "era": 4.64,
       "whip": 1.36,
       "k9": 8.89,
-      "bullpen_era": 4.63,
+      "bullpen_era": 4.64,
       "bullpen_whip": 1.36,
       "obp": 0.316,
       "slg": 0.409,
       "avg": 0.241,
       "ops": 0.725
-    },
-    "KC": {
-      "era": 4.64,
-      "whip": 1.39,
-      "k9": 7.45,
-      "bullpen_era": 4.64,
-      "bullpen_whip": 1.39,
-      "obp": 0.316,
-      "slg": 0.401,
-      "avg": 0.248,
-      "ops": 0.717
-    },
-    "WSH": {
-      "era": 4.66,
-      "whip": 1.39,
-      "k9": 7.85,
-      "bullpen_era": 4.66,
-      "bullpen_whip": 1.39,
-      "obp": 0.325,
-      "slg": 0.432,
-      "avg": 0.249,
-      "ops": 0.757
     },
     "CIN": {
       "era": 4.67,
@@ -680,14 +680,14 @@
       "ops": 0.723
     },
     "ATH": {
-      "era": 5.43,
+      "era": 5.41,
       "whip": 1.5,
       "k9": 8.54,
-      "bullpen_era": 5.43,
+      "bullpen_era": 5.41,
       "bullpen_whip": 1.5,
       "obp": 0.319,
       "slg": 0.401,
-      "avg": 0.245,
+      "avg": 0.246,
       "ops": 0.72
     },
     "COL": {
@@ -697,16 +697,16 @@
       "bullpen_era": 5.51,
       "bullpen_whip": 1.52,
       "obp": 0.324,
-      "slg": 0.416,
+      "slg": 0.415,
       "avg": 0.253,
-      "ops": 0.74
+      "ops": 0.739
     }
   },
   "form": {
     "TB": {
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
+      "last10_w": 6,
+      "last10_l": 4,
+      "last10_pct": 0.6
     },
     "NYY": {
       "last10_w": 6,
@@ -714,14 +714,14 @@
       "last10_pct": 0.6
     },
     "BOS": {
-      "last10_w": 7,
-      "last10_l": 3,
-      "last10_pct": 0.7
+      "last10_w": 6,
+      "last10_l": 4,
+      "last10_pct": 0.6
     },
     "BAL": {
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
+      "last10_w": 6,
+      "last10_l": 4,
+      "last10_pct": 0.6
     },
     "TOR": {
       "last10_w": 5,
@@ -734,9 +734,9 @@
       "last10_pct": 0.7
     },
     "CLE": {
-      "last10_w": 8,
-      "last10_l": 2,
-      "last10_pct": 0.8
+      "last10_w": 7,
+      "last10_l": 3,
+      "last10_pct": 0.7
     },
     "MIN": {
       "last10_w": 3,
@@ -759,9 +759,9 @@
       "last10_pct": 0.5
     },
     "TEX": {
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
+      "last10_w": 4,
+      "last10_l": 6,
+      "last10_pct": 0.4
     },
     "SEA": {
       "last10_w": 5,
@@ -774,14 +774,14 @@
       "last10_pct": 0.4
     },
     "LAA": {
-      "last10_w": 3,
-      "last10_l": 7,
-      "last10_pct": 0.3
+      "last10_w": 2,
+      "last10_l": 8,
+      "last10_pct": 0.2
     },
     "ATL": {
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
+      "last10_w": 7,
+      "last10_l": 3,
+      "last10_pct": 0.7
     },
     "PHI": {
       "last10_w": 8,
@@ -856,21 +856,21 @@
   },
   "top5": [
     {
-      "id": 824874,
+      "id": 824876,
       "status": "Live",
       "home": "ATL",
       "away": "COL",
       "home_name": "Atlanta Braves",
       "away_name": "Colorado Rockies",
-      "time": "2026-08-29T20:10:00Z",
+      "time": "2026-08-30T17:35:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Martín Pérez",
-      "home_pitcher_id": 527048,
-      "away_pitcher": "Zach Agnos",
-      "away_pitcher_id": 688642,
-      "home_era": 3.05,
-      "away_era": 5.49,
+      "home_pitcher": "Tyler Mahle",
+      "home_pitcher_id": 641816,
+      "away_pitcher": "Mason Adams",
+      "away_pitcher_id": 690279,
+      "home_era": 4.34,
+      "away_era": 1.8,
       "hp": 66,
       "ap": 34,
       "conf": "Alta",
@@ -878,83 +878,85 @@
       "diff": 16,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -231,
-        "away_ml": 187,
+        "home_ml": -305,
+        "away_ml": 257,
         "bookmaker": "DraftKings",
-        "consensus_home": 66.7,
-        "consensus_away": 33.3,
-        "books_count": 4,
+        "consensus_home": 71.8,
+        "consensus_away": 28.2,
+        "books_count": 5,
         "books": [
           "FanDuel",
           "DraftKings",
           "Bovada",
-          "BetMGM"
+          "BetMGM",
+          "BetRivers"
         ],
-        "spread": 0.6,
+        "spread": 2.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.7,
+      "edge": -5.8,
       "sel_diff": 16.0
     },
     {
-      "id": 823741,
-      "status": "Preview",
+      "id": 823740,
+      "status": "Live",
       "home": "MIL",
       "away": "TEX",
       "home_name": "Milwaukee Brewers",
       "away_name": "Texas Rangers",
-      "time": "2026-08-29T23:15:00Z",
+      "time": "2026-08-30T18:10:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Shane Drohan",
-      "home_pitcher_id": 675660,
-      "away_pitcher": "Cal Quantrill",
-      "away_pitcher_id": 615698,
-      "home_era": 3.84,
-      "away_era": 2.9,
-      "hp": 63,
-      "ap": 37,
+      "home_pitcher": "Dustin May",
+      "home_pitcher_id": 669160,
+      "away_pitcher": "Kumar Rocker",
+      "away_pitcher_id": 677958,
+      "home_era": 4.56,
+      "away_era": 4.41,
+      "hp": 64,
+      "ap": 36,
       "conf": "Alta",
       "mixed": true,
-      "diff": 13,
+      "diff": 14,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -172,
-        "away_ml": 142,
+        "home_ml": -158,
+        "away_ml": 147,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.8,
-        "consensus_away": 40.2,
-        "books_count": 4,
+        "consensus_home": 59.6,
+        "consensus_away": 40.4,
+        "books_count": 5,
         "books": [
           "FanDuel",
           "DraftKings",
           "Bovada",
-          "BetMGM"
+          "BetMGM",
+          "BetRivers"
         ],
-        "spread": 1.4,
+        "spread": 1.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.2,
-      "sel_diff": 13.0
+      "edge": 4.4,
+      "sel_diff": 14.0
     },
     {
-      "id": 823986,
+      "id": 823987,
       "status": "Preview",
       "home": "LAA",
       "away": "PHI",
       "home_name": "Los Angeles Angels",
       "away_name": "Philadelphia Phillies",
-      "time": "2026-08-30T02:07:00Z",
+      "time": "2026-08-30T20:07:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Ryan Johnson",
-      "home_pitcher_id": 696270,
-      "away_pitcher": "Cristopher Sánchez",
-      "away_pitcher_id": 650911,
-      "home_era": 5.75,
-      "away_era": 2.62,
+      "home_pitcher": "Yusei Kikuchi",
+      "home_pitcher_id": 579328,
+      "away_pitcher": "Zack Wheeler",
+      "away_pitcher_id": 554430,
+      "home_era": 6.25,
+      "away_era": 3.4,
       "hp": 38,
       "ap": 62,
       "conf": "Media",
@@ -962,108 +964,111 @@
       "diff": 12,
       "park_factor": 0.95,
       "odds": {
-        "home_ml": 163,
-        "away_ml": -198,
+        "home_ml": 157,
+        "away_ml": -168,
         "bookmaker": "DraftKings",
-        "consensus_home": 38.1,
-        "consensus_away": 61.9,
-        "books_count": 4,
+        "consensus_home": 37.8,
+        "consensus_away": 62.2,
+        "books_count": 5,
         "books": [
           "DraftKings",
           "FanDuel",
           "Bovada",
-          "BetMGM"
+          "BetMGM",
+          "BetRivers"
         ],
-        "spread": 3.1,
-        "agreement": "Media"
+        "spread": 2.4,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.1,
+      "edge": -0.2,
       "sel_diff": 12.0
     },
     {
-      "id": 822936,
+      "id": 822933,
       "status": "Live",
       "home": "TB",
       "away": "SD",
       "home_name": "Tampa Bay Rays",
       "away_name": "San Diego Padres",
-      "time": "2026-08-29T20:10:00Z",
+      "time": "2026-08-30T17:40:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Nick Martinez",
-      "home_pitcher_id": 607259,
-      "away_pitcher": "Walker Buehler",
-      "away_pitcher_id": 621111,
-      "home_era": 2.99,
-      "away_era": 4.66,
-      "hp": 60,
-      "ap": 40,
+      "home_pitcher": "Drew Rasmussen",
+      "home_pitcher_id": 656876,
+      "away_pitcher": "Robbie Ray",
+      "away_pitcher_id": 592662,
+      "home_era": 2.92,
+      "away_era": 3.19,
+      "hp": 61,
+      "ap": 39,
       "conf": "Media",
       "mixed": true,
-      "diff": 10,
+      "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -175,
-        "away_ml": 144,
+        "home_ml": -155,
+        "away_ml": 135,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.3,
-        "consensus_away": 39.7,
-        "books_count": 4,
+        "consensus_home": 58.1,
+        "consensus_away": 41.9,
+        "books_count": 5,
         "books": [
           "FanDuel",
           "DraftKings",
           "Bovada",
-          "BetMGM"
+          "BetMGM",
+          "BetRivers"
         ],
-        "spread": 1.5,
-        "agreement": "Alta"
+        "spread": 4.6,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": -0.3,
-      "sel_diff": 10.0
+      "edge": 2.9,
+      "sel_diff": 11.0
     },
     {
-      "id": 824392,
-      "status": "Live",
-      "home": "CLE",
-      "away": "KC",
-      "home_name": "Cleveland Guardians",
-      "away_name": "Kansas City Royals",
-      "time": "2026-08-29T20:10:00Z",
+      "id": 824636,
+      "status": "Preview",
+      "home": "CHC",
+      "away": "CIN",
+      "home_name": "Chicago Cubs",
+      "away_name": "Cincinnati Reds",
+      "time": "2026-08-30T23:20:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Foster Griffin",
-      "home_pitcher_id": 656492,
-      "away_pitcher": "Daniel Lynch IV",
-      "away_pitcher_id": 663738,
-      "home_era": 3.21,
-      "away_era": 3.06,
-      "hp": 58,
-      "ap": 42,
+      "home_pitcher": "Shota Imanaga",
+      "home_pitcher_id": 684007,
+      "away_pitcher": "Chase Burns",
+      "away_pitcher_id": 695505,
+      "home_era": 3.78,
+      "away_era": 2.77,
+      "hp": 61,
+      "ap": 39,
       "conf": "Media",
       "mixed": true,
-      "diff": 8,
-      "park_factor": 0.97,
+      "diff": 11,
+      "park_factor": 1.03,
       "odds": {
-        "home_ml": -186,
-        "away_ml": 153,
+        "home_ml": -154,
+        "away_ml": 143,
         "bookmaker": "DraftKings",
-        "consensus_home": 63.5,
-        "consensus_away": 36.5,
-        "books_count": 4,
+        "consensus_home": 59.1,
+        "consensus_away": 40.9,
+        "books_count": 5,
         "books": [
           "FanDuel",
           "DraftKings",
           "Bovada",
-          "BetMGM"
+          "BetMGM",
+          "BetRivers"
         ],
-        "spread": 2.5,
+        "spread": 2.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -5.5,
-      "sel_diff": 8.0
+      "edge": 1.9,
+      "sel_diff": 11.0
     }
   ],
   "history": [
@@ -8693,13 +8698,68 @@
       "pred": "TB",
       "actual": "TB 9-4 SD",
       "hit": true
+    },
+    {
+      "date": "2026-08-29",
+      "home": "ATL",
+      "away": "COL",
+      "hp": 66,
+      "pred": "ATL",
+      "actual": "ATL 2-1 COL",
+      "hit": true,
+      "mkt_home": 66.7,
+      "mkt_away": 33.3
+    },
+    {
+      "date": "2026-08-29",
+      "home": "MIL",
+      "away": "TEX",
+      "hp": 63,
+      "pred": "MIL",
+      "actual": "MIL 5-3 TEX",
+      "hit": true,
+      "mkt_home": 59.8,
+      "mkt_away": 40.2
+    },
+    {
+      "date": "2026-08-29",
+      "home": "LAA",
+      "away": "PHI",
+      "hp": 38,
+      "pred": "PHI",
+      "actual": "PHI 4-2 LAA",
+      "hit": true,
+      "mkt_home": 38.1,
+      "mkt_away": 61.9
+    },
+    {
+      "date": "2026-08-29",
+      "home": "TB",
+      "away": "SD",
+      "hp": 60,
+      "pred": "TB",
+      "actual": "TB 7-6 SD",
+      "hit": true,
+      "mkt_home": 60.3,
+      "mkt_away": 39.7
+    },
+    {
+      "date": "2026-08-29",
+      "home": "CLE",
+      "away": "KC",
+      "hp": 58,
+      "pred": "CLE",
+      "actual": "KC 8-3 CLE",
+      "hit": false,
+      "mkt_home": 63.5,
+      "mkt_away": 36.5
     }
   ],
   "stats": {
-    "hits": 469,
-    "total": 795,
+    "hits": 473,
+    "total": 800,
     "pct": 59,
     "streak": 1,
-    "streak_type": "W"
+    "streak_type": "L"
   }
 }
