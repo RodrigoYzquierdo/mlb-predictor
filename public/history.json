@@ -7680,5 +7680,14 @@
     "hit": false,
     "mkt_home": 63.5,
     "mkt_away": 36.5
+  },
+  {
+    "date": "2026-08-29",
+    "home": "CHC",
+    "away": "CIN",
+    "hp": 62,
+    "pred": "CHC",
+    "actual": "CHC 17-5 CIN",
+    "hit": true
   }
 ]
