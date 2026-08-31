@@ -7722,5 +7722,32 @@
     "hit": true,
     "mkt_home": 18.6,
     "mkt_away": 81.4
+  },
+  {
+    "date": "2026-08-30",
+    "home": "ATL",
+    "away": "COL",
+    "hp": 67,
+    "pred": "ATL",
+    "actual": "ATL 3-2 COL",
+    "hit": true
+  },
+  {
+    "date": "2026-08-30",
+    "home": "MIL",
+    "away": "TEX",
+    "hp": 63,
+    "pred": "MIL",
+    "actual": "TEX 7-4 MIL",
+    "hit": false
+  },
+  {
+    "date": "2026-08-30",
+    "home": "TB",
+    "away": "SD",
+    "hp": 61,
+    "pred": "TB",
+    "actual": "TB 5-4 SD",
+    "hit": true
   }
 ]
