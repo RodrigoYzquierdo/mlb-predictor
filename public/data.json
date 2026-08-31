@@ -1,6 +1,6 @@
 {
   "date": "2026-08-31",
-  "updated": "31/08/2026 15:23 CST",
+  "updated": "31/08/2026 17:28 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -394,26 +394,26 @@
       "ops": 0.735
     },
     "ATL": {
-      "era": 3.55,
-      "whip": 1.24,
-      "k9": 8.59,
-      "bullpen_era": 3.55,
-      "bullpen_whip": 1.24,
+      "era": 3.56,
+      "whip": 1.25,
+      "k9": 8.58,
+      "bullpen_era": 3.56,
+      "bullpen_whip": 1.25,
       "obp": 0.312,
       "slg": 0.412,
       "avg": 0.248,
       "ops": 0.724
     },
     "BOS": {
-      "era": 3.57,
+      "era": 3.58,
       "whip": 1.23,
       "k9": 8.64,
-      "bullpen_era": 3.57,
+      "bullpen_era": 3.58,
       "bullpen_whip": 1.23,
       "obp": 0.323,
-      "slg": 0.403,
+      "slg": 0.404,
       "avg": 0.249,
-      "ops": 0.726
+      "ops": 0.727
     },
     "DET": {
       "era": 3.58,
@@ -450,14 +450,14 @@
     },
     "TB": {
       "era": 3.77,
-      "whip": 1.15,
-      "k9": 8.23,
+      "whip": 1.14,
+      "k9": 8.26,
       "bullpen_era": 3.77,
-      "bullpen_whip": 1.15,
+      "bullpen_whip": 1.14,
       "obp": 0.329,
-      "slg": 0.404,
+      "slg": 0.403,
       "avg": 0.26,
-      "ops": 0.733
+      "ops": 0.732
     },
     "MIA": {
       "era": 3.9,
@@ -471,10 +471,10 @@
       "ops": 0.723
     },
     "SD": {
-      "era": 3.94,
+      "era": 3.93,
       "whip": 1.29,
-      "k9": 8.2,
-      "bullpen_era": 3.94,
+      "k9": 8.22,
+      "bullpen_era": 3.93,
       "bullpen_whip": 1.29,
       "obp": 0.314,
       "slg": 0.385,
@@ -504,15 +504,15 @@
       "ops": 0.716
     },
     "NYM": {
-      "era": 4.08,
+      "era": 4.07,
       "whip": 1.3,
       "k9": 9.05,
-      "bullpen_era": 4.08,
+      "bullpen_era": 4.07,
       "bullpen_whip": 1.3,
-      "obp": 0.306,
+      "obp": 0.305,
       "slg": 0.389,
       "avg": 0.236,
-      "ops": 0.695
+      "ops": 0.694
     },
     "CHC": {
       "era": 4.14,
@@ -537,15 +537,15 @@
       "ops": 0.728
     },
     "SEA": {
-      "era": 4.16,
-      "whip": 1.24,
-      "k9": 8.62,
-      "bullpen_era": 4.16,
-      "bullpen_whip": 1.24,
+      "era": 4.17,
+      "whip": 1.25,
+      "k9": 8.61,
+      "bullpen_era": 4.17,
+      "bullpen_whip": 1.25,
       "obp": 0.307,
-      "slg": 0.372,
+      "slg": 0.373,
       "avg": 0.227,
-      "ops": 0.679
+      "ops": 0.68
     },
     "AZ": {
       "era": 4.18,
@@ -615,14 +615,14 @@
     },
     "SF": {
       "era": 4.35,
-      "whip": 1.36,
-      "k9": 7.69,
+      "whip": 1.35,
+      "k9": 7.7,
       "bullpen_era": 4.35,
-      "bullpen_whip": 1.36,
+      "bullpen_whip": 1.35,
       "obp": 0.307,
-      "slg": 0.405,
+      "slg": 0.406,
       "avg": 0.247,
-      "ops": 0.712
+      "ops": 0.713
     },
     "HOU": {
       "era": 4.62,
@@ -647,10 +647,10 @@
       "ops": 0.723
     },
     "CIN": {
-      "era": 4.67,
+      "era": 4.66,
       "whip": 1.42,
-      "k9": 8.14,
-      "bullpen_era": 4.67,
+      "k9": 8.15,
+      "bullpen_era": 4.66,
       "bullpen_whip": 1.42,
       "obp": 0.307,
       "slg": 0.396,
@@ -658,10 +658,10 @@
       "ops": 0.703
     },
     "WSH": {
-      "era": 4.67,
+      "era": 4.66,
       "whip": 1.39,
-      "k9": 7.88,
-      "bullpen_era": 4.67,
+      "k9": 7.87,
+      "bullpen_era": 4.66,
       "bullpen_whip": 1.39,
       "obp": 0.324,
       "slg": 0.43,
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 824911,
-      "status": "Preview",
+      "status": "Live",
       "home": "ATL",
       "away": "SF",
       "home_name": "Atlanta Braves",
@@ -869,20 +869,20 @@
       "home_pitcher_id": 693821,
       "away_pitcher": "Anthony Molina",
       "away_pitcher_id": 683627,
-      "home_era": 3.95,
-      "away_era": 2.89,
-      "hp": 65,
-      "ap": 35,
+      "home_era": 3.99,
+      "away_era": 3.77,
+      "hp": 66,
+      "ap": 34,
       "conf": "Alta",
       "mixed": true,
-      "diff": 15,
+      "diff": 16,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -193,
-        "away_ml": 179,
+        "home_ml": -111,
+        "away_ml": -104,
         "bookmaker": "DraftKings",
-        "consensus_home": 65.0,
-        "consensus_away": 35.0,
+        "consensus_home": 49.0,
+        "consensus_away": 51.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,16 +891,16 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 3.4,
+        "spread": 4.7,
         "agreement": "Media"
       },
-      "value": false,
-      "edge": 0.0,
-      "sel_diff": 15.0
+      "value": true,
+      "edge": 17.0,
+      "sel_diff": 16.0
     },
     {
       "id": 822932,
-      "status": "Preview",
+      "status": "Live",
       "home": "TB",
       "away": "NYM",
       "home_name": "Tampa Bay Rays",
@@ -912,8 +912,8 @@
       "home_pitcher_id": 693855,
       "away_pitcher": "Robert Stock",
       "away_pitcher_id": 476594,
-      "home_era": 4.21,
-      "away_era": 7.4,
+      "home_era": 4.15,
+      "away_era": 6.46,
       "hp": 65,
       "ap": 35,
       "conf": "Alta",
@@ -1005,22 +1005,23 @@
       "diff": 11,
       "park_factor": 1.05,
       "odds": {
-        "home_ml": -184,
-        "away_ml": 152,
+        "home_ml": -190,
+        "away_ml": 156,
         "bookmaker": "DraftKings",
-        "consensus_home": 62.7,
-        "consensus_away": 37.3,
-        "books_count": 3,
+        "consensus_home": 62.8,
+        "consensus_away": 37.2,
+        "books_count": 4,
         "books": [
           "FanDuel",
           "DraftKings",
-          "Bovada"
+          "Bovada",
+          "BetMGM"
         ],
-        "spread": 1.1,
+        "spread": 0.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -1.7,
+      "edge": -1.8,
       "sel_diff": 7.7
     },
     {
@@ -1046,24 +1047,21 @@
       "diff": 10,
       "park_factor": 1.18,
       "odds": {
-        "home_ml": 112,
-        "away_ml": -120,
-        "bookmaker": "DraftKings",
-        "consensus_home": 46.5,
-        "consensus_away": 53.5,
-        "books_count": 5,
+        "home_ml": 120,
+        "away_ml": -142,
+        "bookmaker": "FanDuel",
+        "consensus_home": 43.7,
+        "consensus_away": 56.3,
+        "books_count": 2,
         "books": [
           "FanDuel",
-          "Bovada",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers"
+          "Bovada"
         ],
-        "spread": 1.8,
+        "spread": 0.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 6.5,
+      "edge": 3.7,
       "sel_diff": 7.0
     }
   ],
