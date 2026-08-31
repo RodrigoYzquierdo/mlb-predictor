@@ -7689,5 +7689,38 @@
     "pred": "CHC",
     "actual": "CHC 17-5 CIN",
     "hit": true
+  },
+  {
+    "date": "2026-08-30",
+    "home": "LAA",
+    "away": "PHI",
+    "hp": 38,
+    "pred": "PHI",
+    "actual": "PHI 5-2 LAA",
+    "hit": true,
+    "mkt_home": 10.8,
+    "mkt_away": 89.2
+  },
+  {
+    "date": "2026-08-30",
+    "home": "CHC",
+    "away": "CIN",
+    "hp": 61,
+    "pred": "CHC",
+    "actual": "CIN 7-5 CHC",
+    "hit": false,
+    "mkt_home": 59.2,
+    "mkt_away": 40.8
+  },
+  {
+    "date": "2026-08-30",
+    "home": "ATH",
+    "away": "BAL",
+    "hp": 44,
+    "pred": "BAL",
+    "actual": "BAL 8-5 ATH",
+    "hit": true,
+    "mkt_home": 18.6,
+    "mkt_away": 81.4
   }
 ]
