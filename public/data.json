@@ -1,6 +1,6 @@
 {
   "date": "2026-09-02",
-  "updated": "02/09/2026 11:48 CST",
+  "updated": "02/09/2026 12:28 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -399,10 +399,10 @@
       "k9": 8.6,
       "bullpen_era": 3.6,
       "bullpen_whip": 1.25,
-      "obp": 0.311,
+      "obp": 0.312,
       "slg": 0.411,
       "avg": 0.248,
-      "ops": 0.722
+      "ops": 0.723
     },
     "BOS": {
       "era": 3.64,
@@ -473,13 +473,13 @@
     "SD": {
       "era": 3.93,
       "whip": 1.29,
-      "k9": 8.22,
+      "k9": 8.23,
       "bullpen_era": 3.93,
       "bullpen_whip": 1.29,
       "obp": 0.315,
-      "slg": 0.388,
+      "slg": 0.387,
       "avg": 0.238,
-      "ops": 0.703
+      "ops": 0.702
     },
     "TOR": {
       "era": 3.96,
@@ -663,10 +663,10 @@
       "k9": 8.17,
       "bullpen_era": 4.66,
       "bullpen_whip": 1.43,
-      "obp": 0.308,
-      "slg": 0.396,
+      "obp": 0.307,
+      "slg": 0.395,
       "avg": 0.228,
-      "ops": 0.704
+      "ops": 0.702
     },
     "KC": {
       "era": 4.69,
@@ -878,11 +878,11 @@
       "diff": 15,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -186,
-        "away_ml": 153,
+        "home_ml": -181,
+        "away_ml": 149,
         "bookmaker": "DraftKings",
-        "consensus_home": 61.6,
-        "consensus_away": 38.4,
+        "consensus_home": 61.5,
+        "consensus_away": 38.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "DraftKings",
           "BetMGM"
         ],
-        "spread": 1.4,
+        "spread": 1.3,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.4,
+      "edge": 3.5,
       "sel_diff": 15.0
     },
     {
@@ -924,8 +924,8 @@
         "home_ml": 135,
         "away_ml": -163,
         "bookmaker": "DraftKings",
-        "consensus_home": 40.5,
-        "consensus_away": 59.5,
+        "consensus_home": 40.4,
+        "consensus_away": 59.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -938,7 +938,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.5,
+      "edge": 2.4,
       "sel_diff": 12.0
     },
     {
@@ -1025,7 +1025,7 @@
     },
     {
       "id": 822851,
-      "status": "Preview",
+      "status": "Live",
       "home": "TEX",
       "away": "ATH",
       "home_name": "Texas Rangers",
@@ -1046,11 +1046,11 @@
       "diff": 12,
       "park_factor": 1.05,
       "odds": {
-        "home_ml": -162,
-        "away_ml": 134,
+        "home_ml": -166,
+        "away_ml": 137,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.7,
-        "consensus_away": 40.3,
+        "consensus_home": 60.0,
+        "consensus_away": 40.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,11 +1059,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.1,
+        "spread": 1.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.3,
+      "edge": 2.0,
       "sel_diff": 8.4
     }
   ],
