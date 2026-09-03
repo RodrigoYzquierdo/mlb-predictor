@@ -7914,5 +7914,14 @@
     "hit": false,
     "mkt_home": 64.6,
     "mkt_away": 35.4
+  },
+  {
+    "date": "2026-09-02",
+    "home": "TEX",
+    "away": "ATH",
+    "hp": 62,
+    "pred": "TEX",
+    "actual": "ATH 9-2 TEX",
+    "hit": false
   }
 ]
