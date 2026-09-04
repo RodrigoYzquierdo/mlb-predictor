@@ -7978,5 +7978,23 @@
     "hit": false,
     "mkt_home": 51.7,
     "mkt_away": 48.3
+  },
+  {
+    "date": "2026-09-03",
+    "home": "PIT",
+    "away": "SF",
+    "hp": 61,
+    "pred": "PIT",
+    "actual": "PIT 5-2 SF",
+    "hit": true
+  },
+  {
+    "date": "2026-09-03",
+    "home": "CLE",
+    "away": "TOR",
+    "hp": 54,
+    "pred": "CLE",
+    "actual": "TOR 6-3 CLE",
+    "hit": false
   }
 ]
