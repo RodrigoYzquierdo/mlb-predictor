@@ -1,6 +1,6 @@
 {
   "date": "2026-09-06",
-  "updated": "06/09/2026 10:49 CST",
+  "updated": "06/09/2026 11:32 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -383,15 +383,15 @@
       "ops": 0.718
     },
     "MIL": {
-      "era": 3.51,
+      "era": 3.53,
       "whip": 1.18,
-      "k9": 9.65,
-      "bullpen_era": 3.51,
+      "k9": 9.66,
+      "bullpen_era": 3.53,
       "bullpen_whip": 1.18,
       "obp": 0.339,
-      "slg": 0.399,
+      "slg": 0.4,
       "avg": 0.256,
-      "ops": 0.738
+      "ops": 0.739
     },
     "ATL": {
       "era": 3.58,
@@ -484,7 +484,7 @@
     "PHI": {
       "era": 3.98,
       "whip": 1.28,
-      "k9": 9.94,
+      "k9": 9.93,
       "bullpen_era": 3.98,
       "bullpen_whip": 1.28,
       "obp": 0.313,
@@ -647,15 +647,15 @@
       "ops": 0.728
     },
     "CIN": {
-      "era": 4.65,
-      "whip": 1.42,
+      "era": 4.66,
+      "whip": 1.43,
       "k9": 8.24,
-      "bullpen_era": 4.65,
-      "bullpen_whip": 1.42,
-      "obp": 0.308,
-      "slg": 0.398,
+      "bullpen_era": 4.66,
+      "bullpen_whip": 1.43,
+      "obp": 0.309,
+      "slg": 0.399,
       "avg": 0.23,
-      "ops": 0.706
+      "ops": 0.708
     },
     "WSH": {
       "era": 4.7,
@@ -891,7 +891,7 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 1.8,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": false,
@@ -900,7 +900,7 @@
     },
     {
       "id": 823336,
-      "status": "Preview",
+      "status": "Live",
       "home": "PIT",
       "away": "LAA",
       "home_name": "Pittsburgh Pirates",
@@ -921,11 +921,11 @@
       "diff": 13,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -181,
-        "away_ml": 149,
+        "home_ml": -179,
+        "away_ml": 147,
         "bookmaker": "DraftKings",
-        "consensus_home": 61.6,
-        "consensus_away": 38.4,
+        "consensus_home": 61.5,
+        "consensus_away": 38.5,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -938,7 +938,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.4,
+      "edge": 1.5,
       "sel_diff": 13.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -205,
         "away_ml": 167,
         "bookmaker": "DraftKings",
-        "consensus_home": 64.2,
-        "consensus_away": 35.8,
+        "consensus_home": 64.3,
+        "consensus_away": 35.7,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -981,12 +981,12 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.2,
+      "edge": -4.3,
       "sel_diff": 10.0
     },
     {
       "id": 824385,
-      "status": "Preview",
+      "status": "Live",
       "home": "CLE",
       "away": "DET",
       "home_name": "Cleveland Guardians",
@@ -1007,11 +1007,11 @@
       "diff": 8,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -171,
-        "away_ml": 141,
+        "home_ml": -173,
+        "away_ml": 143,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.2,
-        "consensus_away": 39.8,
+        "consensus_home": 60.4,
+        "consensus_away": 39.6,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1020,11 +1020,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.8,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.2,
+      "edge": -2.4,
       "sel_diff": 8.0
     },
     {
@@ -9179,13 +9179,22 @@
       "hit": false,
       "mkt_home": 10.1,
       "mkt_away": 89.9
+    },
+    {
+      "date": "2026-09-05",
+      "home": "CWS",
+      "away": "MIN",
+      "hp": 58,
+      "pred": "CWS",
+      "actual": "MIN 6-4 CWS",
+      "hit": false
     }
   ],
   "stats": {
     "hits": 492,
-    "total": 840,
+    "total": 841,
     "pct": 59,
-    "streak": 3,
+    "streak": 4,
     "streak_type": "L"
   }
 }
