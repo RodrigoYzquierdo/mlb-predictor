@@ -8170,5 +8170,32 @@
     "hit": true,
     "mkt_home": 91.5,
     "mkt_away": 8.5
+  },
+  {
+    "date": "2026-09-06",
+    "home": "PIT",
+    "away": "LAA",
+    "hp": 63,
+    "pred": "PIT",
+    "actual": "PIT 1-0 LAA",
+    "hit": true
+  },
+  {
+    "date": "2026-09-06",
+    "home": "CLE",
+    "away": "DET",
+    "hp": 59,
+    "pred": "CLE",
+    "actual": "CLE 3-2 DET",
+    "hit": true
+  },
+  {
+    "date": "2026-09-06",
+    "home": "NYM",
+    "away": "SF",
+    "hp": 58,
+    "pred": "NYM",
+    "actual": "NYM 4-2 SF",
+    "hit": true
   }
 ]
