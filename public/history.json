@@ -8241,5 +8241,32 @@
     "hit": false,
     "mkt_home": 50.4,
     "mkt_away": 49.6
+  },
+  {
+    "date": "2026-09-07",
+    "home": "BOS",
+    "away": "LAA",
+    "hp": 65,
+    "pred": "BOS",
+    "actual": "BOS 5-2 LAA",
+    "hit": true
+  },
+  {
+    "date": "2026-09-07",
+    "home": "MIA",
+    "away": "NYM",
+    "hp": 58,
+    "pred": "MIA",
+    "actual": "NYM 9-4 MIA",
+    "hit": false
+  },
+  {
+    "date": "2026-09-07",
+    "home": "MIL",
+    "away": "CHC",
+    "hp": 58,
+    "pred": "MIL",
+    "actual": "MIL 4-3 CHC",
+    "hit": true
   }
 ]
