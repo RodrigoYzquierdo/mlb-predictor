@@ -1,6 +1,6 @@
 {
   "date": "2026-09-09",
-  "updated": "09/09/2026 11:44 CST",
+  "updated": "09/09/2026 12:22 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -883,10 +883,11 @@
         "bookmaker": "DraftKings",
         "consensus_home": 74.3,
         "consensus_away": 25.7,
-        "books_count": 2,
+        "books_count": 3,
         "books": [
           "DraftKings",
-          "FanDuel"
+          "FanDuel",
+          "Bovada"
         ],
         "spread": 1.0,
         "agreement": "Alta"
@@ -921,8 +922,8 @@
         "home_ml": -291,
         "away_ml": 232,
         "bookmaker": "DraftKings",
-        "consensus_home": 71.1,
-        "consensus_away": 28.9,
+        "consensus_home": 71.2,
+        "consensus_away": 28.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -935,7 +936,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -7.1,
+      "edge": -7.2,
       "sel_diff": 14.0
     },
     {
@@ -964,8 +965,8 @@
         "home_ml": -187,
         "away_ml": 153,
         "bookmaker": "DraftKings",
-        "consensus_home": 61.7,
-        "consensus_away": 38.3,
+        "consensus_home": 62.0,
+        "consensus_away": 38.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -974,11 +975,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 3.0,
-        "agreement": "Media"
+        "spread": 1.1,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.7,
+      "edge": -1.0,
       "sel_diff": 11.0
     },
     {
@@ -1004,8 +1005,8 @@
       "diff": 15,
       "park_factor": 1.08,
       "odds": {
-        "home_ml": -223,
-        "away_ml": 182,
+        "home_ml": -219,
+        "away_ml": 178,
         "bookmaker": "DraftKings",
         "consensus_home": 65.4,
         "consensus_away": 34.6,
@@ -1017,7 +1018,7 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.8,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": false,
@@ -9393,13 +9394,22 @@
       "hit": false,
       "mkt_home": 51.9,
       "mkt_away": 48.1
+    },
+    {
+      "date": "2026-09-08",
+      "home": "MIL",
+      "away": "CHC",
+      "hp": 58,
+      "pred": "MIL",
+      "actual": "MIL 4-3 CHC",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 507,
-    "total": 861,
+    "hits": 508,
+    "total": 862,
     "pct": 59,
-    "streak": 2,
-    "streak_type": "L"
+    "streak": 1,
+    "streak_type": "W"
   }
 }
