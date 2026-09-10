@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "updated": "10/09/2026 11:36 CST",
+  "updated": "10/09/2026 12:12 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -394,15 +394,15 @@
       "ops": 0.739
     },
     "ATL": {
-      "era": 3.58,
-      "whip": 1.25,
+      "era": 3.57,
+      "whip": 1.24,
       "k9": 8.56,
-      "bullpen_era": 3.58,
-      "bullpen_whip": 1.25,
+      "bullpen_era": 3.57,
+      "bullpen_whip": 1.24,
       "obp": 0.309,
-      "slg": 0.407,
-      "avg": 0.245,
-      "ops": 0.716
+      "slg": 0.408,
+      "avg": 0.246,
+      "ops": 0.717
     },
     "BOS": {
       "era": 3.63,
@@ -437,17 +437,6 @@
       "avg": 0.257,
       "ops": 0.759
     },
-    "TB": {
-      "era": 3.79,
-      "whip": 1.14,
-      "k9": 8.14,
-      "bullpen_era": 3.79,
-      "bullpen_whip": 1.14,
-      "obp": 0.329,
-      "slg": 0.404,
-      "avg": 0.261,
-      "ops": 0.733
-    },
     "CLE": {
       "era": 3.8,
       "whip": 1.27,
@@ -458,6 +447,17 @@
       "slg": 0.372,
       "avg": 0.237,
       "ops": 0.686
+    },
+    "TB": {
+      "era": 3.81,
+      "whip": 1.15,
+      "k9": 8.13,
+      "bullpen_era": 3.81,
+      "bullpen_whip": 1.15,
+      "obp": 0.329,
+      "slg": 0.404,
+      "avg": 0.26,
+      "ops": 0.733
     },
     "SD": {
       "era": 3.88,
@@ -482,15 +482,15 @@
       "ops": 0.692
     },
     "PHI": {
-      "era": 4.0,
+      "era": 3.99,
       "whip": 1.27,
       "k9": 9.9,
-      "bullpen_era": 4.0,
+      "bullpen_era": 3.99,
       "bullpen_whip": 1.27,
       "obp": 0.312,
-      "slg": 0.401,
+      "slg": 0.4,
       "avg": 0.242,
-      "ops": 0.713
+      "ops": 0.712
     },
     "MIA": {
       "era": 4.1,
@@ -625,15 +625,15 @@
       "ops": 0.716
     },
     "HOU": {
-      "era": 4.54,
+      "era": 4.53,
       "whip": 1.35,
       "k9": 8.89,
-      "bullpen_era": 4.54,
+      "bullpen_era": 4.53,
       "bullpen_whip": 1.35,
       "obp": 0.315,
-      "slg": 0.41,
+      "slg": 0.409,
       "avg": 0.241,
-      "ops": 0.725
+      "ops": 0.724
     },
     "KC": {
       "era": 4.64,
@@ -922,7 +922,7 @@
       "park_factor": 0.96,
       "odds": {
         "home_ml": -110,
-        "away_ml": -110,
+        "away_ml": -109,
         "bookmaker": "DraftKings",
         "consensus_home": 50.0,
         "consensus_away": 50.0,
@@ -955,8 +955,8 @@
       "home_pitcher_id": 554430,
       "away_pitcher": "Cristian Javier",
       "away_pitcher_id": 664299,
-      "home_era": 3.25,
-      "away_era": 5.86,
+      "home_era": 3.21,
+      "away_era": 5.53,
       "hp": 58,
       "ap": 42,
       "conf": "Media",
@@ -967,8 +967,8 @@
         "home_ml": -113,
         "away_ml": -115,
         "bookmaker": "DraftKings",
-        "consensus_home": 51.1,
-        "consensus_away": 48.9,
+        "consensus_home": 48.6,
+        "consensus_away": 51.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 5.7,
-        "agreement": "Media"
+        "spread": 2.3,
+        "agreement": "Alta"
       },
-      "value": false,
-      "edge": 6.9,
+      "value": true,
+      "edge": 9.4,
       "sel_diff": 5.6
     },
     {
@@ -1007,11 +1007,11 @@
       "diff": 2,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -126,
-        "away_ml": 105,
+        "home_ml": -121,
+        "away_ml": 101,
         "bookmaker": "DraftKings",
-        "consensus_home": 53.1,
-        "consensus_away": 46.9,
+        "consensus_home": 52.3,
+        "consensus_away": 47.7,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1020,11 +1020,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 1.2,
+        "spread": 2.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -1.1,
+      "edge": -0.3,
       "sel_diff": 2.0
     },
     {
@@ -1041,8 +1041,8 @@
       "home_pitcher_id": 527048,
       "away_pitcher": "Nick Martinez",
       "away_pitcher_id": 607259,
-      "home_era": 3.1,
-      "away_era": 2.93,
+      "home_era": 3.08,
+      "away_era": 2.92,
       "hp": 51,
       "ap": 49,
       "conf": "Baja",
@@ -1050,24 +1050,22 @@
       "diff": 1,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -120,
-        "away_ml": -108,
-        "bookmaker": "DraftKings",
-        "consensus_home": 55.3,
-        "consensus_away": 44.7,
-        "books_count": 5,
+        "home_ml": -100000,
+        "away_ml": 5000,
+        "bookmaker": "FanDuel",
+        "consensus_home": 94.7,
+        "consensus_away": 5.3,
+        "books_count": 3,
         "books": [
-          "DraftKings",
           "FanDuel",
-          "Bovada",
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 9.1,
-        "agreement": "Baja"
+        "spread": 2.8,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.3,
+      "edge": -43.7,
       "sel_diff": 1.0
     }
   ],
