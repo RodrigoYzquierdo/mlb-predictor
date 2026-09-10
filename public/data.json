@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "updated": "10/09/2026 12:12 CST",
+  "updated": "10/09/2026 13:02 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -12,14 +12,14 @@
     "TB": {
       "name": "Rays",
       "w": 87,
-      "l": 58,
-      "pct": 0.6,
+      "l": 59,
+      "pct": 0.596,
       "div": "",
       "conf": "",
-      "rdiff": 58,
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
+      "rdiff": 56,
+      "last10_w": 5,
+      "last10_l": 5,
+      "last10_pct": 0.5
     },
     "NYY": {
       "name": "Yankees",
@@ -191,12 +191,12 @@
     },
     "ATL": {
       "name": "Braves",
-      "w": 85,
+      "w": 86,
       "l": 61,
-      "pct": 0.582,
+      "pct": 0.585,
       "div": "",
       "conf": "",
-      "rdiff": 108,
+      "rdiff": 110,
       "last10_w": 4,
       "last10_l": 6,
       "last10_pct": 0.4
@@ -383,10 +383,10 @@
       "ops": 0.72
     },
     "MIL": {
-      "era": 3.54,
+      "era": 3.56,
       "whip": 1.19,
       "k9": 9.64,
-      "bullpen_era": 3.54,
+      "bullpen_era": 3.56,
       "bullpen_whip": 1.19,
       "obp": 0.339,
       "slg": 0.4,
@@ -394,10 +394,10 @@
       "ops": 0.739
     },
     "ATL": {
-      "era": 3.57,
+      "era": 3.58,
       "whip": 1.24,
       "k9": 8.56,
-      "bullpen_era": 3.57,
+      "bullpen_era": 3.58,
       "bullpen_whip": 1.24,
       "obp": 0.309,
       "slg": 0.408,
@@ -482,10 +482,10 @@
       "ops": 0.692
     },
     "PHI": {
-      "era": 3.99,
+      "era": 3.98,
       "whip": 1.27,
-      "k9": 9.9,
-      "bullpen_era": 3.99,
+      "k9": 9.91,
+      "bullpen_era": 3.98,
       "bullpen_whip": 1.27,
       "obp": 0.312,
       "slg": 0.4,
@@ -664,9 +664,9 @@
       "bullpen_era": 4.73,
       "bullpen_whip": 1.43,
       "obp": 0.308,
-      "slg": 0.397,
+      "slg": 0.398,
       "avg": 0.23,
-      "ops": 0.705
+      "ops": 0.706
     },
     "WSH": {
       "era": 4.75,
@@ -704,9 +704,9 @@
   },
   "form": {
     "TB": {
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
+      "last10_w": 5,
+      "last10_l": 5,
+      "last10_pct": 0.5
     },
     "NYY": {
       "last10_w": 7,
@@ -955,8 +955,8 @@
       "home_pitcher_id": 554430,
       "away_pitcher": "Cristian Javier",
       "away_pitcher_id": 664299,
-      "home_era": 3.21,
-      "away_era": 5.53,
+      "home_era": 3.14,
+      "away_era": 5.5,
       "hp": 58,
       "ap": 42,
       "conf": "Media",
@@ -964,11 +964,11 @@
       "diff": 8,
       "park_factor": 1.04,
       "odds": {
-        "home_ml": -113,
-        "away_ml": -115,
+        "home_ml": -157,
+        "away_ml": 120,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.6,
-        "consensus_away": 51.4,
+        "consensus_home": 56.6,
+        "consensus_away": 43.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 2.3,
-        "agreement": "Alta"
+        "spread": 3.2,
+        "agreement": "Media"
       },
-      "value": true,
-      "edge": 9.4,
+      "value": false,
+      "edge": 1.4,
       "sel_diff": 5.6
     },
     {
@@ -1007,7 +1007,7 @@
       "diff": 2,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -121,
+        "home_ml": -122,
         "away_ml": 101,
         "bookmaker": "DraftKings",
         "consensus_home": 52.3,
@@ -1020,53 +1020,12 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 2.0,
+        "spread": 2.3,
         "agreement": "Alta"
       },
       "value": false,
       "edge": -0.3,
       "sel_diff": 2.0
-    },
-    {
-      "id": 824872,
-      "status": "Live",
-      "home": "ATL",
-      "away": "TB",
-      "home_name": "Atlanta Braves",
-      "away_name": "Tampa Bay Rays",
-      "time": "2026-09-10T16:15:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Martín Pérez",
-      "home_pitcher_id": 527048,
-      "away_pitcher": "Nick Martinez",
-      "away_pitcher_id": 607259,
-      "home_era": 3.08,
-      "away_era": 2.92,
-      "hp": 51,
-      "ap": 49,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 1,
-      "park_factor": 1.01,
-      "odds": {
-        "home_ml": -100000,
-        "away_ml": 5000,
-        "bookmaker": "FanDuel",
-        "consensus_home": 94.7,
-        "consensus_away": 5.3,
-        "books_count": 3,
-        "books": [
-          "FanDuel",
-          "BetMGM",
-          "BetRivers"
-        ],
-        "spread": 2.8,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": -43.7,
-      "sel_diff": 1.0
     }
   ],
   "history": [
