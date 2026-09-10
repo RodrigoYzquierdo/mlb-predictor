@@ -1,6 +1,6 @@
 {
   "date": "2026-09-10",
-  "updated": "10/09/2026 13:02 CST",
+  "updated": "10/09/2026 16:02 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -131,12 +131,12 @@
     },
     "HOU": {
       "name": "Astros",
-      "w": 74,
+      "w": 75,
       "l": 72,
-      "pct": 0.507,
+      "pct": 0.51,
       "div": "",
       "conf": "",
-      "rdiff": -41,
+      "rdiff": -40,
       "last10_w": 6,
       "last10_l": 4,
       "last10_pct": 0.6
@@ -204,14 +204,14 @@
     "PHI": {
       "name": "Phillies",
       "w": 82,
-      "l": 64,
-      "pct": 0.562,
+      "l": 65,
+      "pct": 0.558,
       "div": "",
       "conf": "",
-      "rdiff": 38,
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
+      "rdiff": 37,
+      "last10_w": 5,
+      "last10_l": 5,
+      "last10_pct": 0.5
     },
     "MIA": {
       "name": "Marlins",
@@ -583,24 +583,24 @@
     "SEA": {
       "era": 4.22,
       "whip": 1.25,
-      "k9": 8.66,
+      "k9": 8.69,
       "bullpen_era": 4.22,
       "bullpen_whip": 1.25,
-      "obp": 0.31,
-      "slg": 0.374,
+      "obp": 0.309,
+      "slg": 0.373,
       "avg": 0.229,
-      "ops": 0.684
+      "ops": 0.682
     },
     "TEX": {
-      "era": 4.29,
+      "era": 4.28,
       "whip": 1.31,
-      "k9": 8.6,
-      "bullpen_era": 4.29,
+      "k9": 8.64,
+      "bullpen_era": 4.28,
       "bullpen_whip": 1.31,
-      "obp": 0.318,
-      "slg": 0.401,
+      "obp": 0.317,
+      "slg": 0.4,
       "avg": 0.243,
-      "ops": 0.719
+      "ops": 0.717
     },
     "STL": {
       "era": 4.31,
@@ -625,15 +625,15 @@
       "ops": 0.716
     },
     "HOU": {
-      "era": 4.53,
+      "era": 4.52,
       "whip": 1.35,
-      "k9": 8.89,
-      "bullpen_era": 4.53,
+      "k9": 8.9,
+      "bullpen_era": 4.52,
       "bullpen_whip": 1.35,
       "obp": 0.315,
-      "slg": 0.409,
+      "slg": 0.41,
       "avg": 0.241,
-      "ops": 0.724
+      "ops": 0.725
     },
     "KC": {
       "era": 4.64,
@@ -675,9 +675,9 @@
       "bullpen_era": 4.75,
       "bullpen_whip": 1.4,
       "obp": 0.323,
-      "slg": 0.428,
+      "slg": 0.427,
       "avg": 0.247,
-      "ops": 0.751
+      "ops": 0.75
     },
     "ATH": {
       "era": 5.35,
@@ -784,9 +784,9 @@
       "last10_pct": 0.4
     },
     "PHI": {
-      "last10_w": 6,
-      "last10_l": 4,
-      "last10_pct": 0.6
+      "last10_w": 5,
+      "last10_l": 5,
+      "last10_pct": 0.5
     },
     "MIA": {
       "last10_w": 3,
@@ -878,11 +878,11 @@
       "diff": 16,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -301,
-        "away_ml": 239,
+        "home_ml": -305,
+        "away_ml": 242,
         "bookmaker": "DraftKings",
-        "consensus_home": 72.0,
-        "consensus_away": 28.0,
+        "consensus_home": 71.2,
+        "consensus_away": 28.8,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -891,11 +891,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 1.2,
+        "spread": 1.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -6.0,
+      "edge": -5.2,
       "sel_diff": 16.0
     },
     {
@@ -921,11 +921,11 @@
       "diff": 6,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -110,
-        "away_ml": -109,
+        "home_ml": -115,
+        "away_ml": -104,
         "bookmaker": "DraftKings",
-        "consensus_home": 50.0,
-        "consensus_away": 50.0,
+        "consensus_home": 51.0,
+        "consensus_away": 49.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,59 +934,16 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 0.9,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 6.0,
+      "edge": 5.0,
       "sel_diff": 6.0
     },
     {
-      "id": 823413,
-      "status": "Live",
-      "home": "PHI",
-      "away": "HOU",
-      "home_name": "Philadelphia Phillies",
-      "away_name": "Houston Astros",
-      "time": "2026-09-10T17:05:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Zack Wheeler",
-      "home_pitcher_id": 554430,
-      "away_pitcher": "Cristian Javier",
-      "away_pitcher_id": 664299,
-      "home_era": 3.14,
-      "away_era": 5.5,
-      "hp": 58,
-      "ap": 42,
-      "conf": "Media",
-      "mixed": true,
-      "diff": 8,
-      "park_factor": 1.04,
-      "odds": {
-        "home_ml": -157,
-        "away_ml": 120,
-        "bookmaker": "DraftKings",
-        "consensus_home": 56.6,
-        "consensus_away": 43.4,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "Bovada",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers"
-        ],
-        "spread": 3.2,
-        "agreement": "Media"
-      },
-      "value": false,
-      "edge": 1.4,
-      "sel_diff": 5.6
-    },
-    {
       "id": 823088,
-      "status": "Preview",
+      "status": "Live",
       "home": "SEA",
       "away": "TEX",
       "home_name": "Seattle Mariners",
@@ -998,8 +955,8 @@
       "home_pitcher_id": 669302,
       "away_pitcher": "Jacob deGrom",
       "away_pitcher_id": 594798,
-      "home_era": 3.71,
-      "away_era": 3.96,
+      "home_era": 3.72,
+      "away_era": 3.8,
       "hp": 52,
       "ap": 48,
       "conf": "Baja",
@@ -1007,11 +964,11 @@
       "diff": 2,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -122,
-        "away_ml": 101,
+        "home_ml": 144,
+        "away_ml": -190,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.3,
-        "consensus_away": 47.7,
+        "consensus_home": 28.1,
+        "consensus_away": 71.9,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1020,11 +977,11 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 2.3,
-        "agreement": "Alta"
+        "spread": 22.8,
+        "agreement": "Baja"
       },
-      "value": false,
-      "edge": -0.3,
+      "value": true,
+      "edge": 23.9,
       "sel_diff": 2.0
     }
   ],
