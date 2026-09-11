@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "updated": "11/09/2026 11:41 CST",
+  "updated": "11/09/2026 12:16 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -960,24 +960,20 @@
       "diff": 12,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -174,
-        "away_ml": 144,
-        "bookmaker": "DraftKings",
-        "consensus_home": 60.7,
-        "consensus_away": 39.3,
-        "books_count": 5,
+        "home_ml": -142,
+        "away_ml": 120,
+        "bookmaker": "FanDuel",
+        "consensus_home": 56.3,
+        "consensus_away": 43.7,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "Bovada",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers"
+          "FanDuel"
         ],
-        "spread": 1.4,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.3,
+      "edge": 5.7,
       "sel_diff": 12.0
     },
     {
@@ -9485,11 +9481,29 @@
       "hit": true,
       "mkt_home": 28.1,
       "mkt_away": 71.9
+    },
+    {
+      "date": "2026-09-10",
+      "home": "PHI",
+      "away": "HOU",
+      "hp": 57,
+      "pred": "PHI",
+      "actual": "HOU 2-1 PHI",
+      "hit": false
+    },
+    {
+      "date": "2026-09-10",
+      "home": "ATL",
+      "away": "TB",
+      "hp": 52,
+      "pred": "ATL",
+      "actual": "ATL 3-1 TB",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 514,
-    "total": 870,
+    "hits": 515,
+    "total": 872,
     "pct": 59,
     "streak": 1,
     "streak_type": "W"
