@@ -8387,5 +8387,38 @@
     "hit": true,
     "mkt_home": 54.5,
     "mkt_away": 45.5
+  },
+  {
+    "date": "2026-09-10",
+    "home": "NYY",
+    "away": "COL",
+    "hp": 66,
+    "pred": "NYY",
+    "actual": "NYY 10-3 COL",
+    "hit": true,
+    "mkt_home": 71.2,
+    "mkt_away": 28.8
+  },
+  {
+    "date": "2026-09-10",
+    "home": "CWS",
+    "away": "PIT",
+    "hp": 56,
+    "pred": "CWS",
+    "actual": "PIT 2-0 CWS",
+    "hit": false,
+    "mkt_home": 51.0,
+    "mkt_away": 49.0
+  },
+  {
+    "date": "2026-09-10",
+    "home": "SEA",
+    "away": "TEX",
+    "hp": 52,
+    "pred": "SEA",
+    "actual": "SEA 4-3 TEX",
+    "hit": true,
+    "mkt_home": 28.1,
+    "mkt_away": 71.9
   }
 ]
