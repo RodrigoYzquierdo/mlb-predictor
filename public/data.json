@@ -1,6 +1,6 @@
 {
   "date": "2026-09-13",
-  "updated": "13/09/2026 11:21 CST",
+  "updated": "13/09/2026 11:59 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -374,7 +374,7 @@
     "NYY": {
       "era": 3.26,
       "whip": 1.17,
-      "k9": 9.04,
+      "k9": 9.05,
       "bullpen_era": 3.26,
       "bullpen_whip": 1.17,
       "obp": 0.312,
@@ -383,10 +383,10 @@
       "ops": 0.721
     },
     "ATL": {
-      "era": 3.56,
+      "era": 3.55,
       "whip": 1.24,
-      "k9": 8.52,
-      "bullpen_era": 3.56,
+      "k9": 8.51,
+      "bullpen_era": 3.55,
       "bullpen_whip": 1.24,
       "obp": 0.31,
       "slg": 0.41,
@@ -417,25 +417,25 @@
     },
     "LAD": {
       "era": 3.66,
-      "whip": 1.17,
-      "k9": 9.39,
+      "whip": 1.16,
+      "k9": 9.4,
       "bullpen_era": 3.66,
-      "bullpen_whip": 1.17,
+      "bullpen_whip": 1.16,
       "obp": 0.336,
       "slg": 0.421,
       "avg": 0.256,
       "ops": 0.757
     },
     "DET": {
-      "era": 3.67,
+      "era": 3.66,
       "whip": 1.22,
-      "k9": 8.13,
-      "bullpen_era": 3.67,
+      "k9": 8.14,
+      "bullpen_era": 3.66,
       "bullpen_whip": 1.22,
-      "obp": 0.316,
+      "obp": 0.317,
       "slg": 0.4,
       "avg": 0.24,
-      "ops": 0.716
+      "ops": 0.717
     },
     "TB": {
       "era": 3.77,
@@ -443,10 +443,10 @@
       "k9": 8.16,
       "bullpen_era": 3.77,
       "bullpen_whip": 1.14,
-      "obp": 0.328,
-      "slg": 0.404,
+      "obp": 0.329,
+      "slg": 0.405,
       "avg": 0.26,
-      "ops": 0.732
+      "ops": 0.734
     },
     "CLE": {
       "era": 3.8,
@@ -471,10 +471,10 @@
       "ops": 0.706
     },
     "TOR": {
-      "era": 3.92,
+      "era": 3.91,
       "whip": 1.29,
-      "k9": 8.78,
-      "bullpen_era": 3.92,
+      "k9": 8.79,
+      "bullpen_era": 3.91,
       "bullpen_whip": 1.29,
       "obp": 0.31,
       "slg": 0.385,
@@ -527,7 +527,7 @@
     },
     "BAL": {
       "era": 4.17,
-      "whip": 1.35,
+      "whip": 1.34,
       "k9": 8.14,
       "bullpen_era": 4.17,
       "bullpen_whip": 1.35,
@@ -586,10 +586,10 @@
       "k9": 9.11,
       "bullpen_era": 4.2,
       "bullpen_whip": 1.34,
-      "obp": 0.308,
+      "obp": 0.309,
       "slg": 0.372,
       "avg": 0.234,
-      "ops": 0.68
+      "ops": 0.681
     },
     "STL": {
       "era": 4.31,
@@ -625,14 +625,14 @@
       "ops": 0.716
     },
     "HOU": {
-      "era": 4.51,
-      "whip": 1.34,
-      "k9": 8.85,
-      "bullpen_era": 4.51,
-      "bullpen_whip": 1.34,
+      "era": 4.52,
+      "whip": 1.35,
+      "k9": 8.86,
+      "bullpen_era": 4.52,
+      "bullpen_whip": 1.35,
       "obp": 0.314,
       "slg": 0.408,
-      "avg": 0.241,
+      "avg": 0.24,
       "ops": 0.722
     },
     "KC": {
@@ -691,15 +691,15 @@
       "ops": 0.72
     },
     "COL": {
-      "era": 5.57,
+      "era": 5.59,
       "whip": 1.53,
-      "k9": 7.01,
-      "bullpen_era": 5.57,
+      "k9": 7.02,
+      "bullpen_era": 5.59,
       "bullpen_whip": 1.53,
       "obp": 0.323,
-      "slg": 0.416,
+      "slg": 0.415,
       "avg": 0.253,
-      "ops": 0.739
+      "ops": 0.738
     }
   },
   "form": {
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 823734,
-      "status": "Preview",
+      "status": "Live",
       "home": "MIL",
       "away": "CIN",
       "home_name": "Milwaukee Brewers",
@@ -878,8 +878,8 @@
       "diff": 14,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -206,
-        "away_ml": 169,
+        "home_ml": -201,
+        "away_ml": 164,
         "bookmaker": "DraftKings",
         "consensus_home": 63.9,
         "consensus_away": 36.1,
@@ -891,7 +891,7 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 0.9,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
@@ -912,7 +912,7 @@
       "home_pitcher_id": 695549,
       "away_pitcher": "Gabriel Hughes",
       "away_pitcher_id": 687312,
-      "home_era": 4.26,
+      "home_era": 3.97,
       "away_era": 6.37,
       "hp": 62,
       "ap": 38,
@@ -920,25 +920,9 @@
       "mixed": true,
       "diff": 12,
       "park_factor": 0.99,
-      "odds": {
-        "home_ml": -4400,
-        "away_ml": 1060,
-        "bookmaker": "DraftKings",
-        "consensus_home": 91.4,
-        "consensus_away": 8.6,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetMGM",
-          "BetRivers"
-        ],
-        "spread": 2.8,
-        "agreement": "Alta"
-      },
+      "odds": {},
       "value": false,
-      "edge": -29.4,
+      "edge": null,
       "sel_diff": 12.0
     },
     {
@@ -955,8 +939,8 @@
       "home_pitcher_id": 683000,
       "away_pitcher": "Grayson Rodriguez",
       "away_pitcher_id": 680570,
-      "home_era": 5.26,
-      "away_era": 6.28,
+      "home_era": 5.06,
+      "away_era": 6.26,
       "hp": 62,
       "ap": 38,
       "conf": "Media",
@@ -964,11 +948,11 @@
       "diff": 12,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -138,
-        "away_ml": 114,
+        "home_ml": -260,
+        "away_ml": 192,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.3,
-        "consensus_away": 44.7,
+        "consensus_home": 67.3,
+        "consensus_away": 32.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,16 +961,16 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 0.7,
+        "spread": 2.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 6.7,
+      "edge": -5.3,
       "sel_diff": 12.0
     },
     {
       "id": 823495,
-      "status": "Preview",
+      "status": "Live",
       "home": "NYY",
       "away": "NYM",
       "home_name": "New York Yankees",
@@ -1007,11 +991,11 @@
       "diff": 12,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -185,
-        "away_ml": 152,
+        "home_ml": -204,
+        "away_ml": 154,
         "bookmaker": "DraftKings",
-        "consensus_home": 61.8,
-        "consensus_away": 38.2,
+        "consensus_home": 62.6,
+        "consensus_away": 37.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1004,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 1.0,
-        "agreement": "Alta"
+        "spread": 3.2,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 0.2,
+      "edge": -0.6,
       "sel_diff": 12.0
     },
     {
@@ -1041,8 +1025,8 @@
       "home_pitcher_id": 642547,
       "away_pitcher": "Hayden Wesneski",
       "away_pitcher_id": 669713,
-      "home_era": 4.82,
-      "away_era": 3.35,
+      "home_era": 4.79,
+      "away_era": 3.88,
       "hp": 62,
       "ap": 38,
       "conf": "Media",
@@ -1050,11 +1034,11 @@
       "diff": 12,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -133,
-        "away_ml": 110,
+        "home_ml": -670,
+        "away_ml": 415,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.4,
-        "consensus_away": 45.6,
+        "consensus_home": 81.7,
+        "consensus_away": 18.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1047,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.8,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.6,
+      "edge": -19.7,
       "sel_diff": 12.0
     }
   ],
@@ -9621,13 +9605,31 @@
       "hit": true,
       "mkt_home": 46.1,
       "mkt_away": 53.9
+    },
+    {
+      "date": "2026-09-12",
+      "home": "DET",
+      "away": "COL",
+      "hp": 62,
+      "pred": "DET",
+      "actual": "DET 11-7 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-09-12",
+      "home": "NYY",
+      "away": "NYM",
+      "hp": 62,
+      "pred": "NYY",
+      "actual": "NYM 12-2 NYY",
+      "hit": false
     }
   ],
   "stats": {
-    "hits": 524,
-    "total": 882,
+    "hits": 525,
+    "total": 884,
     "pct": 59,
     "streak": 1,
-    "streak_type": "W"
+    "streak_type": "L"
   }
 }
