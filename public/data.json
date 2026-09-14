@@ -1,6 +1,6 @@
 {
   "date": "2026-09-14",
-  "updated": "14/09/2026 14:14 CST",
+  "updated": "14/09/2026 16:50 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -433,9 +433,9 @@
       "bullpen_era": 3.68,
       "bullpen_whip": 1.17,
       "obp": 0.337,
-      "slg": 0.422,
+      "slg": 0.421,
       "avg": 0.256,
-      "ops": 0.759
+      "ops": 0.758
     },
     "TB": {
       "era": 3.78,
@@ -883,10 +883,12 @@
         "bookmaker": "DraftKings",
         "consensus_home": 59.6,
         "consensus_away": 40.4,
-        "books_count": 2,
+        "books_count": 4,
         "books": [
           "DraftKings",
-          "FanDuel"
+          "FanDuel",
+          "Bovada",
+          "BetMGM"
         ],
         "spread": 0.7,
         "agreement": "Alta"
@@ -918,11 +920,11 @@
       "diff": 13,
       "park_factor": 1.18,
       "odds": {
-        "home_ml": 170,
+        "home_ml": 169,
         "away_ml": -207,
         "bookmaker": "DraftKings",
-        "consensus_home": 36.0,
-        "consensus_away": 64.0,
+        "consensus_home": 35.3,
+        "consensus_away": 64.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -931,16 +933,16 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.2,
+        "spread": 1.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -1.0,
+      "edge": -1.7,
       "sel_diff": 9.1
     },
     {
       "id": 824465,
-      "status": "Preview",
+      "status": "Live",
       "home": "CIN",
       "away": "LAD",
       "home_name": "Cincinnati Reds",
@@ -952,8 +954,8 @@
       "home_pitcher_id": 666157,
       "away_pitcher": "Tarik Skubal",
       "away_pitcher_id": 669373,
-      "home_era": 5.12,
-      "away_era": 2.84,
+      "home_era": 5.06,
+      "away_era": 2.83,
       "hp": 40,
       "ap": 60,
       "conf": "Media",
@@ -961,22 +963,23 @@
       "diff": 10,
       "park_factor": 1.06,
       "odds": {
-        "home_ml": 183,
-        "away_ml": -225,
+        "home_ml": 186,
+        "away_ml": -229,
         "bookmaker": "DraftKings",
-        "consensus_home": 34.0,
-        "consensus_away": 66.0,
-        "books_count": 3,
+        "consensus_home": 33.9,
+        "consensus_away": 66.1,
+        "books_count": 4,
         "books": [
           "DraftKings",
           "FanDuel",
-          "BetMGM"
+          "BetMGM",
+          "Bovada"
         ],
-        "spread": 0.5,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -6.0,
+      "edge": -6.1,
       "sel_diff": 7.0
     },
     {
@@ -1005,24 +1008,25 @@
         "home_ml": -150,
         "away_ml": 124,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.6,
-        "consensus_away": 42.4,
-        "books_count": 3,
+        "consensus_home": 57.7,
+        "consensus_away": 42.3,
+        "books_count": 4,
         "books": [
           "DraftKings",
           "FanDuel",
-          "BetMGM"
+          "BetMGM",
+          "Bovada"
         ],
-        "spread": 0.3,
+        "spread": 0.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.6,
+      "edge": -0.7,
       "sel_diff": 7.0
     },
     {
       "id": 822765,
-      "status": "Preview",
+      "status": "Live",
       "home": "TOR",
       "away": "DET",
       "home_name": "Toronto Blue Jays",
@@ -1046,8 +1050,8 @@
         "home_ml": -149,
         "away_ml": 123,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.8,
-        "consensus_away": 43.2,
+        "consensus_home": 56.6,
+        "consensus_away": 43.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1060,7 +1064,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.8,
+      "edge": -0.6,
       "sel_diff": 6.0
     }
   ],
