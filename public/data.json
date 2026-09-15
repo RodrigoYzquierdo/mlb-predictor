@@ -1,6 +1,6 @@
 {
   "date": "2026-09-15",
-  "updated": "15/09/2026 12:04 CST",
+  "updated": "15/09/2026 12:46 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -1053,8 +1053,8 @@
         "home_ml": 199,
         "away_ml": -246,
         "bookmaker": "DraftKings",
-        "consensus_home": 32.3,
-        "consensus_away": 67.7,
+        "consensus_home": 32.4,
+        "consensus_away": 67.6,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1063,11 +1063,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.9,
+        "spread": 2.3,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -6.7,
+      "edge": -6.6,
       "sel_diff": 7.7
     }
   ],
@@ -9783,13 +9783,22 @@
       "hit": false,
       "mkt_home": 56.6,
       "mkt_away": 43.4
+    },
+    {
+      "date": "2026-09-14",
+      "home": "MIN",
+      "away": "NYY",
+      "hp": 43,
+      "pred": "NYY",
+      "actual": "NYY 8-3 MIN",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 535,
-    "total": 898,
+    "hits": 536,
+    "total": 899,
     "pct": 60,
     "streak": 1,
-    "streak_type": "L"
+    "streak_type": "W"
   }
 }

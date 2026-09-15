@@ -8710,5 +8710,14 @@
     "hit": false,
     "mkt_home": 56.6,
     "mkt_away": 43.4
+  },
+  {
+    "date": "2026-09-14",
+    "home": "MIN",
+    "away": "NYY",
+    "hp": 43,
+    "pred": "NYY",
+    "actual": "NYY 8-3 MIN",
+    "hit": true
   }
 ]
