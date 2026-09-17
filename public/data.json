@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "updated": "17/09/2026 13:39 CST",
+  "updated": "17/09/2026 16:30 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -11,12 +11,12 @@
   "standings": {
     "TB": {
       "name": "Rays",
-      "w": 92,
+      "w": 93,
       "l": 59,
-      "pct": 0.609,
+      "pct": 0.612,
       "div": "",
       "conf": "",
-      "rdiff": 71,
+      "rdiff": 80,
       "last10_w": 8,
       "last10_l": 2,
       "last10_pct": 0.8
@@ -168,14 +168,14 @@
     "ATH": {
       "name": "Athletics",
       "w": 61,
-      "l": 91,
-      "pct": 0.401,
+      "l": 92,
+      "pct": 0.399,
       "div": "",
       "conf": "",
-      "rdiff": -205,
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
+      "rdiff": -214,
+      "last10_w": 4,
+      "last10_l": 6,
+      "last10_pct": 0.4
     },
     "LAA": {
       "name": "Angels",
@@ -323,12 +323,12 @@
     },
     "SD": {
       "name": "Padres",
-      "w": 83,
+      "w": 84,
       "l": 69,
-      "pct": 0.546,
+      "pct": 0.549,
       "div": "",
       "conf": "",
-      "rdiff": 23,
+      "rdiff": 30,
       "last10_w": 9,
       "last10_l": 1,
       "last10_pct": 0.9
@@ -360,11 +360,11 @@
     "COL": {
       "name": "Rockies",
       "w": 56,
-      "l": 96,
-      "pct": 0.368,
+      "l": 97,
+      "pct": 0.366,
       "div": "",
       "conf": "",
-      "rdiff": -170,
+      "rdiff": -177,
       "last10_w": 1,
       "last10_l": 9,
       "last10_pct": 0.1
@@ -438,15 +438,15 @@
       "ops": 0.759
     },
     "TB": {
-      "era": 3.74,
+      "era": 3.73,
       "whip": 1.14,
-      "k9": 8.16,
-      "bullpen_era": 3.74,
+      "k9": 8.17,
+      "bullpen_era": 3.73,
       "bullpen_whip": 1.14,
-      "obp": 0.328,
+      "obp": 0.329,
       "slg": 0.406,
       "avg": 0.26,
-      "ops": 0.734
+      "ops": 0.735
     },
     "CLE": {
       "era": 3.8,
@@ -471,15 +471,15 @@
       "ops": 0.696
     },
     "SD": {
-      "era": 3.96,
+      "era": 3.94,
       "whip": 1.29,
-      "k9": 8.24,
-      "bullpen_era": 3.96,
+      "k9": 8.23,
+      "bullpen_era": 3.94,
       "bullpen_whip": 1.29,
-      "obp": 0.317,
-      "slg": 0.395,
+      "obp": 0.318,
+      "slg": 0.397,
       "avg": 0.242,
-      "ops": 0.712
+      "ops": 0.715
     },
     "PHI": {
       "era": 3.99,
@@ -691,15 +691,15 @@
       "ops": 0.719
     },
     "COL": {
-      "era": 5.6,
-      "whip": 1.53,
+      "era": 5.62,
+      "whip": 1.54,
       "k9": 7.03,
-      "bullpen_era": 5.6,
-      "bullpen_whip": 1.53,
+      "bullpen_era": 5.62,
+      "bullpen_whip": 1.54,
       "obp": 0.324,
-      "slg": 0.418,
+      "slg": 0.417,
       "avg": 0.254,
-      "ops": 0.742
+      "ops": 0.741
     }
   },
   "form": {
@@ -769,9 +769,9 @@
       "last10_pct": 0.5
     },
     "ATH": {
-      "last10_w": 5,
-      "last10_l": 5,
-      "last10_pct": 0.5
+      "last10_w": 4,
+      "last10_l": 6,
+      "last10_pct": 0.4
     },
     "LAA": {
       "last10_w": 4,
@@ -856,88 +856,6 @@
   },
   "top5": [
     {
-      "id": 822924,
-      "status": "Live",
-      "home": "TB",
-      "away": "ATH",
-      "home_name": "Tampa Bay Rays",
-      "away_name": "Athletics",
-      "time": "2026-09-17T17:10:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Drew Rasmussen",
-      "home_pitcher_id": 656876,
-      "away_pitcher": "Jeffrey Springs",
-      "away_pitcher_id": 605488,
-      "home_era": 2.72,
-      "away_era": 6.18,
-      "hp": 67,
-      "ap": 33,
-      "conf": "Alta",
-      "mixed": true,
-      "diff": 17,
-      "park_factor": 0.96,
-      "odds": {
-        "home_ml": -10000,
-        "away_ml": 3300,
-        "bookmaker": "BetMGM",
-        "consensus_home": 97.1,
-        "consensus_away": 2.9,
-        "books_count": 1,
-        "books": [
-          "BetMGM"
-        ],
-        "spread": 0,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": -30.1,
-      "sel_diff": 17.0
-    },
-    {
-      "id": 824305,
-      "status": "Live",
-      "home": "COL",
-      "away": "SD",
-      "home_name": "Colorado Rockies",
-      "away_name": "San Diego Padres",
-      "time": "2026-09-17T19:10:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Tanner Gordon",
-      "home_pitcher_id": 685299,
-      "away_pitcher": "Michael King",
-      "away_pitcher_id": 650633,
-      "home_era": 5.58,
-      "away_era": 3.07,
-      "hp": 36,
-      "ap": 64,
-      "conf": "Alta",
-      "mixed": true,
-      "diff": 14,
-      "park_factor": 1.18,
-      "odds": {
-        "home_ml": 171,
-        "away_ml": -229,
-        "bookmaker": "DraftKings",
-        "consensus_home": 35.5,
-        "consensus_away": 64.5,
-        "books_count": 5,
-        "books": [
-          "DraftKings",
-          "FanDuel",
-          "Bovada",
-          "BetMGM",
-          "BetRivers"
-        ],
-        "spread": 5.7,
-        "agreement": "Media"
-      },
-      "value": false,
-      "edge": -0.5,
-      "sel_diff": 9.8
-    },
-    {
       "id": 824141,
       "status": "Preview",
       "home": "HOU",
@@ -960,11 +878,11 @@
       "diff": 9,
       "park_factor": 1.0,
       "odds": {
-        "home_ml": -155,
-        "away_ml": 128,
+        "home_ml": -156,
+        "away_ml": 129,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.9,
-        "consensus_away": 42.1,
+        "consensus_home": 57.6,
+        "consensus_away": 42.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -973,11 +891,11 @@
           "BetRivers",
           "DraftKings"
         ],
-        "spread": 1.1,
+        "spread": 2.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.1,
+      "edge": 1.4,
       "sel_diff": 9.0
     },
     {
@@ -1003,24 +921,21 @@
       "diff": 7,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -119,
-        "away_ml": -101,
-        "bookmaker": "DraftKings",
-        "consensus_home": 51.4,
-        "consensus_away": 48.6,
-        "books_count": 5,
+        "home_ml": -130,
+        "away_ml": 110,
+        "bookmaker": "FanDuel",
+        "consensus_home": 54.3,
+        "consensus_away": 45.7,
+        "books_count": 2,
         "books": [
           "FanDuel",
-          "Bovada",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers"
+          "Bovada"
         ],
-        "spread": 1.7,
+        "spread": 0.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.6,
+      "edge": 2.7,
       "sel_diff": 7.0
     },
     {
@@ -1049,8 +964,8 @@
         "home_ml": -132,
         "away_ml": 109,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.3,
-        "consensus_away": 45.7,
+        "consensus_home": 54.1,
+        "consensus_away": 45.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,12 +974,95 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 0.6,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 9.3,
+      "edge": 9.1,
       "sel_diff": 5.0
+    },
+    {
+      "id": 823978,
+      "status": "Preview",
+      "home": "LAA",
+      "away": "MIN",
+      "home_name": "Los Angeles Angels",
+      "away_name": "Minnesota Twins",
+      "time": "2026-09-18T01:38:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Walbert Ureña",
+      "home_pitcher_id": 700712,
+      "away_pitcher": "Taj Bradley",
+      "away_pitcher_id": 671737,
+      "home_era": 2.88,
+      "away_era": 3.81,
+      "hp": 46,
+      "ap": 54,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 4,
+      "park_factor": 0.95,
+      "odds": {
+        "home_ml": 104,
+        "away_ml": -125,
+        "bookmaker": "DraftKings",
+        "consensus_home": 46.8,
+        "consensus_away": 53.2,
+        "books_count": 2,
+        "books": [
+          "FanDuel",
+          "DraftKings"
+        ],
+        "spread": 0.5,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": 0.8,
+      "sel_diff": 4.0
+    },
+    {
+      "id": 822845,
+      "status": "Preview",
+      "home": "TEX",
+      "away": "BOS",
+      "home_name": "Texas Rangers",
+      "away_name": "Boston Red Sox",
+      "time": "2026-09-18T00:05:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Tyler Alexander",
+      "home_pitcher_id": 641302,
+      "away_pitcher": "Sonny Gray",
+      "away_pitcher_id": 543243,
+      "home_era": 3.38,
+      "away_era": 2.76,
+      "hp": 49,
+      "ap": 51,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 1,
+      "park_factor": 1.05,
+      "odds": {
+        "home_ml": 108,
+        "away_ml": -130,
+        "bookmaker": "DraftKings",
+        "consensus_home": 46.9,
+        "consensus_away": 53.1,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetRivers",
+          "BetMGM",
+          "Bovada"
+        ],
+        "spread": 2.7,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": -2.1,
+      "sel_diff": 0.7
     }
   ],
   "history": [
