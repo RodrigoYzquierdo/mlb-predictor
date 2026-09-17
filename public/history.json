@@ -8829,5 +8829,14 @@
     "hit": false,
     "mkt_home": 33.7,
     "mkt_away": 66.3
+  },
+  {
+    "date": "2026-09-16",
+    "home": "STL",
+    "away": "SF",
+    "hp": 59,
+    "pred": "STL",
+    "actual": "SF 6-5 STL",
+    "hit": false
   }
 ]
