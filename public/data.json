@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "updated": "18/09/2026 11:36 CST",
+  "updated": "18/09/2026 12:09 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -967,8 +967,8 @@
         "home_ml": -136,
         "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.4,
-        "consensus_away": 44.6,
+        "consensus_home": 55.5,
+        "consensus_away": 44.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.6,
+        "spread": 2.0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.6,
+      "edge": 4.5,
       "sel_diff": 10.0
     },
     {
@@ -9966,13 +9966,40 @@
       "hit": true,
       "mkt_home": 46.9,
       "mkt_away": 53.1
+    },
+    {
+      "date": "2026-09-17",
+      "home": "TB",
+      "away": "ATH",
+      "hp": 67,
+      "pred": "TB",
+      "actual": "TB 10-1 ATH",
+      "hit": true
+    },
+    {
+      "date": "2026-09-17",
+      "home": "COL",
+      "away": "SD",
+      "hp": 36,
+      "pred": "SD",
+      "actual": "SD 9-2 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-09-17",
+      "home": "CIN",
+      "away": "LAD",
+      "hp": 39,
+      "pred": "LAD",
+      "actual": "LAD 8-2 CIN",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 546,
-    "total": 915,
+    "hits": 549,
+    "total": 918,
     "pct": 60,
-    "streak": 1,
+    "streak": 4,
     "streak_type": "W"
   }
 }

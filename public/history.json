@@ -8893,5 +8893,32 @@
     "hit": true,
     "mkt_home": 46.9,
     "mkt_away": 53.1
+  },
+  {
+    "date": "2026-09-17",
+    "home": "TB",
+    "away": "ATH",
+    "hp": 67,
+    "pred": "TB",
+    "actual": "TB 10-1 ATH",
+    "hit": true
+  },
+  {
+    "date": "2026-09-17",
+    "home": "COL",
+    "away": "SD",
+    "hp": 36,
+    "pred": "SD",
+    "actual": "SD 9-2 COL",
+    "hit": true
+  },
+  {
+    "date": "2026-09-17",
+    "home": "CIN",
+    "away": "LAD",
+    "hp": 39,
+    "pred": "LAD",
+    "actual": "LAD 8-2 CIN",
+    "hit": true
   }
 ]
