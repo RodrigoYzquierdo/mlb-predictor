@@ -1,6 +1,6 @@
 {
   "date": "2026-09-19",
-  "updated": "19/09/2026 11:06 CST",
+  "updated": "19/09/2026 11:50 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -879,7 +879,7 @@
       "park_factor": 0.98,
       "odds": {
         "home_ml": -415,
-        "away_ml": 317,
+        "away_ml": 318,
         "bookmaker": "DraftKings",
         "consensus_home": 76.9,
         "consensus_away": 23.1,
@@ -891,7 +891,7 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 0.8,
+        "spread": 1.0,
         "agreement": "Alta"
       },
       "value": false,
@@ -924,8 +924,8 @@
         "home_ml": -188,
         "away_ml": 155,
         "bookmaker": "DraftKings",
-        "consensus_home": 62.5,
-        "consensus_away": 37.5,
+        "consensus_home": 62.4,
+        "consensus_away": 37.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -938,7 +938,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.5,
+      "edge": 0.6,
       "sel_diff": 13.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -151,
         "away_ml": 125,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.9,
-        "consensus_away": 42.1,
+        "consensus_home": 57.2,
+        "consensus_away": 42.8,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -981,7 +981,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.1,
+      "edge": 2.8,
       "sel_diff": 10.0
     },
     {
@@ -1053,8 +1053,8 @@
         "home_ml": -159,
         "away_ml": 131,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.7,
-        "consensus_away": 41.3,
+        "consensus_home": 59.1,
+        "consensus_away": 40.9,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1063,11 +1063,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.6,
+        "spread": 2.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.3,
+      "edge": -0.1,
       "sel_diff": 9.0
     }
   ],
@@ -10048,13 +10048,22 @@
       "hit": true,
       "mkt_home": 57.9,
       "mkt_away": 42.1
+    },
+    {
+      "date": "2026-09-18",
+      "home": "BAL",
+      "away": "MIL",
+      "hp": 41,
+      "pred": "MIL",
+      "actual": "MIL 6-5 BAL",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 553,
-    "total": 923,
+    "hits": 554,
+    "total": 924,
     "pct": 60,
-    "streak": 2,
+    "streak": 3,
     "streak_type": "W"
   }
 }

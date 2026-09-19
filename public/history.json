@@ -8975,5 +8975,14 @@
     "hit": true,
     "mkt_home": 57.9,
     "mkt_away": 42.1
+  },
+  {
+    "date": "2026-09-18",
+    "home": "BAL",
+    "away": "MIL",
+    "hp": 41,
+    "pred": "MIL",
+    "actual": "MIL 6-5 BAL",
+    "hit": true
   }
 ]
