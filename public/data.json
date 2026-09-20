@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "updated": "20/09/2026 11:21 CST",
+  "updated": "20/09/2026 12:06 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -394,15 +394,15 @@
       "ops": 0.744
     },
     "BOS": {
-      "era": 3.58,
+      "era": 3.6,
       "whip": 1.24,
-      "k9": 8.78,
-      "bullpen_era": 3.58,
+      "k9": 8.79,
+      "bullpen_era": 3.6,
       "bullpen_whip": 1.24,
       "obp": 0.321,
-      "slg": 0.402,
+      "slg": 0.401,
       "avg": 0.246,
-      "ops": 0.723
+      "ops": 0.722
     },
     "ATL": {
       "era": 3.62,
@@ -440,13 +440,13 @@
     "TB": {
       "era": 3.72,
       "whip": 1.14,
-      "k9": 8.19,
+      "k9": 8.2,
       "bullpen_era": 3.72,
       "bullpen_whip": 1.14,
-      "obp": 0.328,
-      "slg": 0.404,
-      "avg": 0.259,
-      "ops": 0.732
+      "obp": 0.329,
+      "slg": 0.405,
+      "avg": 0.26,
+      "ops": 0.734
     },
     "CLE": {
       "era": 3.8,
@@ -482,14 +482,14 @@
       "ops": 0.717
     },
     "PHI": {
-      "era": 4.02,
+      "era": 4.01,
       "whip": 1.29,
-      "k9": 9.83,
-      "bullpen_era": 4.02,
+      "k9": 9.82,
+      "bullpen_era": 4.01,
       "bullpen_whip": 1.29,
       "obp": 0.312,
       "slg": 0.398,
-      "avg": 0.241,
+      "avg": 0.242,
       "ops": 0.71
     },
     "AZ": {
@@ -537,10 +537,10 @@
       "ops": 0.728
     },
     "NYM": {
-      "era": 4.15,
+      "era": 4.17,
       "whip": 1.3,
-      "k9": 9.06,
-      "bullpen_era": 4.15,
+      "k9": 9.05,
+      "bullpen_era": 4.17,
       "bullpen_whip": 1.3,
       "obp": 0.31,
       "slg": 0.394,
@@ -550,7 +550,7 @@
     "CHC": {
       "era": 4.18,
       "whip": 1.27,
-      "k9": 7.84,
+      "k9": 7.85,
       "bullpen_era": 4.18,
       "bullpen_whip": 1.27,
       "obp": 0.34,
@@ -571,14 +571,14 @@
     },
     "PIT": {
       "era": 4.2,
-      "whip": 1.3,
+      "whip": 1.31,
       "k9": 9.25,
       "bullpen_era": 4.2,
-      "bullpen_whip": 1.3,
-      "obp": 0.331,
+      "bullpen_whip": 1.31,
+      "obp": 0.332,
       "slg": 0.405,
       "avg": 0.254,
-      "ops": 0.736
+      "ops": 0.737
     },
     "SEA": {
       "era": 4.21,
@@ -660,7 +660,7 @@
     "KC": {
       "era": 4.66,
       "whip": 1.39,
-      "k9": 7.41,
+      "k9": 7.4,
       "bullpen_era": 4.66,
       "bullpen_whip": 1.39,
       "obp": 0.315,
@@ -878,11 +878,11 @@
       "diff": 16,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -288,
-        "away_ml": 230,
+        "home_ml": -287,
+        "away_ml": 229,
         "bookmaker": "DraftKings",
-        "consensus_home": 70.1,
-        "consensus_away": 29.9,
+        "consensus_home": 70.3,
+        "consensus_away": 29.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 2.0,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.1,
+      "edge": -4.3,
       "sel_diff": 16.0
     },
     {
@@ -921,11 +921,11 @@
       "diff": 13,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -249,
-        "away_ml": 201,
+        "home_ml": -261,
+        "away_ml": 210,
         "bookmaker": "DraftKings",
-        "consensus_home": 68.4,
-        "consensus_away": 31.6,
+        "consensus_home": 68.8,
+        "consensus_away": 31.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -938,7 +938,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -5.4,
+      "edge": -5.8,
       "sel_diff": 13.0
     },
     {
@@ -955,8 +955,8 @@
       "home_pitcher_id": 643377,
       "away_pitcher": "Patrick Sandoval",
       "away_pitcher_id": 663776,
-      "home_era": 3.8,
-      "away_era": 4.99,
+      "home_era": 3.76,
+      "away_era": 5.55,
       "hp": 61,
       "ap": 39,
       "conf": "Media",
@@ -964,11 +964,11 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -153,
-        "away_ml": 127,
+        "home_ml": -1320,
+        "away_ml": 640,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.6,
-        "consensus_away": 42.4,
+        "consensus_home": 89.0,
+        "consensus_away": 11.0,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -977,11 +977,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.1,
-        "agreement": "Alta"
+        "spread": 5.1,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 3.4,
+      "edge": -28.0,
       "sel_diff": 11.0
     },
     {
@@ -998,8 +998,8 @@
       "home_pitcher_id": 669199,
       "away_pitcher": "Michael Wacha",
       "away_pitcher_id": 608379,
-      "home_era": 3.5,
-      "away_era": 3.34,
+      "home_era": 3.56,
+      "away_era": 3.32,
       "hp": 60,
       "ap": 40,
       "conf": "Media",
@@ -1007,11 +1007,11 @@
       "diff": 10,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -120,
-        "away_ml": 100,
+        "home_ml": 101,
+        "away_ml": -131,
         "bookmaker": "DraftKings",
-        "consensus_home": 51.8,
-        "consensus_away": 48.2,
+        "consensus_home": 46.8,
+        "consensus_away": 53.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 2.6,
+        "spread": 2.2,
         "agreement": "Alta"
       },
-      "value": false,
-      "edge": 8.2,
+      "value": true,
+      "edge": 13.2,
       "sel_diff": 10.0
     },
     {
@@ -1053,8 +1053,8 @@
         "home_ml": -156,
         "away_ml": 129,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.0,
-        "consensus_away": 42.0,
+        "consensus_home": 58.6,
+        "consensus_away": 41.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1063,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.9,
-        "agreement": "Alta"
+        "spread": 3.0,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 2.0,
+      "edge": 1.4,
       "sel_diff": 10.0
     }
   ],
