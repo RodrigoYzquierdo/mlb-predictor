@@ -9039,5 +9039,60 @@
     "hit": true,
     "mkt_home": 55.5,
     "mkt_away": 44.5
+  },
+  {
+    "date": "2026-09-20",
+    "home": "LAD",
+    "away": "SF",
+    "hp": 66,
+    "pred": "LAD",
+    "actual": "LAD 3-1 SF",
+    "hit": true,
+    "mkt_home": 68.6,
+    "mkt_away": 31.4
+  },
+  {
+    "date": "2026-09-20",
+    "home": "SD",
+    "away": "MIA",
+    "hp": 60,
+    "pred": "SD",
+    "actual": "SD 7-3 MIA",
+    "hit": true,
+    "mkt_home": 82.5,
+    "mkt_away": 17.5
+  },
+  {
+    "date": "2026-09-20",
+    "home": "BAL",
+    "away": "MIL",
+    "hp": 41,
+    "pred": "MIL",
+    "actual": "MIL 3-0 BAL",
+    "hit": true,
+    "mkt_home": 34.9,
+    "mkt_away": 65.1
+  },
+  {
+    "date": "2026-09-20",
+    "home": "CWS",
+    "away": "DET",
+    "hp": 57,
+    "pred": "CWS",
+    "actual": "CWS 8-1 DET",
+    "hit": true,
+    "mkt_home": 51.5,
+    "mkt_away": 48.5
+  },
+  {
+    "date": "2026-09-20",
+    "home": "LAA",
+    "away": "MIN",
+    "hp": 47,
+    "pred": "MIN",
+    "actual": "MIN 8-0 LAA",
+    "hit": true,
+    "mkt_home": 4.9,
+    "mkt_away": 95.1
   }
 ]
