@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "updated": "21/09/2026 14:21 CST",
+  "updated": "21/09/2026 16:54 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -433,9 +433,9 @@
       "bullpen_era": 3.66,
       "bullpen_whip": 1.23,
       "obp": 0.319,
-      "slg": 0.398,
-      "avg": 0.24,
-      "ops": 0.717
+      "slg": 0.399,
+      "avg": 0.241,
+      "ops": 0.718
     },
     "TB": {
       "era": 3.7,
@@ -646,17 +646,6 @@
       "avg": 0.244,
       "ops": 0.72
     },
-    "WSH": {
-      "era": 4.66,
-      "whip": 1.38,
-      "k9": 7.98,
-      "bullpen_era": 4.66,
-      "bullpen_whip": 1.38,
-      "obp": 0.322,
-      "slg": 0.425,
-      "avg": 0.247,
-      "ops": 0.747
-    },
     "KC": {
       "era": 4.66,
       "whip": 1.39,
@@ -667,6 +656,17 @@
       "slg": 0.398,
       "avg": 0.245,
       "ops": 0.713
+    },
+    "WSH": {
+      "era": 4.67,
+      "whip": 1.39,
+      "k9": 7.98,
+      "bullpen_era": 4.67,
+      "bullpen_whip": 1.39,
+      "obp": 0.322,
+      "slg": 0.425,
+      "avg": 0.247,
+      "ops": 0.747
     },
     "CIN": {
       "era": 4.89,
@@ -856,6 +856,48 @@
   },
   "top5": [
     {
+      "id": 824221,
+      "status": "Live",
+      "home": "DET",
+      "away": "WSH",
+      "home_name": "Detroit Tigers",
+      "away_name": "Washington Nationals",
+      "time": "2026-09-21T22:40:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "River Ryan",
+      "home_pitcher_id": 689981,
+      "away_pitcher": "DJ Herz",
+      "away_pitcher_id": 687792,
+      "home_era": 0.0,
+      "away_era": 54.0,
+      "hp": 63,
+      "ap": 37,
+      "conf": "Alta",
+      "mixed": true,
+      "diff": 13,
+      "park_factor": 0.99,
+      "odds": {
+        "home_ml": -163,
+        "away_ml": 135,
+        "bookmaker": "DraftKings",
+        "consensus_home": 59.5,
+        "consensus_away": 40.5,
+        "books_count": 4,
+        "books": [
+          "FanDuel",
+          "Bovada",
+          "DraftKings",
+          "BetMGM"
+        ],
+        "spread": 0.7,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": 3.5,
+      "sel_diff": 13.0
+    },
+    {
       "id": 824787,
       "status": "Preview",
       "home": "BAL",
@@ -883,58 +925,18 @@
         "bookmaker": "DraftKings",
         "consensus_home": 52.4,
         "consensus_away": 47.6,
-        "books_count": 3,
+        "books_count": 4,
         "books": [
           "FanDuel",
           "Bovada",
-          "DraftKings"
+          "DraftKings",
+          "BetMGM"
         ],
         "spread": 0.4,
         "agreement": "Alta"
       },
       "value": false,
       "edge": 0.6,
-      "sel_diff": 3.0
-    },
-    {
-      "id": 824221,
-      "status": "Preview",
-      "home": "DET",
-      "away": "WSH",
-      "home_name": "Detroit Tigers",
-      "away_name": "Washington Nationals",
-      "time": "2026-09-21T22:40:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "River Ryan",
-      "home_pitcher_id": 689981,
-      "away_pitcher": "DJ Herz",
-      "away_pitcher_id": 687792,
-      "home_era": null,
-      "away_era": null,
-      "hp": 53,
-      "ap": 47,
-      "conf": "Baja",
-      "mixed": false,
-      "diff": 3,
-      "park_factor": 0.99,
-      "odds": {
-        "home_ml": -162,
-        "away_ml": 134,
-        "bookmaker": "DraftKings",
-        "consensus_home": 59.5,
-        "consensus_away": 40.5,
-        "books_count": 3,
-        "books": [
-          "FanDuel",
-          "Bovada",
-          "DraftKings"
-        ],
-        "spread": 0.4,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": -6.5,
       "sel_diff": 3.0
     },
     {
@@ -963,19 +965,20 @@
         "home_ml": 112,
         "away_ml": -135,
         "bookmaker": "DraftKings",
-        "consensus_home": 45.0,
-        "consensus_away": 55.0,
-        "books_count": 3,
+        "consensus_home": 45.1,
+        "consensus_away": 54.9,
+        "books_count": 4,
         "books": [
           "FanDuel",
           "Bovada",
-          "DraftKings"
+          "DraftKings",
+          "BetMGM"
         ],
-        "spread": 0.4,
+        "spread": 0.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.0,
+      "edge": -3.9,
       "sel_diff": 1.0
     }
   ],
