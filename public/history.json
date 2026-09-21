@@ -9094,5 +9094,32 @@
     "hit": true,
     "mkt_home": 4.9,
     "mkt_away": 95.1
+  },
+  {
+    "date": "2026-09-20",
+    "home": "CLE",
+    "away": "ATH",
+    "hp": 63,
+    "pred": "CLE",
+    "actual": "CLE 1-0 ATH",
+    "hit": true
+  },
+  {
+    "date": "2026-09-20",
+    "home": "PIT",
+    "away": "KC",
+    "hp": 61,
+    "pred": "PIT",
+    "actual": "PIT 4-3 KC",
+    "hit": true
+  },
+  {
+    "date": "2026-09-20",
+    "home": "TB",
+    "away": "BOS",
+    "hp": 61,
+    "pred": "TB",
+    "actual": "TB 5-1 BOS",
+    "hit": true
   }
 ]
