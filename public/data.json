@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "updated": "22/09/2026 12:01 CST",
+  "updated": "22/09/2026 12:36 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -372,10 +372,10 @@
   },
   "team_stats": {
     "NYY": {
-      "era": 3.21,
+      "era": 3.2,
       "whip": 1.16,
       "k9": 9.02,
-      "bullpen_era": 3.21,
+      "bullpen_era": 3.2,
       "bullpen_whip": 1.16,
       "obp": 0.311,
       "slg": 0.41,
@@ -438,7 +438,7 @@
       "ops": 0.72
     },
     "TB": {
-      "era": 3.71,
+      "era": 3.7,
       "whip": 1.13,
       "k9": 8.21,
       "bullpen_era": 3.7,
@@ -1050,7 +1050,7 @@
       "diff": 6,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -173,
+        "home_ml": -174,
         "away_ml": 143,
         "bookmaker": "DraftKings",
         "consensus_home": 60.8,
