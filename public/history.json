@@ -9121,5 +9121,38 @@
     "pred": "TB",
     "actual": "TB 5-1 BOS",
     "hit": true
+  },
+  {
+    "date": "2026-09-21",
+    "home": "DET",
+    "away": "WSH",
+    "hp": 63,
+    "pred": "DET",
+    "actual": "DET 9-2 WSH",
+    "hit": true,
+    "mkt_home": 59.5,
+    "mkt_away": 40.5
+  },
+  {
+    "date": "2026-09-21",
+    "home": "BAL",
+    "away": "TOR",
+    "hp": 53,
+    "pred": "BAL",
+    "actual": "BAL 4-3 TOR",
+    "hit": true,
+    "mkt_home": 52.4,
+    "mkt_away": 47.6
+  },
+  {
+    "date": "2026-09-21",
+    "home": "SF",
+    "away": "MIN",
+    "hp": 49,
+    "pred": "MIN",
+    "actual": "SF 5-2 MIN",
+    "hit": false,
+    "mkt_home": 45.1,
+    "mkt_away": 54.9
   }
 ]
