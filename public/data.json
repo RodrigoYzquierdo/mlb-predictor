@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "updated": "22/09/2026 13:40 CST",
+  "updated": "22/09/2026 16:29 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,17 +881,19 @@
         "home_ml": -255,
         "away_ml": 210,
         "bookmaker": "FanDuel",
-        "consensus_home": 69.0,
-        "consensus_away": 31.0,
-        "books_count": 1,
+        "consensus_home": 68.8,
+        "consensus_away": 31.2,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "Bovada",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 0.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -6.0,
+      "edge": -5.8,
       "sel_diff": 13.0
     },
     {
@@ -920,17 +922,19 @@
         "home_ml": 134,
         "away_ml": -158,
         "bookmaker": "FanDuel",
-        "consensus_home": 41.1,
-        "consensus_away": 58.9,
-        "books_count": 1,
+        "consensus_home": 41.0,
+        "consensus_away": 59.0,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "Bovada",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 0.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.1,
+      "edge": 4.0,
       "sel_diff": 9.1
     },
     {
@@ -959,17 +963,19 @@
         "home_ml": -178,
         "away_ml": 150,
         "bookmaker": "FanDuel",
-        "consensus_home": 61.5,
-        "consensus_away": 38.5,
-        "books_count": 1,
+        "consensus_home": 61.7,
+        "consensus_away": 38.3,
+        "books_count": 3,
         "books": [
-          "FanDuel"
+          "FanDuel",
+          "Bovada",
+          "BetMGM"
         ],
-        "spread": 0,
+        "spread": 0.9,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.5,
+      "edge": -2.7,
       "sel_diff": 9.0
     },
     {
@@ -982,24 +988,24 @@
       "time": "2026-09-23T02:10:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": null,
-      "home_pitcher_id": null,
+      "home_pitcher": "Brock Stewart",
+      "home_pitcher_id": 592779,
       "away_pitcher": "Michael King",
       "away_pitcher_id": 650633,
-      "home_era": null,
+      "home_era": 2.55,
       "away_era": 3.03,
       "hp": 59,
       "ap": 41,
       "conf": "Media",
-      "mixed": false,
+      "mixed": true,
       "diff": 9,
       "park_factor": 0.98,
       "odds": {
         "home_ml": -135,
         "away_ml": 112,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.6,
-        "consensus_away": 45.4,
+        "consensus_home": 54.8,
+        "consensus_away": 45.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1008,16 +1014,16 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 2.4,
+        "spread": 1.3,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.4,
+      "edge": 4.2,
       "sel_diff": 9.0
     },
     {
       "id": 823328,
-      "status": "Preview",
+      "status": "Live",
       "home": "PIT",
       "away": "STL",
       "home_name": "Pittsburgh Pirates",
@@ -1038,11 +1044,11 @@
       "diff": 6,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -174,
-        "away_ml": 144,
+        "home_ml": -169,
+        "away_ml": 140,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.8,
-        "consensus_away": 39.2,
+        "consensus_home": 60.5,
+        "consensus_away": 39.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1051,11 +1057,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 0.4,
+        "spread": 1.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.8,
+      "edge": -4.5,
       "sel_diff": 6.0
     }
   ],
