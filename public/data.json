@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "updated": "24/09/2026 12:21 CST",
+  "updated": "24/09/2026 12:52 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -532,14 +532,14 @@
       "bullpen_era": 4.14,
       "bullpen_whip": 1.29,
       "obp": 0.31,
-      "slg": 0.394,
+      "slg": 0.395,
       "avg": 0.239,
-      "ops": 0.704
+      "ops": 0.705
     },
     "CWS": {
       "era": 4.15,
       "whip": 1.32,
-      "k9": 8.32,
+      "k9": 8.33,
       "bullpen_era": 4.15,
       "bullpen_whip": 1.32,
       "obp": 0.32,
@@ -548,26 +548,26 @@
       "ops": 0.724
     },
     "PIT": {
-      "era": 4.16,
+      "era": 4.15,
       "whip": 1.3,
       "k9": 9.28,
-      "bullpen_era": 4.16,
+      "bullpen_era": 4.15,
       "bullpen_whip": 1.3,
-      "obp": 0.331,
+      "obp": 0.33,
       "slg": 0.404,
-      "avg": 0.254,
-      "ops": 0.735
+      "avg": 0.253,
+      "ops": 0.734
     },
     "CHC": {
-      "era": 4.17,
+      "era": 4.16,
       "whip": 1.26,
-      "k9": 7.87,
-      "bullpen_era": 4.17,
+      "k9": 7.86,
+      "bullpen_era": 4.16,
       "bullpen_whip": 1.26,
       "obp": 0.339,
-      "slg": 0.43,
+      "slg": 0.429,
       "avg": 0.251,
-      "ops": 0.769
+      "ops": 0.768
     },
     "SEA": {
       "era": 4.2,
@@ -605,12 +605,12 @@
     "TEX": {
       "era": 4.3,
       "whip": 1.3,
-      "k9": 8.5,
+      "k9": 8.49,
       "bullpen_era": 4.3,
       "bullpen_whip": 1.3,
       "obp": 0.317,
       "slg": 0.395,
-      "avg": 0.241,
+      "avg": 0.242,
       "ops": 0.712
     },
     "SF": {
@@ -658,15 +658,15 @@
       "ops": 0.744
     },
     "KC": {
-      "era": 4.72,
+      "era": 4.74,
       "whip": 1.4,
       "k9": 7.45,
-      "bullpen_era": 4.72,
+      "bullpen_era": 4.74,
       "bullpen_whip": 1.4,
       "obp": 0.316,
-      "slg": 0.399,
-      "avg": 0.246,
-      "ops": 0.715
+      "slg": 0.4,
+      "avg": 0.247,
+      "ops": 0.716
     },
     "CIN": {
       "era": 4.84,
@@ -921,29 +921,25 @@
       "diff": 12,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -231,
-        "away_ml": 187,
-        "bookmaker": "DraftKings",
-        "consensus_home": 66.3,
-        "consensus_away": 33.7,
-        "books_count": 5,
+        "home_ml": -132,
+        "away_ml": 112,
+        "bookmaker": "FanDuel",
+        "consensus_home": 54.7,
+        "consensus_away": 45.3,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "Bovada",
-          "DraftKings",
-          "BetRivers",
-          "BetMGM"
+          "FanDuel"
         ],
-        "spread": 1.5,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -4.3,
+      "edge": 7.3,
       "sel_diff": 12.0
     },
     {
       "id": 824298,
-      "status": "Preview",
+      "status": "Live",
       "home": "COL",
       "away": "AZ",
       "home_name": "Colorado Rockies",
@@ -1041,8 +1037,8 @@
       "home_pitcher_id": 571510,
       "away_pitcher": "Tyler Phillips",
       "away_pitcher_id": 663969,
-      "home_era": 4.06,
-      "away_era": 3.45,
+      "home_era": 3.99,
+      "away_era": 3.42,
       "hp": 58,
       "ap": 42,
       "conf": "Media",
@@ -1050,11 +1046,11 @@
       "diff": 8,
       "park_factor": 1.03,
       "odds": {
-        "home_ml": -258,
-        "away_ml": 191,
+        "home_ml": -230,
+        "away_ml": 172,
         "bookmaker": "DraftKings",
-        "consensus_home": 65.9,
-        "consensus_away": 34.1,
+        "consensus_home": 65.4,
+        "consensus_away": 34.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1059,11 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 4.3,
-        "agreement": "Media"
+        "spread": 1.4,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -7.9,
+      "edge": -7.4,
       "sel_diff": 8.0
     }
   ],
