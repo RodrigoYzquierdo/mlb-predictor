@@ -1,6 +1,6 @@
 {
   "date": "2026-09-25",
-  "updated": "25/09/2026 12:25 CST",
+  "updated": "25/09/2026 13:10 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -394,10 +394,10 @@
       "ops": 0.742
     },
     "BOS": {
-      "era": 3.56,
+      "era": 3.55,
       "whip": 1.23,
-      "k9": 8.76,
-      "bullpen_era": 3.56,
+      "k9": 8.75,
+      "bullpen_era": 3.55,
       "bullpen_whip": 1.23,
       "obp": 0.32,
       "slg": 0.399,
@@ -536,17 +536,6 @@
       "avg": 0.236,
       "ops": 0.725
     },
-    "CHC": {
-      "era": 4.13,
-      "whip": 1.26,
-      "k9": 7.83,
-      "bullpen_era": 4.13,
-      "bullpen_whip": 1.26,
-      "obp": 0.339,
-      "slg": 0.43,
-      "avg": 0.251,
-      "ops": 0.769
-    },
     "NYM": {
       "era": 4.14,
       "whip": 1.29,
@@ -557,6 +546,17 @@
       "slg": 0.393,
       "avg": 0.238,
       "ops": 0.702
+    },
+    "CHC": {
+      "era": 4.14,
+      "whip": 1.26,
+      "k9": 7.83,
+      "bullpen_era": 4.14,
+      "bullpen_whip": 1.26,
+      "obp": 0.339,
+      "slg": 0.429,
+      "avg": 0.251,
+      "ops": 0.768
     },
     "PIT": {
       "era": 4.15,
@@ -878,24 +878,20 @@
       "diff": 15,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -245,
-        "away_ml": 198,
-        "bookmaker": "DraftKings",
-        "consensus_home": 67.5,
-        "consensus_away": 32.5,
-        "books_count": 5,
+        "home_ml": -235,
+        "away_ml": 194,
+        "bookmaker": "FanDuel",
+        "consensus_home": 67.3,
+        "consensus_away": 32.7,
+        "books_count": 1,
         "books": [
-          "DraftKings",
-          "FanDuel",
-          "Bovada",
-          "BetMGM",
-          "BetRivers"
+          "FanDuel"
         ],
-        "spread": 0.9,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.5,
+      "edge": -2.3,
       "sel_diff": 15.0
     },
     {
@@ -999,24 +995,20 @@
       "diff": 12,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -123,
-        "away_ml": 102,
-        "bookmaker": "DraftKings",
-        "consensus_home": 52.6,
-        "consensus_away": 47.4,
-        "books_count": 5,
+        "home_ml": -198,
+        "away_ml": 166,
+        "bookmaker": "FanDuel",
+        "consensus_home": 63.9,
+        "consensus_away": 36.1,
+        "books_count": 1,
         "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetMGM",
-          "BetRivers"
+          "FanDuel"
         ],
-        "spread": 1.0,
+        "spread": 0,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 9.4,
+      "edge": -1.9,
       "sel_diff": 12.0
     },
     {
@@ -1042,11 +1034,11 @@
       "diff": 11,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -123,
+        "home_ml": -122,
         "away_ml": 102,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.9,
-        "consensus_away": 47.1,
+        "consensus_home": 52.7,
+        "consensus_away": 47.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1059,7 +1051,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 8.1,
+      "edge": 8.3,
       "sel_diff": 11.0
     }
   ],
@@ -10384,13 +10376,31 @@
       "hit": true,
       "mkt_home": 42.9,
       "mkt_away": 57.1
+    },
+    {
+      "date": "2026-09-24",
+      "home": "COL",
+      "away": "AZ",
+      "hp": 36,
+      "pred": "AZ",
+      "actual": "AZ 12-8 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-09-24",
+      "home": "CHC",
+      "away": "MIA",
+      "hp": 58,
+      "pred": "CHC",
+      "actual": "CHC 2-1 MIA",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 576,
-    "total": 955,
+    "hits": 578,
+    "total": 957,
     "pct": 60,
-    "streak": 2,
+    "streak": 4,
     "streak_type": "W"
   }
 }

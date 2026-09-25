@@ -9319,5 +9319,23 @@
     "hit": true,
     "mkt_home": 42.9,
     "mkt_away": 57.1
+  },
+  {
+    "date": "2026-09-24",
+    "home": "COL",
+    "away": "AZ",
+    "hp": 36,
+    "pred": "AZ",
+    "actual": "AZ 12-8 COL",
+    "hit": true
+  },
+  {
+    "date": "2026-09-24",
+    "home": "CHC",
+    "away": "MIA",
+    "hp": 58,
+    "pred": "CHC",
+    "actual": "CHC 2-1 MIA",
+    "hit": true
   }
 ]
