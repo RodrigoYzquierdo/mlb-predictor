@@ -1,6 +1,6 @@
 {
   "date": "2026-09-26",
-  "updated": "26/09/2026 11:41 CST",
+  "updated": "26/09/2026 12:25 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -429,13 +429,13 @@
     "DET": {
       "era": 3.66,
       "whip": 1.22,
-      "k9": 8.22,
+      "k9": 8.23,
       "bullpen_era": 3.66,
       "bullpen_whip": 1.22,
       "obp": 0.32,
-      "slg": 0.401,
+      "slg": 0.4,
       "avg": 0.241,
-      "ops": 0.721
+      "ops": 0.72
     },
     "TB": {
       "era": 3.7,
@@ -550,24 +550,24 @@
     "NYM": {
       "era": 4.15,
       "whip": 1.29,
-      "k9": 9.06,
+      "k9": 9.08,
       "bullpen_era": 4.15,
       "bullpen_whip": 1.29,
       "obp": 0.309,
-      "slg": 0.394,
+      "slg": 0.393,
       "avg": 0.239,
-      "ops": 0.703
+      "ops": 0.702
     },
     "PIT": {
       "era": 4.16,
       "whip": 1.3,
-      "k9": 9.27,
+      "k9": 9.28,
       "bullpen_era": 4.16,
       "bullpen_whip": 1.3,
       "obp": 0.33,
-      "slg": 0.403,
+      "slg": 0.404,
       "avg": 0.253,
-      "ops": 0.733
+      "ops": 0.734
     },
     "SEA": {
       "era": 4.22,
@@ -647,15 +647,15 @@
       "ops": 0.718
     },
     "WSH": {
-      "era": 4.65,
+      "era": 4.64,
       "whip": 1.39,
       "k9": 8.02,
-      "bullpen_era": 4.65,
+      "bullpen_era": 4.64,
       "bullpen_whip": 1.39,
-      "obp": 0.322,
-      "slg": 0.423,
-      "avg": 0.247,
-      "ops": 0.745
+      "obp": 0.321,
+      "slg": 0.422,
+      "avg": 0.246,
+      "ops": 0.743
     },
     "KC": {
       "era": 4.77,
@@ -881,8 +881,8 @@
         "home_ml": -251,
         "away_ml": 203,
         "bookmaker": "DraftKings",
-        "consensus_home": 67.7,
-        "consensus_away": 32.3,
+        "consensus_home": 67.9,
+        "consensus_away": 32.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.8,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.7,
+      "edge": -2.9,
       "sel_diff": 15.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": 233,
         "away_ml": -292,
         "bookmaker": "DraftKings",
-        "consensus_home": 29.0,
-        "consensus_away": 71.0,
+        "consensus_home": 29.1,
+        "consensus_away": 70.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -981,7 +981,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -8.0,
+      "edge": -7.9,
       "sel_diff": 13.0
     },
     {
@@ -1010,8 +1010,8 @@
         "home_ml": -162,
         "away_ml": 134,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.2,
-        "consensus_away": 40.8,
+        "consensus_home": 59.4,
+        "consensus_away": 40.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1024,7 +1024,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 1.8,
+      "edge": 1.6,
       "sel_diff": 11.0
     },
     {
@@ -1042,7 +1042,7 @@
       "away_pitcher": "Jonah Tong",
       "away_pitcher_id": 804636,
       "home_era": 3.33,
-      "away_era": 4.08,
+      "away_era": 3.82,
       "hp": 56,
       "ap": 44,
       "conf": "Baja",
@@ -1050,11 +1050,11 @@
       "diff": 6,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -264,
-        "away_ml": 195,
+        "home_ml": -336,
+        "away_ml": 241,
         "bookmaker": "DraftKings",
-        "consensus_home": 69.6,
-        "consensus_away": 30.4,
+        "consensus_home": 71.6,
+        "consensus_away": 28.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1063,11 +1063,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 6.1,
-        "agreement": "Baja"
+        "spread": 2.4,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -13.6,
+      "edge": -15.6,
       "sel_diff": 6.0
     }
   ],
