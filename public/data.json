@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "updated": "27/09/2026 12:13 CST",
+  "updated": "27/09/2026 12:55 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -438,11 +438,11 @@
       "ops": 0.722
     },
     "TB": {
-      "era": 3.68,
-      "whip": 1.13,
+      "era": 3.69,
+      "whip": 1.14,
       "k9": 8.26,
-      "bullpen_era": 3.68,
-      "bullpen_whip": 1.13,
+      "bullpen_era": 3.69,
+      "bullpen_whip": 1.14,
       "obp": 0.327,
       "slg": 0.401,
       "avg": 0.258,
@@ -482,14 +482,14 @@
       "ops": 0.717
     },
     "PHI": {
-      "era": 4.05,
+      "era": 4.04,
       "whip": 1.29,
-      "k9": 9.88,
-      "bullpen_era": 4.05,
+      "k9": 9.89,
+      "bullpen_era": 4.04,
       "bullpen_whip": 1.29,
       "obp": 0.311,
       "slg": 0.393,
-      "avg": 0.239,
+      "avg": 0.24,
       "ops": 0.704
     },
     "BAL": {
@@ -536,17 +536,6 @@
       "avg": 0.236,
       "ops": 0.726
     },
-    "NYM": {
-      "era": 4.14,
-      "whip": 1.29,
-      "k9": 9.07,
-      "bullpen_era": 4.14,
-      "bullpen_whip": 1.29,
-      "obp": 0.31,
-      "slg": 0.395,
-      "avg": 0.239,
-      "ops": 0.705
-    },
     "AZ": {
       "era": 4.14,
       "whip": 1.28,
@@ -557,6 +546,17 @@
       "slg": 0.403,
       "avg": 0.246,
       "ops": 0.721
+    },
+    "NYM": {
+      "era": 4.14,
+      "whip": 1.29,
+      "k9": 9.06,
+      "bullpen_era": 4.15,
+      "bullpen_whip": 1.29,
+      "obp": 0.31,
+      "slg": 0.396,
+      "avg": 0.239,
+      "ops": 0.706
     },
     "PIT": {
       "era": 4.17,
@@ -647,10 +647,10 @@
       "ops": 0.719
     },
     "WSH": {
-      "era": 4.67,
+      "era": 4.69,
       "whip": 1.39,
       "k9": 8.03,
-      "bullpen_era": 4.67,
+      "bullpen_era": 4.69,
       "bullpen_whip": 1.39,
       "obp": 0.321,
       "slg": 0.422,
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 824542,
-      "status": "Preview",
+      "status": "Live",
       "home": "CWS",
       "away": "COL",
       "home_name": "Chicago White Sox",
@@ -881,8 +881,8 @@
         "home_ml": -163,
         "away_ml": 135,
         "bookmaker": "DraftKings",
-        "consensus_home": 59.1,
-        "consensus_away": 40.9,
+        "consensus_home": 59.2,
+        "consensus_away": 40.8,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -891,16 +891,16 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.9,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 5.9,
+      "edge": 5.8,
       "sel_diff": 15.0
     },
     {
       "id": 823731,
-      "status": "Preview",
+      "status": "Live",
       "home": "MIL",
       "away": "STL",
       "home_name": "Milwaukee Brewers",
@@ -924,8 +924,8 @@
         "home_ml": -218,
         "away_ml": 178,
         "bookmaker": "DraftKings",
-        "consensus_home": 64.2,
-        "consensus_away": 35.8,
+        "consensus_home": 64.7,
+        "consensus_away": 35.3,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -934,16 +934,16 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 4.7,
-        "agreement": "Media"
+        "spread": 1.9,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.2,
+      "edge": -0.7,
       "sel_diff": 14.0
     },
     {
       "id": 823164,
-      "status": "Preview",
+      "status": "Live",
       "home": "SF",
       "away": "LAD",
       "home_name": "San Francisco Giants",
@@ -967,8 +967,8 @@
         "home_ml": 201,
         "away_ml": -249,
         "bookmaker": "DraftKings",
-        "consensus_home": 31.7,
-        "consensus_away": 68.3,
+        "consensus_home": 31.9,
+        "consensus_away": 68.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,16 +977,16 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 2.5,
-        "agreement": "Alta"
+        "spread": 3.5,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": -5.3,
+      "edge": -5.1,
       "sel_diff": 13.0
     },
     {
       "id": 823084,
-      "status": "Preview",
+      "status": "Live",
       "home": "SEA",
       "away": "LAA",
       "home_name": "Seattle Mariners",
@@ -1020,7 +1020,7 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 2.1,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": false,
@@ -1053,8 +1053,8 @@
         "home_ml": -120,
         "away_ml": 100,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.1,
-        "consensus_away": 47.9,
+        "consensus_home": 52.3,
+        "consensus_away": 47.7,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1063,11 +1063,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 0.8,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 7.9,
+      "edge": 7.7,
       "sel_diff": 10.0
     }
   ],
