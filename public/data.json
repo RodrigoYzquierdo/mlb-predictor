@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-27",
-  "updated": "27/09/2026 16:39 CST",
+  "date": "2026-09-28",
+  "updated": "28/09/2026 14:27 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -581,10 +581,10 @@
       "ops": 0.693
     },
     "STL": {
-      "era": 4.27,
+      "era": 4.26,
       "whip": 1.36,
       "k9": 7.97,
-      "bullpen_era": 4.27,
+      "bullpen_era": 4.26,
       "bullpen_whip": 1.36,
       "obp": 0.313,
       "slg": 0.378,
@@ -10304,13 +10304,58 @@
       "hit": true,
       "mkt_home": 52.5,
       "mkt_away": 47.5
+    },
+    {
+      "date": "2026-09-27",
+      "home": "CWS",
+      "away": "COL",
+      "hp": 65,
+      "pred": "CWS",
+      "actual": "CWS 4-2 COL",
+      "hit": true
+    },
+    {
+      "date": "2026-09-27",
+      "home": "MIL",
+      "away": "STL",
+      "hp": 65,
+      "pred": "MIL",
+      "actual": "MIL 6-4 STL",
+      "hit": true
+    },
+    {
+      "date": "2026-09-27",
+      "home": "SF",
+      "away": "LAD",
+      "hp": 36,
+      "pred": "LAD",
+      "actual": "LAD 5-1 SF",
+      "hit": true
+    },
+    {
+      "date": "2026-09-27",
+      "home": "SEA",
+      "away": "LAA",
+      "hp": 62,
+      "pred": "SEA",
+      "actual": "SEA 7-3 LAA",
+      "hit": true
+    },
+    {
+      "date": "2026-09-27",
+      "home": "NYY",
+      "away": "BAL",
+      "hp": 61,
+      "pred": "NYY",
+      "actual": "NYY 0-0 BAL",
+      "hit": false
     }
   ],
   "stats": {
-    "hits": 585,
-    "total": 967,
-    "pct": 60,
-    "streak": 4,
-    "streak_type": "W"
+    "hits": 589,
+    "total": 972,
+    "pct": 61,
+    "streak": 1,
+    "streak_type": "L"
   }
 }
