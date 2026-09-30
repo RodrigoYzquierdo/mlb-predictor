@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "updated": "30/09/2026 14:41 CST",
+  "updated": "30/09/2026 17:18 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,49 +856,6 @@
   },
   "top5": [
     {
-      "id": 849841,
-      "status": "Live",
-      "home": "ATL",
-      "away": "PHI",
-      "home_name": "Atlanta Braves",
-      "away_name": "Philadelphia Phillies",
-      "time": "2026-09-30T18:00:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Tyler Mahle",
-      "home_pitcher_id": 641816,
-      "away_pitcher": "Cristopher Sánchez",
-      "away_pitcher_id": 650911,
-      "home_era": 3.99,
-      "away_era": 2.91,
-      "hp": 56,
-      "ap": 44,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 6,
-      "park_factor": 1.01,
-      "odds": {
-        "home_ml": -288,
-        "away_ml": 211,
-        "bookmaker": "DraftKings",
-        "consensus_home": 68.8,
-        "consensus_away": 31.2,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "DraftKings",
-          "BetMGM",
-          "BetRivers",
-          "Bovada"
-        ],
-        "spread": 3.3,
-        "agreement": "Media"
-      },
-      "value": false,
-      "edge": -12.8,
-      "sel_diff": 6.0
-    },
-    {
       "id": 849848,
       "status": "Preview",
       "home": "NYY",
@@ -924,8 +881,8 @@
         "home_ml": -136,
         "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.8,
-        "consensus_away": 44.2,
+        "consensus_home": 55.9,
+        "consensus_away": 44.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +891,11 @@
           "BetRivers",
           "DraftKings"
         ],
-        "spread": 1.2,
+        "spread": 2.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 0.2,
+      "edge": 0.1,
       "sel_diff": 6.0
     },
     {
@@ -967,8 +924,8 @@
         "home_ml": -149,
         "away_ml": 123,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.9,
-        "consensus_away": 43.1,
+        "consensus_home": 56.7,
+        "consensus_away": 43.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,16 +934,16 @@
           "BetMGM",
           "BetRivers"
         ],
-        "spread": 1.7,
+        "spread": 1.5,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.9,
+      "edge": -0.7,
       "sel_diff": 6.0
     },
     {
       "id": 849846,
-      "status": "Preview",
+      "status": "Live",
       "home": "HOU",
       "away": "CWS",
       "home_name": "Houston Astros",
@@ -1007,11 +964,11 @@
       "diff": 2,
       "park_factor": 1.0,
       "odds": {
-        "home_ml": -155,
-        "away_ml": 128,
+        "home_ml": 580,
+        "away_ml": -1100,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.8,
-        "consensus_away": 42.2,
+        "consensus_home": 12.4,
+        "consensus_away": 87.6,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -1020,11 +977,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 0.8,
+        "spread": 2.9,
         "agreement": "Alta"
       },
-      "value": false,
-      "edge": -5.8,
+      "value": true,
+      "edge": 39.6,
       "sel_diff": 2.0
     }
   ],
