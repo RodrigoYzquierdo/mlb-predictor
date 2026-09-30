@@ -9492,5 +9492,38 @@
     "pred": "NYY",
     "actual": "NYY 0-0 BAL",
     "hit": false
+  },
+  {
+    "date": "2026-09-29",
+    "home": "NYY",
+    "away": "BOS",
+    "hp": 57,
+    "pred": "NYY",
+    "actual": "NYY 9-0 BOS",
+    "hit": true,
+    "mkt_home": 55.1,
+    "mkt_away": 44.9
+  },
+  {
+    "date": "2026-09-29",
+    "home": "SD",
+    "away": "CHC",
+    "hp": 55,
+    "pred": "SD",
+    "actual": "SD 8-0 CHC",
+    "hit": true,
+    "mkt_home": 54.2,
+    "mkt_away": 45.8
+  },
+  {
+    "date": "2026-09-29",
+    "home": "HOU",
+    "away": "CWS",
+    "hp": 51,
+    "pred": "HOU",
+    "actual": "CWS 6-3 HOU",
+    "hit": false,
+    "mkt_home": 11.7,
+    "mkt_away": 88.3
   }
 ]
