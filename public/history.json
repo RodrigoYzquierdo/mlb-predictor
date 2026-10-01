@@ -9567,5 +9567,14 @@
     "hit": false,
     "mkt_home": 12.4,
     "mkt_away": 87.6
+  },
+  {
+    "date": "2026-09-30",
+    "home": "ATL",
+    "away": "PHI",
+    "hp": 56,
+    "pred": "ATL",
+    "actual": "PHI 4-3 ATL",
+    "hit": false
   }
 ]

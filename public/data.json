@@ -1,6 +1,6 @@
 {
   "date": "2026-10-01",
-  "updated": "01/10/2026 13:22 CST",
+  "updated": "01/10/2026 14:12 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,11 +878,11 @@
       "diff": 7,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -108,
-        "away_ml": -111,
+        "home_ml": -109,
+        "away_ml": -110,
         "bookmaker": "DraftKings",
-        "consensus_home": 49.5,
-        "consensus_away": 50.5,
+        "consensus_home": 49.8,
+        "consensus_away": 50.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "DraftKings",
           "BetRivers"
         ],
-        "spread": 0.9,
+        "spread": 1.6,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 7.5,
+      "edge": 7.2,
       "sel_diff": 7.0
     }
   ],
@@ -10468,13 +10468,22 @@
       "hit": false,
       "mkt_home": 12.4,
       "mkt_away": 87.6
+    },
+    {
+      "date": "2026-09-30",
+      "home": "ATL",
+      "away": "PHI",
+      "hp": 56,
+      "pred": "ATL",
+      "actual": "PHI 4-3 ATL",
+      "hit": false
     }
   ],
   "stats": {
     "hits": 594,
-    "total": 979,
+    "total": 980,
     "pct": 61,
-    "streak": 1,
+    "streak": 2,
     "streak_type": "L"
   }
 }
