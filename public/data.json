@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-30",
-  "updated": "30/09/2026 17:18 CST",
+  "date": "2026-10-01",
+  "updated": "01/10/2026 13:22 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -372,10 +372,10 @@
   },
   "team_stats": {
     "NYY": {
-      "era": 3.24,
+      "era": 3.23,
       "whip": 1.17,
       "k9": 9.05,
-      "bullpen_era": 3.24,
+      "bullpen_era": 3.23,
       "bullpen_whip": 1.17,
       "obp": 0.311,
       "slg": 0.409,
@@ -400,9 +400,9 @@
       "bullpen_era": 3.54,
       "bullpen_whip": 1.23,
       "obp": 0.319,
-      "slg": 0.397,
+      "slg": 0.398,
       "avg": 0.245,
-      "ops": 0.716
+      "ops": 0.717
     },
     "LAD": {
       "era": 3.55,
@@ -460,10 +460,10 @@
       "ops": 0.696
     },
     "TOR": {
-      "era": 3.89,
+      "era": 3.9,
       "whip": 1.29,
       "k9": 8.84,
-      "bullpen_era": 3.89,
+      "bullpen_era": 3.9,
       "bullpen_whip": 1.29,
       "obp": 0.31,
       "slg": 0.381,
@@ -493,10 +493,10 @@
       "ops": 0.707
     },
     "BAL": {
-      "era": 4.08,
+      "era": 4.07,
       "whip": 1.34,
       "k9": 8.18,
-      "bullpen_era": 4.08,
+      "bullpen_era": 4.07,
       "bullpen_whip": 1.34,
       "obp": 0.314,
       "slg": 0.396,
@@ -536,6 +536,17 @@
       "avg": 0.236,
       "ops": 0.726
     },
+    "PIT": {
+      "era": 4.14,
+      "whip": 1.3,
+      "k9": 9.32,
+      "bullpen_era": 4.14,
+      "bullpen_whip": 1.3,
+      "obp": 0.33,
+      "slg": 0.404,
+      "avg": 0.253,
+      "ops": 0.734
+    },
     "NYM": {
       "era": 4.15,
       "whip": 1.29,
@@ -543,20 +554,9 @@
       "bullpen_era": 4.15,
       "bullpen_whip": 1.29,
       "obp": 0.31,
-      "slg": 0.395,
+      "slg": 0.396,
       "avg": 0.239,
-      "ops": 0.705
-    },
-    "PIT": {
-      "era": 4.15,
-      "whip": 1.3,
-      "k9": 9.32,
-      "bullpen_era": 4.15,
-      "bullpen_whip": 1.3,
-      "obp": 0.33,
-      "slg": 0.404,
-      "avg": 0.253,
-      "ops": 0.734
+      "ops": 0.706
     },
     "AZ": {
       "era": 4.18,
@@ -665,7 +665,7 @@
       "bullpen_whip": 1.41,
       "obp": 0.316,
       "slg": 0.402,
-      "avg": 0.247,
+      "avg": 0.248,
       "ops": 0.718
     },
     "CIN": {
@@ -856,133 +856,47 @@
   },
   "top5": [
     {
-      "id": 849848,
+      "id": 849844,
       "status": "Preview",
-      "home": "NYY",
-      "away": "BOS",
-      "home_name": "New York Yankees",
-      "away_name": "Boston Red Sox",
-      "time": "2026-10-01T00:00:00Z",
+      "home": "ATL",
+      "away": "PHI",
+      "home_name": "Atlanta Braves",
+      "away_name": "Philadelphia Phillies",
+      "time": "2026-10-02T00:00:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Max Fried",
-      "home_pitcher_id": 608331,
-      "away_pitcher": "Sonny Gray",
-      "away_pitcher_id": 543243,
-      "home_era": 2.8,
-      "away_era": 2.72,
-      "hp": 56,
-      "ap": 44,
-      "conf": "Baja",
+      "home_pitcher": "Ray Kerr",
+      "home_pitcher_id": 678061,
+      "away_pitcher": "Aaron Nola",
+      "away_pitcher_id": 605400,
+      "home_era": 1.47,
+      "away_era": 4.67,
+      "hp": 57,
+      "ap": 43,
+      "conf": "Media",
       "mixed": true,
-      "diff": 6,
-      "park_factor": 1.02,
+      "diff": 7,
+      "park_factor": 1.01,
       "odds": {
-        "home_ml": -136,
-        "away_ml": 113,
+        "home_ml": -108,
+        "away_ml": -111,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.9,
-        "consensus_away": 44.1,
+        "consensus_home": 49.5,
+        "consensus_away": 50.5,
         "books_count": 5,
         "books": [
           "FanDuel",
-          "Bovada",
           "BetMGM",
-          "BetRivers",
-          "DraftKings"
-        ],
-        "spread": 2.1,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": 0.1,
-      "sel_diff": 6.0
-    },
-    {
-      "id": 849842,
-      "status": "Preview",
-      "home": "SD",
-      "away": "CHC",
-      "home_name": "San Diego Padres",
-      "away_name": "Chicago Cubs",
-      "time": "2026-10-01T02:00:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Nick Pivetta",
-      "home_pitcher_id": 601713,
-      "away_pitcher": "Kevin Gausman",
-      "away_pitcher_id": 592332,
-      "home_era": 2.86,
-      "away_era": 4.51,
-      "hp": 56,
-      "ap": 44,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 6,
-      "park_factor": 0.94,
-      "odds": {
-        "home_ml": -149,
-        "away_ml": 123,
-        "bookmaker": "DraftKings",
-        "consensus_home": 56.7,
-        "consensus_away": 43.3,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
           "Bovada",
           "DraftKings",
-          "BetMGM",
           "BetRivers"
         ],
-        "spread": 1.5,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": -0.7,
-      "sel_diff": 6.0
-    },
-    {
-      "id": 849846,
-      "status": "Live",
-      "home": "HOU",
-      "away": "CWS",
-      "home_name": "Houston Astros",
-      "away_name": "Chicago White Sox",
-      "time": "2026-09-30T21:00:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Hunter Brown",
-      "home_pitcher_id": 686613,
-      "away_pitcher": "Sean Burke",
-      "away_pitcher_id": 680732,
-      "home_era": 3.19,
-      "away_era": 3.34,
-      "hp": 52,
-      "ap": 48,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 2,
-      "park_factor": 1.0,
-      "odds": {
-        "home_ml": 580,
-        "away_ml": -1100,
-        "bookmaker": "DraftKings",
-        "consensus_home": 12.4,
-        "consensus_away": 87.6,
-        "books_count": 5,
-        "books": [
-          "DraftKings",
-          "FanDuel",
-          "BetMGM",
-          "BetRivers",
-          "Bovada"
-        ],
-        "spread": 2.9,
+        "spread": 0.9,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 39.6,
-      "sel_diff": 2.0
+      "edge": 7.5,
+      "sel_diff": 7.0
     }
   ],
   "history": [
@@ -10521,13 +10435,46 @@
       "pred": "ATL",
       "actual": "ATL 5-3 PHI",
       "hit": true
+    },
+    {
+      "date": "2026-09-30",
+      "home": "NYY",
+      "away": "BOS",
+      "hp": 56,
+      "pred": "NYY",
+      "actual": "NYY 9-2 BOS",
+      "hit": true,
+      "mkt_home": 55.9,
+      "mkt_away": 44.1
+    },
+    {
+      "date": "2026-09-30",
+      "home": "SD",
+      "away": "CHC",
+      "hp": 56,
+      "pred": "SD",
+      "actual": "SD 4-1 CHC",
+      "hit": true,
+      "mkt_home": 56.7,
+      "mkt_away": 43.3
+    },
+    {
+      "date": "2026-09-30",
+      "home": "HOU",
+      "away": "CWS",
+      "hp": 52,
+      "pred": "HOU",
+      "actual": "CWS 7-3 HOU",
+      "hit": false,
+      "mkt_home": 12.4,
+      "mkt_away": 87.6
     }
   ],
   "stats": {
-    "hits": 592,
-    "total": 976,
+    "hits": 594,
+    "total": 979,
     "pct": 61,
     "streak": 1,
-    "streak_type": "W"
+    "streak_type": "L"
   }
 }
