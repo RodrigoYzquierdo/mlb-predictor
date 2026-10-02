@@ -9576,5 +9576,16 @@
     "pred": "ATL",
     "actual": "PHI 4-3 ATL",
     "hit": false
+  },
+  {
+    "date": "2026-10-01",
+    "home": "ATL",
+    "away": "PHI",
+    "hp": 57,
+    "pred": "ATL",
+    "actual": "ATL 6-2 PHI",
+    "hit": true,
+    "mkt_home": 50.9,
+    "mkt_away": 49.1
   }
 ]
