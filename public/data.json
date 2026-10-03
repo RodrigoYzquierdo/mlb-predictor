@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "updated": "03/10/2026 12:34 CST",
+  "updated": "03/10/2026 13:07 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,11 +878,11 @@
       "diff": 10,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -219,
-        "away_ml": 178,
+        "home_ml": -209,
+        "away_ml": 171,
         "bookmaker": "DraftKings",
-        "consensus_home": 65.4,
-        "consensus_away": 34.6,
+        "consensus_home": 65.1,
+        "consensus_away": 34.9,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.0,
+        "spread": 1.1,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -5.4,
+      "edge": -5.1,
       "sel_diff": 10.0
     },
     {
@@ -967,8 +967,8 @@
         "home_ml": -135,
         "away_ml": 112,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.9,
-        "consensus_away": 45.1,
+        "consensus_home": 55.0,
+        "consensus_away": 45.0,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -977,11 +977,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 0.6,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 2.1,
+      "edge": 2.0,
       "sel_diff": 7.0
     },
     {
@@ -1007,11 +1007,11 @@
       "diff": 4,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": 246,
-        "away_ml": -344,
+        "home_ml": 344,
+        "away_ml": -520,
         "bookmaker": "DraftKings",
-        "consensus_home": 29.8,
-        "consensus_away": 70.2,
+        "consensus_home": 21.7,
+        "consensus_away": 78.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -1020,11 +1020,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 7.9,
-        "agreement": "Baja"
+        "spread": 3.4,
+        "agreement": "Media"
       },
       "value": true,
-      "edge": 24.2,
+      "edge": 32.3,
       "sel_diff": 4.0
     }
   ],
