@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "updated": "04/10/2026 13:24 CST",
+  "updated": "04/10/2026 16:35 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 849825,
-      "status": "Preview",
+      "status": "Live",
       "home": "MIL",
       "away": "SD",
       "home_name": "Milwaukee Brewers",
@@ -878,11 +878,11 @@
       "diff": 10,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -136,
-        "away_ml": 113,
+        "home_ml": 207,
+        "away_ml": -282,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.0,
-        "consensus_away": 45.0,
+        "consensus_home": 28.4,
+        "consensus_away": 71.6,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.1,
-        "agreement": "Alta"
+        "spread": 5.2,
+        "agreement": "Media"
       },
-      "value": false,
-      "edge": 5.0,
+      "value": true,
+      "edge": 31.6,
       "sel_diff": 10.0
     },
     {
@@ -924,8 +924,8 @@
         "home_ml": -212,
         "away_ml": 173,
         "bookmaker": "DraftKings",
-        "consensus_home": 66.5,
-        "consensus_away": 33.5,
+        "consensus_home": 66.7,
+        "consensus_away": 33.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +934,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 2.2,
+        "spread": 2.6,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -9.5,
+      "edge": -9.7,
       "sel_diff": 7.0
     }
   ],
