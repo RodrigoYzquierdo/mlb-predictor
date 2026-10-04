@@ -1,6 +1,6 @@
 {
   "date": "2026-10-04",
-  "updated": "04/10/2026 12:04 CST",
+  "updated": "04/10/2026 12:33 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,8 +881,8 @@
         "home_ml": -136,
         "away_ml": 113,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.2,
-        "consensus_away": 44.8,
+        "consensus_home": 55.3,
+        "consensus_away": 44.7,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -895,7 +895,7 @@
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 4.8,
+      "edge": 4.7,
       "sel_diff": 10.0
     },
     {
@@ -910,22 +910,22 @@
       "away_score": null,
       "home_pitcher": "Blake Snell",
       "home_pitcher_id": 605483,
-      "away_pitcher": null,
-      "away_pitcher_id": null,
+      "away_pitcher": "Ray Kerr",
+      "away_pitcher_id": 678061,
       "home_era": 1.9,
-      "away_era": null,
+      "away_era": 1.47,
       "hp": 57,
       "ap": 43,
       "conf": "Media",
-      "mixed": false,
+      "mixed": true,
       "diff": 7,
       "park_factor": 0.98,
       "odds": {
-        "home_ml": -157,
-        "away_ml": 130,
+        "home_ml": -196,
+        "away_ml": 161,
         "bookmaker": "DraftKings",
-        "consensus_home": 58.5,
-        "consensus_away": 41.5,
+        "consensus_home": 65.7,
+        "consensus_away": 34.3,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -934,11 +934,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 2.2,
-        "agreement": "Alta"
+        "spread": 4.4,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": -1.5,
+      "edge": -8.7,
       "sel_diff": 7.0
     }
   ],
@@ -10564,13 +10564,22 @@
       "hit": true,
       "mkt_home": 55.9,
       "mkt_away": 44.1
+    },
+    {
+      "date": "2026-10-03",
+      "home": "CLE",
+      "away": "CWS",
+      "hp": 54,
+      "pred": "CLE",
+      "actual": "CWS 3-0 CLE",
+      "hit": false
     }
   ],
   "stats": {
     "hits": 598,
-    "total": 984,
+    "total": 985,
     "pct": 61,
-    "streak": 4,
-    "streak_type": "W"
+    "streak": 1,
+    "streak_type": "L"
   }
 }
