@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-05",
-  "updated": "05/10/2026 19:01 CST",
+  "date": "2026-10-06",
+  "updated": "06/10/2026 13:23 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,47 +856,90 @@
   },
   "top5": [
     {
-      "id": 849839,
-      "status": "Live",
-      "home": "TB",
-      "away": "NYY",
-      "home_name": "Tampa Bay Rays",
-      "away_name": "New York Yankees",
-      "time": "2026-10-06T00:00:00Z",
+      "id": 849826,
+      "status": "Preview",
+      "home": "SD",
+      "away": "MIL",
+      "home_name": "San Diego Padres",
+      "away_name": "Milwaukee Brewers",
+      "time": "2026-10-07T01:30:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Freddy Peralta",
-      "home_pitcher_id": 642547,
-      "away_pitcher": "Cam Schlittler",
-      "away_pitcher_id": 693645,
-      "home_era": 4.42,
-      "away_era": 1.95,
-      "hp": 56,
-      "ap": 44,
+      "home_pitcher": "Nick Pivetta",
+      "home_pitcher_id": 601713,
+      "away_pitcher": "Dustin May",
+      "away_pitcher_id": 669160,
+      "home_era": 2.86,
+      "away_era": 4.7,
+      "hp": 48,
+      "ap": 52,
       "conf": "Baja",
       "mixed": true,
-      "diff": 6,
-      "park_factor": 0.96,
+      "diff": 2,
+      "park_factor": 0.94,
       "odds": {
-        "home_ml": -211,
-        "away_ml": 159,
+        "home_ml": -143,
+        "away_ml": 119,
         "bookmaker": "DraftKings",
-        "consensus_home": 61.7,
-        "consensus_away": 38.3,
+        "consensus_home": 55.9,
+        "consensus_away": 44.1,
         "books_count": 5,
         "books": [
           "FanDuel",
-          "DraftKings",
           "BetMGM",
-          "BetRivers",
-          "Bovada"
+          "DraftKings",
+          "Bovada",
+          "BetRivers"
         ],
-        "spread": 5.6,
-        "agreement": "Media"
+        "spread": 1.4,
+        "agreement": "Alta"
+      },
+      "value": true,
+      "edge": 7.9,
+      "sel_diff": 2.0
+    },
+    {
+      "id": 849819,
+      "status": "Preview",
+      "home": "ATL",
+      "away": "LAD",
+      "home_name": "Atlanta Braves",
+      "away_name": "Los Angeles Dodgers",
+      "time": "2026-10-06T22:00:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Chris Sale",
+      "home_pitcher_id": 519242,
+      "away_pitcher": "Yoshinobu Yamamoto",
+      "away_pitcher_id": 808967,
+      "home_era": 2.16,
+      "away_era": 2.53,
+      "hp": 49,
+      "ap": 51,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 1,
+      "park_factor": 1.01,
+      "odds": {
+        "home_ml": -109,
+        "away_ml": -110,
+        "bookmaker": "DraftKings",
+        "consensus_home": 49.7,
+        "consensus_away": 50.3,
+        "books_count": 5,
+        "books": [
+          "DraftKings",
+          "FanDuel",
+          "BetMGM",
+          "Bovada",
+          "BetRivers"
+        ],
+        "spread": 0.9,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -5.7,
-      "sel_diff": 6.0
+      "edge": 0.7,
+      "sel_diff": 1.0
     }
   ],
   "history": [
@@ -10552,13 +10595,24 @@
       "hit": false,
       "mkt_home": 66.7,
       "mkt_away": 33.3
+    },
+    {
+      "date": "2026-10-05",
+      "home": "TB",
+      "away": "NYY",
+      "hp": 56,
+      "pred": "TB",
+      "actual": "TB 5-2 NYY",
+      "hit": true,
+      "mkt_home": 61.7,
+      "mkt_away": 38.3
     }
   ],
   "stats": {
-    "hits": 599,
-    "total": 987,
+    "hits": 600,
+    "total": 988,
     "pct": 61,
     "streak": 1,
-    "streak_type": "L"
+    "streak_type": "W"
   }
 }

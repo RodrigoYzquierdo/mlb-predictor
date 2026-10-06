@@ -9651,5 +9651,16 @@
     "hit": false,
     "mkt_home": 66.7,
     "mkt_away": 33.3
+  },
+  {
+    "date": "2026-10-05",
+    "home": "TB",
+    "away": "NYY",
+    "hp": 56,
+    "pred": "TB",
+    "actual": "TB 5-2 NYY",
+    "hit": true,
+    "mkt_home": 61.7,
+    "mkt_away": 38.3
   }
 ]
