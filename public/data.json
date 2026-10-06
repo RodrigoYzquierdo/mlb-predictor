@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "updated": "06/10/2026 13:23 CST",
+  "updated": "06/10/2026 14:04 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,11 +878,11 @@
       "diff": 2,
       "park_factor": 0.94,
       "odds": {
-        "home_ml": -143,
-        "away_ml": 119,
+        "home_ml": -138,
+        "away_ml": 114,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.9,
-        "consensus_away": 44.1,
+        "consensus_home": 55.5,
+        "consensus_away": 44.5,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -895,7 +895,7 @@
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 7.9,
+      "edge": 7.5,
       "sel_diff": 2.0
     },
     {
@@ -921,11 +921,11 @@
       "diff": 1,
       "park_factor": 1.01,
       "odds": {
-        "home_ml": -109,
-        "away_ml": -110,
+        "home_ml": -110,
+        "away_ml": -109,
         "bookmaker": "DraftKings",
-        "consensus_home": 49.7,
-        "consensus_away": 50.3,
+        "consensus_home": 50.1,
+        "consensus_away": 49.9,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -934,11 +934,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.9,
+        "spread": 1.8,
         "agreement": "Alta"
       },
-      "value": false,
-      "edge": 0.7,
+      "value": true,
+      "edge": 1.1,
       "sel_diff": 1.0
     }
   ],
@@ -10606,13 +10606,22 @@
       "hit": true,
       "mkt_home": 61.7,
       "mkt_away": 38.3
+    },
+    {
+      "date": "2026-10-05",
+      "home": "CLE",
+      "away": "CWS",
+      "hp": 54,
+      "pred": "CLE",
+      "actual": "CWS 4-3 CLE",
+      "hit": false
     }
   ],
   "stats": {
     "hits": 600,
-    "total": 988,
+    "total": 989,
     "pct": 61,
     "streak": 1,
-    "streak_type": "W"
+    "streak_type": "L"
   }
 }
