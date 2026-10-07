@@ -9671,5 +9671,27 @@
     "pred": "CLE",
     "actual": "CWS 4-3 CLE",
     "hit": false
+  },
+  {
+    "date": "2026-10-06",
+    "home": "SD",
+    "away": "MIL",
+    "hp": 48,
+    "pred": "MIL",
+    "actual": "SD 4-3 MIL",
+    "hit": false,
+    "mkt_home": 55.7,
+    "mkt_away": 44.3
+  },
+  {
+    "date": "2026-10-06",
+    "home": "ATL",
+    "away": "LAD",
+    "hp": 49,
+    "pred": "LAD",
+    "actual": "LAD 3-1 ATL",
+    "hit": true,
+    "mkt_home": 14.3,
+    "mkt_away": 85.7
   }
 ]
