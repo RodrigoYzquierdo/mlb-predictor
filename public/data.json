@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-08",
-  "updated": "08/10/2026 18:01 CST",
+  "date": "2026-10-09",
+  "updated": "09/10/2026 13:23 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,51 +854,7 @@
       "last10_pct": 0.2
     }
   },
-  "top5": [
-    {
-      "id": 849832,
-      "status": "Live",
-      "home": "CWS",
-      "away": "CLE",
-      "home_name": "Chicago White Sox",
-      "away_name": "Cleveland Guardians",
-      "time": "2026-10-09T00:00:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Hagen Smith",
-      "home_pitcher_id": 696146,
-      "away_pitcher": "Parker Messick",
-      "away_pitcher_id": 800048,
-      "home_era": 1.29,
-      "away_era": 2.56,
-      "hp": 54,
-      "ap": 46,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 4,
-      "park_factor": 0.96,
-      "odds": {
-        "home_ml": -102,
-        "away_ml": -118,
-        "bookmaker": "DraftKings",
-        "consensus_home": 48.3,
-        "consensus_away": 51.7,
-        "books_count": 5,
-        "books": [
-          "DraftKings",
-          "Bovada",
-          "FanDuel",
-          "BetRivers",
-          "BetMGM"
-        ],
-        "spread": 1.5,
-        "agreement": "Alta"
-      },
-      "value": true,
-      "edge": 5.7,
-      "sel_diff": 4.0
-    }
-  ],
+  "top5": [],
   "history": [
     {
       "date": "2026-03-26",
@@ -10636,13 +10592,24 @@
       "pred": "CWS",
       "actual": "CLE 9-3 CWS",
       "hit": false
+    },
+    {
+      "date": "2026-10-08",
+      "home": "CWS",
+      "away": "CLE",
+      "hp": 54,
+      "pred": "CWS",
+      "actual": "CLE 9-5 CWS",
+      "hit": false,
+      "mkt_home": 48.3,
+      "mkt_away": 51.7
     }
   ],
   "stats": {
     "hits": 603,
-    "total": 995,
+    "total": 996,
     "pct": 61,
-    "streak": 2,
+    "streak": 3,
     "streak_type": "L"
   }
 }
