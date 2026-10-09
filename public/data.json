@@ -1,6 +1,6 @@
 {
   "date": "2026-10-08",
-  "updated": "08/10/2026 15:12 CST",
+  "updated": "08/10/2026 18:01 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 849832,
-      "status": "Preview",
+      "status": "Live",
       "home": "CWS",
       "away": "CLE",
       "home_name": "Chicago White Sox",
@@ -881,8 +881,8 @@
         "home_ml": -102,
         "away_ml": -118,
         "bookmaker": "DraftKings",
-        "consensus_home": 48.7,
-        "consensus_away": 51.3,
+        "consensus_home": 48.3,
+        "consensus_away": 51.7,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -891,11 +891,11 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 3.1,
-        "agreement": "Media"
+        "spread": 1.5,
+        "agreement": "Alta"
       },
       "value": true,
-      "edge": 5.3,
+      "edge": 5.7,
       "sel_diff": 4.0
     }
   ],
