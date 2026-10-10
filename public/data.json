@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "updated": "10/10/2026 12:23 CST",
+  "updated": "10/10/2026 13:09 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -881,8 +881,8 @@
         "home_ml": -143,
         "away_ml": 118,
         "bookmaker": "DraftKings",
-        "consensus_home": 56.0,
-        "consensus_away": 44.0,
+        "consensus_home": 56.1,
+        "consensus_away": 43.9,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "BetRivers",
           "BetMGM"
         ],
-        "spread": 1.6,
+        "spread": 1.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -2.0,
+      "edge": -2.1,
       "sel_diff": 4.0
     }
   ],
