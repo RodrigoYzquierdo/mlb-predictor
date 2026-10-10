@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-09",
-  "updated": "09/10/2026 17:39 CST",
+  "date": "2026-10-10",
+  "updated": "10/10/2026 12:23 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,7 +854,51 @@
       "last10_pct": 0.2
     }
   },
-  "top5": [],
+  "top5": [
+    {
+      "id": 849831,
+      "status": "Preview",
+      "home": "CLE",
+      "away": "CWS",
+      "home_name": "Cleveland Guardians",
+      "away_name": "Chicago White Sox",
+      "time": "2026-10-11T00:00:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Gavin Williams",
+      "home_pitcher_id": 668909,
+      "away_pitcher": "Sean Burke",
+      "away_pitcher_id": 680732,
+      "home_era": 3.76,
+      "away_era": 3.34,
+      "hp": 54,
+      "ap": 46,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 4,
+      "park_factor": 0.97,
+      "odds": {
+        "home_ml": -143,
+        "away_ml": 118,
+        "bookmaker": "DraftKings",
+        "consensus_home": 56.0,
+        "consensus_away": 44.0,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "Bovada",
+          "BetRivers",
+          "BetMGM"
+        ],
+        "spread": 1.6,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": -2.0,
+      "sel_diff": 4.0
+    }
+  ],
   "history": [
     {
       "date": "2026-03-26",
