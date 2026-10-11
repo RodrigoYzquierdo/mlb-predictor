@@ -9746,5 +9746,16 @@
     "hit": false,
     "mkt_home": 48.3,
     "mkt_away": 51.7
+  },
+  {
+    "date": "2026-10-10",
+    "home": "CLE",
+    "away": "CWS",
+    "hp": 54,
+    "pred": "CLE",
+    "actual": "CLE 2-0 CWS",
+    "hit": true,
+    "mkt_home": 55.9,
+    "mkt_away": 44.1
   }
 ]

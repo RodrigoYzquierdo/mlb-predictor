@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-10",
-  "updated": "10/10/2026 17:03 CST",
+  "date": "2026-10-11",
+  "updated": "11/10/2026 12:44 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,47 +856,47 @@
   },
   "top5": [
     {
-      "id": 849831,
+      "id": 849809,
       "status": "Preview",
-      "home": "CLE",
-      "away": "CWS",
-      "home_name": "Cleveland Guardians",
-      "away_name": "Chicago White Sox",
-      "time": "2026-10-11T00:00:00Z",
+      "home": "MIL",
+      "away": "LAD",
+      "home_name": "Milwaukee Brewers",
+      "away_name": "Los Angeles Dodgers",
+      "time": "2026-10-12T00:00:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Gavin Williams",
-      "home_pitcher_id": 668909,
-      "away_pitcher": "Sean Burke",
-      "away_pitcher_id": 680732,
-      "home_era": 3.76,
-      "away_era": 3.34,
-      "hp": 54,
-      "ap": 46,
+      "home_pitcher": "Jacob Misiorowski",
+      "home_pitcher_id": 694819,
+      "away_pitcher": "Tarik Skubal",
+      "away_pitcher_id": 669373,
+      "home_era": 1.8,
+      "away_era": 2.72,
+      "hp": 55,
+      "ap": 45,
       "conf": "Baja",
       "mixed": true,
-      "diff": 4,
-      "park_factor": 0.97,
+      "diff": 5,
+      "park_factor": 1.02,
       "odds": {
-        "home_ml": -142,
-        "away_ml": 127,
+        "home_ml": -107,
+        "away_ml": -112,
         "bookmaker": "DraftKings",
-        "consensus_home": 55.9,
-        "consensus_away": 44.1,
+        "consensus_home": 49.3,
+        "consensus_away": 50.7,
         "books_count": 5,
         "books": [
           "FanDuel",
+          "BetMGM",
           "DraftKings",
           "Bovada",
-          "BetRivers",
-          "BetMGM"
+          "BetRivers"
         ],
-        "spread": 2.5,
+        "spread": 0.5,
         "agreement": "Alta"
       },
-      "value": false,
-      "edge": -1.9,
-      "sel_diff": 4.0
+      "value": true,
+      "edge": 5.7,
+      "sel_diff": 5.0
     }
   ],
   "history": [
@@ -10647,13 +10647,24 @@
       "hit": false,
       "mkt_home": 48.3,
       "mkt_away": 51.7
+    },
+    {
+      "date": "2026-10-10",
+      "home": "CLE",
+      "away": "CWS",
+      "hp": 54,
+      "pred": "CLE",
+      "actual": "CLE 2-0 CWS",
+      "hit": true,
+      "mkt_home": 55.9,
+      "mkt_away": 44.1
     }
   ],
   "stats": {
-    "hits": 603,
-    "total": 996,
+    "hits": 604,
+    "total": 997,
     "pct": 61,
-    "streak": 3,
-    "streak_type": "L"
+    "streak": 1,
+    "streak_type": "W"
   }
 }
