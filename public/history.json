@@ -9768,5 +9768,16 @@
     "hit": true,
     "mkt_home": 49.5,
     "mkt_away": 50.5
+  },
+  {
+    "date": "2026-10-12",
+    "home": "TB",
+    "away": "CLE",
+    "hp": 61,
+    "pred": "TB",
+    "actual": "CLE 7-3 TB",
+    "hit": false,
+    "mkt_home": 75.6,
+    "mkt_away": 24.4
   }
 ]

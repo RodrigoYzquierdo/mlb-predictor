@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-12",
-  "updated": "12/10/2026 19:42 CST",
+  "date": "2026-10-13",
+  "updated": "13/10/2026 14:08 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,21 +856,21 @@
   },
   "top5": [
     {
-      "id": 849820,
-      "status": "Live",
+      "id": 849813,
+      "status": "Preview",
       "home": "TB",
       "away": "CLE",
       "home_name": "Tampa Bay Rays",
       "away_name": "Cleveland Guardians",
-      "time": "2026-10-13T00:00:00Z",
+      "time": "2026-10-14T00:00:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Drew Rasmussen",
-      "home_pitcher_id": 656876,
-      "away_pitcher": "Foster Griffin",
-      "away_pitcher_id": 656492,
-      "home_era": 2.67,
-      "away_era": 3.6,
+      "home_pitcher": "Freddy Peralta",
+      "home_pitcher_id": 642547,
+      "away_pitcher": "Parker Messick",
+      "away_pitcher_id": 800048,
+      "home_era": 4.42,
+      "away_era": 2.56,
       "hp": 61,
       "ap": 39,
       "conf": "Media",
@@ -878,24 +878,24 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -402,
-        "away_ml": 280,
+        "home_ml": -132,
+        "away_ml": 110,
         "bookmaker": "DraftKings",
-        "consensus_home": 75.6,
-        "consensus_away": 24.4,
+        "consensus_home": 54.9,
+        "consensus_away": 45.1,
         "books_count": 5,
         "books": [
           "FanDuel",
           "DraftKings",
           "BetMGM",
-          "BetRivers",
-          "Bovada"
+          "Bovada",
+          "BetRivers"
         ],
-        "spread": 5.0,
-        "agreement": "Media"
+        "spread": 0.7,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -14.6,
+      "edge": 6.1,
       "sel_diff": 11.0
     }
   ],
@@ -10669,13 +10669,24 @@
       "hit": true,
       "mkt_home": 49.5,
       "mkt_away": 50.5
+    },
+    {
+      "date": "2026-10-12",
+      "home": "TB",
+      "away": "CLE",
+      "hp": 61,
+      "pred": "TB",
+      "actual": "CLE 7-3 TB",
+      "hit": false,
+      "mkt_home": 75.6,
+      "mkt_away": 24.4
     }
   ],
   "stats": {
     "hits": 605,
-    "total": 998,
+    "total": 999,
     "pct": 61,
-    "streak": 2,
-    "streak_type": "W"
+    "streak": 1,
+    "streak_type": "L"
   }
 }
