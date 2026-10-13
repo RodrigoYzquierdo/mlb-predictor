@@ -1,6 +1,6 @@
 {
   "date": "2026-10-12",
-  "updated": "12/10/2026 16:50 CST",
+  "updated": "12/10/2026 19:42 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 849820,
-      "status": "Preview",
+      "status": "Live",
       "home": "TB",
       "away": "CLE",
       "home_name": "Tampa Bay Rays",
@@ -878,11 +878,11 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -169,
-        "away_ml": 139,
+        "home_ml": -402,
+        "away_ml": 280,
         "bookmaker": "DraftKings",
-        "consensus_home": 60.5,
-        "consensus_away": 39.5,
+        "consensus_home": 75.6,
+        "consensus_away": 24.4,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,55 +891,12 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.9,
-        "agreement": "Alta"
+        "spread": 5.0,
+        "agreement": "Media"
       },
       "value": false,
-      "edge": 0.5,
+      "edge": -14.6,
       "sel_diff": 11.0
-    },
-    {
-      "id": 849812,
-      "status": "Live",
-      "home": "MIL",
-      "away": "LAD",
-      "home_name": "Milwaukee Brewers",
-      "away_name": "Los Angeles Dodgers",
-      "time": "2026-10-12T21:00:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Logan Henderson",
-      "home_pitcher_id": 701656,
-      "away_pitcher": "Yoshinobu Yamamoto",
-      "away_pitcher_id": 808967,
-      "home_era": 2.47,
-      "away_era": 2.53,
-      "hp": 54,
-      "ap": 46,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 4,
-      "park_factor": 1.02,
-      "odds": {
-        "home_ml": 149,
-        "away_ml": -197,
-        "bookmaker": "DraftKings",
-        "consensus_home": 38.2,
-        "consensus_away": 61.8,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "DraftKings",
-          "Bovada",
-          "BetMGM",
-          "BetRivers"
-        ],
-        "spread": 2.0,
-        "agreement": "Alta"
-      },
-      "value": true,
-      "edge": 15.8,
-      "sel_diff": 4.0
     }
   ],
   "history": [
