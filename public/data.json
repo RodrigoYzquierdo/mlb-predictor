@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "updated": "13/10/2026 14:08 CST",
+  "updated": "13/10/2026 14:32 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,8 +878,8 @@
       "diff": 11,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -132,
-        "away_ml": 110,
+        "home_ml": -136,
+        "away_ml": 113,
         "bookmaker": "DraftKings",
         "consensus_home": 54.9,
         "consensus_away": 45.1,
@@ -10680,13 +10680,22 @@
       "hit": false,
       "mkt_home": 75.6,
       "mkt_away": 24.4
+    },
+    {
+      "date": "2026-10-12",
+      "home": "MIL",
+      "away": "LAD",
+      "hp": 54,
+      "pred": "MIL",
+      "actual": "MIL 7-4 LAD",
+      "hit": true
     }
   ],
   "stats": {
-    "hits": 605,
-    "total": 999,
+    "hits": 606,
+    "total": 1000,
     "pct": 61,
     "streak": 1,
-    "streak_type": "L"
+    "streak_type": "W"
   }
 }

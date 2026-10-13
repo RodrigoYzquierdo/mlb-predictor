@@ -9779,5 +9779,14 @@
     "hit": false,
     "mkt_home": 75.6,
     "mkt_away": 24.4
+  },
+  {
+    "date": "2026-10-12",
+    "home": "MIL",
+    "away": "LAD",
+    "hp": 54,
+    "pred": "MIL",
+    "actual": "MIL 7-4 LAD",
+    "hit": true
   }
 ]
