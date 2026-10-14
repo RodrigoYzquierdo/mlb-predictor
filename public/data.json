@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-13",
-  "updated": "13/10/2026 17:29 CST",
+  "date": "2026-10-14",
+  "updated": "14/10/2026 12:26 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,33 +856,33 @@
   },
   "top5": [
     {
-      "id": 849813,
+      "id": 849811,
       "status": "Preview",
-      "home": "TB",
-      "away": "CLE",
-      "home_name": "Tampa Bay Rays",
-      "away_name": "Cleveland Guardians",
-      "time": "2026-10-14T00:00:00Z",
+      "home": "LAD",
+      "away": "MIL",
+      "home_name": "Los Angeles Dodgers",
+      "away_name": "Milwaukee Brewers",
+      "time": "2026-10-15T00:00:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Freddy Peralta",
-      "home_pitcher_id": 642547,
-      "away_pitcher": "Parker Messick",
-      "away_pitcher_id": 800048,
-      "home_era": 4.42,
-      "away_era": 2.56,
-      "hp": 61,
-      "ap": 39,
-      "conf": "Media",
+      "home_pitcher": "Blake Snell",
+      "home_pitcher_id": 605483,
+      "away_pitcher": "Robert Gasser",
+      "away_pitcher_id": 688107,
+      "home_era": 1.9,
+      "away_era": 3.87,
+      "hp": 53,
+      "ap": 47,
+      "conf": "Baja",
       "mixed": true,
-      "diff": 11,
-      "park_factor": 0.96,
+      "diff": 3,
+      "park_factor": 0.98,
       "odds": {
-        "home_ml": -131,
-        "away_ml": 117,
+        "home_ml": -176,
+        "away_ml": 145,
         "bookmaker": "DraftKings",
-        "consensus_home": 54.9,
-        "consensus_away": 45.1,
+        "consensus_home": 60.9,
+        "consensus_away": 39.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,24 +891,15 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.7,
+        "spread": 0.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 6.1,
-      "sel_diff": 11.0
+      "edge": -7.9,
+      "sel_diff": 3.0
     }
   ],
   "history": [
-    {
-      "date": "2026-03-26",
-      "home": "NYM",
-      "away": "PIT",
-      "hp": 75,
-      "pred": "NYM",
-      "actual": "NYM 11-7 PIT",
-      "hit": true
-    },
     {
       "date": "2026-03-26",
       "home": "MIL",
@@ -10689,13 +10680,24 @@
       "pred": "MIL",
       "actual": "MIL 7-4 LAD",
       "hit": true
+    },
+    {
+      "date": "2026-10-13",
+      "home": "TB",
+      "away": "CLE",
+      "hp": 61,
+      "pred": "TB",
+      "actual": "TB 3-1 CLE",
+      "hit": true,
+      "mkt_home": 54.9,
+      "mkt_away": 45.1
     }
   ],
   "stats": {
-    "hits": 606,
-    "total": 1000,
+    "hits": 607,
+    "total": 1001,
     "pct": 61,
-    "streak": 1,
+    "streak": 2,
     "streak_type": "W"
   }
 }

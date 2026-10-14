@@ -9788,5 +9788,16 @@
     "pred": "MIL",
     "actual": "MIL 7-4 LAD",
     "hit": true
+  },
+  {
+    "date": "2026-10-13",
+    "home": "TB",
+    "away": "CLE",
+    "hp": 61,
+    "pred": "TB",
+    "actual": "TB 3-1 CLE",
+    "hit": true,
+    "mkt_home": 54.9,
+    "mkt_away": 45.1
   }
 ]
