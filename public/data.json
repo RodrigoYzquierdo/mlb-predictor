@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-15",
-  "updated": "15/10/2026 16:44 CST",
+  "date": "2026-10-16",
+  "updated": "16/10/2026 11:54 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,59 +856,50 @@
   },
   "top5": [
     {
-      "id": 849810,
+      "id": 849817,
       "status": "Preview",
-      "home": "LAD",
-      "away": "MIL",
-      "home_name": "Los Angeles Dodgers",
-      "away_name": "Milwaukee Brewers",
-      "time": "2026-10-16T00:00:00Z",
+      "home": "CLE",
+      "away": "TB",
+      "home_name": "Cleveland Guardians",
+      "away_name": "Tampa Bay Rays",
+      "time": "2026-10-17T00:00:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Tyler Glasnow",
-      "home_pitcher_id": 607192,
-      "away_pitcher": "Shane Drohan",
-      "away_pitcher_id": 675660,
-      "home_era": 3.53,
-      "away_era": 4.19,
-      "hp": 52,
-      "ap": 48,
+      "home_pitcher": "Shawn Armstrong",
+      "home_pitcher_id": 542888,
+      "away_pitcher": "Nick Martinez",
+      "away_pitcher_id": 607259,
+      "home_era": 4.58,
+      "away_era": 3.1,
+      "hp": 46,
+      "ap": 54,
       "conf": "Baja",
       "mixed": true,
-      "diff": 2,
-      "park_factor": 0.98,
+      "diff": 4,
+      "park_factor": 0.97,
       "odds": {
-        "home_ml": -156,
-        "away_ml": 129,
+        "home_ml": -108,
+        "away_ml": -112,
         "bookmaker": "DraftKings",
-        "consensus_home": 57.7,
-        "consensus_away": 42.3,
+        "consensus_home": 49.2,
+        "consensus_away": 50.8,
         "books_count": 5,
         "books": [
           "DraftKings",
-          "BetMGM",
           "FanDuel",
+          "BetMGM",
           "Bovada",
           "BetRivers"
         ],
-        "spread": 3.1,
-        "agreement": "Media"
+        "spread": 0.9,
+        "agreement": "Alta"
       },
       "value": false,
-      "edge": -5.7,
-      "sel_diff": 2.0
+      "edge": 3.2,
+      "sel_diff": 4.0
     }
   ],
   "history": [
-    {
-      "date": "2026-03-26",
-      "home": "CHC",
-      "away": "WSH",
-      "hp": 25,
-      "pred": "WSH",
-      "actual": "WSH 10-4 CHC",
-      "hit": true
-    },
     {
       "date": "2026-03-26",
       "home": "BAL",
@@ -10693,13 +10684,24 @@
       "hit": false,
       "mkt_home": 61.5,
       "mkt_away": 38.5
+    },
+    {
+      "date": "2026-10-15",
+      "home": "LAD",
+      "away": "MIL",
+      "hp": 52,
+      "pred": "LAD",
+      "actual": "MIL 6-4 LAD",
+      "hit": false,
+      "mkt_home": 57.7,
+      "mkt_away": 42.3
     }
   ],
   "stats": {
     "hits": 607,
-    "total": 1002,
+    "total": 1003,
     "pct": 61,
-    "streak": 1,
+    "streak": 2,
     "streak_type": "L"
   }
 }
