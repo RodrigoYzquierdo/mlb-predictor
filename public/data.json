@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "updated": "16/10/2026 13:28 CST",
+  "updated": "16/10/2026 16:18 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,11 +878,11 @@
       "diff": 4,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -111,
-        "away_ml": -109,
+        "home_ml": -105,
+        "away_ml": -114,
         "bookmaker": "DraftKings",
-        "consensus_home": 49.8,
-        "consensus_away": 50.2,
+        "consensus_home": 49.0,
+        "consensus_away": 51.0,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.2,
+        "spread": 0.7,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": 3.8,
+      "edge": 3.0,
       "sel_diff": 4.0
     }
   ],
