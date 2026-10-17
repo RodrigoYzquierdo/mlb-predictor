@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-16",
-  "updated": "16/10/2026 16:18 CST",
+  "date": "2026-10-17",
+  "updated": "17/10/2026 10:56 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,13 +856,13 @@
   },
   "top5": [
     {
-      "id": 849817,
+      "id": 849816,
       "status": "Preview",
       "home": "CLE",
       "away": "TB",
       "home_name": "Cleveland Guardians",
       "away_name": "Tampa Bay Rays",
-      "time": "2026-10-17T00:00:00Z",
+      "time": "2026-10-18T00:08:00Z",
       "home_score": null,
       "away_score": null,
       "home_pitcher": "Shawn Armstrong",
@@ -878,20 +878,20 @@
       "diff": 4,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": -105,
+        "home_ml": -106,
         "away_ml": -114,
         "bookmaker": "DraftKings",
         "consensus_home": 49.0,
         "consensus_away": 51.0,
         "books_count": 5,
         "books": [
-          "DraftKings",
           "FanDuel",
+          "DraftKings",
           "BetMGM",
           "Bovada",
           "BetRivers"
         ],
-        "spread": 0.7,
+        "spread": 1.4,
         "agreement": "Alta"
       },
       "value": false,
@@ -900,15 +900,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2026-03-26",
-      "home": "CIN",
-      "away": "BOS",
-      "hp": 25,
-      "pred": "BOS",
-      "actual": "BOS 3-0 CIN",
-      "hit": true
-    },
     {
       "date": "2026-03-27",
       "home": "SF",
@@ -10695,13 +10686,24 @@
       "pred": "TB",
       "actual": "CLE 3-2 TB",
       "hit": false
+    },
+    {
+      "date": "2026-10-16",
+      "home": "CLE",
+      "away": "TB",
+      "hp": 46,
+      "pred": "TB",
+      "actual": "CLE 0-0 TB",
+      "hit": true,
+      "mkt_home": 49.0,
+      "mkt_away": 51.0
     }
   ],
   "stats": {
-    "hits": 607,
-    "total": 1004,
+    "hits": 608,
+    "total": 1005,
     "pct": 60,
-    "streak": 3,
-    "streak_type": "L"
+    "streak": 1,
+    "streak_type": "W"
   }
 }
