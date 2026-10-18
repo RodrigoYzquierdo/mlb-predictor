@@ -1,6 +1,6 @@
 {
   "date": "2026-10-18",
-  "updated": "18/10/2026 12:32 CST",
+  "updated": "18/10/2026 16:00 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 849817,
-      "status": "Preview",
+      "status": "Live",
       "home": "CLE",
       "away": "TB",
       "home_name": "Cleveland Guardians",
@@ -878,11 +878,11 @@
       "diff": 4,
       "park_factor": 0.97,
       "odds": {
-        "home_ml": 110,
-        "away_ml": -132,
+        "home_ml": 465,
+        "away_ml": -790,
         "bookmaker": "DraftKings",
-        "consensus_home": 45.8,
-        "consensus_away": 54.2,
+        "consensus_home": 17.4,
+        "consensus_away": 82.6,
         "books_count": 5,
         "books": [
           "DraftKings",
@@ -891,11 +891,11 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.1,
+        "spread": 2.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -0.2,
+      "edge": -28.6,
       "sel_diff": 4.0
     }
   ],
