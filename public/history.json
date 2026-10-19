@@ -9852,5 +9852,16 @@
     "hit": true,
     "mkt_home": 49.3,
     "mkt_away": 50.7
+  },
+  {
+    "date": "2026-10-18",
+    "home": "CLE",
+    "away": "TB",
+    "hp": 46,
+    "pred": "TB",
+    "actual": "TB 3-1 CLE",
+    "hit": true,
+    "mkt_home": 17.4,
+    "mkt_away": 82.6
   }
 ]
