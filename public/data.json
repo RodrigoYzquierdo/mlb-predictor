@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-19",
-  "updated": "19/10/2026 17:11 CST",
+  "date": "2026-10-20",
+  "updated": "20/10/2026 12:25 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,61 +854,8 @@
       "last10_pct": 0.2
     }
   },
-  "top5": [
-    {
-      "id": 849815,
-      "status": "Preview",
-      "home": "TB",
-      "away": "CLE",
-      "home_name": "Tampa Bay Rays",
-      "away_name": "Cleveland Guardians",
-      "time": "2026-10-20T00:08:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Freddy Peralta",
-      "home_pitcher_id": 642547,
-      "away_pitcher": "Shawn Armstrong",
-      "away_pitcher_id": 542888,
-      "home_era": 4.42,
-      "away_era": 4.58,
-      "hp": 61,
-      "ap": 39,
-      "conf": "Media",
-      "mixed": true,
-      "diff": 11,
-      "park_factor": 0.96,
-      "odds": {
-        "home_ml": -152,
-        "away_ml": 135,
-        "bookmaker": "DraftKings",
-        "consensus_home": 58.4,
-        "consensus_away": 41.6,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "BetRivers",
-          "BetMGM",
-          "Bovada",
-          "DraftKings"
-        ],
-        "spread": 1.1,
-        "agreement": "Alta"
-      },
-      "value": false,
-      "edge": 2.6,
-      "sel_diff": 11.0
-    }
-  ],
+  "top5": [],
   "history": [
-    {
-      "date": "2026-03-27",
-      "home": "SD",
-      "away": "DET",
-      "hp": 25,
-      "pred": "DET",
-      "actual": "DET 5-2 SD",
-      "hit": true
-    },
     {
       "date": "2026-03-27",
       "home": "SEA",
@@ -10701,13 +10648,24 @@
       "hit": true,
       "mkt_home": 17.4,
       "mkt_away": 82.6
+    },
+    {
+      "date": "2026-10-19",
+      "home": "TB",
+      "away": "CLE",
+      "hp": 61,
+      "pred": "TB",
+      "actual": "TB 7-3 CLE",
+      "hit": true,
+      "mkt_home": 58.4,
+      "mkt_away": 41.6
     }
   ],
   "stats": {
-    "hits": 610,
-    "total": 1007,
+    "hits": 611,
+    "total": 1008,
     "pct": 61,
-    "streak": 3,
+    "streak": 4,
     "streak_type": "W"
   }
 }
