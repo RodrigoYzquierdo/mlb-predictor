@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-22",
-  "updated": "22/10/2026 16:50 CST",
+  "date": "2026-10-23",
+  "updated": "23/10/2026 12:12 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,7 +854,51 @@
       "last10_pct": 0.2
     }
   },
-  "top5": [],
+  "top5": [
+    {
+      "id": 849805,
+      "status": "Preview",
+      "home": "MIL",
+      "away": "TB",
+      "home_name": "Milwaukee Brewers",
+      "away_name": "Tampa Bay Rays",
+      "time": "2026-10-24T00:00:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Jacob Misiorowski",
+      "home_pitcher_id": 694819,
+      "away_pitcher": "Nick Martinez",
+      "away_pitcher_id": 607259,
+      "home_era": 1.8,
+      "away_era": 3.1,
+      "hp": 56,
+      "ap": 44,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 6,
+      "park_factor": 1.02,
+      "odds": {
+        "home_ml": -192,
+        "away_ml": 158,
+        "bookmaker": "DraftKings",
+        "consensus_home": 63.5,
+        "consensus_away": 36.5,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetMGM",
+          "Bovada",
+          "BetRivers"
+        ],
+        "spread": 2.2,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": -7.5,
+      "sel_diff": 6.0
+    }
+  ],
   "history": [
     {
       "date": "2026-03-27",
