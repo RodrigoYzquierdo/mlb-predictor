@@ -9874,5 +9874,16 @@
     "hit": true,
     "mkt_home": 58.4,
     "mkt_away": 41.6
+  },
+  {
+    "date": "2026-10-23",
+    "home": "MIL",
+    "away": "TB",
+    "hp": 56,
+    "pred": "MIL",
+    "actual": "MIL 3-2 TB",
+    "hit": true,
+    "mkt_home": 63.1,
+    "mkt_away": 36.9
   }
 ]

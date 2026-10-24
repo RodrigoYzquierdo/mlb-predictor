@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-23",
-  "updated": "23/10/2026 16:43 CST",
+  "date": "2026-10-24",
+  "updated": "24/10/2026 11:18 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,21 +856,21 @@
   },
   "top5": [
     {
-      "id": 849805,
+      "id": 849802,
       "status": "Preview",
       "home": "MIL",
       "away": "TB",
       "home_name": "Milwaukee Brewers",
       "away_name": "Tampa Bay Rays",
-      "time": "2026-10-24T00:00:00Z",
+      "time": "2026-10-25T00:00:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Jacob Misiorowski",
-      "home_pitcher_id": 694819,
-      "away_pitcher": "Nick Martinez",
-      "away_pitcher_id": 607259,
-      "home_era": 1.8,
-      "away_era": 3.1,
+      "home_pitcher": "Logan Henderson",
+      "home_pitcher_id": 701656,
+      "away_pitcher": "Drew Rasmussen",
+      "away_pitcher_id": 656876,
+      "home_era": 2.47,
+      "away_era": 2.67,
       "hp": 56,
       "ap": 44,
       "conf": "Baja",
@@ -878,37 +878,28 @@
       "diff": 6,
       "park_factor": 1.02,
       "odds": {
-        "home_ml": -193,
-        "away_ml": 158,
+        "home_ml": -120,
+        "away_ml": 100,
         "bookmaker": "DraftKings",
-        "consensus_home": 63.1,
-        "consensus_away": 36.9,
+        "consensus_home": 52.5,
+        "consensus_away": 47.5,
         "books_count": 5,
         "books": [
-          "FanDuel",
           "DraftKings",
+          "FanDuel",
           "BetMGM",
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.1,
+        "spread": 0.8,
         "agreement": "Alta"
       },
       "value": false,
-      "edge": -7.1,
+      "edge": 3.5,
       "sel_diff": 6.0
     }
   ],
   "history": [
-    {
-      "date": "2026-03-27",
-      "home": "SEA",
-      "away": "CLE",
-      "hp": 25,
-      "pred": "CLE",
-      "actual": "SEA 5-1 CLE",
-      "hit": false
-    },
     {
       "date": "2026-03-27",
       "home": "LAD",
@@ -10703,13 +10694,24 @@
       "hit": true,
       "mkt_home": 58.4,
       "mkt_away": 41.6
+    },
+    {
+      "date": "2026-10-23",
+      "home": "MIL",
+      "away": "TB",
+      "hp": 56,
+      "pred": "MIL",
+      "actual": "MIL 3-2 TB",
+      "hit": true,
+      "mkt_home": 63.1,
+      "mkt_away": 36.9
     }
   ],
   "stats": {
-    "hits": 611,
-    "total": 1008,
+    "hits": 612,
+    "total": 1009,
     "pct": 61,
-    "streak": 4,
+    "streak": 5,
     "streak_type": "W"
   }
 }
