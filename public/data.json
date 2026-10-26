@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "updated": "26/10/2026 14:57 CST",
+  "updated": "26/10/2026 17:26 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -878,8 +878,8 @@
       "diff": 1,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -119,
-        "away_ml": -101,
+        "home_ml": -114,
+        "away_ml": 102,
         "bookmaker": "DraftKings",
         "consensus_home": 52.0,
         "consensus_away": 48.0,
@@ -891,7 +891,7 @@
           "BetMGM",
           "Bovada"
         ],
-        "spread": 0.6,
+        "spread": 1.5,
         "agreement": "Alta"
       },
       "value": false,
