@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-25",
-  "updated": "25/10/2026 16:09 CST",
+  "date": "2026-10-26",
+  "updated": "26/10/2026 13:49 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,7 +854,51 @@
       "last10_pct": 0.2
     }
   },
-  "top5": [],
+  "top5": [
+    {
+      "id": 849804,
+      "status": "Preview",
+      "home": "TB",
+      "away": "MIL",
+      "home_name": "Tampa Bay Rays",
+      "away_name": "Milwaukee Brewers",
+      "time": "2026-10-27T00:00:00Z",
+      "home_score": null,
+      "away_score": null,
+      "home_pitcher": "Freddy Peralta",
+      "home_pitcher_id": 642547,
+      "away_pitcher": "Robert Gasser",
+      "away_pitcher_id": 688107,
+      "home_era": 4.42,
+      "away_era": 3.87,
+      "hp": 51,
+      "ap": 49,
+      "conf": "Baja",
+      "mixed": true,
+      "diff": 1,
+      "park_factor": 0.96,
+      "odds": {
+        "home_ml": -118,
+        "away_ml": -102,
+        "bookmaker": "DraftKings",
+        "consensus_home": 52.1,
+        "consensus_away": 47.9,
+        "books_count": 5,
+        "books": [
+          "FanDuel",
+          "DraftKings",
+          "BetRivers",
+          "BetMGM",
+          "Bovada"
+        ],
+        "spread": 1.2,
+        "agreement": "Alta"
+      },
+      "value": false,
+      "edge": -1.1,
+      "sel_diff": 1.0
+    }
+  ],
   "history": [
     {
       "date": "2026-03-28",
