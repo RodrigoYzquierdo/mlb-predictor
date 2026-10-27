@@ -1,6 +1,6 @@
 {
   "date": "2026-10-27",
-  "updated": "27/10/2026 13:55 CST",
+  "updated": "27/10/2026 14:32 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -867,22 +867,22 @@
       "away_score": null,
       "home_pitcher": "Griffin Jax",
       "home_pitcher_id": 643377,
-      "away_pitcher": null,
-      "away_pitcher_id": null,
+      "away_pitcher": "Dustin May",
+      "away_pitcher_id": 669160,
       "home_era": 3.53,
-      "away_era": null,
-      "hp": 51,
-      "ap": 49,
+      "away_era": 4.7,
+      "hp": 52,
+      "ap": 48,
       "conf": "Baja",
-      "mixed": false,
-      "diff": 1,
+      "mixed": true,
+      "diff": 2,
       "park_factor": 0.96,
       "odds": {
         "home_ml": 102,
         "away_ml": -123,
         "bookmaker": "DraftKings",
-        "consensus_home": 46.9,
-        "consensus_away": 53.1,
+        "consensus_home": 46.8,
+        "consensus_away": 53.2,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,12 +891,12 @@
           "BetRivers",
           "Bovada"
         ],
-        "spread": 1.0,
+        "spread": 1.2,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 4.1,
-      "sel_diff": 1.0
+      "edge": 5.2,
+      "sel_diff": 2.0
     }
   ],
   "history": [
