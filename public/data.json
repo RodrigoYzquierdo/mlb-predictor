@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-26",
-  "updated": "26/10/2026 17:26 CST",
+  "date": "2026-10-27",
+  "updated": "27/10/2026 13:18 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -856,59 +856,50 @@
   },
   "top5": [
     {
-      "id": 849804,
+      "id": 849803,
       "status": "Preview",
       "home": "TB",
       "away": "MIL",
       "home_name": "Tampa Bay Rays",
       "away_name": "Milwaukee Brewers",
-      "time": "2026-10-27T00:00:00Z",
+      "time": "2026-10-28T00:00:00Z",
       "home_score": null,
       "away_score": null,
-      "home_pitcher": "Freddy Peralta",
-      "home_pitcher_id": 642547,
-      "away_pitcher": "Robert Gasser",
-      "away_pitcher_id": 688107,
-      "home_era": 4.42,
-      "away_era": 3.87,
+      "home_pitcher": "Griffin Jax",
+      "home_pitcher_id": 643377,
+      "away_pitcher": null,
+      "away_pitcher_id": null,
+      "home_era": 3.53,
+      "away_era": null,
       "hp": 51,
       "ap": 49,
       "conf": "Baja",
-      "mixed": true,
+      "mixed": false,
       "diff": 1,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": -114,
-        "away_ml": 102,
+        "home_ml": 104,
+        "away_ml": -125,
         "bookmaker": "DraftKings",
-        "consensus_home": 52.0,
-        "consensus_away": 48.0,
+        "consensus_home": 46.7,
+        "consensus_away": 53.3,
         "books_count": 5,
         "books": [
           "FanDuel",
           "DraftKings",
-          "BetRivers",
           "BetMGM",
+          "BetRivers",
           "Bovada"
         ],
-        "spread": 1.5,
+        "spread": 1.9,
         "agreement": "Alta"
       },
-      "value": false,
-      "edge": -1.0,
+      "value": true,
+      "edge": 4.3,
       "sel_diff": 1.0
     }
   ],
   "history": [
-    {
-      "date": "2026-03-28",
-      "home": "STL",
-      "away": "TB",
-      "hp": 75,
-      "pred": "STL",
-      "actual": "STL 6-5 TB",
-      "hit": true
-    },
     {
       "date": "2026-03-28",
       "home": "CHC",
@@ -10707,13 +10698,24 @@
       "hit": true,
       "mkt_home": 52.3,
       "mkt_away": 47.7
+    },
+    {
+      "date": "2026-10-26",
+      "home": "TB",
+      "away": "MIL",
+      "hp": 51,
+      "pred": "TB",
+      "actual": "MIL 10-1 TB",
+      "hit": false,
+      "mkt_home": 52.0,
+      "mkt_away": 48.0
     }
   ],
   "stats": {
     "hits": 613,
-    "total": 1010,
+    "total": 1011,
     "pct": 61,
-    "streak": 6,
-    "streak_type": "W"
+    "streak": 1,
+    "streak_type": "L"
   }
 }
