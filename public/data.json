@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "updated": "28/10/2026 14:54 CST",
+  "updated": "28/10/2026 17:42 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -857,7 +857,7 @@
   "top5": [
     {
       "id": 849799,
-      "status": "Preview",
+      "status": "Live",
       "home": "TB",
       "away": "MIL",
       "home_name": "Tampa Bay Rays",
@@ -878,11 +878,11 @@
       "diff": 1,
       "park_factor": 0.96,
       "odds": {
-        "home_ml": 123,
-        "away_ml": -149,
+        "home_ml": 124,
+        "away_ml": -139,
         "bookmaker": "DraftKings",
-        "consensus_home": 42.7,
-        "consensus_away": 57.3,
+        "consensus_home": 43.9,
+        "consensus_away": 56.1,
         "books_count": 5,
         "books": [
           "FanDuel",
@@ -891,11 +891,11 @@
           "Bovada",
           "BetRivers"
         ],
-        "spread": 1.6,
+        "spread": 1.9,
         "agreement": "Alta"
       },
       "value": true,
-      "edge": 8.3,
+      "edge": 7.1,
       "sel_diff": 1.0
     }
   ],
