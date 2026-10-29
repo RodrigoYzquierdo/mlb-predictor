@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-28",
-  "updated": "28/10/2026 17:42 CST",
+  "date": "2026-10-29",
+  "updated": "29/10/2026 13:29 CST",
   "model_info": {
     "version": "3.1",
     "type": "Regresion logistica recalibrada",
@@ -854,61 +854,8 @@
       "last10_pct": 0.2
     }
   },
-  "top5": [
-    {
-      "id": 849799,
-      "status": "Live",
-      "home": "TB",
-      "away": "MIL",
-      "home_name": "Tampa Bay Rays",
-      "away_name": "Milwaukee Brewers",
-      "time": "2026-10-29T00:00:00Z",
-      "home_score": null,
-      "away_score": null,
-      "home_pitcher": "Drew Rasmussen",
-      "home_pitcher_id": 656876,
-      "away_pitcher": "Jacob Misiorowski",
-      "away_pitcher_id": 694819,
-      "home_era": 2.67,
-      "away_era": 1.8,
-      "hp": 51,
-      "ap": 49,
-      "conf": "Baja",
-      "mixed": true,
-      "diff": 1,
-      "park_factor": 0.96,
-      "odds": {
-        "home_ml": 124,
-        "away_ml": -139,
-        "bookmaker": "DraftKings",
-        "consensus_home": 43.9,
-        "consensus_away": 56.1,
-        "books_count": 5,
-        "books": [
-          "FanDuel",
-          "BetMGM",
-          "DraftKings",
-          "Bovada",
-          "BetRivers"
-        ],
-        "spread": 1.9,
-        "agreement": "Alta"
-      },
-      "value": true,
-      "edge": 7.1,
-      "sel_diff": 1.0
-    }
-  ],
+  "top5": [],
   "history": [
-    {
-      "date": "2026-03-28",
-      "home": "BAL",
-      "away": "MIN",
-      "hp": 75,
-      "pred": "BAL",
-      "actual": "MIN 4-1 BAL",
-      "hit": false
-    },
     {
       "date": "2026-03-28",
       "home": "PHI",
@@ -10711,13 +10658,24 @@
       "hit": true,
       "mkt_home": 47.2,
       "mkt_away": 52.8
+    },
+    {
+      "date": "2026-10-28",
+      "home": "TB",
+      "away": "MIL",
+      "hp": 51,
+      "pred": "TB",
+      "actual": "MIL 4-1 TB",
+      "hit": false,
+      "mkt_home": 43.9,
+      "mkt_away": 56.1
     }
   ],
   "stats": {
     "hits": 614,
-    "total": 1012,
+    "total": 1013,
     "pct": 61,
     "streak": 1,
-    "streak_type": "W"
+    "streak_type": "L"
   }
 }
